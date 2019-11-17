@@ -1,0 +1,763 @@
+fileFormatVersion: 2
+guid: 9373b6369a84d4211b52223a04e78fbe
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3195956163257263648
+    second: Ch_A_WalingSPrites_3.00
+  - first:
+      213: 5518915033001371846
+    second: Ch_A_WalingSPrites_3.01
+  - first:
+      213: 7613764453613522471
+    second: Ch_A_WalingSPrites_3.02
+  - first:
+      213: 7033421193470278641
+    second: Ch_A_WalingSPrites_3.03
+  - first:
+      213: 3455941443660325412
+    second: Ch_A_WalingSPrites_3.04
+  - first:
+      213: 7006130632920213352
+    second: Ch_A_WalingSPrites_3.05
+  - first:
+      213: -1504012132488226260
+    second: Ch_A_WalingSPrites_3.06
+  - first:
+      213: -6398919593090976000
+    second: Ch_A_WalingSPrites_3.07
+  - first:
+      213: 308131591931651190
+    second: Ch_A_WalingSPrites_3.08
+  - first:
+      213: -4652109151070693260
+    second: Ch_A_WalingSPrites_3.09
+  - first:
+      213: 48200341754253976
+    second: Ch_A_WalingSPrites_3.10
+  - first:
+      213: 3913361936523800788
+    second: Ch_A_WalingSPrites_3.11
+  - first:
+      213: 9045073318726810103
+    second: Ch_A_WalingSPrites_3.12
+  - first:
+      213: 1738200575465172926
+    second: Ch_A_WalingSPrites_3.13
+  - first:
+      213: 87205838423598988
+    second: Ch_A_WalingSPrites_3.14
+  - first:
+      213: 2440897545782612445
+    second: Ch_A_WalingSPrites_3.15
+  - first:
+      213: 7144531532849077040
+    second: Ch_A_WalingSPrites_3.16
+  - first:
+      213: 8089155725605608287
+    second: Ch_A_WalingSPrites_3.17
+  - first:
+      213: 1823309798672433392
+    second: Ch_A_WalingSPrites_3.18
+  - first:
+      213: -6649772518722517185
+    second: Ch_A_WalingSPrites_3.19
+  - first:
+      213: -2521566030949056568
+    second: Ch_A_WalingSPrites_3.20
+  - first:
+      213: 5574010232397080445
+    second: Ch_A_WalingSPrites_3.21
+  - first:
+      213: 3274151702392416895
+    second: Ch_A_WalingSPrites_3.22
+  - first:
+      213: 8483789597100603632
+    second: Ch_A_WalingSPrites_3.23
+  - first:
+      213: -221465246395160782
+    second: Ch_A_WalingSPrites_3.24
+  - first:
+      213: -2906497952248552376
+    second: Ch_A_WalingSPrites_3.25
+  - first:
+      213: 1071581822536693567
+    second: Ch_A_WalingSPrites_3.26
+  - first:
+      213: -6333041415107068250
+    second: Ch_A_WalingSPrites_3.27
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ch_A_WalingSPrites_3.00
+      rect:
+        serializedVersion: 2
+        x: 2648
+        y: 3042
+        width: 238
+        height: 1053
+      alignment: 9
+      pivot: {x: 0.48949578, y: -0.0075973407}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 3195956163257263648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_A_WalingSPrites_3.01
+      rect:
+        serializedVersion: 2
+        x: 2648
+        y: 3042
+        width: 238
+        height: 1053
+      alignment: 9
+      pivot: {x: 0.48949578, y: -0.0075973407}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 5518915033001371846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_A_WalingSPrites_3.02
+      rect:
+        serializedVersion: 2
+        x: 2648
+        y: 3042
+        width: 238
+        height: 1053
+      alignment: 9
+      pivot: {x: 0.48949578, y: -0.0075973407}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 7613764453613522471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_A_WalingSPrites_3.03
+      rect:
+        serializedVersion: 2
+        x: 2648
+        y: 3042
+        width: 238
+        height: 1053
+      alignment: 9
+      pivot: {x: 0.48949578, y: -0.0075973407}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 7033421193470278641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_A_WalingSPrites_3.04
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1983
+        width: 304
+        height: 1056
+      alignment: 9
+      pivot: {x: 0.5246711, y: -0.0047348486}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 3455941443660325412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_A_WalingSPrites_3.05
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 1983
+        width: 489
+        height: 1056
+      alignment: 9
+      pivot: {x: 0.65541923, y: -0.0047348486}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 7006130632920213352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_A_WalingSPrites_3.06
+      rect:
+        serializedVersion: 2
+        x: 1960
+        y: 1982
+        width: 459
+        height: 1057
+      alignment: 9
+      pivot: {x: 0.68736386, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -1504012132488226260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_A_WalingSPrites_3.07
+      rect:
+        serializedVersion: 2
+        x: 1604
+        y: 1982
+        width: 354
+        height: 1057
+      alignment: 9
+      pivot: {x: 0.6285311, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -6398919593090976000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_A_WalingSPrites_3.08
+      rect:
+        serializedVersion: 2
+        x: 2860
+        y: 1980
+        width: 400
+        height: 1059
+      alignment: 9
+      pivot: {x: 0.64125, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 308131591931651190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_A_WalingSPrites_3.09
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3057
+        width: 537
+        height: 1038
+      alignment: 9
+      pivot: {x: 0.62849164, y: -0.01734104}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -4652109151070693260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_A_WalingSPrites_3.10
+      rect:
+        serializedVersion: 2
+        x: 3234
+        y: 3041
+        width: 666
+        height: 1054
+      alignment: 9
+      pivot: {x: 0.6118619, y: -0.0075901328}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 48200341754253976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_A_WalingSPrites_3.11
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 3044
+        width: 591
+        height: 1051
+      alignment: 9
+      pivot: {x: 0.6827411, y: -0.008563273}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 3913361936523800788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_A_WalingSPrites_3.12
+      rect:
+        serializedVersion: 2
+        x: 2421
+        y: 1982
+        width: 437
+        height: 1057
+      alignment: 9
+      pivot: {x: 0.7311213, y: -0.0028382214}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 9045073318726810103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_A_WalingSPrites_3.13
+      rect:
+        serializedVersion: 2
+        x: 2037
+        y: 3042
+        width: 369
+        height: 1053
+      alignment: 9
+      pivot: {x: 0.6111111, y: -0.0056980057}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 1738200575465172926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_A_WalingSPrites_3.14
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 3047
+        width: 411
+        height: 1048
+      alignment: 9
+      pivot: {x: 0.5997567, y: -0.009541985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 87205838423598988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_A_WalingSPrites_3.15
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 3050
+        width: 489
+        height: 1045
+      alignment: 9
+      pivot: {x: 0.6574642, y: -0.010526316}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 2440897545782612445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_A_WalingSPrites_3.16
+      rect:
+        serializedVersion: 2
+        x: 3262
+        y: 1978
+        width: 646
+        height: 1061
+      alignment: 9
+      pivot: {x: 0.6168731, y: -0.00094250706}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 7144531532849077040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_A_WalingSPrites_3.17
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 1983
+        width: 560
+        height: 1056
+      alignment: 9
+      pivot: {x: 0.7080357, y: -0.003787879}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 8089155725605608287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_A_WalingSPrites_3.18
+      rect:
+        serializedVersion: 2
+        x: 2888
+        y: 3041
+        width: 344
+        height: 1054
+      alignment: 9
+      pivot: {x: 0.5886628, y: -0.0056926}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 1823309798672433392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_A_WalingSPrites_3.19
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 1982
+        width: 242
+        height: 1057
+      alignment: 9
+      pivot: {x: 0.50206614, y: -0.0028382214}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -6649772518722517185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_A_WalingSPrites_3.20
+      rect:
+        serializedVersion: 2
+        x: 2408
+        y: 3042
+        width: 238
+        height: 1053
+      alignment: 9
+      pivot: {x: 0.48949578, y: -0.0075973407}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -2521566030949056568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_A_WalingSPrites_3.21
+      rect:
+        serializedVersion: 2
+        x: 2408
+        y: 3042
+        width: 238
+        height: 1053
+      alignment: 9
+      pivot: {x: 0.48949578, y: -0.0075973407}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 5574010232397080445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_A_WalingSPrites_3.22
+      rect:
+        serializedVersion: 2
+        x: 2408
+        y: 3042
+        width: 238
+        height: 1053
+      alignment: 9
+      pivot: {x: 0.48949578, y: -0.0075973407}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 3274151702392416895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_A_WalingSPrites_3.23
+      rect:
+        serializedVersion: 2
+        x: 2408
+        y: 3042
+        width: 238
+        height: 1053
+      alignment: 9
+      pivot: {x: 0.48949578, y: -0.0075973407}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 8483789597100603632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_A_WalingSPrites_3.24
+      rect:
+        serializedVersion: 2
+        x: 2408
+        y: 3042
+        width: 238
+        height: 1053
+      alignment: 9
+      pivot: {x: 0.48949578, y: -0.0075973407}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -221465246395160782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_A_WalingSPrites_3.25
+      rect:
+        serializedVersion: 2
+        x: 2408
+        y: 3042
+        width: 238
+        height: 1053
+      alignment: 9
+      pivot: {x: 0.48949578, y: -0.0075973407}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -2906497952248552376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_A_WalingSPrites_3.26
+      rect:
+        serializedVersion: 2
+        x: 2408
+        y: 3042
+        width: 238
+        height: 1053
+      alignment: 9
+      pivot: {x: 0.48949578, y: -0.0075973407}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 1071581822536693567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_A_WalingSPrites_3.27
+      rect:
+        serializedVersion: 2
+        x: 2408
+        y: 3042
+        width: 238
+        height: 1053
+      alignment: 9
+      pivot: {x: 0.48949578, y: -0.0075973407}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -6333041415107068250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

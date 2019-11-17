@@ -1,0 +1,115 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+namespace Lightbug.Kinematic2D.Implementation
+{
+
+public enum WallJumpType
+{
+	Normal ,
+	Toward ,
+	Away
+}
+
+[AddComponentMenu("Kinematic2D/Implementation/Abilities/Wall Jump")]
+public class WallJump : CharacterAbility
+{
+	
+	[SerializeField] float initialVelocity = 12;
+	
+	[SerializeField] [Range_NoSlider(true)] float towardAngle = 55f;
+	[SerializeField] [Range_NoSlider(true)] float normalAngle = 45f;
+	[SerializeField] [Range_NoSlider(true)] float awayAngle = 25f;
+
+
+
+	protected override void Awake()
+	{
+		base.Awake();
+	}
+
+
+	Vector2 GetWallJumpVector( bool wallJumpToTheRight , WallJumpType wallJumpType )
+	{
+		Vector2 output = Vector2.zero;
+		float angle = 0;
+
+		switch( wallJumpType )
+		{
+			case WallJumpType.Normal:
+				angle = normalAngle;
+				break;
+			case WallJumpType.Toward:
+				angle = towardAngle;
+				break;
+			case WallJumpType.Away:
+				angle = awayAngle;
+				break;
+		}
+
+		output.x = Mathf.Cos( Mathf.Deg2Rad * angle );
+		if(!wallJumpToTheRight)
+			output.x = -output.x;
+
+		output.y = Mathf.Sin( Mathf.Deg2Rad * angle );
+
+		return output;
+	}
+
+	void Setup()
+	{	
+
+		bool wallJumpToTheRight = !characterController2D.IsFacingRight;
+		Vector2 targetWallJumpDirection = Vector2.zero;
+		
+
+
+		if( characterBrain.CharacterAction.left )
+		{
+			targetWallJumpDirection = GetWallJumpVector( wallJumpToTheRight , wallJumpToTheRight ? WallJumpType.Toward : WallJumpType.Away);
+			if(!wallJumpToTheRight)
+				characterController2D.LookToTheOppositeSide();
+
+		}
+		else if( characterBrain.CharacterAction.right )
+		{ 				
+			targetWallJumpDirection = GetWallJumpVector( wallJumpToTheRight , wallJumpToTheRight ? WallJumpType.Away : WallJumpType.Toward);
+			if(wallJumpToTheRight)
+				characterController2D.LookToTheOppositeSide();
+		}
+		else
+		{
+			targetWallJumpDirection = GetWallJumpVector( wallJumpToTheRight , WallJumpType.Normal );
+			characterController2D.LookToTheOppositeSide();
+		}
+
+		
+		characterController2D.SetVelocity( targetWallJumpDirection.normalized * initialVelocity );
+	}
+
+	
+     public override void Process( float dt )
+	{			
+		if( !movementController.isCurrentlyOnState( MovementState.WallSlide ) )
+			return;
+		
+		if( characterBrain.CharacterAction.jumpPressed )
+		{
+			Setup();
+			//verticalMovement.ResetAirJump();
+			movementController.SetState( MovementState.Normal );
+		}		
+
+		
+	}
+
+	public override string GetInfo()
+	{ 
+		return "It allows the character to perform a wall jump, only if this is in \"WallSlide\" state."; 
+	}
+
+	
+}
+
+}

@@ -1,0 +1,18 @@
+version: 2
+importPivots: 1
+tpsheetFileNames:
+- Assets/ArtAssets/CharacterATest/Character_A_Walking.tpsheet
+- Assets/ArtAssets/TempCharacters/Character_B_Cheering.tpsheet
+- Assets/ArtAssets/TempCharacters/Character_B_Walking.tpsheet
+- Assets/codeandweb.com/Example/SpriteSheet/sprites.tpsheet
+textureFileNames:
+- Assets/ArtAssets/CharacterATest/Character_A_Walking.png
+- Assets/ArtAssets/TempCharacters/Character_B_Cheering.png
+- Assets/ArtAssets/TempCharacters/Character_B_Walking.png
+- Assets/codeandweb.com/Example/SpriteSheet/sprites.png
+normalmapFileNames:
+- 
+- 
+- 
+- Assets/codeandweb.com/Example/SpriteSheet/sprites_n.png
+enableDebugOutput: 0

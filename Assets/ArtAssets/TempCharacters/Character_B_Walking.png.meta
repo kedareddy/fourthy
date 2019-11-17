@@ -1,0 +1,757 @@
+fileFormatVersion: 2
+guid: aa264221347fb46658279e573e181dee
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6904191327059171402
+    second: Scene - character-04.06
+  - first:
+      213: -3947528488351348539
+    second: Scene - character-04.07
+  - first:
+      213: 1541110871938215738
+    second: Scene - character-04.08
+  - first:
+      213: 5191866293140307281
+    second: Scene - character-04.09
+  - first:
+      213: -7021011036640472719
+    second: Scene - character-04.10
+  - first:
+      213: 8458285952558638684
+    second: Scene - character-04.11
+  - first:
+      213: -8958599160070642945
+    second: Scene - character-04.12
+  - first:
+      213: -3050877101265399318
+    second: Scene - character-04.13
+  - first:
+      213: 7065296173540182546
+    second: Scene - character-04.14
+  - first:
+      213: 8258772652860032696
+    second: Scene - character-04.15
+  - first:
+      213: 2547219427013596980
+    second: Scene - character-04.16
+  - first:
+      213: -1815436389961793700
+    second: Scene - character-04.17
+  - first:
+      213: 5677474181247770348
+    second: Scene - character-04.18
+  - first:
+      213: 8112433295827538608
+    second: Scene - character-04.19
+  - first:
+      213: 8162815135462216284
+    second: Scene - character-04.20
+  - first:
+      213: -3964711983908719392
+    second: Scene - character-04.21
+  - first:
+      213: -4793661825620008934
+    second: Scene - character-04.22
+  - first:
+      213: -3800066075210566605
+    second: Scene - character-04.23
+  - first:
+      213: 9079352095571380912
+    second: Scene - character-04.24
+  - first:
+      213: 302734294570249858
+    second: Scene - character-04.25
+  - first:
+      213: -1328916442617594305
+    second: Scene - character-04.26
+  - first:
+      213: 5791963673832803623
+    second: Scene - character-04.27
+  - first:
+      213: 726891126357813576
+    second: Scene - character-04.28
+  - first:
+      213: 3905359423081897019
+    second: Scene - character-04.29
+  - first:
+      213: 270915093351281078
+    second: Character_B_Walking_0
+  - first:
+      213: -1046535005922604543
+    second: Character_B_Walking_1
+  - first:
+      213: 4509977138607768131
+    second: Character_B_Walking_2
+  - first:
+      213: -3186269042661744055
+    second: Character_B_Walking_3
+  - first:
+      213: 6630014199173073595
+    second: Character_B_Walking_4
+  - first:
+      213: -3031669856399962707
+    second: Character_B_Walking_5
+  - first:
+      213: -2585011151636694616
+    second: Character_B_Walking_6
+  - first:
+      213: -1621691856183818633
+    second: Character_B_Walking_7
+  - first:
+      213: -9096756478164969636
+    second: Character_B_Walking_8
+  - first:
+      213: -2846506825869805479
+    second: Character_B_Walking_9
+  - first:
+      213: 8122278690792161852
+    second: Character_B_Walking_10
+  - first:
+      213: 8879223240266398559
+    second: Character_B_Walking_11
+  - first:
+      213: 1351068436419432195
+    second: Character_B_Walking_12
+  - first:
+      213: 1492571626615300751
+    second: Character_B_Walking_13
+  - first:
+      213: 5205493909122340065
+    second: Character_B_Walking_14
+  - first:
+      213: 5618567502065969851
+    second: Character_B_Walking_15
+  - first:
+      213: -1186642648925635890
+    second: Character_B_Walking_16
+  - first:
+      213: -6703900007198565056
+    second: Character_B_Walking_17
+  - first:
+      213: 9041715389882453491
+    second: Character_B_Walking_18
+  - first:
+      213: 2681520115180591173
+    second: Character_B_Walking_19
+  - first:
+      213: -6158267202413450457
+    second: Character_B_Walking_20
+  - first:
+      213: -4545943804202540802
+    second: Character_B_Walking_21
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Scene - character-04.06
+      rect:
+        serializedVersion: 2
+        x: 1241
+        y: 2200
+        width: 211
+        height: 947
+      alignment: 9
+      pivot: {x: 0.471564, y: -0.0718057}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 6904191327059171402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - character-04.07
+      rect:
+        serializedVersion: 2
+        x: 2019
+        y: 3151
+        width: 233
+        height: 944
+      alignment: 9
+      pivot: {x: 0.45708156, y: -0.07521187}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -3947528488351348539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - character-04.08
+      rect:
+        serializedVersion: 2
+        x: 2637
+        y: 2197
+        width: 420
+        height: 950
+      alignment: 9
+      pivot: {x: 0.59166664, y: -0.07157895}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 1541110871938215738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - character-04.09
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 1242
+        width: 413
+        height: 953
+      alignment: 9
+      pivot: {x: 0.60895884, y: -0.06820567}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 5191866293140307281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - character-04.10
+      rect:
+        serializedVersion: 2
+        x: 1905
+        y: 2198
+        width: 316
+        height: 949
+      alignment: 9
+      pivot: {x: 0.53322786, y: -0.07586934}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -7021011036640472719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - character-04.11
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 2200
+        width: 355
+        height: 947
+      alignment: 9
+      pivot: {x: 0.5225352, y: -0.07602957}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 8458285952558638684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - character-04.12
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 3156
+        width: 460
+        height: 939
+      alignment: 9
+      pivot: {x: 0.5728261, y: -0.079872206}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -8958599160070642945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - character-04.13
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1243
+        width: 588
+        height: 952
+      alignment: 9
+      pivot: {x: 0.5297619, y: -0.074579835}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -3050877101265399318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - character-04.14
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2201
+        width: 524
+        height: 946
+      alignment: 9
+      pivot: {x: 0.6192748, y: -0.07610994}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 7065296173540182546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - character-04.15
+      rect:
+        serializedVersion: 2
+        x: 1598
+        y: 3152
+        width: 419
+        height: 943
+      alignment: 9
+      pivot: {x: 0.6121718, y: -0.075291626}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 8258772652860032696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - character-04.16
+      rect:
+        serializedVersion: 2
+        x: 2530
+        y: 3150
+        width: 311
+        height: 945
+      alignment: 9
+      pivot: {x: 0.551447, y: -0.074074075}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 2547219427013596980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - character-04.17
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 3153
+        width: 363
+        height: 942
+      alignment: 9
+      pivot: {x: 0.530303, y: -0.081740975}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -1815436389961793700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - character-04.18
+      rect:
+        serializedVersion: 2
+        x: 1454
+        y: 2200
+        width: 449
+        height: 947
+      alignment: 9
+      pivot: {x: 0.5712695, y: -0.07074974}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 5677474181247770348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - character-04.19
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 1235
+        width: 583
+        height: 960
+      alignment: 9
+      pivot: {x: 0.5394511, y: -0.065625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 8112433295827538608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - character-04.20
+      rect:
+        serializedVersion: 2
+        x: 3059
+        y: 2197
+        width: 514
+        height: 950
+      alignment: 9
+      pivot: {x: 0.6235409, y: -0.07157895}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 8162815135462216284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - character-04.21
+      rect:
+        serializedVersion: 2
+        x: 2223
+        y: 2198
+        width: 412
+        height: 949
+      alignment: 9
+      pivot: {x: 0.6080097, y: -0.06849315}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -3964711983908719392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - character-04.22
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 3152
+        width: 306
+        height: 943
+      alignment: 9
+      pivot: {x: 0.54738563, y: -0.07635207}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -4793661825620008934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - character-04.23
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 2200
+        width: 355
+        height: 947
+      alignment: 9
+      pivot: {x: 0.5225352, y: -0.07602957}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -3800066075210566605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - character-04.24
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3156
+        width: 460
+        height: 939
+      alignment: 9
+      pivot: {x: 0.5728261, y: -0.079872206}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 9079352095571380912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - character-04.25
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1243
+        width: 588
+        height: 952
+      alignment: 9
+      pivot: {x: 0.5297619, y: -0.074579835}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 302734294570249858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - character-04.26
+      rect:
+        serializedVersion: 2
+        x: 2843
+        y: 3149
+        width: 524
+        height: 946
+      alignment: 9
+      pivot: {x: 0.6192748, y: -0.07610994}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -1328916442617594305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - character-04.27
+      rect:
+        serializedVersion: 2
+        x: 2254
+        y: 3151
+        width: 274
+        height: 944
+      alignment: 9
+      pivot: {x: 0.56386864, y: -0.07733051}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 5791963673832803623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - character-04.28
+      rect:
+        serializedVersion: 2
+        x: 3369
+        y: 3149
+        width: 214
+        height: 946
+      alignment: 9
+      pivot: {x: 0.46495327, y: -0.07293869}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 726891126357813576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - character-04.29
+      rect:
+        serializedVersion: 2
+        x: 1241
+        y: 2200
+        width: 211
+        height: 947
+      alignment: 9
+      pivot: {x: 0.471564, y: -0.0718057}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 3905359423081897019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - WallSlide
+  - Water
+  - Weird
+  - Ice
+  - Honey
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - Character
+  - Trigger
+  - Static Obstacle
+  - 
+  - 
+  - 
+  - One Way Platform
+  - 
+  - Dynamic Obstacle
+  - 
+  - 
+  - Corner Alignment
+  - Non Collidable Dynamic Obstacle
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 1518516711
+    locked: 0
+  - name: Middleground
+    uniqueID: 3196964053
+    locked: 0
+  - name: LevelObjects
+    uniqueID: 2984193287
+    locked: 0
+  - name: Characters
+    uniqueID: 4005505105
+    locked: 0
+  - name: Foreground
+    uniqueID: 1594042715
+    locked: 0
