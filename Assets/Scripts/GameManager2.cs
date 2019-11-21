@@ -18,6 +18,7 @@ public class GameManager2 : MonoBehaviour
         Equality,
         Equity,
         Liberation,
+        EndScene,
         FourthBox,
         MainMenu,
         Restart,
@@ -34,7 +35,7 @@ public class GameManager2 : MonoBehaviour
     public GameObject blackBarBottom;
     public Animator fourthyAnimator;
 
-    public GameObject intro1Scene, introScene2, EqualityScene, EquityScene;
+    public GameObject intro1Scene, introScene2, EqualityScene, EquityScene, LiberationScene;
     public GameObject bkgBlurredParent, bkgBlurred, fenceBlurred, builderBlurred, dustBlurred, pitcherBlurred, batterBlurred, catcherBlurred;
     public GameObject fence, builder, dust, pitcher, batter, catcher, newFence1, newFence2, newFence3;
 
@@ -55,6 +56,13 @@ public class GameManager2 : MonoBehaviour
     public Image equityBlackScreen;
     public Character equity_TallC, equity_ShortC, equity_BoxC1, equity_BoxC2;
     public Vector3 INIT_EQUITY_POS = new Vector3(6.9f, -25.4f, -10f);
+
+    //Liberation related references
+    public GameObject liberationIntroScreen;
+    public Animator liberationTextAnimator;
+    public Image liberationBlackScreen;
+    public Vector3 INIT_LIBERATION_POS = new Vector3(6.9f, -10.3f, -10f);
+
 
     //ui buttons
     public GameObject mainMenuUI, cssLogo, game1Button, game2Button, game3Button, creditsButton, questionsButton, englishButton, spanishButton;
@@ -445,15 +453,24 @@ public class GameManager2 : MonoBehaviour
     {
         SuccessScreen mySuccessScreen = successScene.GetComponent<SuccessScreen>();
         mySuccessScreen.percentText.text = percent.ToString() + "%";
-        if(percent < 1f)
+        Debug.Log("in turnonResultsScreen");
+        if (fsm.CurrentStateMap.state.ToString() != States.Liberation.ToString())
         {
-            mySuccessScreen.nextButton.GetComponent<Button>().interactable = false;
+            if (percent < 1f)
+            {
+                mySuccessScreen.nextButton.GetComponent<Button>().interactable = false;
+            }
+            else
+            {
+                mySuccessScreen.nextButton.GetComponent<Button>().interactable = true;
+
+            }
         }
         else
         {
-            mySuccessScreen.nextButton.GetComponent<Button>().interactable = true;
-
+            mySuccessScreen.nextButton.GetComponent<Button>().interactable = false;
         }
+
         mySuccessScreen.AnimateStars(percent);
         if (fsm.CurrentStateMap.state.ToString() == States.Equality.ToString())
         {
@@ -469,7 +486,15 @@ public class GameManager2 : MonoBehaviour
             equityBlackScreen.transform.SetAsLastSibling();
             mySuccessScreen.infoText.text = "Equity Achieved"; 
         }
-            
+        else if (fsm.CurrentStateMap.state.ToString() == States.Liberation.ToString())
+        {
+            Debug.Log("Success is parented Liberation now"); 
+            successScene.transform.SetParent(liberationUI.transform);
+            successScene.transform.SetAsLastSibling();
+            liberationBlackScreen.transform.SetAsLastSibling();
+            mySuccessScreen.infoText.text = "Equity Achieved";
+        }
+
         successScene.SetActive(true);
     }
 
@@ -614,7 +639,7 @@ public class GameManager2 : MonoBehaviour
         Debug.Log("Exiting Equity");
 
         equityBlackScreen.color = new Color(0f, 0f, 0f, 0f);
-        Tween fadeToBlackTween = equalityBlackScreen.DOFade(1f, 2f).SetEase(Ease.OutQuad);
+        Tween fadeToBlackTween = equityBlackScreen.DOFade(1f, 2f).SetEase(Ease.OutQuad);
         yield return fadeToBlackTween.WaitForCompletion();
         //delete all instantiated boxes and hearts
         foreach (Transform child in equityRuntimeObjsParent.transform)
@@ -625,6 +650,88 @@ public class GameManager2 : MonoBehaviour
         equityUI.SetActive(false);
         DOTween.KillAll();
     }
+
+
+    public void Liberation_Enter()
+    {
+        Debug.Log("Welcome to Liberation");
+
+        SoundManager.instance.musicSource.clip = SoundManager.instance.ballparkBkg;
+        SoundManager.instance.musicSource.Play();
+        //reset heart counter, character Heart_StartPoint
+        Camera.main.GetComponent<NewDrag>().enabled = true; 
+        successScene.SetActive(false);
+        liberationTextAnimator.gameObject.SetActive(false);
+        LiberationScene.SetActive(true);
+        liberationUI.SetActive(true);
+        heartCounterButton.transform.SetParent(liberationUI.transform);
+        heartCounterButton.GetComponent<HeartCounter>().HeartsNumber = 0;
+        boxButton.transform.SetParent(liberationUI.transform);
+        liberationBlackScreen.transform.SetAsLastSibling();
+        liberationBlackScreen.color = new Color(0f, 0f, 0f, 0f);
+        Tween fadeFromBlack = liberationBlackScreen.DOFade(1f, 3f).SetEase(Ease.InOutQuad).From();
+        fadeFromBlack.OnUpdate(() => {
+            if (fadeFromBlack.ElapsedPercentage() > 0.25f)
+            {
+                if (!liberationIntroScreen.activeInHierarchy)
+                {
+                    liberationIntroScreen.SetActive(true);
+                }
+
+            }
+        });
+        Camera.main.orthographicSize = 30;
+        Camera.main.transform.position = INIT_LIBERATION_POS;
+    }
+
+    public void CalculateScore_Liberation()
+    {
+
+        Debug.Log("should show Liberation fail screen");
+        float totalCharacters = 0f;
+        float passedCharacters = 0f; 
+
+        foreach (Transform child in LiberationScene.transform)
+        {
+            Character c = child.GetComponent<Character>();
+            if (c != null)
+            {
+                totalCharacters = totalCharacters + 1f;
+                if (c.fsm != null)
+                {
+                    if (c.fsm.CurrentStateMap.state.ToString() == Character.States.Watching.ToString())
+                    {
+                        passedCharacters = passedCharacters + 1f;
+                    }
+                }
+            }
+        }
+
+        TurnOnResultsScreen((passedCharacters / totalCharacters) * 100f);
+    }
+
+
+    public void Liberation_Update()
+    {
+    }
+
+    public IEnumerator Liberation_Exit()
+    {
+        Debug.Log("Exiting Liberation");
+        Camera.main.GetComponent<NewDrag>().enabled = false;
+        liberationBlackScreen.color = new Color(0f, 0f, 0f, 0f);
+        Tween fadeToBlackTween = liberationBlackScreen.DOFade(1f, 2f).SetEase(Ease.OutQuad);
+        yield return fadeToBlackTween.WaitForCompletion();
+        //delete all instantiated boxes and hearts
+        foreach (Transform child in liberationRuntimeObjsParent.transform)
+        {
+            Destroy(child.gameObject);
+        }
+        LiberationScene.SetActive(false);
+        liberationUI.SetActive(false);
+        DOTween.KillAll();
+    }
+
 
 
     public void MainMenu_Enter()
@@ -694,7 +801,7 @@ public class GameManager2 : MonoBehaviour
     {
         SoundManager.instance.PlaySingle(SoundManager.instance.take);
 
-        nextSceneState = States.Equity;
+        nextSceneState = States.Liberation;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
@@ -753,7 +860,7 @@ public class GameManager2 : MonoBehaviour
         }
         else if (fsm.CurrentStateMap.state.ToString() == States.Liberation.ToString())
         {
-            return equityRuntimeObjsParent.transform;
+            return liberationRuntimeObjsParent.transform;
         }
         else
         {

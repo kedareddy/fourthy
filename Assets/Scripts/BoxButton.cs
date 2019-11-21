@@ -7,7 +7,6 @@ using UnityEngine.UI;
 public class BoxButton : MonoBehaviour
 {
     public GameObject boxPrefab;
-    public List<GameObject> obstaclesInColumn;
     private static BoxButton _instance;
 
     public static BoxButton Instance { get { return _instance; } }
@@ -55,6 +54,8 @@ public class BoxButton : MonoBehaviour
         }
     }
 
+
+    private Vector3 mouseDownPos; 
     // Update is called once per frame
     void Update()
     {
@@ -67,33 +68,40 @@ public class BoxButton : MonoBehaviour
                 if (!EventSystem.current.IsPointerOverGameObject())
                 {
 
-
-                Vector3 worldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                Vector3 worldTopPos = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0f));
-                  
-                obstaclesInColumn =  GridWorld.GetColumnObjects(worldPos);
-                //Debug.Log("HOW many obstacles: " + obstaclesInColumn.Count); 
-
-                SoundManager.instance.PlaySingle(SoundManager.instance.drop);
-               // Debug.Log("Dropped a box");
-
-                
-                GameObject instantiatedBox = Instantiate(boxPrefab, new Vector3(worldPos.x, worldTopPos.y, boxPrefab.transform.position.z), boxPrefab.transform.rotation) as GameObject;
-                instantiatedBox.transform.SetParent(GameManager2.instance.GetCurrentRuntimeObjsParent());
-                HeartCounter.Instance.DecrementBoxHearts();
-
-                if (GameManager2.instance.fsm.CurrentStateMap.state.ToString() == GameManager2.States.Equality.ToString())
-                {
-                    if (GameManager2.instance.clickTutorialUI.activeInHierarchy)
-                    {
-                        GameManager2.instance.clickTutorialUI.SetActive(false);
-                    }
-                }
-
-
+                    mouseDownPos = Input.mousePosition;
 
                 }
             }
+
+
+            if (Input.GetMouseButtonUp(0))
+            {
+                if(mouseDownPos == Input.mousePosition)
+                {
+                    Vector3 worldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                    Vector3 worldTopPos = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0f));
+                    Vector3 gridWorldPos = GridWorld.GetGridPointCenter(worldPos);
+
+
+                    SoundManager.instance.PlaySingle(SoundManager.instance.drop);
+                    // Debug.Log("Dropped a box");
+
+
+                    GameObject instantiatedBox = Instantiate(boxPrefab, new Vector3(gridWorldPos.x, worldTopPos.y, boxPrefab.transform.position.z), boxPrefab.transform.rotation) as GameObject;
+                    instantiatedBox.transform.SetParent(GameManager2.instance.GetCurrentRuntimeObjsParent());
+                    HeartCounter.Instance.DecrementBoxHearts();
+
+                    if (GameManager2.instance.fsm.CurrentStateMap.state.ToString() == GameManager2.States.Equality.ToString())
+                    {
+                        if (GameManager2.instance.clickTutorialUI.activeInHierarchy)
+                        {
+                            GameManager2.instance.clickTutorialUI.SetActive(false);
+                        }
+                    }
+                }
+
+            }
+
         }
 
     }

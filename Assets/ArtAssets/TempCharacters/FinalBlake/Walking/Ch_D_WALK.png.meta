@@ -1,0 +1,691 @@
+fileFormatVersion: 2
+guid: 058e91060a90f41afa30c3a1a265f65a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5558307000025439060
+    second: CH_D_WAlking_PNGS.06
+  - first:
+      213: -6476964716372566223
+    second: CH_D_WAlking_PNGS.07
+  - first:
+      213: 8091791448792138083
+    second: CH_D_WAlking_PNGS.08
+  - first:
+      213: -8486044733875834869
+    second: CH_D_WAlking_PNGS.09
+  - first:
+      213: 3826627085177701747
+    second: CH_D_WAlking_PNGS.10
+  - first:
+      213: 1703497527299440778
+    second: CH_D_WAlking_PNGS.11
+  - first:
+      213: 7141473040846504053
+    second: CH_D_WAlking_PNGS.12
+  - first:
+      213: -979650906776084533
+    second: CH_D_WAlking_PNGS.13
+  - first:
+      213: 138445902723568928
+    second: CH_D_WAlking_PNGS.14
+  - first:
+      213: -2315729064605790918
+    second: CH_D_WAlking_PNGS.15
+  - first:
+      213: -7771130948671661068
+    second: CH_D_WAlking_PNGS.16
+  - first:
+      213: 7388201857411142193
+    second: CH_D_WAlking_PNGS.17
+  - first:
+      213: -77799875276690741
+    second: CH_D_WAlking_PNGS.18
+  - first:
+      213: 3617455091838378366
+    second: CH_D_WAlking_PNGS.19
+  - first:
+      213: 39821942370818324
+    second: CH_D_WAlking_PNGS.20
+  - first:
+      213: -874969505542131198
+    second: CH_D_WAlking_PNGS.21
+  - first:
+      213: 6497219343174708089
+    second: CH_D_WAlking_PNGS.22
+  - first:
+      213: -3009519947728484127
+    second: CH_D_WAlking_PNGS.23
+  - first:
+      213: -4450296543759741911
+    second: CH_D_WAlking_PNGS.24
+  - first:
+      213: -864912031444723690
+    second: CH_D_WAlking_PNGS.25
+  - first:
+      213: -3051675395961460334
+    second: CH_D_WAlking_PNGS.26
+  - first:
+      213: 8011345785605393253
+    second: CH_D_WAlking_PNGS.27
+  - first:
+      213: 8648524375878257501
+    second: CH_D_WAlking_PNGS.28
+  - first:
+      213: -567459820239637989
+    second: CH_D_WAlking_PNGS.29
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CH_D_WAlking_PNGS.06
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 2638
+        width: 383
+        height: 720
+      alignment: 9
+      pivot: {x: 0.48041776, y: -0.016666668}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -5558307000025439060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_D_WAlking_PNGS.07
+      rect:
+        serializedVersion: 2
+        x: 2919
+        y: 2617
+        width: 447
+        height: 741
+      alignment: 9
+      pivot: {x: 0.5145414, y: 0.009446694}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -6476964716372566223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_D_WAlking_PNGS.08
+      rect:
+        serializedVersion: 2
+        x: 1578
+        y: 2621
+        width: 444
+        height: 737
+      alignment: 9
+      pivot: {x: 0.5472973, y: 0.0081411125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 8091791448792138083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_D_WAlking_PNGS.09
+      rect:
+        serializedVersion: 2
+        x: 2431
+        y: 3360
+        width: 368
+        height: 735
+      alignment: 9
+      pivot: {x: 0.51902175, y: 0.0027210885}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -8486044733875834869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_D_WAlking_PNGS.10
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3368
+        width: 283
+        height: 727
+      alignment: 9
+      pivot: {x: 0.41696113, y: -0.0027510317}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 3826627085177701747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_D_WAlking_PNGS.11
+      rect:
+        serializedVersion: 2
+        x: 2110
+        y: 3365
+        width: 319
+        height: 730
+      alignment: 9
+      pivot: {x: 0.48902822, y: 0.001369863}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 1703497527299440778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_D_WAlking_PNGS.12
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 2632
+        width: 403
+        height: 726
+      alignment: 9
+      pivot: {x: 0.5210918, y: -0.008264462}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 7141473040846504053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_D_WAlking_PNGS.13
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 1887
+        width: 484
+        height: 728
+      alignment: 9
+      pivot: {x: 0.5082645, y: -0.0013736264}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -979650906776084533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_D_WAlking_PNGS.14
+      rect:
+        serializedVersion: 2
+        x: 3368
+        y: 2639
+        width: 452
+        height: 719
+      alignment: 9
+      pivot: {x: 0.5818584, y: -0.016689846}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 138445902723568928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_D_WAlking_PNGS.15
+      rect:
+        serializedVersion: 2
+        x: 3549
+        y: 3377
+        width: 373
+        height: 718
+      alignment: 9
+      pivot: {x: 0.5630027, y: -0.020891365}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -2315729064605790918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_D_WAlking_PNGS.16
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 3382
+        width: 283
+        height: 713
+      alignment: 9
+      pivot: {x: 0.4770318, y: -0.022440393}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -7771130948671661068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_D_WAlking_PNGS.17
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 3380
+        width: 313
+        height: 715
+      alignment: 9
+      pivot: {x: 0.42492014, y: -0.01958042}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 7388201857411142193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_D_WAlking_PNGS.18
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2638
+        width: 383
+        height: 720
+      alignment: 9
+      pivot: {x: 0.48041776, y: -0.016666668}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -77799875276690741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_D_WAlking_PNGS.19
+      rect:
+        serializedVersion: 2
+        x: 2470
+        y: 2618
+        width: 447
+        height: 740
+      alignment: 9
+      pivot: {x: 0.5145414, y: 0.008108108}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 3617455091838378366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_D_WAlking_PNGS.20
+      rect:
+        serializedVersion: 2
+        x: 2024
+        y: 2621
+        width: 444
+        height: 737
+      alignment: 9
+      pivot: {x: 0.5472973, y: 0.0081411125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 39821942370818324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_D_WAlking_PNGS.21
+      rect:
+        serializedVersion: 2
+        x: 2801
+        y: 3365
+        width: 372
+        height: 730
+      alignment: 9
+      pivot: {x: 0.51344085, y: 0.002739726}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -874969505542131198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_D_WAlking_PNGS.22
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 3368
+        width: 288
+        height: 727
+      alignment: 9
+      pivot: {x: 0.4097222, y: -0.0027510317}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 6497219343174708089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_D_WAlking_PNGS.23
+      rect:
+        serializedVersion: 2
+        x: 1789
+        y: 3365
+        width: 319
+        height: 730
+      alignment: 9
+      pivot: {x: 0.48902822, y: 0.001369863}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -3009519947728484127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_D_WAlking_PNGS.24
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 2632
+        width: 400
+        height: 726
+      alignment: 9
+      pivot: {x: 0.525, y: -0.008264462}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -4450296543759741911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_D_WAlking_PNGS.25
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 1883
+        width: 484
+        height: 732
+      alignment: 9
+      pivot: {x: 0.5082645, y: -0.0027322404}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -864912031444723690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_D_WAlking_PNGS.26
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1895
+        width: 452
+        height: 720
+      alignment: 9
+      pivot: {x: 0.5818584, y: -0.016666668}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -3051675395961460334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_D_WAlking_PNGS.27
+      rect:
+        serializedVersion: 2
+        x: 3175
+        y: 3382
+        width: 372
+        height: 713
+      alignment: 9
+      pivot: {x: 0.56182796, y: -0.021037867}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 8011345785605393253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_D_WAlking_PNGS.28
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 3382
+        width: 296
+        height: 713
+      alignment: 9
+      pivot: {x: 0.4560811, y: -0.022440393}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 8648524375878257501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_D_WAlking_PNGS.29
+      rect:
+        serializedVersion: 2
+        x: 1474
+        y: 3380
+        width: 313
+        height: 715
+      alignment: 9
+      pivot: {x: 0.42492014, y: -0.01958042}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -567459820239637989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -40,7 +40,7 @@ public class Character : MonoBehaviour
     public StateMachine<States> fsm;
 
     public List<Box> myBoxes = new List<Box>();
-    private Tween myPathTween, myBoxWalkTween;
+    private Tween myPathTween, myBoxWalkTween, myBoxJumpTween;
     private Vector3 boxPosition;
     private List<Vector3> myPathPoints = new List<Vector3>();
     private int currentPos;
@@ -49,7 +49,7 @@ public class Character : MonoBehaviour
     private SpriteRenderer mySpriteRenderer;
     public Tween resolveBarTween, heartBarTween;
     private Vector3[] drawPoints;
-    private Vector3 originalPos; 
+    private Vector3 originalPos;
     // Start is called before the first frame update
     void Start()
     {
@@ -60,7 +60,7 @@ public class Character : MonoBehaviour
         fsm = StateMachine<States>.Initialize(this);
         Tween myVisualPathTween = GetComponent<DOTweenPath>().GetTween();
         drawPoints = myVisualPathTween.PathGetDrawPoints();
-     
+
 
     }
 
@@ -89,19 +89,21 @@ public class Character : MonoBehaviour
         {
             if (fsm.CurrentStateMap.state.ToString() == States.Waiting.ToString() || fsm.CurrentStateMap.state.ToString() == States.Offscreen.ToString())
             {
-                if (!(myHeightType == HeightType.Short && mySpriteRenderer.sortingOrder == 2))
+                if (!(myHeightType == HeightType.Short && myBoxes.Count > 0) && myBoxWalkTween == null && myBoxJumpTween == null)
                 {
+                    Debug.Log("walk to empty box");
                     myPathTween.Kill();
                     myPathTween = null;
                     boxPosition = box.transform.position;
                     myBoxWalkTween = transform.DOLocalMoveX(box.transform.position.x, WALK_SPEED).SetSpeedBased().SetEase(Ease.Linear);
                     myBoxWalkTween.OnComplete(() =>
                     {
+                        myBoxWalkTween = null;
                         Box targetBox = box.GetComponent<Box>();
-                    //Debug.Log("box is already occupied");
-                    if (targetBox.boxOccupiedState == BoxOccupiedState.Unoccupied)
+                        //Debug.Log("box is already occupied");
+                        if (targetBox.boxOccupiedState == BoxOccupiedState.Unoccupied)
                         {
-                            Debug.Log("added box to character");
+                            // Debug.Log("added box to character");
                             myBoxes.Add(targetBox);
                             targetBox.boxOccupiedState = BoxOccupiedState.Occupied;
 
@@ -111,21 +113,25 @@ public class Character : MonoBehaviour
 
                             SoundManager.instance.PlaySingle(SoundManager.instance.grunt);
 
-                            transform.DOLocalPath(new Vector3[] { firstPoint, secondPoint, thirdPoint }, JUMP_SPEED).SetSpeedBased().SetEase(Ease.InOutQuad).OnComplete(() =>
+                            myBoxJumpTween = transform.DOLocalPath(new Vector3[] { firstPoint, secondPoint, thirdPoint }, JUMP_SPEED).SetSpeedBased().SetEase(Ease.InOutQuad);
+                            myBoxJumpTween.OnComplete(() =>
                             {
+                                myBoxJumpTween = null; 
                                 if (myHeightType == HeightType.Short)
                                 {
-                                //fsm.ChangeState(States.WaitingOnBox);
-                                mySpriteRenderer.sortingOrder = 2;
+                                    //fsm.ChangeState(States.WaitingOnBox);
+                                    mySpriteRenderer.sortingOrder = 2;
                                 }
                                 else
                                 {
+                                    resolveBarTween.Kill();
                                     fsm.ChangeState(States.Watching);
                                 }
                             });
                         }
                         else
                         {
+                            resolveBarTween.Pause();
                             fsm.ChangeState(States.Restart);
                         }
                     });
@@ -170,66 +176,96 @@ public class Character : MonoBehaviour
 
     public IEnumerator Waiting_Enter()
     {
-        Debug.Log("Welcome to Waiting!!!!!!!!!");
-        mySpriteRenderer.sortingOrder = 3; 
+        //Debug.Log("Welcome to Waiting!!!!!!!!!");
+        mySpriteRenderer.sortingOrder = 3;
         meter.SetActive(true);
         resolveBar.SetActive(true);
         heartBar.SetActive(false);
         myAnimator.SetBool("isMoving", false);
         myAnimator.SetBool("isCheering", false);
+
         if (fsm.LastState != States.Restart)
         {
             resolveBar.transform.localPosition = Vector3.zero;
-        }
-        //subscribe to box occupancy opened event
-        resolveBarTween = resolveBar.transform.DOLocalMoveX(-1.35f, RESOLVE).OnComplete(() =>
-        {
-            fsm.ChangeState(States.GaveUp);
-        });
-
-        if(myPathTween == null)
-        {
-            currentPos = 0;
-            myPathPoints.Clear();
-            myPathPoints.Add(transform.localPosition);
-            myPathPoints.AddRange(drawPoints);
-            myPathPoints.RemoveAt(1);
-            myPathTween = transform.DOLocalPath(myPathPoints.ToArray(), WALK_SPEED).SetDelay(WP_WAIT_TIME).SetSpeedBased(true).SetLoops(-1, LoopType.Yoyo).SetEase(Ease.Linear);
-            yield return myPathTween.WaitForStart();
-            
-            myPathTween.OnWaypointChange((int index) =>
+            resolveBarTween = resolveBar.transform.DOLocalMoveX(-1.35f, RESOLVE).OnComplete(() =>
             {
-                if (myPathTween.IsPlaying())
-                {
-                    currentPos = index;
-                    myPathTween.Pause();
-                    StartCoroutine(AtWayPoint(index));
-                }
+                resolveBarTween.Kill();
+                fsm.ChangeState(States.GaveUp);
             });
+        }
+        else
+        {
+            resolveBarTween.Play();
+        }
+
+
+        //check if short character is waiting on box, in 
+        if (myBoxes.Count == 0)
+        {
+
+            if (myPathTween == null)
+            {
+                currentPos = 0;
+                myPathPoints.Clear();
+                myPathPoints.Add(transform.localPosition);
+                myPathPoints.AddRange(drawPoints);
+                myPathPoints.RemoveAt(1);
+                myPathTween = transform.DOLocalPath(myPathPoints.ToArray(), WALK_SPEED).SetDelay(WP_WAIT_TIME).SetSpeedBased(true).SetLoops(-1, LoopType.Yoyo).SetEase(Ease.Linear);
+                yield return myPathTween.WaitForStart();
+
+                myPathTween.OnWaypointChange((int index) =>
+                {
+                    if (myPathTween.IsPlaying())
+                    {
+                        currentPos = index;
+                        myPathTween.Pause();
+                        StartCoroutine(AtWayPoint(index));
+                    }
+                });
+            }
+
+            //check for previously dropped, free boxes. first make sure character is on the ground
+            if (myBoxes.Count == 0)
+            {
+                foreach (Transform child in GameManager2.instance.GetCurrentRuntimeObjsParent())
+                {
+                    Box b = child.GetComponent<Box>();
+                    if (b != null)
+                    {
+                        if (b.boxOccupiedState == BoxOccupiedState.Unoccupied && b.transform.localPosition.y < (b.BOX_Y + 1f))
+                        {
+                            HandleEmptyBox(child.gameObject);
+                        }
+
+                    }
+                }
+            }
+
         }
     }
 
     private string movingPath = "none";
-    private Tween jumpUpAgainTween;
+    private Tween jumpUpAgainTween, fallDownTween;
     public void Waiting_Update()
     {
         movingPath = "none";
-        if (myPathTween != null) {
-            if(myPathTween.IsActive() && myPathTween.IsPlaying())
+        if (myPathTween != null)
+        {
+            if (myPathTween.IsActive() && myPathTween.IsPlaying())
             {
                 movingPath = "path";
             }
         }
 
-        if(myBoxWalkTween != null)
+        if (myBoxWalkTween != null)
         {
-            if(myBoxWalkTween.IsActive() && myBoxWalkTween.IsPlaying())
+            if (myBoxWalkTween.IsActive() && myBoxWalkTween.IsPlaying())
             {
                 movingPath = "box";
             }
         }
 
-        if(movingPath != "none")
+        if (movingPath != "none")
         {
             //Debug.Log(transform.name + " is Moving");
             myAnimator.SetBool("isMoving", true);
@@ -274,20 +310,44 @@ public class Character : MonoBehaviour
         {
             if (myBoxes.Count > 0)
             {
-                //Debug.Log("should jump up again 111: " + myBoxes[0].boxOnTop + " :");
+                //check to see if should jump up
                 if (myBoxes[0].boxOnTop != null)
                 {
                     //Debug.Log("should jump up again 222");
                     if (jumpUpAgainTween == null)
                     {
-                        //Debug.Log("should jump up again 333");
+                        // Debug.Log("should jump up again 333");
                         jumpUpAgainTween = transform.DOLocalMoveY(-1.8f, JUMP_SPEED).SetSpeedBased().SetEase(Ease.InExpo).SetDelay(0.25f);
 
-                        jumpUpAgainTween.OnComplete(() => {
-                            myBoxes.Add(myBoxes[0].boxOnTop.GetComponent<Box>());
+                        jumpUpAgainTween.OnComplete(() =>
+                        {
+                            Box topBox = myBoxes[0].boxOnTop.GetComponent<Box>();
+                            topBox.boxOccupiedState = BoxOccupiedState.Occupied;
+                            myBoxes.Add(topBox);
                             jumpUpAgainTween.Kill();
+                            jumpUpAgainTween = null;
                             SoundManager.instance.PlaySingle(SoundManager.instance.grunt);
+                            resolveBarTween.Kill();
                             fsm.ChangeState(States.Watching);
+                        });
+                    }
+                }
+                //check to see if should fall down
+                if (myBoxes[0].boxHealthState == BoxHealthState.Broken)
+                {
+                    if (fallDownTween == null)
+                    {
+                        // Debug.Log("jump to ground");
+                        fallDownTween = transform.DOLocalMoveY(-15.1f, JUMP_SPEED).SetSpeedBased().SetEase(Ease.InExpo).SetDelay(0.25f);
+
+                        fallDownTween.OnComplete(() =>
+                        {
+                            myBoxes.RemoveAt(0);
+                            resolveBarTween.Pause();
+                            fallDownTween.Kill();
+                            fallDownTween = null;
+                            SoundManager.instance.PlaySingle(SoundManager.instance.grunt);
+                            fsm.ChangeState(States.Restart);
                         });
                     }
                 }
@@ -298,41 +358,41 @@ public class Character : MonoBehaviour
 
     public void Waiting_Exit()
     {
-        resolveBarTween.Kill();
+        //resolveBarTween.Kill();
     }
 
     private Tween meterTween;
     public void Watching_Enter()
     {
         mySpriteRenderer.sortingOrder = 2;
-        
-        Debug.Log("Watching game!");
+
+        //Debug.Log("Watching game!");
 
         //if (myHeightType != HeightType.Short || (myHeightType == HeightType.Short && myBoxes.Count > 1 && transform.localPosition.y > -2f))
         //{
-            meter.SetActive(true);
-            resolveBar.SetActive(true);
-            resolveBar.transform.localPosition = Vector3.zero;
-            heartBar.SetActive(true);
-            heartBar.transform.localPosition = new Vector3(-0.114f, 0.058f, 0f); 
-            heartBarTween = heartBar.transform.DOLocalMoveY(-0.22f, HEART).From().SetLoops(-1, LoopType.Restart);
-            heartBarTween.Goto(HEART_STARTPOINT, true);
+        meter.SetActive(true);
+        resolveBar.SetActive(true);
+        resolveBar.transform.localPosition = Vector3.zero;
+        heartBar.SetActive(true);
+        heartBar.transform.localPosition = new Vector3(-0.114f, 0.058f, 0f);
+        heartBarTween = heartBar.transform.DOLocalMoveY(-0.22f, HEART).From().SetLoops(-1, LoopType.Restart);
+        heartBarTween.Goto(HEART_STARTPOINT, true);
 
-            heartBarTween.OnStepComplete(() =>
-            {
+        heartBarTween.OnStepComplete(() =>
+        {
                 //Debug.Log("should release heart");
                 meterTween = meter.transform.DOScale(1.2f, 0.25f).SetLoops(2, LoopType.Yoyo).SetEase(Ease.InQuad);
-                meterTween.OnComplete(() =>
-                {
+            meterTween.OnComplete(() =>
+            {
                     //if(meterTween.CompletedLoops() == 1)
                     //{
-                        Instantiate(Resources.Load("Prefabs/heart", typeof(GameObject)), new Vector3(meter.transform.position.x, meter.transform.position.y, 0f), Quaternion.identity, GameManager2.instance.GetCurrentRuntimeObjsParent());
+                    Instantiate(Resources.Load("Prefabs/heart", typeof(GameObject)), new Vector3(meter.transform.position.x, meter.transform.position.y, 0f), Quaternion.identity, GameManager2.instance.GetCurrentRuntimeObjsParent());
                     //} 
                 });
-            });
+        });
 
-            myAnimator.SetBool("isCheering", true);
-       // }
+        myAnimator.SetBool("isCheering", true);
+        // }
 
 
         if (GameManager2.instance.fsm.CurrentStateMap.state.ToString() == GameManager2.States.Equality.ToString())
@@ -343,32 +403,73 @@ public class Character : MonoBehaviour
                 meter.SetActive(false);
             }
         }
-        
-        
+
+
     }
 
     private Tween jumpDownTween;
     public void Watching_Update()
     {
-        if (myBoxes.Count > 0)
+
+        if (myBoxes.Count == 1)
         {
             if (myBoxes[0].boxHealthState == BoxHealthState.Broken)
             {
                 if (jumpDownTween == null)
                 {
+                    // Debug.Log("jump to ground");
                     jumpDownTween = transform.DOLocalMoveY(-15.1f, JUMP_SPEED).SetSpeedBased().SetEase(Ease.InExpo).SetDelay(0.25f);
-                    
-                    jumpDownTween.OnComplete(()=>{
+
+                    jumpDownTween.OnComplete(() =>
+                    {
+                        myBoxes.RemoveAt(0);
                         fsm.ChangeState(States.Waiting);
                         jumpDownTween.Kill();
+                        jumpDownTween = null;
                         //SoundManager.instance.PlaySingle(SoundManager.instance.grunt);
                     });
                 }
             }
+
+        }
+        else if (myBoxes.Count > 1)
+        {
+            //check if bottom box is broken. Always check the bottom box, since top box becomes bottom box.
+            if (myBoxes[0].boxHealthState == BoxHealthState.Broken)
+            {
+                if (jumpDownTween == null)
+                {
+                    //Debug.Log("jump to ground");
+                    jumpDownTween = transform.DOLocalMoveY(-15.1f + myBoxes[0].GetComponent<SpriteRenderer>().bounds.size.y, JUMP_SPEED).SetSpeedBased().SetEase(Ease.InExpo).SetDelay(0.25f);
+
+                    jumpDownTween.OnComplete(() =>
+                    {
+                        myBoxes.RemoveAt(0);
+                        fsm.ChangeState(States.Waiting);
+                        jumpDownTween.Kill();
+                        jumpDownTween = null;
+                        //SoundManager.instance.PlaySingle(SoundManager.instance.grunt);
+                    });
+                }
+            }
+
+            //if (myBoxes[1].boxHealthState == BoxHealthState.Broken) {
+            //    if (jumpDownTween == null)
+            //    {
+            //        Debug.Log("should jump to first box");
+            //        jumpDownTween = transform.DOLocalMoveY(-15.1f + myBoxes[0].GetComponent<SpriteRenderer>().bounds.size.y, JUMP_SPEED).SetSpeedBased().SetEase(Ease.InExpo).SetDelay(0.25f);
+
+            //        jumpDownTween.OnComplete(() => {
+            //            //fsm.ChangeState(States.Waiting);
+            //            jumpDownTween.Kill();
+            //            //SoundManager.instance.PlaySingle(SoundManager.instance.grunt);
+            //        });
+            //    }
+            //}
         }
 
-        
     }
+
     public void Watching_Exit()
     {
         heartBarTween.Kill();
@@ -382,12 +483,18 @@ public class Character : MonoBehaviour
         meter.SetActive(false);
         transform.DOKill();
         myAnimator.SetBool("isSitting", true);
-        transform.localPosition = new Vector3(transform.localPosition.x, originalPos.y, transform.localPosition.z); 
+        transform.localPosition = new Vector3(transform.localPosition.x, originalPos.y, transform.localPosition.z);
         //talk to people if there are more than 2 people next to each other
         if (GameManager2.instance.fsm.CurrentStateMap.state.ToString() == GameManager2.States.Equality.ToString() || GameManager2.instance.fsm.CurrentStateMap.state.ToString() == GameManager2.States.Equity.ToString())
         {
             Debug.Log("should show fail SCREEN");
             StartCoroutine(GameManager2.instance.Failed());
+        }
+
+        //if shortest gave up on a box, make that box unoccupied
+        if (myBoxes.Count > 0)
+        {
+            myBoxes[0].boxOccupiedState = BoxOccupiedState.Unoccupied;
         }
 
     }

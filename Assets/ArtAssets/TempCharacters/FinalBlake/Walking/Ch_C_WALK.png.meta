@@ -1,0 +1,547 @@
+fileFormatVersion: 2
+guid: 0f50ef8760f4544bdb6c1b7ec2d0b640
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1888723758855103332
+    second: Ch_C_Walking.xml.10
+  - first:
+      213: 1014215812796950962
+    second: Ch_C_Walking.xml.11
+  - first:
+      213: 1573548188080166592
+    second: Ch_C_Walking.xml.12
+  - first:
+      213: -1930876753332008067
+    second: Ch_C_Walking.xml.13
+  - first:
+      213: 9117229614647878701
+    second: Ch_C_Walking.xml.14
+  - first:
+      213: 3877681475097496167
+    second: Ch_C_Walking.xml.15
+  - first:
+      213: 158350506210563964
+    second: Ch_C_Walking.xml.16
+  - first:
+      213: 727041067468655544
+    second: Ch_C_Walking.xml.17
+  - first:
+      213: -4318800482195329122
+    second: Ch_C_Walking.xml.18
+  - first:
+      213: -3079547189670290641
+    second: Ch_C_Walking.xml.19
+  - first:
+      213: -8074783320069084648
+    second: Ch_C_Walking.xml.20
+  - first:
+      213: 2416674947810707469
+    second: Ch_C_Walking.xml.21
+  - first:
+      213: -4593878668822552657
+    second: Ch_C_Walking.xml.22
+  - first:
+      213: 7436407576593399076
+    second: Ch_C_Walking.xml.23
+  - first:
+      213: -1405319984734319331
+    second: Ch_C_Walking.xml.24
+  - first:
+      213: 4406786282425642402
+    second: Ch_C_Walking.xml.25
+  - first:
+      213: -8702634015757794695
+    second: Ch_C_Walking.xml.26
+  - first:
+      213: 8306073858533803030
+    second: Ch_C_Walking.xml.27
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ch_C_Walking.xml.10
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3376
+        width: 420
+        height: 719
+      alignment: 9
+      pivot: {x: 0.43809524, y: -0.009735744}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 1888723758855103332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_Walking.xml.11
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 3377
+        width: 381
+        height: 718
+      alignment: 9
+      pivot: {x: 0.4855643, y: -0.011142061}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 1014215812796950962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_Walking.xml.12
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 3364
+        width: 354
+        height: 731
+      alignment: 9
+      pivot: {x: 0.519774, y: -0.0013679891}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 1573548188080166592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_Walking.xml.13
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 3374
+        width: 307
+        height: 721
+      alignment: 9
+      pivot: {x: 0.50162864, y: -0.018030513}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -1930876753332008067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_Walking.xml.14
+      rect:
+        serializedVersion: 2
+        x: 1471
+        y: 3374
+        width: 312
+        height: 721
+      alignment: 9
+      pivot: {x: 0.44230768, y: -0.0138696255}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 9117229614647878701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_Walking.xml.15
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 3373
+        width: 333
+        height: 722
+      alignment: 9
+      pivot: {x: 0.4144144, y: -0.012465374}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 3877681475097496167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_Walking.xml.16
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 3374
+        width: 347
+        height: 721
+      alignment: 9
+      pivot: {x: 0.39769453, y: -0.009708738}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 158350506210563964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_Walking.xml.17
+      rect:
+        serializedVersion: 2
+        x: 2469
+        y: 3369
+        width: 378
+        height: 726
+      alignment: 9
+      pivot: {x: 0.36243385, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 727041067468655544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_Walking.xml.18
+      rect:
+        serializedVersion: 2
+        x: 2849
+        y: 3359
+        width: 401
+        height: 736
+      alignment: 9
+      pivot: {x: 0.35660848, y: 0.016304348}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -4318800482195329122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_Walking.xml.19
+      rect:
+        serializedVersion: 2
+        x: 3252
+        y: 3368
+        width: 445
+        height: 727
+      alignment: 9
+      pivot: {x: 0.3775281, y: -0.0041265474}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -3079547189670290641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_Walking.xml.20
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2631
+        width: 460
+        height: 726
+      alignment: 9
+      pivot: {x: 0.3847826, y: -0.002754821}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -8074783320069084648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_Walking.xml.21
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 2627
+        width: 460
+        height: 730
+      alignment: 9
+      pivot: {x: 0.38913044, y: 0.002739726}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 2416674947810707469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_Walking.xml.22
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 2629
+        width: 432
+        height: 728
+      alignment: 9
+      pivot: {x: 0.36805555, y: -0.008241759}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -4593878668822552657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_Walking.xml.23
+      rect:
+        serializedVersion: 2
+        x: 1359
+        y: 2634
+        width: 400
+        height: 723
+      alignment: 9
+      pivot: {x: 0.345, y: -0.009681881}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 7436407576593399076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_Walking.xml.24
+      rect:
+        serializedVersion: 2
+        x: 1761
+        y: 2642
+        width: 388
+        height: 715
+      alignment: 9
+      pivot: {x: 0.3556701, y: -0.013986014}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -1405319984734319331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_Walking.xml.25
+      rect:
+        serializedVersion: 2
+        x: 2151
+        y: 2641
+        width: 370
+        height: 716
+      alignment: 9
+      pivot: {x: 0.36756757, y: -0.01396648}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 4406786282425642402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_Walking.xml.26
+      rect:
+        serializedVersion: 2
+        x: 2523
+        y: 2638
+        width: 356
+        height: 719
+      alignment: 9
+      pivot: {x: 0.38764045, y: -0.011126565}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -8702634015757794695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_Walking.xml.27
+      rect:
+        serializedVersion: 2
+        x: 2881
+        y: 2632
+        width: 338
+        height: 725
+      alignment: 9
+      pivot: {x: 0.42307693, y: -0.009655172}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 8306073858533803030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

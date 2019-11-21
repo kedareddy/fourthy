@@ -1,0 +1,691 @@
+fileFormatVersion: 2
+guid: 93483a402de0d43439fc0e8124b324d9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7239446168171106002
+    second: Ch_B_WALK_2.06
+  - first:
+      213: 7410342285434159030
+    second: Ch_B_WALK_2.07
+  - first:
+      213: 2329480241034582818
+    second: Ch_B_WALK_2.08
+  - first:
+      213: 2391181231651905545
+    second: Ch_B_WALK_2.09
+  - first:
+      213: -8023782477307071223
+    second: Ch_B_WALK_2.10
+  - first:
+      213: 257958543703663288
+    second: Ch_B_WALK_2.11
+  - first:
+      213: 4552369355307153738
+    second: Ch_B_WALK_2.12
+  - first:
+      213: 2113417896773934649
+    second: Ch_B_WALK_2.13
+  - first:
+      213: -8867631971425215385
+    second: Ch_B_WALK_2.14
+  - first:
+      213: -4961535135891919676
+    second: Ch_B_WALK_2.15
+  - first:
+      213: 464957018727286175
+    second: Ch_B_WALK_2.16
+  - first:
+      213: 5707384308765715608
+    second: Ch_B_WALK_2.17
+  - first:
+      213: 8446689828077536914
+    second: Ch_B_WALK_2.18
+  - first:
+      213: 2162191180291890030
+    second: Ch_B_WALK_2.19
+  - first:
+      213: 3782356290861262829
+    second: Ch_B_WALK_2.20
+  - first:
+      213: -4804109542406731358
+    second: Ch_B_WALK_2.21
+  - first:
+      213: 3936537309068449531
+    second: Ch_B_WALK_2.22
+  - first:
+      213: -6573976208068794769
+    second: Ch_B_WALK_2.23
+  - first:
+      213: -4054409242408011780
+    second: Ch_B_WALK_2.24
+  - first:
+      213: -3096935744458953916
+    second: Ch_B_WALK_2.25
+  - first:
+      213: -3889898219266951936
+    second: Ch_B_WALK_2.26
+  - first:
+      213: -4958493714006680858
+    second: Ch_B_WALK_2.27
+  - first:
+      213: 2114250230788422473
+    second: Ch_B_WALK_2.28
+  - first:
+      213: -3790546383216244670
+    second: Ch_B_WALK_2.29
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ch_B_WALK_2.06
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 3274
+        width: 318
+        height: 821
+      alignment: 9
+      pivot: {x: 0.4937107, y: 0.007308161}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -7239446168171106002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_B_WALK_2.07
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 2445
+        width: 408
+        height: 824
+      alignment: 9
+      pivot: {x: 0.4779412, y: 0.013349514}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 7410342285434159030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_B_WALK_2.08
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3276
+        width: 373
+        height: 819
+      alignment: 9
+      pivot: {x: 0.5469169, y: 0.0024420025}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 2329480241034582818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_B_WALK_2.09
+      rect:
+        serializedVersion: 2
+        x: 2082
+        y: 2443
+        width: 302
+        height: 826
+      alignment: 9
+      pivot: {x: 0.53642386, y: 0.010895884}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 2391181231651905545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_B_WALK_2.10
+      rect:
+        serializedVersion: 2
+        x: 1544
+        y: 3273
+        width: 224
+        height: 822
+      alignment: 9
+      pivot: {x: 0.48214287, y: 0.008515815}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -8023782477307071223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_B_WALK_2.11
+      rect:
+        serializedVersion: 2
+        x: 1346
+        y: 2444
+        width: 244
+        height: 825
+      alignment: 9
+      pivot: {x: 0.45491803, y: 0.012121212}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 257958543703663288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_B_WALK_2.12
+      rect:
+        serializedVersion: 2
+        x: 2914
+        y: 3272
+        width: 328
+        height: 823
+      alignment: 9
+      pivot: {x: 0.47560975, y: 0.009720535}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 4552369355307153738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_B_WALK_2.13
+      rect:
+        serializedVersion: 2
+        x: 2507
+        y: 3272
+        width: 405
+        height: 823
+      alignment: 9
+      pivot: {x: 0.46666667, y: 0.008505468}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 2113417896773934649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_B_WALK_2.14
+      rect:
+        serializedVersion: 2
+        x: 2690
+        y: 2442
+        width: 370
+        height: 827
+      alignment: 9
+      pivot: {x: 0.5405405, y: 0.007255139}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -8867631971425215385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_B_WALK_2.15
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 2445
+        width: 301
+        height: 824
+      alignment: 9
+      pivot: {x: 0.53488374, y: 0.0084951455}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -4961535135891919676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_B_WALK_2.16
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 2445
+        width: 220
+        height: 824
+      alignment: 9
+      pivot: {x: 0.46363637, y: 0.01092233}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 464957018727286175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_B_WALK_2.17
+      rect:
+        serializedVersion: 2
+        x: 3062
+        y: 2442
+        width: 240
+        height: 827
+      alignment: 9
+      pivot: {x: 0.46666667, y: 0.012091898}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 5707384308765715608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_B_WALK_2.18
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 3274
+        width: 318
+        height: 821
+      alignment: 9
+      pivot: {x: 0.4937107, y: 0.007308161}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 8446689828077536914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_B_WALK_2.19
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2445
+        width: 408
+        height: 824
+      alignment: 9
+      pivot: {x: 0.4779412, y: 0.013349514}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 2162191180291890030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_B_WALK_2.20
+      rect:
+        serializedVersion: 2
+        x: 3244
+        y: 3272
+        width: 373
+        height: 823
+      alignment: 9
+      pivot: {x: 0.5469169, y: 0.0024301338}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 3782356290861262829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_B_WALK_2.21
+      rect:
+        serializedVersion: 2
+        x: 2386
+        y: 2443
+        width: 302
+        height: 826
+      alignment: 9
+      pivot: {x: 0.53642386, y: 0.010895884}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -4804109542406731358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_B_WALK_2.22
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 3273
+        width: 223
+        height: 822
+      alignment: 9
+      pivot: {x: 0.48430493, y: 0.008515815}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 3936537309068449531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_B_WALK_2.23
+      rect:
+        serializedVersion: 2
+        x: 1834
+        y: 2444
+        width: 246
+        height: 825
+      alignment: 9
+      pivot: {x: 0.4512195, y: 0.012121212}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -6573976208068794769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_B_WALK_2.24
+      rect:
+        serializedVersion: 2
+        x: 1770
+        y: 3272
+        width: 328
+        height: 823
+      alignment: 9
+      pivot: {x: 0.47560975, y: 0.009720535}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -4054409242408011780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_B_WALK_2.25
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 3272
+        width: 405
+        height: 823
+      alignment: 9
+      pivot: {x: 0.46666667, y: 0.008505468}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -3096935744458953916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_B_WALK_2.26
+      rect:
+        serializedVersion: 2
+        x: 3304
+        y: 2442
+        width: 370
+        height: 827
+      alignment: 9
+      pivot: {x: 0.5405405, y: 0.007255139}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -3889898219266951936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_B_WALK_2.27
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 3275
+        width: 301
+        height: 820
+      alignment: 9
+      pivot: {x: 0.53488374, y: 0.008536586}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -4958493714006680858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_B_WALK_2.28
+      rect:
+        serializedVersion: 2
+        x: 3619
+        y: 3271
+        width: 217
+        height: 824
+      alignment: 9
+      pivot: {x: 0.47004607, y: 0.01092233}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 2114250230788422473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_B_WALK_2.29
+      rect:
+        serializedVersion: 2
+        x: 1592
+        y: 2444
+        width: 240
+        height: 825
+      alignment: 9
+      pivot: {x: 0.46666667, y: 0.012121212}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -3790546383216244670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

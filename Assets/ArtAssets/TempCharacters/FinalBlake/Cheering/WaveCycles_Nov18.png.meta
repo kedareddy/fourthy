@@ -1,0 +1,1243 @@
+fileFormatVersion: 2
+guid: dfd123aef648c4bc8ad3b910eeda74b3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2547789181039335429
+    second: CH_A_Wave-PNGS-CH_B_PNGS.09
+  - first:
+      213: 2618011185519333509
+    second: CH_A_Wave-PNGS-CH_B_PNGS.10
+  - first:
+      213: 231429161763140798
+    second: CH_A_Wave-PNGS-CH_B_PNGS.11
+  - first:
+      213: -984245941303879371
+    second: CH_A_Wave-PNGS-CH_B_PNGS.12
+  - first:
+      213: -3039072937197553159
+    second: CH_A_Wave-PNGS-CH_B_PNGS.13
+  - first:
+      213: -6234557977117751236
+    second: CH_A_Wave-PNGS-CH_B_PNGS.14
+  - first:
+      213: 360487907849853260
+    second: CH_A_Wave-PNGS-CH_B_PNGS.15
+  - first:
+      213: 5650620954942651037
+    second: CH_A_Wave-PNGS-CH_B_PNGS.16
+  - first:
+      213: 4798864288194812056
+    second: CH_A_Wave-PNGS-CH_B_PNGS.17
+  - first:
+      213: 5703550341256707951
+    second: CH_A_Wave-PNGS-CH_B_PNGS.18
+  - first:
+      213: -8949363402806801679
+    second: CH_A_Wave-PNGS-CH_B_PNGS.19
+  - first:
+      213: 6524039185595826928
+    second: CH_A_Wave-PNGS-CH_B_PNGS.20
+  - first:
+      213: 5583645591056676768
+    second: CH_B_Wave-PNGS-CH_B_Wave.09
+  - first:
+      213: -2632809559312767539
+    second: CH_B_Wave-PNGS-CH_B_Wave.10
+  - first:
+      213: 1361522571761957809
+    second: CH_B_Wave-PNGS-CH_B_Wave.11
+  - first:
+      213: -4340642829988453352
+    second: CH_B_Wave-PNGS-CH_B_Wave.12
+  - first:
+      213: 5835686903125409443
+    second: CH_B_Wave-PNGS-CH_B_Wave.13
+  - first:
+      213: 6214558484810621193
+    second: CH_B_Wave-PNGS-CH_B_Wave.14
+  - first:
+      213: -3105868945519435009
+    second: CH_B_Wave-PNGS-CH_B_Wave.15
+  - first:
+      213: -364875734838626397
+    second: CH_B_Wave-PNGS-CH_B_Wave.16
+  - first:
+      213: 1973854904538367950
+    second: CH_B_Wave-PNGS-CH_B_Wave.17
+  - first:
+      213: -5121438233634978238
+    second: CH_B_Wave-PNGS-CH_B_Wave.18
+  - first:
+      213: -1469748756604175521
+    second: CH_B_Wave-PNGS-CH_B_Wave.19
+  - first:
+      213: -1291451169635411644
+    second: CH_B_Wave-PNGS-CH_B_Wave.20
+  - first:
+      213: -6746572050608800264
+    second: CH_C_Wave-PNGS-CH_D_WAVE.09
+  - first:
+      213: -6144084086105781556
+    second: CH_C_Wave-PNGS-CH_D_WAVE.10
+  - first:
+      213: 931030885939084004
+    second: CH_C_Wave-PNGS-CH_D_WAVE.11
+  - first:
+      213: 5445732170573344210
+    second: CH_C_Wave-PNGS-CH_D_WAVE.12
+  - first:
+      213: 7462618827471333816
+    second: CH_C_Wave-PNGS-CH_D_WAVE.13
+  - first:
+      213: 3861311753790822435
+    second: CH_C_Wave-PNGS-CH_D_WAVE.14
+  - first:
+      213: -5807083287322053215
+    second: CH_C_Wave-PNGS-CH_D_WAVE.15
+  - first:
+      213: -7156289351356529772
+    second: CH_C_Wave-PNGS-CH_D_WAVE.16
+  - first:
+      213: 4766974100516380556
+    second: CH_C_Wave-PNGS-CH_D_WAVE.17
+  - first:
+      213: 5813014852607275060
+    second: CH_C_Wave-PNGS-CH_D_WAVE.18
+  - first:
+      213: -6438265598244793634
+    second: CH_C_Wave-PNGS-CH_D_WAVE.19
+  - first:
+      213: -5666999819887219859
+    second: CH_C_Wave-PNGS-CH_D_WAVE.20
+  - first:
+      213: -4214432150089909256
+    second: Ch_D_Wave-PNGS-Ch_D_Wave.09
+  - first:
+      213: 5149403815753085666
+    second: Ch_D_Wave-PNGS-Ch_D_Wave.10
+  - first:
+      213: 5172173695299146984
+    second: Ch_D_Wave-PNGS-Ch_D_Wave.11
+  - first:
+      213: 9082511088635176219
+    second: Ch_D_Wave-PNGS-Ch_D_Wave.12
+  - first:
+      213: 1945474146748573803
+    second: Ch_D_Wave-PNGS-Ch_D_Wave.13
+  - first:
+      213: -4174525931913851928
+    second: Ch_D_Wave-PNGS-Ch_D_Wave.14
+  - first:
+      213: -5852572786514236036
+    second: Ch_D_Wave-PNGS-Ch_D_Wave.15
+  - first:
+      213: 4353249429910305379
+    second: Ch_D_Wave-PNGS-Ch_D_Wave.16
+  - first:
+      213: -6430558514566073835
+    second: Ch_D_Wave-PNGS-Ch_D_Wave.17
+  - first:
+      213: -589573926408835478
+    second: Ch_D_Wave-PNGS-Ch_D_Wave.18
+  - first:
+      213: 8331808064885076458
+    second: Ch_D_Wave-PNGS-Ch_D_Wave.19
+  - first:
+      213: 924448984358169328
+    second: Ch_D_Wave-PNGS-Ch_D_Wave.20
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CH_A_Wave-PNGS-CH_B_PNGS.09
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 275
+        width: 472
+        height: 1139
+      alignment: 9
+      pivot: {x: 0.66101694, y: 0.005267779}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 2547789181039335429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_A_Wave-PNGS-CH_B_PNGS.10
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 332
+        width: 538
+        height: 1082
+      alignment: 9
+      pivot: {x: 0.7026022, y: 0.0055452865}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 2618011185519333509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_A_Wave-PNGS-CH_B_PNGS.11
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 332
+        width: 538
+        height: 1082
+      alignment: 9
+      pivot: {x: 0.7026022, y: 0.0055452865}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 231429161763140798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_A_Wave-PNGS-CH_B_PNGS.12
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 275
+        width: 472
+        height: 1139
+      alignment: 9
+      pivot: {x: 0.66101694, y: 0.005267779}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -984245941303879371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_A_Wave-PNGS-CH_B_PNGS.13
+      rect:
+        serializedVersion: 2
+        x: 1363
+        y: 259
+        width: 370
+        height: 1155
+      alignment: 9
+      pivot: {x: 0.5648649, y: 0.005194805}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -3039072937197553159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_A_Wave-PNGS-CH_B_PNGS.14
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 425
+        width: 346
+        height: 989
+      alignment: 9
+      pivot: {x: 0.53757226, y: 0.006066734}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -6234557977117751236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_A_Wave-PNGS-CH_B_PNGS.15
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 425
+        width: 346
+        height: 989
+      alignment: 9
+      pivot: {x: 0.53757226, y: 0.006066734}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 360487907849853260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_A_Wave-PNGS-CH_B_PNGS.16
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 425
+        width: 346
+        height: 989
+      alignment: 9
+      pivot: {x: 0.53757226, y: 0.006066734}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 5650620954942651037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_A_Wave-PNGS-CH_B_PNGS.17
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 425
+        width: 346
+        height: 989
+      alignment: 9
+      pivot: {x: 0.53757226, y: 0.006066734}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 4798864288194812056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_A_Wave-PNGS-CH_B_PNGS.18
+      rect:
+        serializedVersion: 2
+        x: 1735
+        y: 252
+        width: 309
+        height: 1162
+      alignment: 9
+      pivot: {x: 0.48220065, y: 0.0051635113}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 5703550341256707951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_A_Wave-PNGS-CH_B_PNGS.19
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 275
+        width: 472
+        height: 1139
+      alignment: 9
+      pivot: {x: 0.66101694, y: 0.005267779}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -8949363402806801679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_A_Wave-PNGS-CH_B_PNGS.20
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 332
+        width: 538
+        height: 1082
+      alignment: 9
+      pivot: {x: 0.7026022, y: 0.0055452865}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 6524039185595826928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_B_Wave-PNGS-CH_B_Wave.09
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 3292
+        width: 339
+        height: 803
+      alignment: 9
+      pivot: {x: 0.5221239, y: 0.00498132}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 5583645591056676768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_B_Wave-PNGS-CH_B_Wave.10
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 3292
+        width: 339
+        height: 803
+      alignment: 9
+      pivot: {x: 0.5221239, y: 0.00498132}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -2632809559312767539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_B_Wave-PNGS-CH_B_Wave.11
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 3292
+        width: 339
+        height: 803
+      alignment: 9
+      pivot: {x: 0.5221239, y: 0.00498132}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 1361522571761957809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_B_Wave-PNGS-CH_B_Wave.12
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2484
+        width: 345
+        height: 806
+      alignment: 9
+      pivot: {x: 0.5304348, y: 0.004962779}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -4340642829988453352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_B_Wave-PNGS-CH_B_Wave.13
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 1472
+        width: 373
+        height: 932
+      alignment: 9
+      pivot: {x: 0.56568366, y: 0.0042918455}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 5835686903125409443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_B_Wave-PNGS-CH_B_Wave.14
+      rect:
+        serializedVersion: 2
+        x: 1315
+        y: 2406
+        width: 460
+        height: 884
+      alignment: 9
+      pivot: {x: 0.6478261, y: 0.004524887}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 6214558484810621193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_B_Wave-PNGS-CH_B_Wave.15
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 2433
+        width: 529
+        height: 857
+      alignment: 9
+      pivot: {x: 0.6937618, y: 0.0046674446}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -3105868945519435009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_B_Wave-PNGS-CH_B_Wave.16
+      rect:
+        serializedVersion: 2
+        x: 1315
+        y: 2406
+        width: 460
+        height: 884
+      alignment: 9
+      pivot: {x: 0.6478261, y: 0.004524887}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -364875734838626397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_B_Wave-PNGS-CH_B_Wave.17
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 1472
+        width: 373
+        height: 932
+      alignment: 9
+      pivot: {x: 0.56568366, y: 0.0042918455}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 1973854904538367950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_B_Wave-PNGS-CH_B_Wave.18
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 3292
+        width: 339
+        height: 803
+      alignment: 9
+      pivot: {x: 0.5221239, y: 0.00498132}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -5121438233634978238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_B_Wave-PNGS-CH_B_Wave.19
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 3292
+        width: 339
+        height: 803
+      alignment: 9
+      pivot: {x: 0.5221239, y: 0.00498132}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -1469748756604175521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_B_Wave-PNGS-CH_B_Wave.20
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 3292
+        width: 339
+        height: 803
+      alignment: 9
+      pivot: {x: 0.5221239, y: 0.00498132}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -1291451169635411644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_C_Wave-PNGS-CH_D_WAVE.09
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 2460
+        width: 434
+        height: 830
+      alignment: 9
+      pivot: {x: 0.47235024, y: 0.0072289156}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -6746572050608800264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_C_Wave-PNGS-CH_D_WAVE.10
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 2460
+        width: 434
+        height: 830
+      alignment: 9
+      pivot: {x: 0.47235024, y: 0.0072289156}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -6144084086105781556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_C_Wave-PNGS-CH_D_WAVE.11
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 2460
+        width: 434
+        height: 830
+      alignment: 9
+      pivot: {x: 0.47235024, y: 0.0072289156}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 931030885939084004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_C_Wave-PNGS-CH_D_WAVE.12
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1416
+        width: 381
+        height: 988
+      alignment: 9
+      pivot: {x: 0.53805774, y: 0.0060728746}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 5445732170573344210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_C_Wave-PNGS-CH_D_WAVE.13
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 1441
+        width: 457
+        height: 963
+      alignment: 9
+      pivot: {x: 0.44857767, y: 0.0062305294}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 7462618827471333816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_C_Wave-PNGS-CH_D_WAVE.14
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1480
+        width: 563
+        height: 924
+      alignment: 9
+      pivot: {x: 0.36412078, y: 0.0064935065}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 3861311753790822435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_C_Wave-PNGS-CH_D_WAVE.15
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 1441
+        width: 457
+        height: 963
+      alignment: 9
+      pivot: {x: 0.44857767, y: 0.0062305294}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -5807083287322053215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_C_Wave-PNGS-CH_D_WAVE.16
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1416
+        width: 381
+        height: 988
+      alignment: 9
+      pivot: {x: 0.53805774, y: 0.0060728746}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -7156289351356529772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_C_Wave-PNGS-CH_D_WAVE.17
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 2460
+        width: 434
+        height: 830
+      alignment: 9
+      pivot: {x: 0.47235024, y: 0.0072289156}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 4766974100516380556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_C_Wave-PNGS-CH_D_WAVE.18
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 2460
+        width: 434
+        height: 830
+      alignment: 9
+      pivot: {x: 0.47235024, y: 0.0072289156}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 5813014852607275060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_C_Wave-PNGS-CH_D_WAVE.19
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 2460
+        width: 434
+        height: 830
+      alignment: 9
+      pivot: {x: 0.47235024, y: 0.0072289156}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -6438265598244793634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_C_Wave-PNGS-CH_D_WAVE.20
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 2460
+        width: 434
+        height: 830
+      alignment: 9
+      pivot: {x: 0.47235024, y: 0.0072289156}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -5666999819887219859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_Wave-PNGS-Ch_D_Wave.09
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3373
+        width: 268
+        height: 722
+      alignment: 9
+      pivot: {x: 0.49253732, y: 0.0069252076}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -4214432150089909256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_Wave-PNGS-Ch_D_Wave.10
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3373
+        width: 268
+        height: 722
+      alignment: 9
+      pivot: {x: 0.49253732, y: 0.0069252076}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 5149403815753085666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_Wave-PNGS-Ch_D_Wave.11
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3373
+        width: 268
+        height: 722
+      alignment: 9
+      pivot: {x: 0.49253732, y: 0.0069252076}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 5172173695299146984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_Wave-PNGS-Ch_D_Wave.12
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3373
+        width: 268
+        height: 722
+      alignment: 9
+      pivot: {x: 0.49253732, y: 0.0069252076}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 9082511088635176219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_Wave-PNGS-Ch_D_Wave.13
+      rect:
+        serializedVersion: 2
+        x: 1114
+        y: 3302
+        width: 336
+        height: 793
+      alignment: 9
+      pivot: {x: 0.5952381, y: 0.0063051702}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 1945474146748573803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_Wave-PNGS-Ch_D_Wave.14
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 3331
+        width: 389
+        height: 764
+      alignment: 9
+      pivot: {x: 0.6503856, y: 0.0065445025}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -4174525931913851928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_Wave-PNGS-Ch_D_Wave.15
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 3371
+        width: 450
+        height: 724
+      alignment: 9
+      pivot: {x: 0.69777775, y: 0.0069060773}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -5852572786514236036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_Wave-PNGS-Ch_D_Wave.16
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 3331
+        width: 389
+        height: 764
+      alignment: 9
+      pivot: {x: 0.6503856, y: 0.0065445025}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 4353249429910305379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_Wave-PNGS-Ch_D_Wave.17
+      rect:
+        serializedVersion: 2
+        x: 1114
+        y: 3302
+        width: 336
+        height: 793
+      alignment: 9
+      pivot: {x: 0.5952381, y: 0.0063051702}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -6430558514566073835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_Wave-PNGS-Ch_D_Wave.18
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3373
+        width: 268
+        height: 722
+      alignment: 9
+      pivot: {x: 0.49253732, y: 0.0069252076}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -589573926408835478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_Wave-PNGS-Ch_D_Wave.19
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3373
+        width: 268
+        height: 722
+      alignment: 9
+      pivot: {x: 0.49253732, y: 0.0069252076}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 8331808064885076458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_Wave-PNGS-Ch_D_Wave.20
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3373
+        width: 268
+        height: 722
+      alignment: 9
+      pivot: {x: 0.49253732, y: 0.0069252076}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 924448984358169328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

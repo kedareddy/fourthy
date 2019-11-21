@@ -1,0 +1,1339 @@
+fileFormatVersion: 2
+guid: d2d6fe4a2b72c4bc98bd6537f6399d86
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6103101865498990232
+    second: CH_BreatheFence_B.png.00
+  - first:
+      213: -9051925527074971364
+    second: CH_BreatheFence_B.png.01
+  - first:
+      213: 1800755355600806970
+    second: CH_BreatheFence_B.png.02
+  - first:
+      213: 4348824544123441561
+    second: CH_BreatheFence_B.png.03
+  - first:
+      213: 3760420194170168005
+    second: CH_BreatheFence_B.png.04
+  - first:
+      213: 2653873921228203035
+    second: CH_BreatheFence_B.png.05
+  - first:
+      213: -744963856452513553
+    second: CH_BreatheFence_B.png.06
+  - first:
+      213: -5033183780128131916
+    second: CH_BreatheFence_B.png.07
+  - first:
+      213: -9088773194033428395
+    second: CH_BreatheFence_B.png.08
+  - first:
+      213: -5498329904458359911
+    second: CH_BreatheFence_B.png.09
+  - first:
+      213: 4593425063063198424
+    second: CH_BreatheFence_B.png.10
+  - first:
+      213: 6595240521994552428
+    second: CH_BreatheFence_B.png.11
+  - first:
+      213: 4866337289878278207
+    second: CH_BreatheFence_B.png.12
+  - first:
+      213: -6672290093480838952
+    second: CH_BreatheFence_B.png.13
+  - first:
+      213: -4008297182444099487
+    second: CH_BreatheFence_B.png.14
+  - first:
+      213: 8363951174797884838
+    second: CH_BreatheFence_B.png.15
+  - first:
+      213: 4983153011801911250
+    second: CH_BreatheFence_B.png.16
+  - first:
+      213: -2010076057762326461
+    second: CH_BreatheFence_B.png.17
+  - first:
+      213: -1326735992349686622
+    second: CH_BreatheFence_B.png.18
+  - first:
+      213: 5339430379794167890
+    second: CH_BreatheFence_B.png.19
+  - first:
+      213: 5924081879011937578
+    second: CH_BreatheFence_B.png.20
+  - first:
+      213: 5423355924439878723
+    second: CH_BreatheFence_B.png.21
+  - first:
+      213: 6976948993810822243
+    second: CH_BreatheFence_B.png.22
+  - first:
+      213: 1621882726536026365
+    second: CH_BreatheFence_B.png.23
+  - first:
+      213: 8511094666931752678
+    second: CH_BreatheFence_B.png.24
+  - first:
+      213: -3210043133008679541
+    second: CH_BreatheFence_B.png.25
+  - first:
+      213: -3194385337156261069
+    second: CH_BreatheFence_B.png.26
+  - first:
+      213: -2577945382918139660
+    second: CH_BreatheFence_B.png.27
+  - first:
+      213: -2572524593000824772
+    second: CH_BreatheFence_B.png.28
+  - first:
+      213: 7293223198737682918
+    second: CH_BreatheFence_B.png.29
+  - first:
+      213: 6731137737904350703
+    second: CH_BreatheFence_B.png.30
+  - first:
+      213: -233414917402504864
+    second: CH_BreatheFence_B.png.31
+  - first:
+      213: -3316775286745792464
+    second: CH_BreatheFence_B.png.32
+  - first:
+      213: -4469316205586145172
+    second: CH_BreatheFence_B.png.33
+  - first:
+      213: 8795203550163710564
+    second: CH_BreatheFence_B.png.34
+  - first:
+      213: 5136328108118671920
+    second: CH_BreatheFence_B.png.35
+  - first:
+      213: -1890029509498057566
+    second: CH_BreatheFence_B.png.36
+  - first:
+      213: 7162620301776212206
+    second: CH_BreatheFence_B.png.37
+  - first:
+      213: -5790086873326596801
+    second: CH_BreatheFence_B.png.38
+  - first:
+      213: 2933729379358197590
+    second: CH_BreatheFence_B.png.39
+  - first:
+      213: -9204040521696593815
+    second: CH_BreatheFence_B.png.40
+  - first:
+      213: -1274155813610572316
+    second: CH_BreatheFence_B.png.41
+  - first:
+      213: 6533229900440603709
+    second: CH_BreatheFence_B.png.42
+  - first:
+      213: -1476629834034696470
+    second: CH_BreatheFence_B.png.43
+  - first:
+      213: -8533181470960024471
+    second: CH_BreatheFence_B.png.44
+  - first:
+      213: -4581695593124094678
+    second: CH_BreatheFence_B.png.45
+  - first:
+      213: -1040415320090048318
+    second: CH_BreatheFence_B.png.46
+  - first:
+      213: -7555096035143370563
+    second: CH_BreatheFence_B.png.47
+  - first:
+      213: 4792278445092294257
+    second: CH_BreatheFence_B.png.48
+  - first:
+      213: -1090549827867148446
+    second: CH_BreatheFence_B.png.49
+  - first:
+      213: 2052812549567747029
+    second: CH_BreatheFence_B.png.50
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CH_BreatheFence_B.png.00
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3273
+        width: 350
+        height: 822
+      alignment: 9
+      pivot: {x: 0.52, y: 0.003649635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -6103101865498990232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_BreatheFence_B.png.01
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 3273
+        width: 350
+        height: 822
+      alignment: 9
+      pivot: {x: 0.52, y: 0.003649635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -9051925527074971364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_BreatheFence_B.png.02
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 3273
+        width: 350
+        height: 822
+      alignment: 9
+      pivot: {x: 0.52, y: 0.003649635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 1800755355600806970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_BreatheFence_B.png.03
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 3273
+        width: 350
+        height: 822
+      alignment: 9
+      pivot: {x: 0.52, y: 0.003649635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 4348824544123441561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_BreatheFence_B.png.04
+      rect:
+        serializedVersion: 2
+        x: 1409
+        y: 3273
+        width: 350
+        height: 822
+      alignment: 9
+      pivot: {x: 0.52, y: 0.003649635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 3760420194170168005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_BreatheFence_B.png.05
+      rect:
+        serializedVersion: 2
+        x: 1761
+        y: 3273
+        width: 350
+        height: 822
+      alignment: 9
+      pivot: {x: 0.52, y: 0.003649635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 2653873921228203035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_BreatheFence_B.png.06
+      rect:
+        serializedVersion: 2
+        x: 2113
+        y: 3273
+        width: 350
+        height: 822
+      alignment: 9
+      pivot: {x: 0.52, y: 0.003649635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -744963856452513553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_BreatheFence_B.png.07
+      rect:
+        serializedVersion: 2
+        x: 2465
+        y: 3273
+        width: 350
+        height: 822
+      alignment: 9
+      pivot: {x: 0.52, y: 0.003649635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -5033183780128131916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_BreatheFence_B.png.08
+      rect:
+        serializedVersion: 2
+        x: 2817
+        y: 3273
+        width: 350
+        height: 822
+      alignment: 9
+      pivot: {x: 0.52, y: 0.003649635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -9088773194033428395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_BreatheFence_B.png.09
+      rect:
+        serializedVersion: 2
+        x: 3169
+        y: 3273
+        width: 350
+        height: 822
+      alignment: 9
+      pivot: {x: 0.52, y: 0.003649635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -5498329904458359911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_BreatheFence_B.png.10
+      rect:
+        serializedVersion: 2
+        x: 3521
+        y: 3273
+        width: 350
+        height: 822
+      alignment: 9
+      pivot: {x: 0.52, y: 0.003649635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 4593425063063198424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_BreatheFence_B.png.11
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2449
+        width: 350
+        height: 822
+      alignment: 9
+      pivot: {x: 0.52, y: 0.003649635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 6595240521994552428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_BreatheFence_B.png.12
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 2449
+        width: 350
+        height: 822
+      alignment: 9
+      pivot: {x: 0.52, y: 0.003649635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 4866337289878278207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_BreatheFence_B.png.13
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2449
+        width: 350
+        height: 822
+      alignment: 9
+      pivot: {x: 0.52, y: 0.003649635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -6672290093480838952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_BreatheFence_B.png.14
+      rect:
+        serializedVersion: 2
+        x: 3521
+        y: 3273
+        width: 350
+        height: 822
+      alignment: 9
+      pivot: {x: 0.52, y: 0.003649635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -4008297182444099487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_BreatheFence_B.png.15
+      rect:
+        serializedVersion: 2
+        x: 3169
+        y: 3273
+        width: 350
+        height: 822
+      alignment: 9
+      pivot: {x: 0.52, y: 0.003649635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 8363951174797884838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_BreatheFence_B.png.16
+      rect:
+        serializedVersion: 2
+        x: 2817
+        y: 3273
+        width: 350
+        height: 822
+      alignment: 9
+      pivot: {x: 0.52, y: 0.003649635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 4983153011801911250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_BreatheFence_B.png.17
+      rect:
+        serializedVersion: 2
+        x: 2465
+        y: 3273
+        width: 350
+        height: 822
+      alignment: 9
+      pivot: {x: 0.52, y: 0.003649635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -2010076057762326461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_BreatheFence_B.png.18
+      rect:
+        serializedVersion: 2
+        x: 2113
+        y: 3273
+        width: 350
+        height: 822
+      alignment: 9
+      pivot: {x: 0.52, y: 0.003649635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -1326735992349686622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_BreatheFence_B.png.19
+      rect:
+        serializedVersion: 2
+        x: 1761
+        y: 3273
+        width: 350
+        height: 822
+      alignment: 9
+      pivot: {x: 0.52, y: 0.003649635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 5339430379794167890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_BreatheFence_B.png.20
+      rect:
+        serializedVersion: 2
+        x: 1409
+        y: 3273
+        width: 350
+        height: 822
+      alignment: 9
+      pivot: {x: 0.52, y: 0.003649635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 5924081879011937578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_BreatheFence_B.png.21
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 3273
+        width: 350
+        height: 822
+      alignment: 9
+      pivot: {x: 0.52, y: 0.003649635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 5423355924439878723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_BreatheFence_B.png.22
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 3273
+        width: 350
+        height: 822
+      alignment: 9
+      pivot: {x: 0.52, y: 0.003649635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 6976948993810822243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_BreatheFence_B.png.23
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 3273
+        width: 350
+        height: 822
+      alignment: 9
+      pivot: {x: 0.52, y: 0.003649635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 1621882726536026365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_BreatheFence_B.png.24
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3273
+        width: 350
+        height: 822
+      alignment: 9
+      pivot: {x: 0.52, y: 0.003649635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 8511094666931752678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_BreatheFence_B.png.25
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 2449
+        width: 350
+        height: 822
+      alignment: 9
+      pivot: {x: 0.52, y: 0.003649635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -3210043133008679541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_BreatheFence_B.png.26
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 2449
+        width: 350
+        height: 822
+      alignment: 9
+      pivot: {x: 0.52, y: 0.003649635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -3194385337156261069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_BreatheFence_B.png.27
+      rect:
+        serializedVersion: 2
+        x: 1409
+        y: 2449
+        width: 350
+        height: 822
+      alignment: 9
+      pivot: {x: 0.52, y: 0.003649635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -2577945382918139660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_BreatheFence_B.png.28
+      rect:
+        serializedVersion: 2
+        x: 1761
+        y: 2449
+        width: 350
+        height: 822
+      alignment: 9
+      pivot: {x: 0.52, y: 0.003649635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -2572524593000824772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_BreatheFence_B.png.29
+      rect:
+        serializedVersion: 2
+        x: 2113
+        y: 2449
+        width: 350
+        height: 822
+      alignment: 9
+      pivot: {x: 0.52, y: 0.003649635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 7293223198737682918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_BreatheFence_B.png.30
+      rect:
+        serializedVersion: 2
+        x: 2465
+        y: 2449
+        width: 350
+        height: 822
+      alignment: 9
+      pivot: {x: 0.52, y: 0.003649635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 6731137737904350703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_BreatheFence_B.png.31
+      rect:
+        serializedVersion: 2
+        x: 2817
+        y: 2449
+        width: 350
+        height: 822
+      alignment: 9
+      pivot: {x: 0.52, y: 0.003649635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -233414917402504864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_BreatheFence_B.png.32
+      rect:
+        serializedVersion: 2
+        x: 3169
+        y: 2449
+        width: 350
+        height: 822
+      alignment: 9
+      pivot: {x: 0.52, y: 0.003649635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -3316775286745792464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_BreatheFence_B.png.33
+      rect:
+        serializedVersion: 2
+        x: 3521
+        y: 2449
+        width: 350
+        height: 822
+      alignment: 9
+      pivot: {x: 0.52, y: 0.003649635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -4469316205586145172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_BreatheFence_B.png.34
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1625
+        width: 350
+        height: 822
+      alignment: 9
+      pivot: {x: 0.52, y: 0.003649635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 8795203550163710564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_BreatheFence_B.png.35
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 1625
+        width: 350
+        height: 822
+      alignment: 9
+      pivot: {x: 0.52, y: 0.003649635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 5136328108118671920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_BreatheFence_B.png.36
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 1625
+        width: 350
+        height: 822
+      alignment: 9
+      pivot: {x: 0.52, y: 0.003649635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -1890029509498057566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_BreatheFence_B.png.37
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 1625
+        width: 350
+        height: 822
+      alignment: 9
+      pivot: {x: 0.52, y: 0.003649635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 7162620301776212206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_BreatheFence_B.png.38
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1625
+        width: 350
+        height: 822
+      alignment: 9
+      pivot: {x: 0.52, y: 0.003649635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -5790086873326596801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_BreatheFence_B.png.39
+      rect:
+        serializedVersion: 2
+        x: 3521
+        y: 2449
+        width: 350
+        height: 822
+      alignment: 9
+      pivot: {x: 0.52, y: 0.003649635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 2933729379358197590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_BreatheFence_B.png.40
+      rect:
+        serializedVersion: 2
+        x: 3169
+        y: 2449
+        width: 350
+        height: 822
+      alignment: 9
+      pivot: {x: 0.52, y: 0.003649635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -9204040521696593815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_BreatheFence_B.png.41
+      rect:
+        serializedVersion: 2
+        x: 2817
+        y: 2449
+        width: 350
+        height: 822
+      alignment: 9
+      pivot: {x: 0.52, y: 0.003649635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -1274155813610572316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_BreatheFence_B.png.42
+      rect:
+        serializedVersion: 2
+        x: 2465
+        y: 2449
+        width: 350
+        height: 822
+      alignment: 9
+      pivot: {x: 0.52, y: 0.003649635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 6533229900440603709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_BreatheFence_B.png.43
+      rect:
+        serializedVersion: 2
+        x: 2113
+        y: 2449
+        width: 350
+        height: 822
+      alignment: 9
+      pivot: {x: 0.52, y: 0.003649635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -1476629834034696470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_BreatheFence_B.png.44
+      rect:
+        serializedVersion: 2
+        x: 1761
+        y: 2449
+        width: 350
+        height: 822
+      alignment: 9
+      pivot: {x: 0.52, y: 0.003649635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -8533181470960024471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_BreatheFence_B.png.45
+      rect:
+        serializedVersion: 2
+        x: 1409
+        y: 2449
+        width: 350
+        height: 822
+      alignment: 9
+      pivot: {x: 0.52, y: 0.003649635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -4581695593124094678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_BreatheFence_B.png.46
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 2449
+        width: 350
+        height: 822
+      alignment: 9
+      pivot: {x: 0.52, y: 0.003649635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -1040415320090048318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_BreatheFence_B.png.47
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 2449
+        width: 350
+        height: 822
+      alignment: 9
+      pivot: {x: 0.52, y: 0.003649635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -7555096035143370563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_BreatheFence_B.png.48
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3273
+        width: 350
+        height: 822
+      alignment: 9
+      pivot: {x: 0.52, y: 0.003649635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 4792278445092294257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_BreatheFence_B.png.49
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 3273
+        width: 350
+        height: 822
+      alignment: 9
+      pivot: {x: 0.52, y: 0.003649635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -1090549827867148446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_BreatheFence_B.png.50
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 3273
+        width: 350
+        height: 822
+      alignment: 9
+      pivot: {x: 0.52, y: 0.003649635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 2052812549567747029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

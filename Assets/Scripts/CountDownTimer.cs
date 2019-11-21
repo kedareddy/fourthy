@@ -1,29 +1,56 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using DG.Tweening;
 
 
 public class CountDownTimer : MonoBehaviour
 {
+
+    public Image meter;
+    public Image meterBkg; 
+    public Text meterText;
+    public float secondsAlotted = 10f; 
+
+    private static CountDownTimer _instance;
+    public static CountDownTimer Instance { get { return _instance; } }
+
+    private void Awake()
+    {
+        if (_instance != null && _instance != this)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            _instance = this;
+        }
+    }
+
+    private float timeLeft;
+    private bool flickerStarted = false; 
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(StartCountdown());
-    }
+        meterText.text = Mathf.Floor(secondsAlotted / 60).ToString("00") + ":" + (secondsAlotted % 60).ToString("00");
 
-    float currCountdownValue;
-    public IEnumerator StartCountdown(float countdownValue = 10)
-    {
-        currCountdownValue = countdownValue;
-        while (currCountdownValue > 0)
-        {
-            //Debug.Log("Countdown: " + currCountdownValue);
-            yield return new WaitForSeconds(1.0f);
-            currCountdownValue--;
-        }
-        //LevelManager.Instance.KillPlayer(LevelManager.Instance.PlayerPrefabs[0]);
-        //StartCoroutine(StartCountdown());
-
+        Tween countDownTween = DOTween.To(() => meter.fillAmount, x => meter.fillAmount = x, 0f, secondsAlotted).SetEase(Ease.Linear);
+        countDownTween.OnUpdate(()=> {
+            timeLeft = secondsAlotted - countDownTween.position; 
+            meterText.text = Mathf.Floor(timeLeft / 60).ToString("00") + ":" + (timeLeft % 60).ToString("00");
+            if(timeLeft < 10f && flickerStarted == false)
+            {
+                //meter.DOColor(new Color(0f,0f,0f,0f), 10f).SetEase(Ease.Flash, 50, -1f);
+                meterBkg.DOColor(new Color(0f, 0f, 0f, 0f), 10f).SetEase(Ease.Flash, 50, -1f);
+                flickerStarted = true; 
+            }
+        });
+        countDownTween.OnComplete(()=> {
+            Debug.Log("END LIBERATION");
+            GameManager2.instance.CalculateScore_Liberation(); 
+        });
+       
     }
 
 

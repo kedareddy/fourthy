@@ -109,17 +109,19 @@ public static class GridWorld
 
 		return indices;
 	}
+    #endregion  // Private methods
+    #region  Public methods
 
-    private static Vector3 SquareToGrid(int[] sq)
+    public static Vector3 SquareToGrid(int[] sq)
     {
         Vector3 gridPoint = new Vector3(sq[0], sq[1], 0f);
         var shift = .5f * Vector3.one;
         gridPoint += shift;
         return gridPoint;
     }
-	#endregion  // Private methods
+	
 
-	#region  Public methods
+	
 	/// <summary>
 	///   Initialize the puzzle using a grid and renderer.
 	/// </summary>
@@ -139,6 +141,7 @@ public static class GridWorld
 	{
 
         var sq = GetSquare(obstacle.position);
+        //Debug.Log("Register as free: " + sq[0] + " : " + sq[1] + ": " +  state.ToString());
         levelMatrix[sq[0], sq[1]] = state;
         // First break up the obstacle into several 1x1 obstacles.
   //      var parts = BreakUpObstacle(obstacle);
@@ -197,15 +200,29 @@ public static class GridWorld
                 Vector3 gridPoint = SquareToGrid(new int[] { sq[0], j });
                 Vector3 worldPoint = _grid.GridToWorld(gridPoint);
                 //Debug.Log("worldPoint: " + worldPoint);
-                Collider2D col = Physics2D.OverlapPoint(new Vector2(worldPoint.x, worldPoint.y));
-                if (col != null)
+                Collider2D col = Physics2D.OverlapPoint(new Vector2(worldPoint.x, worldPoint.y), LayerMask.GetMask("Default"));
+                Box b = col.gameObject.GetComponent<Box>();
+                if (col != null && b != null)
                 {
-                    foundGOs.Add(col.gameObject);
+                    if(b.boxHealthState != BoxHealthState.Broken)
+                    {
+                        foundGOs.Add(col.gameObject);
+                        Debug.Log("col: " + col.transform.name);
+                    }
                 }
             }
         }
 
         return foundGOs;
+    }
+
+    public static Vector3 GetGridPointCenter(Vector3 initWorldPos)
+    {
+        var sq = GetSquare(initWorldPos);
+        Vector3 gridPoint = SquareToGrid(sq);
+        Vector3 worldPoint = _grid.GridToWorld(gridPoint);
+
+        return worldPoint;
     }
 
 

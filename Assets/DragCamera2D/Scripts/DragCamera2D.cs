@@ -12,6 +12,7 @@ public class DragCamera2D : MonoBehaviour
     public float panSpeed = -0.06f;
     public bool keyboardInput = false;
     public bool inverseKeyboard = false;
+    private Vector3 _lastPosition;
 
     [Header("Zoom")]
     public bool zoomEnabled = true;
@@ -58,17 +59,31 @@ public class DragCamera2D : MonoBehaviour
     //click and drag
     public void panControl() {
         // if mouse is down
-        if (Input.GetMouseButton(0)) {
-            float x = Input.GetAxis("Mouse X") * panSpeed;
-            float y = Input.GetAxis("Mouse Y") * panSpeed;
-
-            if (linkedZoomDrag) {
-                x *= Camera.main.orthographicSize;
-                //y *= Camera.main.orthographicSize;
-            }
-
-            transform.Translate(x, 0, 0);
+        if (Input.GetMouseButtonDown(0))
+        {
+            _lastPosition = Input.mousePosition;
         }
+
+        if (Input.GetMouseButton(0))
+        {
+            var delta = (_lastPosition - Input.mousePosition);
+            var deltaxz = new Vector3(delta.x, 0f, delta.y);
+            //new:
+            
+            transform.position = Vector3.Lerp(transform.position, transform.position + deltaxz, 5f * Time.deltaTime);
+            _lastPosition = Input.mousePosition;
+        }
+        //if (Input.GetMouseButton(0)) {
+        //    float x = Input.GetAxis("Mouse X") * panSpeed;
+        //    float y = Input.GetAxis("Mouse Y") * panSpeed;
+
+        //    if (linkedZoomDrag) {
+        //        x *= Camera.main.orthographicSize;
+        //        //y *= Camera.main.orthographicSize;
+        //    }
+
+        //    transform.Translate(x, 0, 0);
+        //}
 
         // if keyboard input is allowed
         if (keyboardInput) {

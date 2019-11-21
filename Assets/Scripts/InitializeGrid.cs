@@ -14,15 +14,15 @@ public class InitializeGrid : MonoBehaviour
 		GridWorld.InitializePuzzle(grid, para);
 	}
 
-	// visualizes the matrix in text form to let you see what's going on
-	//void OnGUI()
-	//{
-	//	const int w = 500;
-	//	const int h = 250;
-	//	const int x = 10;
+    // visualizes the matrix in text form to let you see what's going on
+    //void OnGUI()
+    //{
+    //    const int w = 500;
+    //    const int h = 250;
+    //    const int x = 10;
 
-	//	var y = Screen.height - x - h;
+    //    var y = Screen.height - x - h;
 
-	//	GUI.TextArea(new Rect(x, y, w, h), GridWorld.MatrixToString());
-	//}
+    //    GUI.TextArea(new Rect(x, y, w, h), GridWorld.MatrixToString());
+    //}
 }

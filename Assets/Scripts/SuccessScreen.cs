@@ -26,6 +26,7 @@ public class SuccessScreen : MonoBehaviour
         resultsS.Join(homeButton.transform.DOScale(Vector3.zero, 0.25f).From().SetEase(Ease.OutQuad));
         resultsS.Join(nextButton.transform.DOScale(Vector3.zero, 0.25f).From().SetEase(Ease.OutQuad));
         resultsS.Append(percentText.transform.DOScale(0f, 0.25f).From().SetEase(Ease.OutBounce));
+        Debug.Log("Success was turned on!"); 
     }
 
     void OnDisable()
@@ -114,7 +115,7 @@ public class SuccessScreen : MonoBehaviour
         }else if(GameManager2.instance.fsm.CurrentStateMap.state.ToString() == GameManager2.States.Equity.ToString())
         {
             //GameManager2.unlockGameNum = GameManager2.unlockGameNum + 1; 
-            GameManager2.instance.fsm.ChangeState(GameManager2.States.MainMenu);
+            GameManager2.instance.fsm.ChangeState(GameManager2.States.Liberation);
         }
     }
 
