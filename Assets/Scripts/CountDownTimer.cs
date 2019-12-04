@@ -29,13 +29,14 @@ public class CountDownTimer : MonoBehaviour
     }
 
     private float timeLeft;
-    private bool flickerStarted = false; 
+    private bool flickerStarted = false;
+    public Tween countDownTween; 
     // Start is called before the first frame update
     void Start()
     {
         meterText.text = Mathf.Floor(secondsAlotted / 60).ToString("00") + ":" + (secondsAlotted % 60).ToString("00");
 
-        Tween countDownTween = DOTween.To(() => meter.fillAmount, x => meter.fillAmount = x, 0f, secondsAlotted).SetEase(Ease.Linear);
+        countDownTween = DOTween.To(() => meter.fillAmount, x => meter.fillAmount = x, 0f, secondsAlotted).SetEase(Ease.Linear);
         countDownTween.OnUpdate(()=> {
             timeLeft = secondsAlotted - countDownTween.position; 
             meterText.text = Mathf.Floor(timeLeft / 60).ToString("00") + ":" + (timeLeft % 60).ToString("00");

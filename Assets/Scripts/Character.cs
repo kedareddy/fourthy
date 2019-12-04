@@ -18,6 +18,7 @@ public class Character : MonoBehaviour
     public float HEART = 30f;
     public float HEART_STARTPOINT = 0f;
     public GameObject meter, resolveBar, heartBar;
+    public GameObject speechBubble;
 
 
     public enum HeightType
@@ -35,6 +36,7 @@ public class Character : MonoBehaviour
         GaveUp,
         Offscreen,
         Restart,
+        None,
     }
     public States startingState;
     public StateMachine<States> fsm;
@@ -68,30 +70,40 @@ public class Character : MonoBehaviour
     {
         StartCoroutine(AssignState());
         Box.OnBoxEmpty += HandleEmptyBox;
+        if (!transform.name.Contains("CharC"))
+        {
+            JumpMeter.OnInitiateJump += HandleJump;
+        }
+
     }
 
     IEnumerator AssignState()
     {
         yield return new WaitForSeconds(0.25f);
+        fsm.ChangeState(States.None);
         fsm.ChangeState(startingState);
     }
 
     private void OnDisable()
     {
         Box.OnBoxEmpty -= HandleEmptyBox;
+        if (!transform.name.Contains("CharC"))
+        {
+            JumpMeter.OnInitiateJump -= HandleJump;
+        }
     }
 
 
     public void HandleEmptyBox(GameObject box = null)
     {
         //Debug.Log("Handle Empty Box");
-        if (fsm.CurrentStateMap.state != null)
+        if (fsm.CurrentStateMap.state != null && !transform.name.Contains("CharC"))
         {
             if (fsm.CurrentStateMap.state.ToString() == States.Waiting.ToString() || fsm.CurrentStateMap.state.ToString() == States.Offscreen.ToString())
             {
                 if (!(myHeightType == HeightType.Short && myBoxes.Count > 0) && myBoxWalkTween == null && myBoxJumpTween == null)
                 {
-                    Debug.Log("walk to empty box");
+                    //Debug.Log("walk to empty box");
                     myPathTween.Kill();
                     myPathTween = null;
                     boxPosition = box.transform.position;
@@ -99,40 +111,43 @@ public class Character : MonoBehaviour
                     myBoxWalkTween.OnComplete(() =>
                     {
                         myBoxWalkTween = null;
-                        Box targetBox = box.GetComponent<Box>();
-                        //Debug.Log("box is already occupied");
-                        if (targetBox.boxOccupiedState == BoxOccupiedState.Unoccupied)
+                        if (box != null)
                         {
-                            // Debug.Log("added box to character");
-                            myBoxes.Add(targetBox);
-                            targetBox.boxOccupiedState = BoxOccupiedState.Occupied;
-
-                            Vector3 firstPoint = new Vector3(transform.localPosition.x, transform.localPosition.y, transform.localPosition.z);
-                            Vector3 secondPoint = new Vector3(transform.localPosition.x, transform.localPosition.y + 6.5f + 1f, transform.localPosition.z);
-                            Vector3 thirdPoint = new Vector3(transform.localPosition.x, transform.localPosition.y + 6.5f, transform.localPosition.z);
-
-                            SoundManager.instance.PlaySingle(SoundManager.instance.grunt);
-
-                            myBoxJumpTween = transform.DOLocalPath(new Vector3[] { firstPoint, secondPoint, thirdPoint }, JUMP_SPEED).SetSpeedBased().SetEase(Ease.InOutQuad);
-                            myBoxJumpTween.OnComplete(() =>
+                            Box targetBox = box.GetComponent<Box>();
+                            //Debug.Log("box is already occupied");
+                            if (targetBox.boxOccupiedState == BoxOccupiedState.Unoccupied)
                             {
-                                myBoxJumpTween = null; 
-                                if (myHeightType == HeightType.Short)
+                                // Debug.Log("added box to character");
+                                myBoxes.Add(targetBox);
+                                targetBox.boxOccupiedState = BoxOccupiedState.Occupied;
+
+                                Vector3 firstPoint = new Vector3(transform.localPosition.x, transform.localPosition.y, transform.localPosition.z);
+                                Vector3 secondPoint = new Vector3(transform.localPosition.x, transform.localPosition.y + 6.5f + 1f, transform.localPosition.z);
+                                Vector3 thirdPoint = new Vector3(transform.localPosition.x, transform.localPosition.y + 6.5f, transform.localPosition.z);
+
+                                SoundManager.instance.PlaySingle(SoundManager.instance.grunt);
+
+                                myBoxJumpTween = transform.DOLocalPath(new Vector3[] { firstPoint, secondPoint, thirdPoint }, JUMP_SPEED).SetSpeedBased().SetEase(Ease.InOutQuad);
+                                myBoxJumpTween.OnComplete(() =>
                                 {
+                                    myBoxJumpTween = null;
+                                    if (myHeightType == HeightType.Short)
+                                    {
                                     //fsm.ChangeState(States.WaitingOnBox);
                                     mySpriteRenderer.sortingOrder = 2;
-                                }
-                                else
-                                {
-                                    resolveBarTween.Kill();
-                                    fsm.ChangeState(States.Watching);
-                                }
-                            });
-                        }
-                        else
-                        {
-                            resolveBarTween.Pause();
-                            fsm.ChangeState(States.Restart);
+                                    }
+                                    else
+                                    {
+                                        resolveBarTween.Kill();
+                                        fsm.ChangeState(States.Watching);
+                                    }
+                                });
+                            }
+                            else
+                            {
+                                resolveBarTween.Pause();
+                                fsm.ChangeState(States.Restart);
+                            }
                         }
                     });
                 }
@@ -145,9 +160,15 @@ public class Character : MonoBehaviour
         prevDir = "right";
         currentPos = 0;
         Tween initWalkTween = transform.DOLocalMove(startPoint, WALK_SPEED).SetEase(Ease.Linear).SetSpeedBased(true);
-        myAnimator.SetBool("isMoving", true);
+        if(myAnimator.GetBool("isMoving") == false)
+        {
+            myAnimator.SetBool("isMoving", true);
+        }
         yield return initWalkTween.WaitForCompletion();
-        myAnimator.SetBool("isMoving", false);
+        if (myAnimator.GetBool("isMoving") == true)
+        {
+            myAnimator.SetBool("isMoving", false);
+        }
         yield return new WaitForSeconds(WP_WAIT_TIME);
         //Debug.Log("how many draw points: " + drawPoints.Length);
         myPathPoints.Add(transform.localPosition);
@@ -168,9 +189,29 @@ public class Character : MonoBehaviour
         });
     }
 
+    private bool checkSpeechBubleOnce = false;
     IEnumerator AtWayPoint(int index)
     {
+        
+        if (checkSpeechBubleOnce == false && speechBubble != null)
+        {
+            checkSpeechBubleOnce = true; 
+            int randInt = Random.Range(0, 11);
+            if (randInt > 5)
+            {
+                if (speechBubble.activeInHierarchy == false)
+                {
+                    //Debug.Log("set active333333");
+                    speechBubble.SetActive(true);
+                }
+            }
+        }
         yield return new WaitForSeconds(WP_WAIT_TIME);
+        checkSpeechBubleOnce = false;
+        if (speechBubble != null)
+        {
+            speechBubble.SetActive(false);
+        }
         myPathTween.Play();
     }
 
@@ -184,7 +225,24 @@ public class Character : MonoBehaviour
         myAnimator.SetBool("isMoving", false);
         myAnimator.SetBool("isCheering", false);
 
-        if (fsm.LastState != States.Restart)
+        bool setupResolveBar = false; 
+        if(fsm.LastState == States.None)
+        {
+            setupResolveBar = true;
+
+        }
+        else
+        {
+            if (fsm.LastState != States.Restart)
+            {
+                setupResolveBar = true;
+            }
+            else
+            {
+                setupResolveBar = false;
+            }
+        }
+        if (setupResolveBar)
         {
             resolveBar.transform.localPosition = Vector3.zero;
             resolveBarTween = resolveBar.transform.DOLocalMoveX(-1.35f, RESOLVE).OnComplete(() =>
@@ -225,7 +283,7 @@ public class Character : MonoBehaviour
             }
 
             //check for previously dropped, free boxes. first make sure character is on the ground
-            if (myBoxes.Count == 0)
+            if (myBoxes.Count == 0 && !transform.name.Contains("CharC"))
             {
                 foreach (Transform child in GameManager2.instance.GetCurrentRuntimeObjsParent())
                 {
@@ -267,8 +325,15 @@ public class Character : MonoBehaviour
 
         if (movingPath != "none")
         {
-            //Debug.Log(transform.name + " is Moving");
-            myAnimator.SetBool("isMoving", true);
+            //Debug.Log("the animator state is: " + myAnimator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.chrD_moving") + myAnimator.GetCurrentAnimatorStateInfo(0).IsName("chrD_moving"));
+            //if (myAnimator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.chrD_moving") == false)
+                //{
+            if (myAnimator.GetBool("isMoving") == false)
+            {
+                //Debug.Log("setting WALKING");
+                myAnimator.SetBool("isMoving", true);
+            }
+            
 
             float direction;
             //orienting when patrolling points or going to box
@@ -358,6 +423,14 @@ public class Character : MonoBehaviour
 
     public void Waiting_Exit()
     {
+        myAnimator.SetBool("isMoving", false);
+        if (speechBubble != null)
+        {
+            if (speechBubble.activeInHierarchy)
+            {
+                speechBubble.SetActive(false);
+            }
+        }
         //resolveBarTween.Kill();
     }
 
@@ -472,18 +545,83 @@ public class Character : MonoBehaviour
 
     public void Watching_Exit()
     {
+        myAnimator.SetBool("isCheering", true);
         heartBarTween.Kill();
 
     }
 
 
+    private Tween gaveUpWalkTween;
+    public SitSite closestSitSite;
+    public int sitPointIndex = 0; 
     public void GaveUp_Enter()
     {
-        mySpriteRenderer.sortingOrder = 4;
-        meter.SetActive(false);
-        transform.DOKill();
-        myAnimator.SetBool("isSitting", true);
-        transform.localPosition = new Vector3(transform.localPosition.x, originalPos.y, transform.localPosition.z);
+        //determin sites with open spots, determine the closest one, select one of it's sit points, turn it to occupied, and chart a path to it, and sit.
+        List<SitSite> possibleSites = new List<SitSite> { GameManager2.instance.sitSite1, GameManager2.instance.sitSite2, GameManager2.instance.sitSite3};
+        closestSitSite = null;
+        //figure out open and closest sites
+        for (int i = 0; i < possibleSites.Count; i++)
+        {
+            int numOpenPos = 0;
+            for (int j = 0; j < possibleSites[i].sitPoints.Count; j++)
+            {
+
+                if (possibleSites[i].sitPoints[j].occupant == null)
+                {
+                    numOpenPos++;
+                }
+            }
+            if (numOpenPos == 0)
+            {
+                possibleSites.RemoveAt(i);
+            }
+            else
+            {
+                if (closestSitSite == null)
+                {
+                    closestSitSite = possibleSites[i];
+                }
+                else
+                {
+                    if (Mathf.Abs(transform.position.x - closestSitSite.transform.position.x) < Mathf.Abs(transform.position.x - possibleSites[i].transform.position.x))
+                    {
+                        closestSitSite = possibleSites[i];
+                    }
+                }
+            }
+        }
+
+        //figure out the exact point at the site
+        sitPointIndex = 0; 
+        for (int k = 0; k < closestSitSite.sitPoints.Count; k++)
+        {
+            if (closestSitSite.sitPoints[k].occupant == null)
+            {
+                sitPointIndex = k;
+                closestSitSite.sitPoints[k].occupant = GetComponent<Character>(); 
+                break;
+            }
+        }
+
+        //chart a path to sit point
+        //if shortest gave up on a box, make that box unoccupied
+        if (myBoxes.Count > 0)
+        {
+            myBoxes[0].boxOccupiedState = BoxOccupiedState.Unoccupied;
+            //first jump down then move to the sit point
+            transform.DOLocalMoveY(-15.1f, JUMP_SPEED).SetSpeedBased().SetEase(Ease.InExpo).SetDelay(0.25f).OnComplete(() =>
+            {
+                myBoxes.RemoveAt(0);
+                SoundManager.instance.PlaySingle(SoundManager.instance.grunt);
+                WalkToSitPoint();
+            });
+        }
+        else
+        {
+            WalkToSitPoint(); 
+        }
+
+        //transform.localPosition = new Vector3(transform.localPosition.x, originalPos.y, transform.localPosition.z);
         //talk to people if there are more than 2 people next to each other
         if (GameManager2.instance.fsm.CurrentStateMap.state.ToString() == GameManager2.States.Equality.ToString() || GameManager2.instance.fsm.CurrentStateMap.state.ToString() == GameManager2.States.Equity.ToString())
         {
@@ -491,20 +629,199 @@ public class Character : MonoBehaviour
             StartCoroutine(GameManager2.instance.Failed());
         }
 
-        //if shortest gave up on a box, make that box unoccupied
-        if (myBoxes.Count > 0)
-        {
-            myBoxes[0].boxOccupiedState = BoxOccupiedState.Unoccupied;
-        }
+
 
     }
+
+    public void WalkToSitPoint()
+    {
+        transform.DOKill();
+        gaveUpWalkTween = transform.DOLocalMoveX(closestSitSite.sitPoints[sitPointIndex].transformPoint.position.x, WALK_SPEED).SetSpeedBased().SetEase(Ease.Linear);
+        gaveUpWalkTween.OnComplete(() =>
+        {
+            mySpriteRenderer.sortingOrder = closestSitSite.sitPoints[sitPointIndex].zOrder;
+            meter.SetActive(false);
+            gaveUpWalkTween = null;
+            myAnimator.SetBool("isSitting", true);
+            //orienting to face each other
+            Debug.Log(transform.name + " sitSite: " + closestSitSite.transform.name +  " sitPointIndex " + sitPointIndex + "yRotation: " + closestSitSite.sitPoints[sitPointIndex].yAngle);
+            transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, closestSitSite.sitPoints[sitPointIndex].yAngle, transform.rotation.eulerAngles.z);
+            if(closestSitSite.sitPoints[sitPointIndex].yAngle > 0f)
+            {
+                prevDir = "left";
+            }
+            else
+            {
+                prevDir = "right";
+            }
+            StartCoroutine(WaitToStartTalking());
+        });
+    }
+
+    IEnumerator WaitToStartTalking()
+    {
+        yield return new WaitForSeconds(1f);
+        if (speechBubble != null)
+        {
+            speechBubble.SetActive(true);
+        }
+    }
+
+    private bool walkToFence = false;
+    private Sequence moveOnFenceS;
+    public IEnumerator GetOnFence()
+    {
+        
+        transform.DOKill();
+        myAnimator.SetBool("isSitting", false);
+        walkToFence = true; 
+        transform.localPosition = new Vector3(transform.localPosition.x, startPoint.y, transform.localPosition.z);
+        gaveUpWalkTween = transform.DOLocalMoveX( GameManager2.instance.finalBoxes.transform.position.x , WALK_SPEED).SetSpeedBased().SetEase(Ease.Linear);
+        gaveUpWalkTween.OnPlay(() =>
+        {
+            myAnimator.SetBool("isSitting", false);
+            mySpriteRenderer.sortingOrder = closestSitSite.sitPoints[sitPointIndex].zOrder;
+        });
+        gaveUpWalkTween.OnComplete(() =>
+        {
+            gaveUpWalkTween = null;
+            
+            transform.DOLocalMoveY(transform.localPosition.y + 7f, JUMP_SPEED).SetSpeedBased().SetEase(Ease.InExpo).SetDelay(0.25f).OnComplete(()=> {
+                mySpriteRenderer.sortingOrder = mySpriteRenderer.sortingOrder - 1;
+                transform.DOLocalMoveY(transform.localPosition.y + 7f, JUMP_SPEED).SetSpeedBased().SetEase(Ease.InExpo).SetDelay(0.25f).OnComplete(()=> {
+                    mySpriteRenderer.sortingOrder = mySpriteRenderer.sortingOrder - 1;
+                    transform.DOLocalMoveY(GameManager2.instance.fencePointsParent.transform.localPosition.y, JUMP_SPEED).SetSpeedBased().SetEase(Ease.InExpo).SetDelay(0.25f).OnComplete(()=> {
+                        //iterate through available points and see which one's closest one that's still available and move to it.
+                        FencePoint fp = null;
+                        for(int i = 0; i < GameManager2.instance.fencePoints.Count; i++)
+                        {
+                            if(GameManager2.instance.fencePoints[i].occupant == null)
+                            {
+                                Debug.Log("FloorToInt: " + Mathf.FloorToInt(GameManager2.instance.fencePoints.Count / 2));
+                                if(i == 1)
+                                {
+                                    Camera.main.transform.DOMoveX(GameManager2.instance.fencePoints[i].transformPoint.position.x, 5f).SetEase(Ease.InOutQuad);
+                                }
+                                fp = GameManager2.instance.fencePoints[i];
+                                break;
+                            }
+                        }
+
+                        if (fp != null)
+                        {
+                            fp.occupant = GetComponent<Character>();
+                            moveOnFenceS = DOTween.Sequence();
+                            moveOnFenceS.Append(transform.DOLocalRotate(new Vector3(0f,0f,transform.localEulerAngles.z - 5f), 0.5f).SetLoops(100, LoopType.Yoyo).SetEase(Ease.Linear));
+                            moveOnFenceS.Join(transform.DOLocalMoveX(fp.transformPoint.position.x, WALK_SPEED*1.75f).SetSpeedBased().SetEase(Ease.Linear).SetDelay(0.25f).OnComplete(OnFinishMovingToFencePoint));
+                        }
+                    });
+                });
+
+            });
+
+        });
+
+        yield return new WaitForSeconds(1f);
+    }
+
+    public void OnFinishMovingToFencePoint()
+    {
+        mySpriteRenderer.sortingOrder = mySpriteRenderer.sortingOrder - 1;
+        GameManager2.instance.howManyOnFence++;
+        moveOnFenceS.Kill(true);
+    }
+
+    private Tween fenceJumpTween = null;
+    public void HandleJump(bool sweetSpot)
+    {
+        if (fenceJumpTween == null) {
+            float delay = 0f;
+            if (!sweetSpot)
+            {
+                delay = Random.Range(0f, 2f);
+            }
+
+            fenceJumpTween = transform.DOLocalMoveY(transform.localPosition.y + 5f, 0.75f).SetLoops(2, LoopType.Yoyo).SetDelay(delay).SetEase(Ease.InExpo);
+
+            fenceJumpTween.OnStepComplete(() =>
+            {
+                if(fenceJumpTween.CompletedLoops() == 1)
+                {
+                    fenceJumpTween.SetEase(Ease.InQuad);
+                }
+                if(fenceJumpTween.CompletedLoops() > 1)
+                {
+                    fenceJumpTween = null;
+                }
+                
+            });
+        }
+    }
+
+    public void FallToGround()
+    {
+        transform.DOLocalMoveY(originalPos.y, 30f).SetSpeedBased().SetEase(Ease.InExpo).OnComplete(()=> {
+            myAnimator.SetBool("isCheering", true);
+        });
+    }
+
     public void GaveUp_Update()
     {
+        if (gaveUpWalkTween != null )
+        {
+            //Debug.Log("not null");
+            if (gaveUpWalkTween.IsActive() )
+            {
+                //Debug.Log("is active");
+                if (myAnimator.GetBool("isMoving") == false)
+                {
+                    //Debug.Log("setting WALKING");
+                    myAnimator.SetBool("isSitting", false);
+                    myAnimator.SetBool("isMoving", true);
+                }
 
+                //orienting towards end point
+                float direction;
+                if (walkToFence)
+                {
+                    direction = -GameManager2.instance.finalBoxes.transform.localPosition.x + transform.localPosition.x;
+                }
+                else
+                {
+                    direction = -closestSitSite.sitPoints[sitPointIndex].transformPoint.position.x + transform.localPosition.x;
+                }
+
+
+                if (direction > 0f)
+                {
+                    //Debug.Log("Left");
+                    if (prevDir != "left")
+                    {
+                        transform.Rotate(0, 180f, 0);
+                        prevDir = "left";
+                    }
+                }
+                else
+                {
+                    //Debug.Log("Right");
+                    if (prevDir != "right")
+                    {
+                        transform.Rotate(0, 180f, 0);
+                        prevDir = "right";
+                    }
+                }
+            }
+        }
+        else
+        {
+            Debug.Log("moving set to false");
+            myAnimator.SetBool("isMoving", false);
+        }
     }
     public void GaveUp_Exit()
     {
-
+        myAnimator.SetBool("isSitting", false);
+        Debug.Log("Exited GaveUp");
     }
 
 

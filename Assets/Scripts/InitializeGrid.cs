@@ -14,7 +14,7 @@ public class InitializeGrid : MonoBehaviour
 		GridWorld.InitializePuzzle(grid, para);
 	}
 
-    // visualizes the matrix in text form to let you see what's going on
+   // visualizes the matrix in text form to let you see what's going on
     //void OnGUI()
     //{
     //    const int w = 500;

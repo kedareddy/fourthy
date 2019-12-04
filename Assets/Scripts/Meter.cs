@@ -5,22 +5,18 @@ using UnityEngine;
 public class Meter : MonoBehaviour
 {
     // Start is called before the first frame update
-    private Quaternion rotation;
-    private Vector3 scale;
-    private Transform parent; 
+    private Quaternion rotation, localRotation;
+    
     void Awake()
     {
-        rotation = transform.rotation;
-        parent = transform.parent; 
-        scale = transform.lossyScale; 
+        //rotation = transform.rotation;
+        localRotation = transform.localRotation; 
     }
 
     // Update is called once per frame
     void LateUpdate()
     {
-        transform.rotation = rotation;
-        //transform.SetParent(null);
-        //transform.localScale = scale;
-        //transform.SetParent(parent);
+        //transform.rotation = rotation;
+        transform.localRotation = localRotation;
     }
 }

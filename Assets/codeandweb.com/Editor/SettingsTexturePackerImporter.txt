@@ -9,6 +9,12 @@ tpsheetFileNames:
 - Assets/ArtAssets/TempCharacters/FinalBlake/Idle/CH_BreatheFence_B_@.tpsheet
 - Assets/ArtAssets/TempCharacters/FinalBlake/Idle/CH_BreatheFence_C.tpsheet
 - Assets/ArtAssets/TempCharacters/FinalBlake/Idle/CH_BreatheFence_D.tpsheet
+- Assets/ArtAssets/TempCharacters/FinalBlake/IdleAlternate/Ch_B_IdleBack.tpsheet
+- Assets/ArtAssets/TempCharacters/FinalBlake/SittingIdle/Ch_A_SitIdle.tpsheet
+- Assets/ArtAssets/TempCharacters/FinalBlake/SittingIdle/CH_B_SittingIdle.tpsheet
+- Assets/ArtAssets/TempCharacters/FinalBlake/SittingIdle/CH_C_SittingIdle.tpsheet
+- Assets/ArtAssets/TempCharacters/FinalBlake/SittingIdle/CH_D_SittingIdle.tpsheet
+- Assets/ArtAssets/TempCharacters/FinalBlake/SittingTalking/CH_SitTalk.tpsheet
 - Assets/ArtAssets/TempCharacters/FinalBlake/Walking/Ch_A_WALK.tpsheet
 - Assets/ArtAssets/TempCharacters/FinalBlake/Walking/Ch_B_WALK_2.tpsheet
 - Assets/ArtAssets/TempCharacters/FinalBlake/Walking/Ch_C_WALK.tpsheet
@@ -23,12 +29,24 @@ textureFileNames:
 - Assets/ArtAssets/TempCharacters/FinalBlake/Idle/CH_BreatheFence_B_@.png
 - Assets/ArtAssets/TempCharacters/FinalBlake/Idle/CH_BreatheFence_C.png
 - Assets/ArtAssets/TempCharacters/FinalBlake/Idle/CH_BreatheFence_D.png
+- Assets/ArtAssets/TempCharacters/FinalBlake/IdleAlternate/Ch_B_IdleBack.png
+- Assets/ArtAssets/TempCharacters/FinalBlake/SittingIdle/Ch_A_SitIdle.png
+- Assets/ArtAssets/TempCharacters/FinalBlake/SittingIdle/CH_B_SittingIdle.png
+- Assets/ArtAssets/TempCharacters/FinalBlake/SittingIdle/CH_C_SittingIdle.png
+- Assets/ArtAssets/TempCharacters/FinalBlake/SittingIdle/CH_D_SittingIdle.png
+- Assets/ArtAssets/TempCharacters/FinalBlake/SittingTalking/CH_SitTalk.png
 - Assets/ArtAssets/TempCharacters/FinalBlake/Walking/Ch_A_WALK.png
 - Assets/ArtAssets/TempCharacters/FinalBlake/Walking/Ch_B_WALK_2.png
 - Assets/ArtAssets/TempCharacters/FinalBlake/Walking/Ch_C_WALK.png
 - Assets/ArtAssets/TempCharacters/FinalBlake/Walking/Ch_D_WALK.png
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.png
 normalmapFileNames:
+- 
+- 
+- 
+- 
+- 
+- 
 - 
 - 
 - 

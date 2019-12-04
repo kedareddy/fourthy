@@ -9,6 +9,15 @@ using UnityEngine.SceneManagement;
 using DG.Tweening;
 
 
+[System.Serializable]
+public class FencePoint
+{
+    [SerializeField]
+    public Transform transformPoint;
+    [SerializeField]
+    public Character occupant;
+}
+
 public class GameManager2 : MonoBehaviour
 {
     public enum States
@@ -19,6 +28,7 @@ public class GameManager2 : MonoBehaviour
         Equity,
         Liberation,
         EndScene,
+        Credits,
         FourthBox,
         MainMenu,
         Restart,
@@ -35,7 +45,7 @@ public class GameManager2 : MonoBehaviour
     public GameObject blackBarBottom;
     public Animator fourthyAnimator;
 
-    public GameObject intro1Scene, introScene2, EqualityScene, EquityScene, LiberationScene;
+    public GameObject intro1Scene, introScene2, EqualityScene, EquityScene, LiberationScene, EndScene;
     public GameObject bkgBlurredParent, bkgBlurred, fenceBlurred, builderBlurred, dustBlurred, pitcherBlurred, batterBlurred, catcherBlurred;
     public GameObject fence, builder, dust, pitcher, batter, catcher, newFence1, newFence2, newFence3;
 
@@ -62,7 +72,16 @@ public class GameManager2 : MonoBehaviour
     public Animator liberationTextAnimator;
     public Image liberationBlackScreen;
     public Vector3 INIT_LIBERATION_POS = new Vector3(6.9f, -10.3f, -10f);
+    public GameObject ideaBubble;
 
+    //endscene references
+    public GameObject endSceneUI;
+    public Image endSceneBlackScreen;
+    public Vector3 INIT_ENDSCENE_POS = new Vector3(18.3f, -9.6f, -10f);
+
+    //credits references
+    public GameObject creditsUI;
+    public Image creditsBlackScreen; 
 
     //ui buttons
     public GameObject mainMenuUI, cssLogo, game1Button, game2Button, game3Button, creditsButton, questionsButton, englishButton, spanishButton;
@@ -74,9 +93,18 @@ public class GameManager2 : MonoBehaviour
     public GameObject equityRuntimeObjsParent;
     public GameObject liberationRuntimeObjsParent;
 
+    public SitSite sitSite1, sitSite2, sitSite3;
+    public GameObject finalBoxes;
+    [SerializeField]
+    public List<FencePoint> fencePoints; 
+    public GameObject fencePointsParent;
+    public List<Transform> fenceParts;
+    public GameObject jumpMeter; 
+
 
     private Sequence instroS, intro2S, mainMenuS;
     private List<Character> equityCharacters = new List<Character>();
+    
 
     // Use this for initialization
     void Awake()
@@ -534,8 +562,14 @@ public class GameManager2 : MonoBehaviour
         Tween fadeToBlackTween = equalityBlackScreen.DOFade(1f, 2f).SetEase(Ease.OutQuad);
         yield return fadeToBlackTween.WaitForCompletion();
         //delete all instantiated boxes and hearts
+        Box sceneBox; 
         foreach (Transform child in equalityRuntimeObjsParent.transform)
         {
+            sceneBox = child.GetComponent<Box>();
+            if(sceneBox != null)
+            {
+                GridWorld.RegisterObstacle(sceneBox.transform, true);
+            }
             Destroy(child.gameObject);
         }
         EqualityScene.SetActive(false);
@@ -642,8 +676,14 @@ public class GameManager2 : MonoBehaviour
         Tween fadeToBlackTween = equityBlackScreen.DOFade(1f, 2f).SetEase(Ease.OutQuad);
         yield return fadeToBlackTween.WaitForCompletion();
         //delete all instantiated boxes and hearts
+        Box sceneBox;
         foreach (Transform child in equityRuntimeObjsParent.transform)
         {
+            sceneBox = child.GetComponent<Box>();
+            if (sceneBox != null)
+            {
+                GridWorld.RegisterObstacle(sceneBox.transform, true);
+            }
             Destroy(child.gameObject);
         }
         EquityScene.SetActive(false);
@@ -711,8 +751,119 @@ public class GameManager2 : MonoBehaviour
     }
 
 
+    private bool triggerJumpMeter = false;
+    public int currenFencePower = 0;
+    private int maxFencePower = 12;
+    private bool initiateBreakFence = false; 
     public void Liberation_Update()
     {
+        //Debug.Log("howMany: " + howManyOnFence + " allChars: " + allFenceChars.Count); 
+        if(howManyOnFence == allFenceChars.Count && howManyOnFence > 0)
+        {
+            if(triggerJumpMeter == false)
+            {
+                jumpMeter.SetActive(true);
+                triggerJumpMeter = true;
+            }
+        }
+
+        if(currenFencePower >= maxFencePower)
+        {
+            Debug.Log("FENCE IS BROKEN");
+            if(initiateBreakFence == false)
+            {
+                initiateBreakFence = true;
+                jumpMeter.SetActive(false);
+                FenceParent.Instance.DestroyFence();
+                for(int i =0; i < allFenceChars.Count; i++)
+                {
+                    allFenceChars[i].FallToGround();
+                    StartCoroutine(InitiateLiberationSuccess()); 
+                }
+            }
+        }
+    }
+
+    IEnumerator InitiateLiberationSuccess()
+    {
+        yield return new WaitForSeconds(6f);
+        Sequence successS = DOTween.Sequence();
+        successS.Append(DOTween.To(() => Camera.main.orthographicSize, x => Camera.main.orthographicSize = x, 50, 5f));
+        //successS.Join(Camera.main.transform.DOMove(new Vector3(Camera.main.transform.position.x, -8.8f, Camera.main.transform.position.z), 5f, false));
+        successS.InsertCallback(2f, () =>
+        {
+            SoundManager.instance.musicSource.clip = SoundManager.instance.bigcheer;
+            SoundManager.instance.musicSource.Play();
+        });
+        successS.InsertCallback(5f, () =>
+        {
+            liberationTextAnimator.gameObject.SetActive(true);
+            liberationTextAnimator.Play("Expand");
+        });
+        successS.InsertCallback(9f, () =>
+        {
+            fsm.ChangeState(States.EndScene);
+        });
+        
+
+
+    }
+
+    private bool triggeredIB = false;
+    public void TriggerIdeaBubble(Vector3 pos)
+    {
+        if(triggeredIB == false)
+        {
+            triggeredIB = true;
+            ideaBubble.SetActive(true);
+            ideaBubble.transform.position = pos;
+            ideaBubble.transform.DOLocalMoveY(5f, 2f).SetSpeedBased().SetEase(Ease.Linear);
+        }
+    }
+
+    //track if character is going to stand on fence
+    public List<Character> allFenceChars = new List<Character>();
+    public int howManyOnFence = 0; 
+    public void HandleIdeaBubble()
+    {
+        Debug.Log("idea bubble clicked");
+        //disable camera drag
+        Camera.main.GetComponent<NewDrag>().enabled = false;
+        Vector3 endPoint = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width/2f, Screen.height*0.5f, Camera.main.nearClipPlane));
+        ideaBubble.transform.DOKill();
+        Sequence ideaBubbleS = DOTween.Sequence();
+        ideaBubbleS.SetDelay(0.5f);
+        ideaBubbleS.Append(ideaBubble.transform.DOMove(new Vector3(endPoint.x, endPoint.y, ideaBubble.transform.position.z), 1f).SetEase(Ease.OutQuad));
+        ideaBubbleS.Join(ideaBubble.transform.DOScale(26f, 1f).SetEase(Ease.OutQuad));
+        ideaBubbleS.AppendCallback(() =>
+        {
+            finalBoxes.SetActive(true);
+            CountDownTimer.Instance.countDownTween.Kill();
+            CountDownTimer.Instance.transform.gameObject.SetActive(false);
+            HeartCounter.Instance.transform.gameObject.SetActive(false);
+            boxButton.gameObject.SetActive(false);
+            //turn off back button
+            liberationUI.transform.GetChild(0).gameObject.SetActive(false);
+        });
+        ideaBubbleS.AppendInterval(3f);
+        ideaBubbleS.OnComplete(()=> {
+            ideaBubble.SetActive(false);
+            foreach (Transform child in LiberationScene.transform)
+            {
+                Character c = child.GetComponent<Character>();
+                if (c != null)
+                {
+                    if (c.fsm.CurrentStateMap.state.ToString() == Character.States.GaveUp.ToString() && !c.transform.name.Contains("CharC"))
+                    {
+                        allFenceChars.Add(c);
+                        StartCoroutine(c.GetOnFence());
+                    }
+                }
+            }
+            //move camera final Boxes
+            Camera.main.transform.DOMoveX(finalBoxes.transform.position.x, 5f).SetEase(Ease.InOutQuad);
+        });
+        
     }
 
     public IEnumerator Liberation_Exit()
@@ -729,6 +880,76 @@ public class GameManager2 : MonoBehaviour
         }
         LiberationScene.SetActive(false);
         liberationUI.SetActive(false);
+        DOTween.KillAll();
+    }
+
+
+    public IEnumerator EndScene_Enter()
+    {
+        Debug.Log("Welcome to EndScene");
+
+
+        successScene.SetActive(false);
+        
+        EndScene.SetActive(true);
+        endSceneUI.SetActive(true);
+        endSceneBlackScreen.color = new Color(0f, 0f, 0f, 0f);
+        endSceneBlackScreen.DOFade(1f, 3f).SetEase(Ease.InOutQuad).From();
+        Camera.main.transform.position = INIT_ENDSCENE_POS;
+
+        yield return new WaitForSeconds(6f);
+        fsm.ChangeState(States.Credits);
+        //fadeFromBlack.OnUpdate(() => {
+        //    if (fadeFromBlack.ElapsedPercentage() > 0.25f)
+        //    {
+        //        if (!liberationIntroScreen.activeInHierarchy)
+        //        {
+        //            liberationIntroScreen.SetActive(true);
+        //        }
+
+        //    }
+        //});
+        //Camera.main.orthographicSize = 30;
+        //Camera.main.transform.position = INIT_LIBERATION_POS;
+    }
+
+
+    public IEnumerator EndScene_Exit()
+    {
+        Debug.Log("Exiting EndScene");
+        liberationBlackScreen.color = new Color(0f, 0f, 0f, 0f);
+        Tween fadeToBlackTween = endSceneBlackScreen.DOFade(1f, 2f).SetEase(Ease.OutQuad);
+        yield return fadeToBlackTween.WaitForCompletion();
+        EndScene.SetActive(false);
+        endSceneUI.SetActive(false);
+        DOTween.KillAll();
+    }
+
+
+
+    public void Credits_Enter()
+    {
+        Debug.Log("Welcome to Credits");
+
+        creditsUI.SetActive(true);
+        creditsBlackScreen.color = new Color(0f, 0f, 0f, 0f);
+        creditsBlackScreen.DOFade(1f, 3f).SetEase(Ease.InOutQuad).From();
+    }
+
+
+    public void HandleCreditsFinished()
+    {
+        fsm.ChangeState(States.MainMenu);
+    }
+
+
+    public IEnumerator Credits_Exit()
+    {
+        Debug.Log("Exiting Credits");
+        creditsBlackScreen.color = new Color(0f, 0f, 0f, 0f);
+        Tween fadeToBlackTween = creditsBlackScreen.DOFade(1f, 2f).SetEase(Ease.OutQuad);
+        yield return fadeToBlackTween.WaitForCompletion();
+        creditsUI.SetActive(false);
         DOTween.KillAll();
     }
 
@@ -814,7 +1035,7 @@ public class GameManager2 : MonoBehaviour
     public void CreditsButtonPressed()
     {
         SoundManager.instance.PlaySingle(SoundManager.instance.take);
-        //fsm.ChangeState(States.Equality);
+        fsm.ChangeState(States.Credits);
     }
 
     public void MainMenu_Update()

@@ -1,0 +1,955 @@
+fileFormatVersion: 2
+guid: abb93644f12984e3a9bf5435dd623764
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3859431110172061369
+    second: CH_B_SittingIdle.00
+  - first:
+      213: 4849359767832769894
+    second: CH_B_SittingIdle.01
+  - first:
+      213: 1895419255740666821
+    second: CH_B_SittingIdle.02
+  - first:
+      213: 6566027853940183709
+    second: CH_B_SittingIdle.03
+  - first:
+      213: 6975496263067266850
+    second: CH_B_SittingIdle.04
+  - first:
+      213: -3740958473021443444
+    second: CH_B_SittingIdle.05
+  - first:
+      213: -183647869809315523
+    second: CH_B_SittingIdle.06
+  - first:
+      213: 5860104517817844618
+    second: CH_B_SittingIdle.07
+  - first:
+      213: -137710679309721549
+    second: CH_B_SittingIdle.08
+  - first:
+      213: -1380211810177022327
+    second: CH_B_SittingIdle.09
+  - first:
+      213: -1578287982039628871
+    second: CH_B_SittingIdle.10
+  - first:
+      213: 4784609104465515690
+    second: CH_B_SittingIdle.11
+  - first:
+      213: 8134811561084710038
+    second: CH_B_SittingIdle.12
+  - first:
+      213: 5308814629356134156
+    second: CH_B_SittingIdle.13
+  - first:
+      213: -8209022587837529061
+    second: CH_B_SittingIdle.14
+  - first:
+      213: 5292764386288284183
+    second: CH_B_SittingIdle.15
+  - first:
+      213: -7847114252662354774
+    second: CH_B_SittingIdle.16
+  - first:
+      213: -5534739888124254655
+    second: CH_B_SittingIdle.17
+  - first:
+      213: -8747737947940437334
+    second: CH_B_SittingIdle.18
+  - first:
+      213: 1676117003235783996
+    second: CH_B_SittingIdle.19
+  - first:
+      213: 8613772399165358742
+    second: CH_B_SittingIdle.20
+  - first:
+      213: 4263035975806006747
+    second: CH_B_SittingIdle.21
+  - first:
+      213: 261848001355961541
+    second: CH_B_SittingIdle.22
+  - first:
+      213: 8750085202828332886
+    second: CH_B_SittingIdle.23
+  - first:
+      213: -6479849260931663162
+    second: CH_B_SittingIdle.24
+  - first:
+      213: -8736814877125234433
+    second: CH_B_SittingIdle.25
+  - first:
+      213: 7379886583136583076
+    second: CH_B_SittingIdle.26
+  - first:
+      213: -4185993034387798688
+    second: CH_B_SittingIdle.27
+  - first:
+      213: -2393628401060668141
+    second: CH_B_SittingIdle.28
+  - first:
+      213: 8760449884015788326
+    second: CH_B_SittingIdle.29
+  - first:
+      213: 8806352555496531613
+    second: CH_B_SittingIdle.30
+  - first:
+      213: -3106732387524728597
+    second: CH_B_SittingIdle.31
+  - first:
+      213: -5619511285557477860
+    second: CH_B_SittingIdle.32
+  - first:
+      213: -2065516064108748111
+    second: CH_B_SittingIdle.33
+  - first:
+      213: -4269421429372927113
+    second: CH_B_SittingIdle.34
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CH_B_SittingIdle.00
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 2264
+        width: 474
+        height: 458
+      alignment: 9
+      pivot: {x: 0.43670887, y: 0.01746725}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -3859431110172061369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_B_SittingIdle.01
+      rect:
+        serializedVersion: 2
+        x: 2882
+        y: 2263
+        width: 483
+        height: 459
+      alignment: 9
+      pivot: {x: 0.4389234, y: 0.015250545}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 4849359767832769894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_B_SittingIdle.02
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 3185
+        width: 477
+        height: 454
+      alignment: 9
+      pivot: {x: 0.45073375, y: 0.004405286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 1895419255740666821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_B_SittingIdle.03
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3643
+        width: 477
+        height: 452
+      alignment: 9
+      pivot: {x: 0.43815514, y: 0.0044247787}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 6566027853940183709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_B_SittingIdle.04
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2725
+        width: 476
+        height: 456
+      alignment: 9
+      pivot: {x: 0.43907562, y: 0.013157895}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 6975496263067266850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_B_SittingIdle.05
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2265
+        width: 479
+        height: 457
+      alignment: 9
+      pivot: {x: 0.43841335, y: 0.010940919}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -3740958473021443444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_B_SittingIdle.06
+      rect:
+        serializedVersion: 2
+        x: 3356
+        y: 2724
+        width: 471
+        height: 457
+      alignment: 9
+      pivot: {x: 0.44373673, y: 0.015317286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -183647869809315523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_B_SittingIdle.07
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2264
+        width: 482
+        height: 458
+      alignment: 9
+      pivot: {x: 0.43568465, y: 0.013100437}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 5860104517817844618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_B_SittingIdle.08
+      rect:
+        serializedVersion: 2
+        x: 1907
+        y: 3185
+        width: 475
+        height: 454
+      alignment: 9
+      pivot: {x: 0.43789473, y: 0.004405286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -137710679309721549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_B_SittingIdle.09
+      rect:
+        serializedVersion: 2
+        x: 2865
+        y: 3642
+        width: 479
+        height: 453
+      alignment: 9
+      pivot: {x: 0.44050103, y: 0.0066225166}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -1380211810177022327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_B_SittingIdle.10
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 1801
+        width: 477
+        height: 460
+      alignment: 9
+      pivot: {x: 0.44025156, y: 0.017391304}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -1578287982039628871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_B_SittingIdle.11
+      rect:
+        serializedVersion: 2
+        x: 2879
+        y: 2724
+        width: 475
+        height: 457
+      alignment: 9
+      pivot: {x: 0.44210526, y: 0.010940919}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 4784609104465515690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_B_SittingIdle.12
+      rect:
+        serializedVersion: 2
+        x: 3367
+        y: 2263
+        width: 478
+        height: 459
+      alignment: 9
+      pivot: {x: 0.43933055, y: 0.015250545}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 8134811561084710038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_B_SittingIdle.13
+      rect:
+        serializedVersion: 2
+        x: 2404
+        y: 2264
+        width: 476
+        height: 458
+      alignment: 9
+      pivot: {x: 0.44117647, y: 0.013100437}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 5308814629356134156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_B_SittingIdle.14
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3185
+        width: 473
+        height: 454
+      alignment: 9
+      pivot: {x: 0.44397464, y: 0.004405286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -8209022587837529061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_B_SittingIdle.15
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 3643
+        width: 473
+        height: 452
+      alignment: 9
+      pivot: {x: 0.44397464, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 5292764386288284183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_B_SittingIdle.16
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 2265
+        width: 482
+        height: 457
+      alignment: 9
+      pivot: {x: 0.43360996, y: 0.010940919}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -7847114252662354774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_B_SittingIdle.17
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 2725
+        width: 483
+        height: 456
+      alignment: 9
+      pivot: {x: 0.43271223, y: 0.00877193}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -5534739888124254655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_B_SittingIdle.18
+      rect:
+        serializedVersion: 2
+        x: 3348
+        y: 3183
+        width: 489
+        height: 456
+      alignment: 9
+      pivot: {x: 0.43762782, y: 0.00877193}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -8747737947940437334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_B_SittingIdle.19
+      rect:
+        serializedVersion: 2
+        x: 2384
+        y: 3184
+        width: 483
+        height: 455
+      alignment: 9
+      pivot: {x: 0.44720498, y: 0.010989011}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 1676117003235783996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_B_SittingIdle.20
+      rect:
+        serializedVersion: 2
+        x: 2391
+        y: 3642
+        width: 472
+        height: 453
+      alignment: 9
+      pivot: {x: 0.43644068, y: 0.0022075055}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 8613772399165358742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_B_SittingIdle.21
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 3643
+        width: 478
+        height: 452
+      alignment: 9
+      pivot: {x: 0.43723848, y: 0.0044247787}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 4263035975806006747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_B_SittingIdle.22
+      rect:
+        serializedVersion: 2
+        x: 2869
+        y: 3184
+        width: 477
+        height: 455
+      alignment: 9
+      pivot: {x: 0.44025156, y: 0.0065934067}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 261848001355961541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_B_SittingIdle.23
+      rect:
+        serializedVersion: 2
+        x: 3346
+        y: 3641
+        width: 479
+        height: 454
+      alignment: 9
+      pivot: {x: 0.45302713, y: 0.008810572}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 8750085202828332886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_B_SittingIdle.24
+      rect:
+        serializedVersion: 2
+        x: 1922
+        y: 2724
+        width: 471
+        height: 457
+      alignment: 9
+      pivot: {x: 0.44373673, y: 0.015317286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -6479849260931663162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_B_SittingIdle.25
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 2725
+        width: 479
+        height: 456
+      alignment: 9
+      pivot: {x: 0.4321503, y: 0.00877193}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -8736814877125234433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_B_SittingIdle.26
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 3185
+        width: 475
+        height: 454
+      alignment: 9
+      pivot: {x: 0.43789473, y: 0.004405286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 7379886583136583076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_B_SittingIdle.27
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 3643
+        width: 479
+        height: 452
+      alignment: 9
+      pivot: {x: 0.44050103, y: 0.0044247787}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -4185993034387798688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_B_SittingIdle.28
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1801
+        width: 477
+        height: 460
+      alignment: 9
+      pivot: {x: 0.44025156, y: 0.017391304}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -2393628401060668141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_B_SittingIdle.29
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 2724
+        width: 475
+        height: 457
+      alignment: 9
+      pivot: {x: 0.44210526, y: 0.010940919}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 8760449884015788326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_B_SittingIdle.30
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1802
+        width: 478
+        height: 459
+      alignment: 9
+      pivot: {x: 0.43933055, y: 0.015250545}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 8806352555496531613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_B_SittingIdle.31
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 2264
+        width: 476
+        height: 458
+      alignment: 9
+      pivot: {x: 0.44117647, y: 0.013100437}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -3106732387524728597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_B_SittingIdle.32
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 3185
+        width: 473
+        height: 454
+      alignment: 9
+      pivot: {x: 0.44397464, y: 0.004405286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -5619511285557477860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_B_SittingIdle.33
+      rect:
+        serializedVersion: 2
+        x: 1916
+        y: 3643
+        width: 473
+        height: 452
+      alignment: 9
+      pivot: {x: 0.44397464, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -2065516064108748111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CH_B_SittingIdle.34
+      rect:
+        serializedVersion: 2
+        x: 2395
+        y: 2724
+        width: 482
+        height: 457
+      alignment: 9
+      pivot: {x: 0.43360996, y: 0.010940919}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -4269421429372927113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,1243 @@
+fileFormatVersion: 2
+guid: 2f96c66f98e08410faf1879cd026f152
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7275281648898631241
+    second: Ch_A_SitTalk-Ch_A_SitTalk.14
+  - first:
+      213: 7656590799752351225
+    second: Ch_A_SitTalk-Ch_A_SitTalk.15
+  - first:
+      213: -8378229807377313924
+    second: Ch_A_SitTalk-Ch_A_SitTalk.16
+  - first:
+      213: 2361209724147244289
+    second: Ch_A_SitTalk-Ch_A_SitTalk.17
+  - first:
+      213: -6962761331049137444
+    second: Ch_A_SitTalk-Ch_A_SitTalk.18
+  - first:
+      213: -3580363313548124081
+    second: Ch_A_SitTalk-Ch_A_SitTalk.19
+  - first:
+      213: 932551004221918414
+    second: Ch_A_SitTalk-Ch_A_SitTalk.20
+  - first:
+      213: 5888335224691857181
+    second: Ch_A_SitTalk-Ch_A_SitTalk.21
+  - first:
+      213: 6873911718012243632
+    second: Ch_A_SitTalk-Ch_A_SitTalk.22
+  - first:
+      213: 6874230667286709670
+    second: Ch_A_SitTalk-Ch_A_SitTalk.23
+  - first:
+      213: 1131887678877631405
+    second: Ch_B_SitTalk-Ch_B_SitTalk.28
+  - first:
+      213: 5302259133271842998
+    second: Ch_B_SitTalk-Ch_B_SitTalk.29
+  - first:
+      213: -5221281583223325761
+    second: Ch_B_SitTalk-Ch_B_SitTalk.30
+  - first:
+      213: -8002672125323567083
+    second: Ch_B_SitTalk-Ch_B_SitTalk.31
+  - first:
+      213: -8278834101530054148
+    second: Ch_B_SitTalk-Ch_B_SitTalk.32
+  - first:
+      213: 8835626202464448511
+    second: Ch_B_SitTalk-Ch_B_SitTalk.33
+  - first:
+      213: -5864386624108119601
+    second: Ch_B_SitTalk-Ch_B_SitTalk.34
+  - first:
+      213: -694399430378825725
+    second: Ch_B_SitTalk-Ch_B_SitTalk.35
+  - first:
+      213: -3898799298488946640
+    second: Ch_B_SitTalk-Ch_B_SitTalk.36
+  - first:
+      213: -6713774750769909845
+    second: Ch_B_SitTalk-Ch_B_SitTalk.37
+  - first:
+      213: 2233693804391854786
+    second: Ch_B_SitTalk-Ch_B_SitTalk.38
+  - first:
+      213: 4803913538983590502
+    second: Ch_B_SitTalk-Ch_B_SitTalk.39
+  - first:
+      213: 1662518935922370400
+    second: Ch_B_SitTalk-Ch_B_SitTalk.40
+  - first:
+      213: 6758182373818777484
+    second: Ch_B_SitTalk-Ch_B_SitTalk.41
+  - first:
+      213: -2200012866826607312
+    second: Ch_B_SitTalk-Ch_B_SitTalk.42
+  - first:
+      213: -4889973120029108712
+    second: Ch_B_SitTalk-Ch_B_SitTalk.43
+  - first:
+      213: 2585032458008125470
+    second: Ch_C_SitTalk-Ch_C_SitTalk.11
+  - first:
+      213: -4154700830926444196
+    second: Ch_C_SitTalk-Ch_C_SitTalk.12
+  - first:
+      213: -5219731939318249594
+    second: Ch_C_SitTalk-Ch_C_SitTalk.13
+  - first:
+      213: -1427632035530217922
+    second: Ch_C_SitTalk-Ch_C_SitTalk.14
+  - first:
+      213: -7364910920224449443
+    second: Ch_C_SitTalk-Ch_C_SitTalk.15
+  - first:
+      213: 5011911040634543563
+    second: Ch_C_SitTalk-Ch_C_SitTalk.16
+  - first:
+      213: -4966399693230221105
+    second: Ch_C_SitTalk-Ch_C_SitTalk.17
+  - first:
+      213: -2829926133203239489
+    second: Ch_C_SitTalk-Ch_C_SitTalk.18
+  - first:
+      213: 6657332843712346282
+    second: Ch_C_SitTalk-Ch_C_SitTalk.19
+  - first:
+      213: -6087577666591351453
+    second: Ch_C_SitTalk-Ch_C_SitTalk.20
+  - first:
+      213: 947945854996305893
+    second: Ch_C_SitTalk-Ch_C_SitTalk.21
+  - first:
+      213: 1138183059498828011
+    second: Ch_D_SitTalk-Ch_D_SitTalk.28
+  - first:
+      213: 1334340892683902257
+    second: Ch_D_SitTalk-Ch_D_SitTalk.29
+  - first:
+      213: -5829032396538295100
+    second: Ch_D_SitTalk-Ch_D_SitTalk.30
+  - first:
+      213: 164495369428317925
+    second: Ch_D_SitTalk-Ch_D_SitTalk.31
+  - first:
+      213: -6991922054303733962
+    second: Ch_D_SitTalk-Ch_D_SitTalk.32
+  - first:
+      213: -2100086302806690352
+    second: Ch_D_SitTalk-Ch_D_SitTalk.33
+  - first:
+      213: -6480568320443129077
+    second: Ch_D_SitTalk-Ch_D_SitTalk.34
+  - first:
+      213: 8233993615610099948
+    second: Ch_D_SitTalk-Ch_D_SitTalk.35
+  - first:
+      213: -7689060667801490710
+    second: Ch_D_SitTalk-Ch_D_SitTalk.36
+  - first:
+      213: -2932253695298861797
+    second: Ch_D_SitTalk-Ch_D_SitTalk.37
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ch_A_SitTalk-Ch_A_SitTalk.14
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 1013
+        width: 589
+        height: 597
+      alignment: 9
+      pivot: {x: 0.43803057, y: 0.00837521}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 7275281648898631241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_A_SitTalk-Ch_A_SitTalk.15
+      rect:
+        serializedVersion: 2
+        x: 1733
+        y: 1612
+        width: 594
+        height: 597
+      alignment: 9
+      pivot: {x: 0.44276094, y: 0.00837521}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 7656590799752351225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_A_SitTalk-Ch_A_SitTalk.16
+      rect:
+        serializedVersion: 2
+        x: 2925
+        y: 1612
+        width: 592
+        height: 597
+      alignment: 9
+      pivot: {x: 0.4408784, y: 0.00837521}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -8378229807377313924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_A_SitTalk-Ch_A_SitTalk.17
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 1612
+        width: 591
+        height: 597
+      alignment: 9
+      pivot: {x: 0.43993232, y: 0.00837521}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 2361209724147244289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_A_SitTalk-Ch_A_SitTalk.18
+      rect:
+        serializedVersion: 2
+        x: 2329
+        y: 1612
+        width: 594
+        height: 597
+      alignment: 9
+      pivot: {x: 0.44276094, y: 0.00837521}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -6962761331049137444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_A_SitTalk-Ch_A_SitTalk.19
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 1013
+        width: 588
+        height: 597
+      alignment: 9
+      pivot: {x: 0.43707484, y: 0.00837521}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -3580363313548124081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_A_SitTalk-Ch_A_SitTalk.20
+      rect:
+        serializedVersion: 2
+        x: 2366
+        y: 1013
+        width: 585
+        height: 597
+      alignment: 9
+      pivot: {x: 0.43418804, y: 0.00837521}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 932551004221918414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_A_SitTalk-Ch_A_SitTalk.21
+      rect:
+        serializedVersion: 2
+        x: 2953
+        y: 1013
+        width: 592
+        height: 597
+      alignment: 9
+      pivot: {x: 0.4408784, y: 0.00837521}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 5888335224691857181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_A_SitTalk-Ch_A_SitTalk.22
+      rect:
+        serializedVersion: 2
+        x: 1772
+        y: 1013
+        width: 592
+        height: 597
+      alignment: 9
+      pivot: {x: 0.4408784, y: 0.00837521}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 6873911718012243632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_A_SitTalk-Ch_A_SitTalk.23
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1013
+        width: 588
+        height: 597
+      alignment: 9
+      pivot: {x: 0.43707484, y: 0.00837521}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 6874230667286709670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_B_SitTalk-Ch_B_SitTalk.28
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 2264
+        width: 477
+        height: 460
+      alignment: 9
+      pivot: {x: 0.44025156, y: 0.017391304}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 1131887678877631405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_B_SitTalk-Ch_B_SitTalk.29
+      rect:
+        serializedVersion: 2
+        x: 2905
+        y: 2726
+        width: 475
+        height: 457
+      alignment: 9
+      pivot: {x: 0.44210526, y: 0.010940919}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 5302259133271842998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_B_SitTalk-Ch_B_SitTalk.30
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2266
+        width: 478
+        height: 458
+      alignment: 9
+      pivot: {x: 0.43933055, y: 0.015283843}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -5221281583223325761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_B_SitTalk-Ch_B_SitTalk.31
+      rect:
+        serializedVersion: 2
+        x: 1943
+        y: 2726
+        width: 476
+        height: 457
+      alignment: 9
+      pivot: {x: 0.44117647, y: 0.013129103}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -8002672125323567083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_B_SitTalk-Ch_B_SitTalk.32
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 3187
+        width: 473
+        height: 453
+      alignment: 9
+      pivot: {x: 0.44397464, y: 0.004415011}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -8278834101530054148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_B_SitTalk-Ch_B_SitTalk.33
+      rect:
+        serializedVersion: 2
+        x: 2603
+        y: 3643
+        width: 473
+        height: 452
+      alignment: 9
+      pivot: {x: 0.44397464, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 8835626202464448511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_B_SitTalk-Ch_B_SitTalk.34
+      rect:
+        serializedVersion: 2
+        x: 2421
+        y: 2726
+        width: 482
+        height: 457
+      alignment: 9
+      pivot: {x: 0.43360996, y: 0.010940919}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -5864386624108119601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_B_SitTalk-Ch_B_SitTalk.35
+      rect:
+        serializedVersion: 2
+        x: 1458
+        y: 2727
+        width: 483
+        height: 456
+      alignment: 9
+      pivot: {x: 0.43271223, y: 0.00877193}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -694399430378825725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_B_SitTalk-Ch_B_SitTalk.36
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 2727
+        width: 489
+        height: 456
+      alignment: 9
+      pivot: {x: 0.43762782, y: 0.00877193}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -3898799298488946640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_B_SitTalk-Ch_B_SitTalk.37
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2728
+        width: 483
+        height: 455
+      alignment: 9
+      pivot: {x: 0.44720498, y: 0.010989011}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -6713774750769909845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_B_SitTalk-Ch_B_SitTalk.38
+      rect:
+        serializedVersion: 2
+        x: 3558
+        y: 3642
+        width: 472
+        height: 453
+      alignment: 9
+      pivot: {x: 0.43644068, y: 0.0022075055}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 2233693804391854786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_B_SitTalk-Ch_B_SitTalk.39
+      rect:
+        serializedVersion: 2
+        x: 3078
+        y: 3643
+        width: 478
+        height: 452
+      alignment: 9
+      pivot: {x: 0.43723848, y: 0.0044247787}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 4803913538983590502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_B_SitTalk-Ch_B_SitTalk.40
+      rect:
+        serializedVersion: 2
+        x: 3055
+        y: 3185
+        width: 477
+        height: 455
+      alignment: 9
+      pivot: {x: 0.44025156, y: 0.0065934067}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 1662518935922370400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_B_SitTalk-Ch_B_SitTalk.41
+      rect:
+        serializedVersion: 2
+        x: 2574
+        y: 3186
+        width: 479
+        height: 454
+      alignment: 9
+      pivot: {x: 0.45302713, y: 0.008810572}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 6758182373818777484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_B_SitTalk-Ch_B_SitTalk.42
+      rect:
+        serializedVersion: 2
+        x: 3382
+        y: 2726
+        width: 471
+        height: 457
+      alignment: 9
+      pivot: {x: 0.44373673, y: 0.015317286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -2200012866826607312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_B_SitTalk-Ch_B_SitTalk.43
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 2727
+        width: 479
+        height: 456
+      alignment: 9
+      pivot: {x: 0.4321503, y: 0.00877193}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -4889973120029108712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_SitTalk-Ch_C_SitTalk.11
+      rect:
+        serializedVersion: 2
+        x: 1718
+        y: 2212
+        width: 380
+        height: 512
+      alignment: 9
+      pivot: {x: 0.43421054, y: 0.00390625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 2585032458008125470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_SitTalk-Ch_C_SitTalk.12
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 2214
+        width: 387
+        height: 510
+      alignment: 9
+      pivot: {x: 0.43152454, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -4154700830926444196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_SitTalk-Ch_C_SitTalk.13
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 1695
+        width: 386
+        height: 514
+      alignment: 9
+      pivot: {x: 0.4300518, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -5219731939318249594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_SitTalk-Ch_C_SitTalk.14
+      rect:
+        serializedVersion: 2
+        x: 3582
+        y: 2211
+        width: 372
+        height: 513
+      alignment: 9
+      pivot: {x: 0.44354838, y: 0.0058479533}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -1427632035530217922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_SitTalk-Ch_C_SitTalk.15
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1696
+        width: 366
+        height: 513
+      alignment: 9
+      pivot: {x: 0.45081967, y: 0.0058479533}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -7364910920224449443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_SitTalk-Ch_C_SitTalk.16
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 1695
+        width: 381
+        height: 514
+      alignment: 9
+      pivot: {x: 0.43832022, y: 0.0019455253}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 5011911040634543563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_SitTalk-Ch_C_SitTalk.17
+      rect:
+        serializedVersion: 2
+        x: 1349
+        y: 2213
+        width: 367
+        height: 511
+      alignment: 9
+      pivot: {x: 0.44959128, y: 0.0039138943}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -4966399693230221105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_SitTalk-Ch_C_SitTalk.18
+      rect:
+        serializedVersion: 2
+        x: 2477
+        y: 2212
+        width: 370
+        height: 512
+      alignment: 9
+      pivot: {x: 0.44054055, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -2829926133203239489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_SitTalk-Ch_C_SitTalk.19
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 2212
+        width: 375
+        height: 512
+      alignment: 9
+      pivot: {x: 0.432, y: 0.001953125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 6657332843712346282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_SitTalk-Ch_C_SitTalk.20
+      rect:
+        serializedVersion: 2
+        x: 2849
+        y: 2212
+        width: 365
+        height: 512
+      alignment: 9
+      pivot: {x: 0.44383562, y: 0.001953125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -6087577666591351453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_SitTalk-Ch_C_SitTalk.21
+      rect:
+        serializedVersion: 2
+        x: 3216
+        y: 2211
+        width: 364
+        height: 513
+      alignment: 9
+      pivot: {x: 0.43956044, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 947945854996305893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_SitTalk-Ch_D_SitTalk.28
+      rect:
+        serializedVersion: 2
+        x: 2043
+        y: 3186
+        width: 529
+        height: 454
+      alignment: 9
+      pivot: {x: 0.51606804, y: 0.019823788}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 1138183059498828011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_SitTalk-Ch_D_SitTalk.29
+      rect:
+        serializedVersion: 2
+        x: 1523
+        y: 3187
+        width: 518
+        height: 453
+      alignment: 9
+      pivot: {x: 0.507722, y: 0.015452539}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 1334340892683902257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_SitTalk-Ch_D_SitTalk.30
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3187
+        width: 523
+        height: 453
+      alignment: 9
+      pivot: {x: 0.5105162, y: 0.017660044}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -5829032396538295100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_SitTalk-Ch_D_SitTalk.31
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 3645
+        width: 521
+        height: 450
+      alignment: 9
+      pivot: {x: 0.51055664, y: 0.011111111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 164495369428317925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_SitTalk-Ch_D_SitTalk.32
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 3645
+        width: 520
+        height: 450
+      alignment: 9
+      pivot: {x: 0.50576925, y: 0.011111111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -6991922054303733962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_SitTalk-Ch_D_SitTalk.33
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3646
+        width: 518
+        height: 449
+      alignment: 9
+      pivot: {x: 0.503861, y: 0.008908686}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -2100086302806690352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_SitTalk-Ch_D_SitTalk.34
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 3645
+        width: 514
+        height: 450
+      alignment: 9
+      pivot: {x: 0.50389105, y: 0.011111111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -6480568320443129077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_SitTalk-Ch_D_SitTalk.35
+      rect:
+        serializedVersion: 2
+        x: 2082
+        y: 3645
+        width: 519
+        height: 450
+      alignment: 9
+      pivot: {x: 0.50289017, y: 0.011111111}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 8233993615610099948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_SitTalk-Ch_D_SitTalk.36
+      rect:
+        serializedVersion: 2
+        x: 3534
+        y: 3185
+        width: 517
+        height: 455
+      alignment: 9
+      pivot: {x: 0.50870407, y: 0.01978022}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -7689060667801490710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_SitTalk-Ch_D_SitTalk.37
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 3187
+        width: 520
+        height: 453
+      alignment: 9
+      pivot: {x: 0.50576925, y: 0.017660044}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -2932253695298861797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
