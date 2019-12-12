@@ -1,12 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using MyTools.MyExtensions; 
+using MyTools.MyExtensions;
+using DG.Tweening;
+
+public class ExplodablePart
+{
+    public Explodable explodablePart;
+}
+
+
 public class FenceParent : MonoBehaviour
 {
     private static FenceParent _instance;
     public static FenceParent Instance { get { return _instance; } }
+    public GameObject debris;
     public List<SpriteRenderer> fenceParts;
+    public List<ExplodablePart> fenceExplodables;
+    public GameObject fenceCrusher;
+    //public List<Explodable> fenceExplodables;
     public Sprite brokenFenceSprite;
     private int previousFencePower;
 
@@ -29,7 +41,16 @@ public class FenceParent : MonoBehaviour
         foreach (SpriteRenderer spR in spriteRenderers)
         {
             fenceParts.Add(spR);
+            //ExplodablePart eP; 
+            //eP.explodablePart = spR.GetComponent<Explodable>();
+            //if (eP.explodablePart != null)
+            //{
+            //    fenceExplodables.Add(eP);
+            //}
         }
+
+       // Debug.Log("How many fence Parts" + fenceParts.Count);
+        //Debug.Log("How many fence Explodables" + fenceExplodables.Count);
     }
 
     public void ApplyDamage(bool fullDamage)
@@ -59,9 +80,52 @@ public class FenceParent : MonoBehaviour
         }        
     }
 
+    private bool deleteSomeFenceParts = false; 
     public void DestroyFence()
     {
-        Destroy(gameObject);
+        List<SpriteRenderer> partsForDeletion = new List<SpriteRenderer>(); 
+        for (int i = 0; i < fenceParts.Count; i++)
+        {
+            fenceParts[i].GetComponent<PolygonCollider2D>().enabled = true; 
+           if (i % 2 == 0)
+           {
+                Explodable eP = fenceParts[i].GetComponent<Explodable>();
+                if (eP != null)
+                {
+                    eP.explode();
+                }
+           }
+           else
+           {
+              partsForDeletion.Add(fenceParts[i]);
+           }
+            //fenceExplodables[i].explodablePart.explode();
+        }
+
+        Tween fenceCrushTween = fenceCrusher.transform.DOLocalMoveY(-55f, 10f).SetSpeedBased().SetEase(Ease.InExpo);
+
+        fenceCrushTween.OnUpdate(() =>
+        {
+
+
+            
+            if (fenceCrushTween.ElapsedPercentage() > 0.74f)
+            {
+                if(deleteSomeFenceParts == false)
+                {
+                    deleteSomeFenceParts = true;
+                    for (int j = 0; j < partsForDeletion.Count; j++)
+                    {
+                        Destroy(partsForDeletion[j].gameObject);
+                    }
+                    debris.SetActive(true);
+                }
+                
+
+            }
+            
+        });
+        //Destroy(gameObject);
     }
 
     // Update is called once per frame

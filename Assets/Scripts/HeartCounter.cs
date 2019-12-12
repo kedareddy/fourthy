@@ -61,7 +61,7 @@ public class HeartCounter : MonoBehaviour
     {
         SoundManager.instance.PlaySingle(SoundManager.instance.taken);
         HeartsNumber = HeartsNumber + 1;
-        transform.DOJump(transform.position, 15f, 1, 0.25f).OnComplete(() => {
+        transform.DOJump(transform.position, 2.5f, 1, 0.25f).OnComplete(() => {
             myText.text = HeartsNumber.ToString();
             if (HeartsNumber == 3)
             {
@@ -69,6 +69,8 @@ public class HeartCounter : MonoBehaviour
             }
         });
     }
+
+
 
     public void DecrementBoxHearts()
     {

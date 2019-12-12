@@ -93,7 +93,7 @@ public class Box : MonoBehaviour
         if (fallDownTween == null)
         {
             //remove from grid
-            //Debug.Log("remove from: " + transform.position);
+            Debug.Log("remove from: " + transform.position);
             //Debug.DrawLine(transform.position, new Vector3(0f, 5f, 0f), Color.white, 2.5f);
             GridWorld.RegisterObstacle(transform, true);
             fallDownTween = transform.DOLocalMoveY(BOX_Y, FALL_SPEED).SetSpeedBased().SetEase(Ease.InExpo).SetDelay(.2f);

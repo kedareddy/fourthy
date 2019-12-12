@@ -101,6 +101,7 @@ MonoBehaviour:
   boxOccupiedState: 0
   boxOrigin: 1
   HEALTH: 50
+  BOX_Y: -11.4369
 --- !u!61 &-7307591102768784045
 BoxCollider2D:
   m_ObjectHideFlags: 0

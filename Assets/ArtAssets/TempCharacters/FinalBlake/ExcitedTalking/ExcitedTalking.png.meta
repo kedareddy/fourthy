@@ -1,0 +1,1219 @@
+fileFormatVersion: 2
+guid: 6aca7194899a74eb1bc616165ec1d8a7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4058198248861404788
+    second: Excited - Character_A-Excited - Character_A.00
+  - first:
+      213: -5067654202848908720
+    second: Excited - Character_A-Excited - Character_A.01
+  - first:
+      213: 910251432493391284
+    second: Excited - Character_A-Excited - Character_A.02
+  - first:
+      213: 6445342637100405649
+    second: Excited - Character_A-Excited - Character_A.03
+  - first:
+      213: -9037284592417093235
+    second: Excited - Character_A-Excited - Character_A.04
+  - first:
+      213: -2433610765732159201
+    second: Excited - Character_A-Excited - Character_A.05
+  - first:
+      213: 7073455460509247297
+    second: Excited - Character_A-Excited - Character_A.06
+  - first:
+      213: 3907380303848932316
+    second: Excited - Character_A-Excited - Character_A.07
+  - first:
+      213: -4164093027688710816
+    second: Excited - Character_A-Excited - Character_A.08
+  - first:
+      213: -7262855307298798878
+    second: Excited - Character_A-Excited - Character_A.09
+  - first:
+      213: 3238957488534000010
+    second: Excited - Character_A-Excited - Character_A.10
+  - first:
+      213: -3961006006540055573
+    second: Excited - Character_A-Excited - Character_A.11
+  - first:
+      213: 5309782522030615520
+    second: Excited - Character_A-Excited - Character_A.12
+  - first:
+      213: -955406206700481016
+    second: Excited - Character_A-Excited - Character_A.13
+  - first:
+      213: 4219677101482690103
+    second: Excited - Character_A-Excited - Character_A.14
+  - first:
+      213: -7010651183031626709
+    second: Excited - Character_A-Excited - Character_A.15
+  - first:
+      213: -4151150182353230892
+    second: Excited - Character_A-Excited - Character_A.16
+  - first:
+      213: 2040556382719375373
+    second: Excited - Character_A-Excited - Character_A.17
+  - first:
+      213: 8057187427494715442
+    second: Excited - Character_A-Excited - Character_A.18
+  - first:
+      213: -5859588757034521177
+    second: Excited - Character_A-Excited - Character_A.19
+  - first:
+      213: 317943467469716846
+    second: Excited - Character_A-Excited - Character_A.20
+  - first:
+      213: -5264003692366376187
+    second: Excited - Character_A-Excited - Character_A.21
+  - first:
+      213: -256471043575184444
+    second: Excited - Character_B-Excited - Character_B.00
+  - first:
+      213: -7487675016725929021
+    second: Excited - Character_B-Excited - Character_B.01
+  - first:
+      213: 6451844990409655178
+    second: Excited - Character_B-Excited - Character_B.02
+  - first:
+      213: 9017748519574275378
+    second: Excited - Character_B-Excited - Character_B.03
+  - first:
+      213: 6655177061085626819
+    second: Excited - Character_B-Excited - Character_B.04
+  - first:
+      213: -6407075616702136693
+    second: Excited - Character_B-Excited - Character_B.05
+  - first:
+      213: 1714456012890459260
+    second: Excited - Character_B-Excited - Character_B.06
+  - first:
+      213: -6208963884261685509
+    second: Excited - Character_B-Excited - Character_B.07
+  - first:
+      213: 1913956415977718017
+    second: Excited - Character_B-Excited - Character_B.08
+  - first:
+      213: 3827480932320544988
+    second: Excited - Character_C-Excited - Character_C.00
+  - first:
+      213: 8244152294561589990
+    second: Excited - Character_C-Excited - Character_C.01
+  - first:
+      213: 7147416504374683831
+    second: Excited - Character_C-Excited - Character_C.02
+  - first:
+      213: 7478367244757082047
+    second: Excited - Character_C-Excited - Character_C.03
+  - first:
+      213: 6855363720711726711
+    second: Excited - Character_C-Excited - Character_C.04
+  - first:
+      213: -8439013848255367768
+    second: Excited - Character_C-Excited - Character_C.05
+  - first:
+      213: 5494242257449641024
+    second: Excited - Character_C-Excited - Character_C.06
+  - first:
+      213: 6151454571007413469
+    second: Excited - Character_D-Excited - Character_D.00
+  - first:
+      213: -6436202957042410987
+    second: Excited - Character_D-Excited - Character_D.01
+  - first:
+      213: 7491601202882441002
+    second: Excited - Character_D-Excited - Character_D.02
+  - first:
+      213: -2379107385528450927
+    second: Excited - Character_D-Excited - Character_D.03
+  - first:
+      213: 6230324329743392386
+    second: Excited - Character_D-Excited - Character_D.04
+  - first:
+      213: -5761686174805073395
+    second: Excited - Character_D-Excited - Character_D.05
+  - first:
+      213: 2462795653895461387
+    second: Excited - Character_D-Excited - Character_D.06
+  - first:
+      213: 8349066989772125480
+    second: Excited - Character_D-Excited - Character_D.07
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Excited - Character_A-Excited - Character_A.00
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 106
+        width: 903
+        height: 916
+      alignment: 9
+      pivot: {x: 0.3986711, y: 0.0021834061}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 4058198248861404788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Excited - Character_A-Excited - Character_A.01
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 106
+        width: 903
+        height: 916
+      alignment: 9
+      pivot: {x: 0.3986711, y: 0.0021834061}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -5067654202848908720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Excited - Character_A-Excited - Character_A.02
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 106
+        width: 903
+        height: 916
+      alignment: 9
+      pivot: {x: 0.3986711, y: 0.0021834061}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 910251432493391284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Excited - Character_A-Excited - Character_A.03
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 106
+        width: 903
+        height: 916
+      alignment: 9
+      pivot: {x: 0.3986711, y: 0.0021834061}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 6445342637100405649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Excited - Character_A-Excited - Character_A.04
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 106
+        width: 903
+        height: 916
+      alignment: 9
+      pivot: {x: 0.3986711, y: 0.0021834061}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -9037284592417093235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Excited - Character_A-Excited - Character_A.05
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1024
+        width: 903
+        height: 916
+      alignment: 9
+      pivot: {x: 0.3986711, y: 0.0021834061}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -2433610765732159201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Excited - Character_A-Excited - Character_A.06
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 106
+        width: 903
+        height: 916
+      alignment: 9
+      pivot: {x: 0.3986711, y: 0.0021834061}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 7073455460509247297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Excited - Character_A-Excited - Character_A.07
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 1024
+        width: 903
+        height: 916
+      alignment: 9
+      pivot: {x: 0.3986711, y: 0.0021834061}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 3907380303848932316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Excited - Character_A-Excited - Character_A.08
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 1024
+        width: 903
+        height: 916
+      alignment: 9
+      pivot: {x: 0.3986711, y: 0.0021834061}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -4164093027688710816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Excited - Character_A-Excited - Character_A.09
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 1024
+        width: 903
+        height: 916
+      alignment: 9
+      pivot: {x: 0.3986711, y: 0.0021834061}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -7262855307298798878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Excited - Character_A-Excited - Character_A.10
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 1024
+        width: 903
+        height: 916
+      alignment: 9
+      pivot: {x: 0.3986711, y: 0.0021834061}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 3238957488534000010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Excited - Character_A-Excited - Character_A.11
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 1024
+        width: 903
+        height: 916
+      alignment: 9
+      pivot: {x: 0.3986711, y: 0.0021834061}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -3961006006540055573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Excited - Character_A-Excited - Character_A.12
+      rect:
+        serializedVersion: 2
+        x: 2716
+        y: 1024
+        width: 903
+        height: 916
+      alignment: 9
+      pivot: {x: 0.3986711, y: 0.0021834061}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 5309782522030615520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Excited - Character_A-Excited - Character_A.13
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 106
+        width: 903
+        height: 916
+      alignment: 9
+      pivot: {x: 0.3986711, y: 0.0021834061}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -955406206700481016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Excited - Character_A-Excited - Character_A.14
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 1024
+        width: 903
+        height: 916
+      alignment: 9
+      pivot: {x: 0.3986711, y: 0.0021834061}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 4219677101482690103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Excited - Character_A-Excited - Character_A.15
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 1024
+        width: 903
+        height: 916
+      alignment: 9
+      pivot: {x: 0.3986711, y: 0.0021834061}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -7010651183031626709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Excited - Character_A-Excited - Character_A.16
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 1024
+        width: 903
+        height: 916
+      alignment: 9
+      pivot: {x: 0.3986711, y: 0.0021834061}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -4151150182353230892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Excited - Character_A-Excited - Character_A.17
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 1024
+        width: 903
+        height: 916
+      alignment: 9
+      pivot: {x: 0.3986711, y: 0.0021834061}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 2040556382719375373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Excited - Character_A-Excited - Character_A.18
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 1024
+        width: 903
+        height: 916
+      alignment: 9
+      pivot: {x: 0.3986711, y: 0.0021834061}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 8057187427494715442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Excited - Character_A-Excited - Character_A.19
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 1024
+        width: 903
+        height: 916
+      alignment: 9
+      pivot: {x: 0.3986711, y: 0.0021834061}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -5859588757034521177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Excited - Character_A-Excited - Character_A.20
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 1024
+        width: 903
+        height: 916
+      alignment: 9
+      pivot: {x: 0.3986711, y: 0.0021834061}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 317943467469716846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Excited - Character_A-Excited - Character_A.21
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 1024
+        width: 903
+        height: 916
+      alignment: 9
+      pivot: {x: 0.3986711, y: 0.0021834061}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -5264003692366376187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Excited - Character_B-Excited - Character_B.00
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2030
+        width: 736
+        height: 688
+      alignment: 9
+      pivot: {x: 0.4048913, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -256471043575184444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Excited - Character_B-Excited - Character_B.01
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2030
+        width: 736
+        height: 688
+      alignment: 9
+      pivot: {x: 0.4048913, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -7487675016725929021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Excited - Character_B-Excited - Character_B.02
+      rect:
+        serializedVersion: 2
+        x: 2953
+        y: 2720
+        width: 736
+        height: 688
+      alignment: 9
+      pivot: {x: 0.4048913, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 6451844990409655178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Excited - Character_B-Excited - Character_B.03
+      rect:
+        serializedVersion: 2
+        x: 1477
+        y: 2720
+        width: 736
+        height: 688
+      alignment: 9
+      pivot: {x: 0.4048913, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 9017748519574275378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Excited - Character_B-Excited - Character_B.04
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 2720
+        width: 736
+        height: 688
+      alignment: 9
+      pivot: {x: 0.4048913, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 6655177061085626819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Excited - Character_B-Excited - Character_B.05
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2721
+        width: 736
+        height: 687
+      alignment: 9
+      pivot: {x: 0.4048913, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -6407075616702136693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Excited - Character_B-Excited - Character_B.06
+      rect:
+        serializedVersion: 2
+        x: 2953
+        y: 2720
+        width: 736
+        height: 688
+      alignment: 9
+      pivot: {x: 0.4048913, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 1714456012890459260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Excited - Character_B-Excited - Character_B.07
+      rect:
+        serializedVersion: 2
+        x: 2215
+        y: 2720
+        width: 736
+        height: 688
+      alignment: 9
+      pivot: {x: 0.4048913, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -6208963884261685509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Excited - Character_B-Excited - Character_B.08
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2030
+        width: 736
+        height: 688
+      alignment: 9
+      pivot: {x: 0.4048913, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 1913956415977718017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Excited - Character_C-Excited - Character_C.00
+      rect:
+        serializedVersion: 2
+        x: 3039
+        y: 1942
+        width: 573
+        height: 776
+      alignment: 9
+      pivot: {x: 0.35602096, y: 0.0077319588}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 3827480932320544988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Excited - Character_C-Excited - Character_C.01
+      rect:
+        serializedVersion: 2
+        x: 2464
+        y: 1942
+        width: 573
+        height: 776
+      alignment: 9
+      pivot: {x: 0.35602096, y: 0.0077319588}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 8244152294561589990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Excited - Character_C-Excited - Character_C.02
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 1942
+        width: 573
+        height: 776
+      alignment: 9
+      pivot: {x: 0.35602096, y: 0.0077319588}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 7147416504374683831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Excited - Character_C-Excited - Character_C.03
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 1942
+        width: 573
+        height: 776
+      alignment: 9
+      pivot: {x: 0.35602096, y: 0.0077319588}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 7478367244757082047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Excited - Character_C-Excited - Character_C.04
+      rect:
+        serializedVersion: 2
+        x: 1889
+        y: 1942
+        width: 573
+        height: 776
+      alignment: 9
+      pivot: {x: 0.35602096, y: 0.0077319588}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 6855363720711726711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Excited - Character_C-Excited - Character_C.05
+      rect:
+        serializedVersion: 2
+        x: 2464
+        y: 1942
+        width: 573
+        height: 776
+      alignment: 9
+      pivot: {x: 0.35602096, y: 0.0077319588}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -8439013848255367768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Excited - Character_C-Excited - Character_C.06
+      rect:
+        serializedVersion: 2
+        x: 3039
+        y: 1942
+        width: 573
+        height: 776
+      alignment: 9
+      pivot: {x: 0.35602096, y: 0.0077319588}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 5494242257449641024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Excited - Character_D-Excited - Character_D.00
+      rect:
+        serializedVersion: 2
+        x: 1361
+        y: 3410
+        width: 791
+        height: 685
+      alignment: 9
+      pivot: {x: 0.4450063, y: 0.016058395}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 6151454571007413469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Excited - Character_D-Excited - Character_D.01
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3410
+        width: 678
+        height: 685
+      alignment: 9
+      pivot: {x: 0.35250738, y: 0.016058395}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -6436202957042410987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Excited - Character_D-Excited - Character_D.02
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 3410
+        width: 678
+        height: 685
+      alignment: 9
+      pivot: {x: 0.35250738, y: 0.016058395}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 7491601202882441002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Excited - Character_D-Excited - Character_D.03
+      rect:
+        serializedVersion: 2
+        x: 2154
+        y: 3410
+        width: 678
+        height: 685
+      alignment: 9
+      pivot: {x: 0.35250738, y: 0.016058395}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -2379107385528450927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Excited - Character_D-Excited - Character_D.04
+      rect:
+        serializedVersion: 2
+        x: 2834
+        y: 3410
+        width: 678
+        height: 685
+      alignment: 9
+      pivot: {x: 0.35250738, y: 0.016058395}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 6230324329743392386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Excited - Character_D-Excited - Character_D.05
+      rect:
+        serializedVersion: 2
+        x: 1361
+        y: 3410
+        width: 791
+        height: 685
+      alignment: 9
+      pivot: {x: 0.4450063, y: 0.016058395}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -5761686174805073395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Excited - Character_D-Excited - Character_D.06
+      rect:
+        serializedVersion: 2
+        x: 1361
+        y: 3410
+        width: 791
+        height: 685
+      alignment: 9
+      pivot: {x: 0.4450063, y: 0.016058395}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 2462795653895461387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Excited - Character_D-Excited - Character_D.07
+      rect:
+        serializedVersion: 2
+        x: 1361
+        y: 3410
+        width: 791
+        height: 685
+      alignment: 9
+      pivot: {x: 0.4450063, y: 0.016058395}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 8349066989772125480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

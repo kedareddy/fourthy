@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using DG.Tweening;
 
 public class BoxButton : MonoBehaviour
 {
@@ -39,13 +40,23 @@ public class BoxButton : MonoBehaviour
             SoundManager.instance.PlaySingle(SoundManager.instance.take);
             //Debug.Log("it is interactive");
             //boxToggle.isOn = true;
-            if (GameManager2.instance.fsm.CurrentStateMap.state.ToString() == "Equality")
+            if (GameManager2.instance.fsm.CurrentStateMap.state.ToString() == GameManager2.States.Equality.ToString())
             {
                 if (GameManager2.instance.clickTutorialUI.activeInHierarchy)
                 {
                     GameManager2.instance.clickTutorialUI.SetActive(false);
                     StartCoroutine(GameManager2.instance.BoxPlacementTutorial());
                 }
+            }
+
+            if (GameManager2.instance.fsm.CurrentStateMap.state.ToString() == GameManager2.States.Equity.ToString() && GameManager2.instance.equity_ShortC.myBoxes.Count == 1 && HeartCounter.Instance.HeartsNumber == 3)
+            {
+                GameManager2.instance.textTutorialUI.SetActive(false);
+                Tween stackTutorialTween = GameManager2.instance.wideTutorialUI.transform.DOLocalMoveX(GameManager2.instance.wideTutorialUI.transform.localPosition.x - 100f, 0.5f).From().SetEase(Ease.OutQuad);
+                stackTutorialTween.OnPlay(() =>
+                {
+                    GameManager2.instance.wideTutorialUI.SetActive(true);
+                });
             }
         }
         else
@@ -85,7 +96,7 @@ public class BoxButton : MonoBehaviour
 
                     SoundManager.instance.PlaySingle(SoundManager.instance.drop);
                     // Debug.Log("Dropped a box");
-
+                    //trigger box stacking tutorial in Equity
 
                     GameObject instantiatedBox = Instantiate(boxPrefab, new Vector3(gridWorldPos.x, worldTopPos.y, boxPrefab.transform.position.z), boxPrefab.transform.rotation) as GameObject;
                     instantiatedBox.transform.SetParent(GameManager2.instance.GetCurrentRuntimeObjsParent());
@@ -96,6 +107,14 @@ public class BoxButton : MonoBehaviour
                         if (GameManager2.instance.clickTutorialUI.activeInHierarchy)
                         {
                             GameManager2.instance.clickTutorialUI.SetActive(false);
+                        }
+                    }
+
+                    if (GameManager2.instance.fsm.CurrentStateMap.state.ToString() == GameManager2.States.Equity.ToString() && GameManager2.instance.equity_ShortC.myBoxes.Count == 1)
+                    {
+                        if (GameManager2.instance.wideTutorialUI.activeInHierarchy)
+                        {
+                            GameManager2.instance.wideTutorialUI.SetActive(false);
                         }
                     }
                 }

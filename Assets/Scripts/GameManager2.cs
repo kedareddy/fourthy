@@ -33,12 +33,13 @@ public class GameManager2 : MonoBehaviour
         MainMenu,
         Restart,
     }
-    public static States nextSceneState = States.Intro1;
+    public static States nextSceneState = States.Liberation;
     public StateMachine<States> fsm;
 
-    public static int unlockGameNum = 0; 
+    public static int unlockGameNum = 0;
 
     public static GameManager2 instance { get; private set; }
+    public Camera UICamera;
     public Image blackScreen;
     public Animator textAnimator;
     public GameObject blackBarTop;
@@ -51,14 +52,18 @@ public class GameManager2 : MonoBehaviour
 
     public GameObject heartCounterButton, boxButton;
 
+    public GameObject quoteUI;
+    public Text quoteText, quoteByLineText;
+
     //Equality related references
-    public GameObject equalityUI, liberationUI, clickTutorialUI;
+    public GameObject equalityUI, liberationUI, clickTutorialUI, textTutorialUI, wideTutorialUI;
+    public Animator clickTutorialAnimator; 
     public Animator equalityTextAnimator;
     public Image equalityBlackScreen;
     public Vector3 INIT_EQUALITY_POS = new Vector3(6.9f, -25.4f, -10f);
     public Character equality_ShortC, equality_BoxC1, equality_BoxC2;
     public GameObject successScene, equalityIntroScreen;
-    public Text clickTutorialUIText;
+    public Text clickTutorialUIText, textTutorialText, wideTutorialText;
 
     //Equity related references
     public GameObject equityIntroScreen, equityUI;
@@ -73,10 +78,15 @@ public class GameManager2 : MonoBehaviour
     public Image liberationBlackScreen;
     public Vector3 INIT_LIBERATION_POS = new Vector3(6.9f, -10.3f, -10f);
     public GameObject ideaBubble;
+    public NewDrag panScript;
+    public GameObject fireworks;
+    public GameObject bottomBkgObject, topBkgObject;
 
     //endscene references
     public GameObject endSceneUI;
+    public GameObject endSceneIntroScreen;
     public Image endSceneBlackScreen;
+    public GameObject endSceneChars, endFenceBuilder, lastFence1, lastFence2, lastFence3, endBuilderDust;
     public Vector3 INIT_ENDSCENE_POS = new Vector3(18.3f, -9.6f, -10f);
 
     //credits references
@@ -144,27 +154,44 @@ public class GameManager2 : MonoBehaviour
 
     public void Intro1_Enter()
     {
-        SoundManager.instance.musicSource.clip = SoundManager.instance.steadycheer;
-        SoundManager.instance.musicSource.Play();
-        blackScreen.DOFade(0f, 9f).SetEase(Ease.InQuad);//.SetLoops(1, LoopType.Restart);
-        Debug.Log("Welcome entered");
-        //welcomeUI.SetActive(true);
-        instroS = DOTween.Sequence();
-        instroS.Append(DOTween.To(() => Camera.main.orthographicSize, x => Camera.main.orthographicSize = x, 12, 10f));
-        instroS.Join(Camera.main.transform.DOMove(new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y + 25f, Camera.main.transform.position.z), 10f, false));
-        instroS.AppendInterval(3f);
-        //instroS.Insert(4.5f, blackBarTop.transform.DOLocalMoveY(130f, 0.5f, false).SetEase(Ease.OutQuad));
-        //instroS.Insert(4.5f, blackBarBottom.transform.DOLocalMoveY(-130f, 0.5f, false).SetEase(Ease.OutQuad));
-        instroS.SetDelay(3f);
-        //instroS.SetAutoKill(false);
-        instroS.OnComplete(FinishedIntro1Sequence);
-        instroS.InsertCallback(7f, () =>
-        {
-            fourthyAnimator.SetBool("isWatching", true);
+        
+        Sequence quoteS = DOTween.Sequence();
+        quoteS.Append(quoteText.transform.DOScale(0.17f, 20f).From());
+        quoteS.Join(quoteText.DOFade(0f, 5f).From().SetEase(Ease.InOutQuad));
+        quoteS.Append(quoteByLineText.DOFade(0f, 2f).From().SetEase(Ease.InOutQuad));
+        quoteS.AppendInterval(4f);
+        quoteS.Append(quoteText.DOFade(0f, 2f).SetEase(Ease.InOutQuad));
+        quoteS.Join(quoteByLineText.DOFade(0f, 2f).SetEase(Ease.InOutQuad));
+        quoteS.OnPlay(() => {
+            quoteUI.SetActive(true);
         });
-        instroS.InsertCallback(11f, () =>
-        {
-            fourthyAnimator.SetBool("isSerious", true);
+        quoteS.OnComplete(()=> {
+
+            quoteUI.SetActive(false);
+
+            SoundManager.instance.musicSource.clip = SoundManager.instance.steadycheer;
+            SoundManager.instance.musicSource.Play();
+            blackScreen.DOFade(0f, 9f).SetEase(Ease.InQuad);//.SetLoops(1, LoopType.Restart);
+            Debug.Log("Welcome entered");
+            //welcomeUI.SetActive(true);
+            instroS = DOTween.Sequence();
+            instroS.Append(DOTween.To(() => Camera.main.orthographicSize, x => Camera.main.orthographicSize = x, 12, 10f));
+            instroS.Join(Camera.main.transform.DOMove(new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y + 25f, Camera.main.transform.position.z), 10f, false));
+            instroS.AppendInterval(3f);
+            //instroS.Insert(4.5f, blackBarTop.transform.DOLocalMoveY(130f, 0.5f, false).SetEase(Ease.OutQuad));
+            //instroS.Insert(4.5f, blackBarBottom.transform.DOLocalMoveY(-130f, 0.5f, false).SetEase(Ease.OutQuad));
+            instroS.SetDelay(3f);
+            //instroS.SetAutoKill(false);
+            instroS.OnComplete(FinishedIntro1Sequence);
+            instroS.InsertCallback(7f, () =>
+            {
+                fourthyAnimator.SetBool("isWatching", true);
+            });
+            instroS.InsertCallback(11f, () =>
+            {
+                fourthyAnimator.SetBool("isSerious", true);
+            });
+
         });
     }
 
@@ -532,7 +559,7 @@ public class GameManager2 : MonoBehaviour
         yield return new WaitForSeconds(2f);
         if(fsm.CurrentStateMap.state.ToString() == States.Equality.ToString())
         {
-            TurnOnResultsScreen(0f);
+            TurnOnResultsScreen(67f);
         }else if(fsm.CurrentStateMap.state.ToString() == States.Equity.ToString())
         {
             Debug.Log("should show Equity fail screen");
@@ -671,6 +698,10 @@ public class GameManager2 : MonoBehaviour
     public IEnumerator Equity_Exit()
     {
         Debug.Log("Exiting Equity");
+        if (wideTutorialUI.activeInHierarchy)
+        {
+            wideTutorialUI.SetActive(false);
+        }
 
         equityBlackScreen.color = new Color(0f, 0f, 0f, 0f);
         Tween fadeToBlackTween = equityBlackScreen.DOFade(1f, 2f).SetEase(Ease.OutQuad);
@@ -686,20 +717,22 @@ public class GameManager2 : MonoBehaviour
             }
             Destroy(child.gameObject);
         }
+
         EquityScene.SetActive(false);
         equityUI.SetActive(false);
         DOTween.KillAll();
     }
 
 
-    public void Liberation_Enter()
+    public IEnumerator Liberation_Enter()
     {
         Debug.Log("Welcome to Liberation");
+        
 
         SoundManager.instance.musicSource.clip = SoundManager.instance.ballparkBkg;
         SoundManager.instance.musicSource.Play();
         //reset heart counter, character Heart_StartPoint
-        Camera.main.GetComponent<NewDrag>().enabled = true; 
+        panScript.enabled = true; 
         successScene.SetActive(false);
         liberationTextAnimator.gameObject.SetActive(false);
         LiberationScene.SetActive(true);
@@ -722,6 +755,21 @@ public class GameManager2 : MonoBehaviour
         });
         Camera.main.orthographicSize = 30;
         Camera.main.transform.position = INIT_LIBERATION_POS;
+
+        yield return new WaitForSeconds(10f);
+        if (panScript.numOfPans == 0)
+        {
+            clickTutorialUIText.text = "Tap and drag\n to pan sideways";
+            
+            clickTutorialUI.transform.position = new Vector3(Screen.width*0.5f, clickTutorialUI.transform.position.y, clickTutorialUI.transform.position.z);
+            Tween showTextTutorial = clickTutorialUI.transform.DOLocalMoveY(clickTutorialUI.transform.localPosition.y - 100f, 0.5f).From().SetEase(Ease.OutQuad);
+            showTextTutorial.OnPlay(() =>
+            {
+                clickTutorialUI.SetActive(true);
+                clickTutorialAnimator.SetBool("isDrag", true);
+            });
+        }
+        
     }
 
     public void CalculateScore_Liberation()
@@ -757,8 +805,17 @@ public class GameManager2 : MonoBehaviour
     private bool initiateBreakFence = false; 
     public void Liberation_Update()
     {
-        //Debug.Log("howMany: " + howManyOnFence + " allChars: " + allFenceChars.Count); 
-        if(howManyOnFence == allFenceChars.Count && howManyOnFence > 0)
+
+        if (panScript.numOfPans > 0)
+        {
+            if (clickTutorialUI.activeInHierarchy)
+            {
+                clickTutorialUI.SetActive(false);
+                clickTutorialAnimator.SetBool("isDrag", false);
+            }
+        }
+            //Debug.Log("howMany: " + howManyOnFence + " allChars: " + allFenceChars.Count); 
+            if (howManyOnFence == allFenceChars.Count && howManyOnFence > 0)
         {
             if(triggerJumpMeter == false)
             {
@@ -769,17 +826,24 @@ public class GameManager2 : MonoBehaviour
 
         if(currenFencePower >= maxFencePower)
         {
-            Debug.Log("FENCE IS BROKEN");
+            //Debug.Log("FENCE IS BROKEN");
             if(initiateBreakFence == false)
             {
                 initiateBreakFence = true;
                 jumpMeter.SetActive(false);
                 FenceParent.Instance.DestroyFence();
-                for(int i =0; i < allFenceChars.Count; i++)
+
+                for(int j=0; j< allNonFenceChars.Count; j++)
+                {
+                    allNonFenceChars[j].myAnimator.SetBool("isAltCheering", true);
+
+                }
+                for (int i =0; i < allFenceChars.Count; i++)
                 {
                     allFenceChars[i].FallToGround();
-                    StartCoroutine(InitiateLiberationSuccess()); 
+                    
                 }
+                StartCoroutine(InitiateLiberationSuccess());
             }
         }
     }
@@ -788,19 +852,26 @@ public class GameManager2 : MonoBehaviour
     {
         yield return new WaitForSeconds(6f);
         Sequence successS = DOTween.Sequence();
-        successS.Append(DOTween.To(() => Camera.main.orthographicSize, x => Camera.main.orthographicSize = x, 50, 5f));
-        //successS.Join(Camera.main.transform.DOMove(new Vector3(Camera.main.transform.position.x, -8.8f, Camera.main.transform.position.z), 5f, false));
+        successS.Append(DOTween.To(() => Camera.main.orthographicSize, x => Camera.main.orthographicSize = x, 60, 5f));
+        successS.Join(Camera.main.transform.DOMove(new Vector3(23f, 5f, Camera.main.transform.position.z), 5f, false));
         successS.InsertCallback(2f, () =>
         {
             SoundManager.instance.musicSource.clip = SoundManager.instance.bigcheer;
             SoundManager.instance.musicSource.Play();
+            //bottomBkgObject.transform.localPosition = new Vector3(10f, 45f, 80f);
+            //topBkgObject.transform.localPosition = new Vector3(0f, 0f, 0f);
+
         });
         successS.InsertCallback(5f, () =>
         {
             liberationTextAnimator.gameObject.SetActive(true);
             liberationTextAnimator.Play("Expand");
         });
-        successS.InsertCallback(9f, () =>
+        successS.InsertCallback(6f, () =>
+        {
+            fireworks.SetActive(true);
+        });
+        successS.InsertCallback(17f, () =>
         {
             fsm.ChangeState(States.EndScene);
         });
@@ -823,10 +894,11 @@ public class GameManager2 : MonoBehaviour
 
     //track if character is going to stand on fence
     public List<Character> allFenceChars = new List<Character>();
+    public List<Character> allNonFenceChars = new List<Character>();
     public int howManyOnFence = 0; 
     public void HandleIdeaBubble()
     {
-        Debug.Log("idea bubble clicked");
+        //Debug.Log("idea bubble clicked");
         //disable camera drag
         Camera.main.GetComponent<NewDrag>().enabled = false;
         Vector3 endPoint = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width/2f, Screen.height*0.5f, Camera.main.nearClipPlane));
@@ -853,15 +925,41 @@ public class GameManager2 : MonoBehaviour
                 Character c = child.GetComponent<Character>();
                 if (c != null)
                 {
-                    if (c.fsm.CurrentStateMap.state.ToString() == Character.States.GaveUp.ToString() && !c.transform.name.Contains("CharC"))
+                    //c.fsm.CurrentStateMap.state.ToString() == Character.States.GaveUp.ToString() &&
+                    if (!c.transform.name.Contains("CharC"))
                     {
                         allFenceChars.Add(c);
-                        StartCoroutine(c.GetOnFence());
+                        if (c.fsm.CurrentStateMap.state.ToString() != Character.States.GaveUp.ToString())
+                        {
+                            if(c.myBoxes.Count > 0)
+                            {
+                                //for Char B & D who might be standing on boxes, first get down from them
+                                c.GetDownBox_ThenFence();
+                            }
+                            else
+                            {
+                                //for Char A who's watching and for Char B & D who might be waiting around with some resolve left
+                                c.skipSittingDown = true;
+                                c.fsm.ChangeState(Character.States.GaveUp);
+                                StartCoroutine(c.GetOnFence());
+                            }
+
+                        }
+                        else
+                        {
+                            StartCoroutine(c.GetOnFence());
+                        }
+                        
+                    }
+                    else
+                    {
+                        allNonFenceChars.Add(c);
+                        c.StandUp();
                     }
                 }
             }
             //move camera final Boxes
-            Camera.main.transform.DOMoveX(finalBoxes.transform.position.x, 5f).SetEase(Ease.InOutQuad);
+            Camera.main.transform.DOMoveX(finalBoxes.transform.position.x, 20f).SetSpeedBased().SetEase(Ease.Linear).SetDelay(2f);
         });
         
     }
@@ -880,6 +978,10 @@ public class GameManager2 : MonoBehaviour
         }
         LiberationScene.SetActive(false);
         liberationUI.SetActive(false);
+        foreach (PolygonCollider2D po in Resources.FindObjectsOfTypeAll(typeof(PolygonCollider2D)) as PolygonCollider2D[])
+        {
+            Destroy(po.gameObject);
+        }
         DOTween.KillAll();
     }
 
@@ -894,23 +996,57 @@ public class GameManager2 : MonoBehaviour
         EndScene.SetActive(true);
         endSceneUI.SetActive(true);
         endSceneBlackScreen.color = new Color(0f, 0f, 0f, 0f);
-        endSceneBlackScreen.DOFade(1f, 3f).SetEase(Ease.InOutQuad).From();
+        Tween fadeFromBlack = endSceneBlackScreen.DOFade(1f, 3f).SetEase(Ease.InOutQuad).From();
+        fadeFromBlack.OnUpdate(() => {
+            if (fadeFromBlack.ElapsedPercentage() > 0.25f)
+            {
+                if (!endSceneIntroScreen.activeInHierarchy)
+                {
+                    endSceneIntroScreen.SetActive(true);
+                }
+
+            }
+        });
+
+
+
         Camera.main.transform.position = INIT_ENDSCENE_POS;
+        Camera.main.orthographicSize = 65;
 
-        yield return new WaitForSeconds(6f);
+        yield return new WaitForSeconds(9f);
+
+        Sequence fadingS = DOTween.Sequence();
+        fadingS.Append(endSceneBlackScreen.DOFade(1f, 2f).SetEase(Ease.InOutQuad));
+        fadingS.AppendCallback(() =>
+        {
+            endSceneChars.SetActive(false);
+        });
+        fadingS.Append(endSceneBlackScreen.DOFade(1f, .5f).SetEase(Ease.InOutQuad).From());
+
+        StartCoroutine(buildEndFence());
+    }
+
+    public IEnumerator buildEndFence()
+    {
+        endBuilderDust.GetComponent<Animator>().SetTrigger("triggerBigPoof");
+        yield return new WaitForSeconds(1.25f);
+        lastFence1.SetActive(true);
+        yield return new WaitForSeconds(.25f);
+        endFenceBuilder.transform.localPosition = new Vector3(endFenceBuilder.transform.localPosition.x + 14f, endFenceBuilder.transform.localPosition.y, endFenceBuilder.transform.localPosition.z);
+        yield return new WaitForSeconds(3f);
+        endBuilderDust.GetComponent<Animator>().SetTrigger("triggerBigPoof");
+        yield return new WaitForSeconds(1.25f);
+        lastFence2.SetActive(true);
+        yield return new WaitForSeconds(.25f);
+        endFenceBuilder.transform.localPosition = new Vector3(endFenceBuilder.transform.localPosition.x + 16f, endFenceBuilder.transform.localPosition.y, endFenceBuilder.transform.localPosition.z);
+        yield return new WaitForSeconds(3f);
+        endBuilderDust.GetComponent<Animator>().SetTrigger("triggerBigPoof");
+        yield return new WaitForSeconds(1.25f);
+        lastFence3.SetActive(true);
+        yield return new WaitForSeconds(.25f);
+        endFenceBuilder.transform.localPosition = new Vector3(endFenceBuilder.transform.localPosition.x + 16f, endFenceBuilder.transform.localPosition.y, endFenceBuilder.transform.localPosition.z);
+        yield return new WaitForSeconds(3f);
         fsm.ChangeState(States.Credits);
-        //fadeFromBlack.OnUpdate(() => {
-        //    if (fadeFromBlack.ElapsedPercentage() > 0.25f)
-        //    {
-        //        if (!liberationIntroScreen.activeInHierarchy)
-        //        {
-        //            liberationIntroScreen.SetActive(true);
-        //        }
-
-        //    }
-        //});
-        //Camera.main.orthographicSize = 30;
-        //Camera.main.transform.position = INIT_LIBERATION_POS;
     }
 
 
@@ -918,8 +1054,10 @@ public class GameManager2 : MonoBehaviour
     {
         Debug.Log("Exiting EndScene");
         liberationBlackScreen.color = new Color(0f, 0f, 0f, 0f);
-        Tween fadeToBlackTween = endSceneBlackScreen.DOFade(1f, 2f).SetEase(Ease.OutQuad);
+        Tween fadeToBlackTween = endSceneBlackScreen.DOFade(1f, 3f).SetEase(Ease.InOutQuad);
         yield return fadeToBlackTween.WaitForCompletion();
+
+
         EndScene.SetActive(false);
         endSceneUI.SetActive(false);
         DOTween.KillAll();
@@ -939,6 +1077,7 @@ public class GameManager2 : MonoBehaviour
 
     public void HandleCreditsFinished()
     {
+        
         fsm.ChangeState(States.MainMenu);
     }
 
@@ -949,6 +1088,7 @@ public class GameManager2 : MonoBehaviour
         creditsBlackScreen.color = new Color(0f, 0f, 0f, 0f);
         Tween fadeToBlackTween = creditsBlackScreen.DOFade(1f, 2f).SetEase(Ease.OutQuad);
         yield return fadeToBlackTween.WaitForCompletion();
+
         creditsUI.SetActive(false);
         DOTween.KillAll();
     }

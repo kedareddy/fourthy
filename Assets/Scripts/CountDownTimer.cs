@@ -9,7 +9,9 @@ public class CountDownTimer : MonoBehaviour
 {
 
     public Image meter;
-    public Image meterBkg; 
+    public Image meterBkg;
+    public Sprite redMeterSprite;
+    public Sprite greenMeterSprite;
     public Text meterText;
     public float secondsAlotted = 10f; 
 
@@ -40,10 +42,11 @@ public class CountDownTimer : MonoBehaviour
         countDownTween.OnUpdate(()=> {
             timeLeft = secondsAlotted - countDownTween.position; 
             meterText.text = Mathf.Floor(timeLeft / 60).ToString("00") + ":" + (timeLeft % 60).ToString("00");
-            if(timeLeft < 10f && flickerStarted == false)
+            if(timeLeft < 30f && flickerStarted == false)
             {
                 //meter.DOColor(new Color(0f,0f,0f,0f), 10f).SetEase(Ease.Flash, 50, -1f);
-                meterBkg.DOColor(new Color(0f, 0f, 0f, 0f), 10f).SetEase(Ease.Flash, 50, -1f);
+                meter.sprite = redMeterSprite; 
+                meterBkg.DOColor(new Color(0f, 0f, 0f, 0f), 30f).SetEase(Ease.Flash, 150, -1f);
                 flickerStarted = true; 
             }
         });

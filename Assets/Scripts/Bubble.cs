@@ -62,6 +62,7 @@ public class Bubble : MonoBehaviour
         }
         if (recursive)
         {
+            mySpriteRenderer.sortingLayerName = "GaveUp";
             transform.localPosition = new Vector3(transform.localPosition.x, seatedHeight, transform.localPosition.z);
             //Debug.Log("should set localpos to be half height");
         }
@@ -76,6 +77,10 @@ public class Bubble : MonoBehaviour
             {
                 if (i < numOfEmojis)
                 {
+                    if (recursive)
+                    {
+                        availableSpriteRenderers[i].sortingLayerName = "GaveUp";
+                    }
                     availableSpriteRenderers[i].sprite = sadEmojis[Random.Range(0, sadEmojis.Count)];
                     availableSpriteRenderers[i].transform.gameObject.SetActive(true);
                 }
@@ -86,8 +91,11 @@ public class Bubble : MonoBehaviour
             }
             if (recursive)
             {
-                myCharacter.closestSitSite.numConversations++; 
-                StartCoroutine(CloseBubble());
+                myCharacter.closestSitSite.numConversations++;
+                if (gameObject.activeInHierarchy)
+                {
+                    StartCoroutine(CloseBubble());
+                }
             }
         });
     }

@@ -61,3 +61,48 @@ TagManager:
   - name: Foreground
     uniqueID: 1594042715
     locked: 0
+  - name: Watching
+    uniqueID: 4022580865
+    locked: 0
+  - name: Char1
+    uniqueID: 1844501363
+    locked: 0
+  - name: Char2
+    uniqueID: 701526111
+    locked: 0
+  - name: Char3
+    uniqueID: 3030982699
+    locked: 0
+  - name: Char4
+    uniqueID: 3012288221
+    locked: 0
+  - name: Char5
+    uniqueID: 197861257
+    locked: 0
+  - name: Char6
+    uniqueID: 145669531
+    locked: 0
+  - name: Char7
+    uniqueID: 1972116773
+    locked: 0
+  - name: Char8
+    uniqueID: 1112775873
+    locked: 0
+  - name: Char9
+    uniqueID: 677884331
+    locked: 0
+  - name: Char10
+    uniqueID: 702662853
+    locked: 0
+  - name: Char11
+    uniqueID: 1522546157
+    locked: 0
+  - name: Char12
+    uniqueID: 2663178973
+    locked: 0
+  - name: GaveUp
+    uniqueID: 3363968319
+    locked: 0
+  - name: Hearts
+    uniqueID: 2037664197
+    locked: 0

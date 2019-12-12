@@ -9,7 +9,7 @@
 :format=40300
 :texture=CH_C_SittingIdle.png
 :size=4096x4096
-:pivotpoints=enabled
+:pivotpoints=disabled
 :borders=disabled
 :alphahandling=ClearTransparentPixels
 

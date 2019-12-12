@@ -10,7 +10,7 @@ public class JumpMeter : MonoBehaviour
     public static event InitiateJump OnInitiateJump;
     public Image marker;
     private float meterLength = 490f; 
-    private float meterSpeed = 500f;
+    private float meterSpeed = 700f;
     private List<float> sweetSpotPoints = new List<float> { -542f, -382f};
     private float orgMarkerX; 
 
@@ -23,6 +23,14 @@ public class JumpMeter : MonoBehaviour
     void OnEnable()
     {
         markerTween = marker.transform.DOLocalMoveX(marker.transform.localPosition.x + meterLength, meterSpeed).SetSpeedBased().SetEase(Ease.Linear).SetLoops(-1, LoopType.Yoyo);
+        GameManager2.instance.wideTutorialText.text = "Tap anywhere when the\n marker overlaps the green";
+        
+        GameManager2.instance.wideTutorialUI.transform.position = new Vector3(Screen.width*0.5f, GameManager2.instance.clickTutorialUI.transform.position.y, GameManager2.instance.wideTutorialUI.transform.position.z);
+        GameManager2.instance.wideTutorialUI.SetActive(true);
+        //GameManager2.instance.wideTutorialUI.transform.DOLocalMoveY(GameManager2.instance.wideTutorialUI.transform.localPosition.y - 100f, 0.5f).From().SetEase(Ease.InOutQuad).SetDelay(0.5f).OnPlay(() =>
+        //{
+        
+        //});
     }
 
     private bool listenToInput = true; 
@@ -50,14 +58,24 @@ public class JumpMeter : MonoBehaviour
                 markerTween.TogglePause();
                 listenToInput = false;
                 StartCoroutine(ResetListenToInput(sweetSpot));
+                if (GameManager2.instance.wideTutorialUI.activeInHierarchy)
+                {
+                    GameManager2.instance.wideTutorialUI.SetActive(false);
+                }
             }
         }
     }
 
     IEnumerator ResetListenToInput(bool sweetSpot)
     {
-        
-        yield return new WaitForSeconds(0.85f);
+        float waitTime; 
+        if (sweetSpot) {
+            waitTime = 0.75f * 2f;
+        } else
+        {
+            waitTime = 2.5f;
+        }
+        yield return new WaitForSeconds(waitTime);
         if (sweetSpot)
         {
             GameManager2.instance.currenFencePower = GameManager2.instance.currenFencePower + 3;

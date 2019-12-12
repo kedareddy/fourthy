@@ -16,6 +16,8 @@ public class NewDrag : MonoBehaviour
     public float cameraMaxX = 50;
     public float cameraMinX = -50;
 
+    public int numOfPans = 0; 
+
 
     private Vector3 bl;
     private Vector3 tr;
@@ -55,6 +57,8 @@ public class NewDrag : MonoBehaviour
             // Get mouse origin
             mouseOrigin = Input.mousePosition;
             isPanning = true;
+            numOfPans++;
+            //Debug.Log("num of pans: " + numOfPans);
             if (timeInitialized == false)
             {
                 timeInitialized = true;
@@ -69,6 +73,8 @@ public class NewDrag : MonoBehaviour
         {
             isPanning = false;
             timeInitialized = false;
+          
+            
 
         }
 
@@ -90,6 +96,7 @@ public class NewDrag : MonoBehaviour
         // Move (pan) the camera on it's XY plane
         if (isPanning)
         {
+            
             // Get mouse displacement vector from original to current position
             Vector3 pos = Camera.main.ScreenToViewportPoint(Input.mousePosition - mouseOrigin);
             Vector3 move = new Vector3(pos.x * panSpeed, pos.y, 0);

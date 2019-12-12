@@ -1,11 +1,13 @@
 ﻿using UnityEngine;
 using DG.Tweening;
 using UnityEngine.EventSystems;
+using System.Collections;
+using System.Collections.Generic;
 
 public class Heart : MonoBehaviour, IPointerDownHandler
 {
     public float LIFE = 10f;
-    public bool floatDown = true; 
+    public bool floatDown = true;
     private SpriteRenderer mySpriteRenderer;
     private SpriteRenderer myBkgSpriteRenderer;
     private float FLOOR_Y = -16.9f;
@@ -42,7 +44,6 @@ public class Heart : MonoBehaviour, IPointerDownHandler
             //Debug.Log("heart clicked");
             if (eventData.pointerCurrentRaycast.gameObject == gameObject)
             {
-          
                     pickedUp = true;
                     if (GameManager2.instance.fsm.CurrentStateMap.state.ToString() == GameManager2.States.Equality.ToString())
                     {
@@ -56,7 +57,7 @@ public class Heart : MonoBehaviour, IPointerDownHandler
                     SoundManager.instance.PlaySingle(SoundManager.instance.gulp);
                     Sequence collectS = DOTween.Sequence();
                     collectS.Append(transform.DOLocalRotate(new Vector3(0f, 0f, 0f), 0.5f).SetEase(Ease.OutQuad));
-                    collectS.Append(transform.DOMove(Camera.main.ScreenToWorldPoint(new Vector3(HeartCounter.Instance.transform.position.x, HeartCounter.Instance.transform.position.y, Camera.main.nearClipPlane)), 1f).SetSpeedBased().SetEase(Ease.OutQuad));
+                    collectS.Append(transform.DOMove(Camera.main.ScreenToWorldPoint(new Vector3(Screen.width*0.2f, Screen.height*0.9f, Camera.main.nearClipPlane)), 1f).SetSpeedBased().SetEase(Ease.OutQuad));
                     collectS.Join(mySpriteRenderer.DOFade(0f, 1f).SetSpeedBased().SetEase(Ease.OutQuad));
                     collectS.Join(myBkgSpriteRenderer.DOFade(0f, 1f).SetSpeedBased().SetEase(Ease.OutQuad));
                     collectS.Join(transform.DOScale(new Vector3(1f, 1f, 1f), 1f).SetSpeedBased().SetEase(Ease.InQuad));
@@ -64,7 +65,7 @@ public class Heart : MonoBehaviour, IPointerDownHandler
                     {
                         HeartCounter.Instance.IncrementHearts();
                     });
-                
+
             }
 
         }

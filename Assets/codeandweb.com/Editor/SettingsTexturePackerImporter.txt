@@ -4,7 +4,9 @@ tpsheetFileNames:
 - Assets/ArtAssets/CharacterATest/Character_A_Walking.tpsheet
 - Assets/ArtAssets/TempCharacters/Character_B_Cheering.tpsheet
 - Assets/ArtAssets/TempCharacters/Character_B_Walking.tpsheet
+- Assets/ArtAssets/TempCharacters/FinalBlake/AltCheering/Waving_2.tpsheet
 - Assets/ArtAssets/TempCharacters/FinalBlake/Cheering/WaveCycles_Nov18.tpsheet
+- Assets/ArtAssets/TempCharacters/FinalBlake/ExcitedTalking/ExcitedTalking.tpsheet
 - Assets/ArtAssets/TempCharacters/FinalBlake/Idle/CH_BreatheFence_A.tpsheet
 - Assets/ArtAssets/TempCharacters/FinalBlake/Idle/CH_BreatheFence_B_@.tpsheet
 - Assets/ArtAssets/TempCharacters/FinalBlake/Idle/CH_BreatheFence_C.tpsheet
@@ -24,7 +26,9 @@ textureFileNames:
 - Assets/ArtAssets/CharacterATest/Character_A_Walking.png
 - Assets/ArtAssets/TempCharacters/Character_B_Cheering.png
 - Assets/ArtAssets/TempCharacters/Character_B_Walking.png
+- Assets/ArtAssets/TempCharacters/FinalBlake/AltCheering/Waving_2.png
 - Assets/ArtAssets/TempCharacters/FinalBlake/Cheering/WaveCycles_Nov18.png
+- Assets/ArtAssets/TempCharacters/FinalBlake/ExcitedTalking/ExcitedTalking.png
 - Assets/ArtAssets/TempCharacters/FinalBlake/Idle/CH_BreatheFence_A.png
 - Assets/ArtAssets/TempCharacters/FinalBlake/Idle/CH_BreatheFence_B_@.png
 - Assets/ArtAssets/TempCharacters/FinalBlake/Idle/CH_BreatheFence_C.png
@@ -41,6 +45,8 @@ textureFileNames:
 - Assets/ArtAssets/TempCharacters/FinalBlake/Walking/Ch_D_WALK.png
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.png
 normalmapFileNames:
+- 
+- 
 - 
 - 
 - 
