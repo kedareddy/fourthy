@@ -36,7 +36,8 @@ public class SoundManager : MonoBehaviour
         efxSource.clip = clip;
 
         //Play the clip.
-        efxSource.Play();
+        efxSource.PlayOneShot(clip);
+        //efxSource.Play();
     }
 
 

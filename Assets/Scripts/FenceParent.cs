@@ -106,10 +106,8 @@ public class FenceParent : MonoBehaviour
 
         fenceCrushTween.OnUpdate(() =>
         {
-
-
             
-            if (fenceCrushTween.ElapsedPercentage() > 0.74f)
+            if (fenceCrushTween.ElapsedPercentage() > 0.55f)
             {
                 if(deleteSomeFenceParts == false)
                 {
@@ -119,6 +117,9 @@ public class FenceParent : MonoBehaviour
                         Destroy(partsForDeletion[j].gameObject);
                     }
                     debris.SetActive(true);
+                    GameManager2.instance.gamePlayers.SetActive(false);
+                    GameManager2.instance.winningTeam.SetActive(true);
+                    GameManager2.instance.liberationFourthy.SetActive(true);
                 }
                 
 

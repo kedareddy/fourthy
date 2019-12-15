@@ -29,16 +29,48 @@ public class SitSite : MonoBehaviour
     {
         if(numConversations >= CONVERSATIONS_THRESHOLD)
         {
-            //turn off chats
+            SitPoint idea1Point = null;
+            SitPoint idea2Point = null;
+            //Vector3 idea1Pos = Vector3.zero;
+            //Vector3 idea2Pos = Vector3.zero;
+            float charCAngle = -1f; 
+
+            //check for a char C
             for (int i = 0; i < sitPoints.Count; i++)
             {
                 if (sitPoints[i].occupant != null)
                 {
-                    sitPoints[i].occupant.speechBubble.SetActive(false);
+                    if (sitPoints[i].occupant.name.Contains("CharC"))
+                    {
+                        idea1Point = sitPoints[i];
+                        //idea1Pos = sitPoints[i].occupant.GetComponent<Character>().speechBubble.transform.position;
+                        charCAngle = sitPoints[i].yAngle;
+                    }
                 }
             }
-            GameManager2.instance.TriggerIdeaBubble(transform.position);
-            numConversations = 0; 
+
+
+            for (int j = 0; j < sitPoints.Count; j++)
+            {
+                if (sitPoints[j].occupant != null && charCAngle >= 0f)
+                {
+                    if (!sitPoints[j].occupant.name.Contains("CharC") && Mathf.Abs(sitPoints[j].yAngle - charCAngle) > 1f)
+                    {
+                        idea2Point = sitPoints[j];
+                        //idea2Pos = sitPoints[j].occupant.GetComponent<Character>().speechBubble.transform.position;
+                    }
+                    //turn off chats
+                    if (idea1Point!= null && idea2Point != null)
+                    {
+                        Debug.Log("idea 1 angle: " + idea1Point.yAngle + "idea 2 angle: " + idea2Point.yAngle); 
+                        sitPoints[j].occupant.speechBubble.SetActive(false);
+                        GameManager2.instance.TriggerIdeaBubble(idea1Point, idea2Point);
+                        numConversations = 0;
+                        break;
+                    }
+                }
+            }
+            
         }
     }
 }

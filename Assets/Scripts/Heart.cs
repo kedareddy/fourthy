@@ -31,7 +31,10 @@ public class Heart : MonoBehaviour, IPointerDownHandler
             heartS.AppendInterval(10f);
             heartS.OnComplete(() =>
             {
-                Destroy(gameObject);
+                if(gameObject != null)
+                {
+                    Destroy(gameObject);
+                }
             });
             SoundManager.instance.PlaySingle(SoundManager.instance.born);
         }

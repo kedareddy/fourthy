@@ -289,8 +289,11 @@ public class Character : MonoBehaviour
         if (setupResolveBar)
         {
             //Debug.Log("Resolve bar should flash");
-            resolveBar.transform.localPosition = Vector3.zero;
-            resolveBarTween = resolveBar.transform.DOLocalMoveX(-1.35f, RESOLVE);
+            //resolveBar.transform.localPosition = Vector3.zero;
+            resolveBar.transform.localPosition = new Vector3(-0.77f, 0.07f, 0f);
+            resolveBar.transform.SetScaleX(1f);
+            resolveBarTween = resolveBar.transform.DOScaleX(0f, RESOLVE);
+            //resolveBarTween = resolveBar.transform.DOLocalMoveX(-1.35f, RESOLVE);
             resolveBarTween.OnUpdate(() => {
                 //float resolveTweenLeft = Mathf.Abs(-1.35f - resolveBarTween.position);
                 //Debug.Log("resolv: " + resolveBarTween.ElapsedPercentage());
@@ -521,7 +524,9 @@ public class Character : MonoBehaviour
         //{
         meter.SetActive(true);
         resolveBar.SetActive(true);
-        resolveBar.transform.localPosition = Vector3.zero;
+        //resolveBar.transform.localPosition = Vector3.zero;
+        resolveBar.transform.localPosition = new Vector3(-0.77f, 0.07f, 0f);
+        resolveBar.transform.SetScaleX(1f);
         heartBar.SetActive(true);
         heartBar.transform.localPosition = new Vector3(-0.114f, 0.058f, 0f);
         heartBarTween = heartBar.transform.DOLocalMoveY(-0.22f, HEART).From().SetLoops(-1, LoopType.Restart);
@@ -1019,7 +1024,9 @@ public class Character : MonoBehaviour
         meter.SetActive(true);
         resolveBar.SetActive(true);
         heartBar.SetActive(false);
-        resolveBar.transform.localPosition = Vector3.zero;
+        //resolveBar.transform.localPosition = Vector3.zero;
+        resolveBar.transform.localPosition = new Vector3(-0.77f, 0.07f, 0f);
+        resolveBar.transform.SetScaleX(1f);
         StartCoroutine(WalkIntoScene());
     }
     public void Offscreen_Update()

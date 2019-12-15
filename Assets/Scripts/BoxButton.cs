@@ -75,10 +75,12 @@ public class BoxButton : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0))
             {
+                
                 // Check if the mouse was clicked over a UI element
-                if (!EventSystem.current.IsPointerOverGameObject())
-                {
-
+                //if (!EventSystem.current.IsPointerOverGameObject())
+                //{
+                if(IsPointerOverUIElement() == false) { 
+                    Debug.Log("Dropped a box");
                     mouseDownPos = Input.mousePosition;
 
                 }
@@ -87,7 +89,8 @@ public class BoxButton : MonoBehaviour
 
             if (Input.GetMouseButtonUp(0))
             {
-                if(mouseDownPos == Input.mousePosition)
+                Debug.Log("Dropped a box UP");
+                if (mouseDownPos == Input.mousePosition)
                 {
                     Vector3 worldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                     Vector3 worldTopPos = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0f));
@@ -95,7 +98,7 @@ public class BoxButton : MonoBehaviour
 
 
                     SoundManager.instance.PlaySingle(SoundManager.instance.drop);
-                    // Debug.Log("Dropped a box");
+                   
                     //trigger box stacking tutorial in Equity
 
                     GameObject instantiatedBox = Instantiate(boxPrefab, new Vector3(gridWorldPos.x, worldTopPos.y, boxPrefab.transform.position.z), boxPrefab.transform.rotation) as GameObject;
@@ -123,6 +126,33 @@ public class BoxButton : MonoBehaviour
 
         }
 
+    }
+
+
+
+    public static bool IsPointerOverUIElement()
+    {
+        return IsPointerOverUIElement(GetEventSystemRaycastResults());
+    }
+    ///Returns 'true' if we touched or hovering on Unity UI element.
+    public static bool IsPointerOverUIElement(List<RaycastResult> eventSystemRaysastResults)
+    {
+        for (int index = 0; index < eventSystemRaysastResults.Count; index++)
+        {
+            RaycastResult curRaysastResult = eventSystemRaysastResults[index];
+            if (curRaysastResult.gameObject.layer == LayerMask.NameToLayer("UI"))
+                return true;
+        }
+        return false;
+    }
+    ///Gets all event systen raycast results of current mouse or touch position.
+    static List<RaycastResult> GetEventSystemRaycastResults()
+    {
+        PointerEventData eventData = new PointerEventData(EventSystem.current);
+        eventData.position = Input.mousePosition;
+        List<RaycastResult> raysastResults = new List<RaycastResult>();
+        EventSystem.current.RaycastAll(eventData, raysastResults);
+        return raysastResults;
     }
 }
 

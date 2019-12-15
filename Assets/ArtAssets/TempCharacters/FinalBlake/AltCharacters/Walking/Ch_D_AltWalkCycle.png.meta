@@ -1,0 +1,1291 @@
+fileFormatVersion: 2
+guid: bc0d63b2acaa948f18d880d3d2be0847
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8433160418873725467
+    second: Ch_D_WALK_1.04
+  - first:
+      213: -4881014915427759922
+    second: Ch_D_WALK_1.05
+  - first:
+      213: -7597613248778698322
+    second: Ch_D_WALK_1.06
+  - first:
+      213: -1412592289372197632
+    second: Ch_D_WALK_1.07
+  - first:
+      213: 7436014019564815352
+    second: Ch_D_WALK_1.08
+  - first:
+      213: -1847294062491437063
+    second: Ch_D_WALK_1.09
+  - first:
+      213: 6227172718004476502
+    second: Ch_D_WALK_1.10
+  - first:
+      213: 1751184372411202044
+    second: Ch_D_WALK_1.11
+  - first:
+      213: -4028406474911989881
+    second: Ch_D_WALK_1.12
+  - first:
+      213: -3202084169668900334
+    second: Ch_D_WALK_1.13
+  - first:
+      213: 1450423068805175471
+    second: Ch_D_WALK_1.14
+  - first:
+      213: 5084402529952521179
+    second: Ch_D_WALK_1.15
+  - first:
+      213: -2417478803094614577
+    second: Ch_D_WALK_1.16
+  - first:
+      213: 822768520712636914
+    second: Ch_D_WALK_1.17
+  - first:
+      213: 4113419712967423390
+    second: Ch_D_WALK_1.18
+  - first:
+      213: 7864791017307605604
+    second: Ch_D_WALK_1.19
+  - first:
+      213: -3002685438024447000
+    second: Ch_D_WALK_1.20
+  - first:
+      213: -5782189973468597594
+    second: Ch_D_WALK_1.21
+  - first:
+      213: -7854413565275743170
+    second: Ch_D_WALK_1.22
+  - first:
+      213: -7482192688997949147
+    second: Ch_D_WALK_1.23
+  - first:
+      213: 8101063806106153399
+    second: Ch_D_WALK_1.24
+  - first:
+      213: -4169678715540449550
+    second: Ch_D_WALK_1.25
+  - first:
+      213: 2572010602320422155
+    second: Ch_D_WALK_1.26
+  - first:
+      213: 9191512666243952179
+    second: Ch_D_WALK_1.27
+  - first:
+      213: 4983100470945780932
+    second: Ch_D_WALK_1.28
+  - first:
+      213: 8063515352777032796
+    second: Ch_D_WALK_2.04
+  - first:
+      213: -5764809990188357468
+    second: Ch_D_WALK_2.05
+  - first:
+      213: 5178386599534212785
+    second: Ch_D_WALK_2.06
+  - first:
+      213: -463482569588797706
+    second: Ch_D_WALK_2.07
+  - first:
+      213: -7642146132514592520
+    second: Ch_D_WALK_2.08
+  - first:
+      213: -4523467166239637651
+    second: Ch_D_WALK_2.09
+  - first:
+      213: 2134786140354568437
+    second: Ch_D_WALK_2.10
+  - first:
+      213: 1980780544544724062
+    second: Ch_D_WALK_2.11
+  - first:
+      213: -1233148883252168899
+    second: Ch_D_WALK_2.12
+  - first:
+      213: -50160140804065795
+    second: Ch_D_WALK_2.13
+  - first:
+      213: 6394627862106383158
+    second: Ch_D_WALK_2.14
+  - first:
+      213: -8712165041844152472
+    second: Ch_D_WALK_2.15
+  - first:
+      213: -974931959990352017
+    second: Ch_D_WALK_2.16
+  - first:
+      213: -5451770371133052705
+    second: Ch_D_WALK_2.17
+  - first:
+      213: -8563184602702042159
+    second: Ch_D_WALK_2.18
+  - first:
+      213: 2998866786509669442
+    second: Ch_D_WALK_2.19
+  - first:
+      213: 1344539551282978438
+    second: Ch_D_WALK_2.20
+  - first:
+      213: 5416946764188728609
+    second: Ch_D_WALK_2.21
+  - first:
+      213: -5843596714051213918
+    second: Ch_D_WALK_2.22
+  - first:
+      213: 3711762045677435166
+    second: Ch_D_WALK_2.23
+  - first:
+      213: -3368932939170413087
+    second: Ch_D_WALK_2.24
+  - first:
+      213: -7985679337323899884
+    second: Ch_D_WALK_2.25
+  - first:
+      213: 2828128109557091755
+    second: Ch_D_WALK_2.26
+  - first:
+      213: -7526598722295773549
+    second: Ch_D_WALK_2.27
+  - first:
+      213: -4615978912278272185
+    second: Ch_D_WALK_2.28
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ch_D_WALK_1.04
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 3385
+        width: 376
+        height: 710
+      alignment: 9
+      pivot: {x: 0.55585104, y: -0.02112676}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -8433160418873725467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_WALK_1.05
+      rect:
+        serializedVersion: 2
+        x: 1649
+        y: 3382
+        width: 294
+        height: 713
+      alignment: 9
+      pivot: {x: 0.45238096, y: -0.022440393}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -4881014915427759922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_WALK_1.06
+      rect:
+        serializedVersion: 2
+        x: 2893
+        y: 3380
+        width: 314
+        height: 715
+      alignment: 9
+      pivot: {x: 0.41719747, y: -0.01958042}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -7597613248778698322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_WALK_1.07
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 2656
+        width: 384
+        height: 720
+      alignment: 9
+      pivot: {x: 0.47395834, y: -0.016666668}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -1412592289372197632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_WALK_1.08
+      rect:
+        serializedVersion: 2
+        x: 2144
+        y: 440
+        width: 447
+        height: 743
+      alignment: 9
+      pivot: {x: 0.5100671, y: 0.012113055}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 7436014019564815352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_WALK_1.09
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 446
+        width: 438
+        height: 737
+      alignment: 9
+      pivot: {x: 0.5502283, y: 0.0081411125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -1847294062491437063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_WALK_1.10
+      rect:
+        serializedVersion: 2
+        x: 2976
+        y: 1185
+        width: 381
+        height: 735
+      alignment: 9
+      pivot: {x: 0.496063, y: 0.0027210885}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 6227172718004476502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_WALK_1.11
+      rect:
+        serializedVersion: 2
+        x: 2074
+        y: 1926
+        width: 288
+        height: 727
+      alignment: 9
+      pivot: {x: 0.4027778, y: -0.0027510317}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 1751184372411202044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_WALK_1.12
+      rect:
+        serializedVersion: 2
+        x: 3234
+        y: 1922
+        width: 320
+        height: 731
+      alignment: 9
+      pivot: {x: 0.484375, y: 0.0027359782}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -4028406474911989881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_WALK_1.13
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 1927
+        width: 402
+        height: 726
+      alignment: 9
+      pivot: {x: 0.51741296, y: -0.008264462}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -3202084169668900334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_WALK_1.14
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 1188
+        width: 485
+        height: 732
+      alignment: 9
+      pivot: {x: 0.5051546, y: -0.0027322404}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 1450423068805175471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_WALK_1.15
+      rect:
+        serializedVersion: 2
+        x: 2363
+        y: 2656
+        width: 452
+        height: 720
+      alignment: 9
+      pivot: {x: 0.57743365, y: -0.015277778}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 5084402529952521179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_WALK_1.16
+      rect:
+        serializedVersion: 2
+        x: 3209
+        y: 3378
+        width: 373
+        height: 717
+      alignment: 9
+      pivot: {x: 0.55764073, y: -0.020920502}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -2417478803094614577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_WALK_1.17
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 3382
+        width: 296
+        height: 713
+      alignment: 9
+      pivot: {x: 0.4493243, y: -0.022440393}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 822768520712636914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_WALK_1.18
+      rect:
+        serializedVersion: 2
+        x: 1945
+        y: 3380
+        width: 314
+        height: 715
+      alignment: 9
+      pivot: {x: 0.41719747, y: -0.01958042}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 4113419712967423390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_WALK_1.19
+      rect:
+        serializedVersion: 2
+        x: 2817
+        y: 2656
+        width: 384
+        height: 720
+      alignment: 9
+      pivot: {x: 0.47395834, y: -0.016666668}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 7864791017307605604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_WALK_1.20
+      rect:
+        serializedVersion: 2
+        x: 2593
+        y: 440
+        width: 447
+        height: 743
+      alignment: 9
+      pivot: {x: 0.5100671, y: 0.012113055}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -3002685438024447000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_WALK_1.21
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 446
+        width: 438
+        height: 737
+      alignment: 9
+      pivot: {x: 0.5502283, y: 0.0081411125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -5782189973468597594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_WALK_1.22
+      rect:
+        serializedVersion: 2
+        x: 3359
+        y: 1185
+        width: 381
+        height: 735
+      alignment: 9
+      pivot: {x: 0.496063, y: 0.0027210885}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -7854413565275743170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_WALK_1.23
+      rect:
+        serializedVersion: 2
+        x: 2944
+        y: 1926
+        width: 288
+        height: 727
+      alignment: 9
+      pivot: {x: 0.4027778, y: -0.0027510317}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -7482192688997949147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_WALK_1.24
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1189
+        width: 320
+        height: 731
+      alignment: 9
+      pivot: {x: 0.484375, y: 0.0027359782}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 8101063806106153399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_WALK_1.25
+      rect:
+        serializedVersion: 2
+        x: 1669
+        y: 1927
+        width: 403
+        height: 726
+      alignment: 9
+      pivot: {x: 0.516129, y: -0.008264462}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -4169678715540449550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_WALK_1.26
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 1188
+        width: 485
+        height: 732
+      alignment: 9
+      pivot: {x: 0.5051546, y: -0.0027322404}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 2572010602320422155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_WALK_1.27
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1932
+        width: 453
+        height: 721
+      alignment: 9
+      pivot: {x: 0.57615894, y: -0.015256588}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 9191512666243952179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_WALK_1.28
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 3378
+        width: 373
+        height: 717
+      alignment: 9
+      pivot: {x: 0.55764073, y: -0.020920502}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 4983100470945780932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_WALK_2.04
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3385
+        width: 376
+        height: 710
+      alignment: 9
+      pivot: {x: 0.55585104, y: -0.02112676}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 8063515352777032796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_WALK_2.05
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 3382
+        width: 294
+        height: 713
+      alignment: 9
+      pivot: {x: 0.45238096, y: -0.022440393}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -5764809990188357468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_WALK_2.06
+      rect:
+        serializedVersion: 2
+        x: 2577
+        y: 3380
+        width: 314
+        height: 715
+      alignment: 9
+      pivot: {x: 0.41719747, y: -0.01958042}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 5178386599534212785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_WALK_2.07
+      rect:
+        serializedVersion: 2
+        x: 1977
+        y: 2656
+        width: 384
+        height: 720
+      alignment: 9
+      pivot: {x: 0.47395834, y: -0.016666668}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -463482569588797706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_WALK_2.08
+      rect:
+        serializedVersion: 2
+        x: 3491
+        y: 440
+        width: 447
+        height: 743
+      alignment: 9
+      pivot: {x: 0.5100671, y: 0.012113055}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -7642146132514592520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_WALK_2.09
+      rect:
+        serializedVersion: 2
+        x: 1264
+        y: 446
+        width: 438
+        height: 737
+      alignment: 9
+      pivot: {x: 0.5502283, y: 0.0081411125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -4523467166239637651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_WALK_2.10
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 448
+        width: 381
+        height: 735
+      alignment: 9
+      pivot: {x: 0.496063, y: 0.0027210885}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 2134786140354568437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_WALK_2.11
+      rect:
+        serializedVersion: 2
+        x: 2364
+        y: 1926
+        width: 288
+        height: 727
+      alignment: 9
+      pivot: {x: 0.4027778, y: -0.0027510317}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 1980780544544724062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_WALK_2.12
+      rect:
+        serializedVersion: 2
+        x: 3556
+        y: 1922
+        width: 320
+        height: 731
+      alignment: 9
+      pivot: {x: 0.484375, y: 0.0027359782}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -1233148883252168899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_WALK_2.13
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 1927
+        width: 402
+        height: 726
+      alignment: 9
+      pivot: {x: 0.51741296, y: -0.008264462}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -50160140804065795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_WALK_2.14
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 1188
+        width: 485
+        height: 732
+      alignment: 9
+      pivot: {x: 0.5051546, y: -0.0027322404}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 6394627862106383158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_WALK_2.15
+      rect:
+        serializedVersion: 2
+        x: 1523
+        y: 2656
+        width: 452
+        height: 720
+      alignment: 9
+      pivot: {x: 0.57743365, y: -0.015277778}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -8712165041844152472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_WALK_2.16
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 2659
+        width: 373
+        height: 717
+      alignment: 9
+      pivot: {x: 0.55764073, y: -0.020920502}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -974931959990352017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_WALK_2.17
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 3382
+        width: 296
+        height: 713
+      alignment: 9
+      pivot: {x: 0.4493243, y: -0.022440393}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -5451770371133052705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_WALK_2.18
+      rect:
+        serializedVersion: 2
+        x: 2261
+        y: 3380
+        width: 314
+        height: 715
+      alignment: 9
+      pivot: {x: 0.41719747, y: -0.01958042}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -8563184602702042159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_WALK_2.19
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 2656
+        width: 384
+        height: 720
+      alignment: 9
+      pivot: {x: 0.47395834, y: -0.016666668}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 2998866786509669442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_WALK_2.20
+      rect:
+        serializedVersion: 2
+        x: 3042
+        y: 440
+        width: 447
+        height: 743
+      alignment: 9
+      pivot: {x: 0.5100671, y: 0.012113055}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 1344539551282978438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_WALK_2.21
+      rect:
+        serializedVersion: 2
+        x: 1704
+        y: 446
+        width: 438
+        height: 737
+      alignment: 9
+      pivot: {x: 0.5502283, y: 0.0081411125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 5416946764188728609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_WALK_2.22
+      rect:
+        serializedVersion: 2
+        x: 2593
+        y: 1185
+        width: 381
+        height: 735
+      alignment: 9
+      pivot: {x: 0.496063, y: 0.0027210885}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -5843596714051213918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_WALK_2.23
+      rect:
+        serializedVersion: 2
+        x: 2654
+        y: 1926
+        width: 288
+        height: 727
+      alignment: 9
+      pivot: {x: 0.4027778, y: -0.0027510317}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 3711762045677435166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_WALK_2.24
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 1189
+        width: 320
+        height: 731
+      alignment: 9
+      pivot: {x: 0.484375, y: 0.0027359782}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -3368932939170413087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_WALK_2.25
+      rect:
+        serializedVersion: 2
+        x: 1264
+        y: 1927
+        width: 403
+        height: 726
+      alignment: 9
+      pivot: {x: 0.516129, y: -0.008264462}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -7985679337323899884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_WALK_2.26
+      rect:
+        serializedVersion: 2
+        x: 2106
+        y: 1188
+        width: 485
+        height: 732
+      alignment: 9
+      pivot: {x: 0.5051546, y: -0.0027322404}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 2828128109557091755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_WALK_2.27
+      rect:
+        serializedVersion: 2
+        x: 3203
+        y: 2655
+        width: 453
+        height: 721
+      alignment: 9
+      pivot: {x: 0.57615894, y: -0.015256588}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -7526598722295773549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_D_WALK_2.28
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2659
+        width: 373
+        height: 717
+      alignment: 9
+      pivot: {x: 0.55764073, y: -0.020920502}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -4615978912278272185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

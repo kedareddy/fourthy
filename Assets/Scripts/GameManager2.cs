@@ -47,8 +47,8 @@ public class GameManager2 : MonoBehaviour
     public Animator fourthyAnimator;
 
     public GameObject intro1Scene, introScene2, EqualityScene, EquityScene, LiberationScene, EndScene;
-    public GameObject bkgBlurredParent, bkgBlurred, fenceBlurred, builderBlurred, dustBlurred, pitcherBlurred, batterBlurred, catcherBlurred;
-    public GameObject fence, builder, dust, pitcher, batter, catcher, newFence1, newFence2, newFence3;
+    public GameObject bkgBlurredParent, bkgBlurred, fenceBlurred, builderBlurred, dustBlurred, pitcherBlurred, batterBlurred, catcherBlurred, builder2Blurred, fan1Blurred, fan2Blurred, fan3Blurred, fan4Blurred;
+    public GameObject fence, builder, dust, pitcher, batter, catcher, newFence1, newFence2, newFence3, builder2, fan1, fan2, fan3, fan4;
 
     public GameObject heartCounterButton, boxButton;
 
@@ -77,16 +77,17 @@ public class GameManager2 : MonoBehaviour
     public Animator liberationTextAnimator;
     public Image liberationBlackScreen;
     public Vector3 INIT_LIBERATION_POS = new Vector3(6.9f, -10.3f, -10f);
-    public GameObject ideaBubble;
+    public GameObject ideaBubble, ideaBubble2;
     public NewDrag panScript;
     public GameObject fireworks;
     public GameObject bottomBkgObject, topBkgObject;
+    public GameObject liberationFourthy, winningTeam, gamePlayers;
 
     //endscene references
     public GameObject endSceneUI;
     public GameObject endSceneIntroScreen;
     public Image endSceneBlackScreen;
-    public GameObject endSceneChars, endFenceBuilder, lastFence1, lastFence2, lastFence3, endBuilderDust;
+    public GameObject endSceneChars, endFenceBuilder, lastFence1, lastFence2, lastFence3, endBuilderDust, sawer;
     public Vector3 INIT_ENDSCENE_POS = new Vector3(18.3f, -9.6f, -10f);
 
     //credits references
@@ -116,7 +117,7 @@ public class GameManager2 : MonoBehaviour
     private List<Character> equityCharacters = new List<Character>();
     
 
-    // Use this for initialization
+    // Use this for initializat
     void Awake()
     {
         instance = this;
@@ -368,6 +369,12 @@ public class GameManager2 : MonoBehaviour
         intro2S.Join(pitcherBlurred.GetComponent<SpriteRenderer>().DOFade(0f, 1.5f).SetEase(Ease.InQuad));
         intro2S.Join(batterBlurred.GetComponent<SpriteRenderer>().DOFade(0f, 1.5f).SetEase(Ease.InQuad));
         intro2S.Join(catcherBlurred.GetComponent<SpriteRenderer>().DOFade(0f, 1.5f).SetEase(Ease.InQuad));
+        
+        intro2S.Join(builder2Blurred.GetComponent<SpriteRenderer>().DOFade(0f, 1.5f).SetEase(Ease.InQuad));
+        intro2S.Join(fan1Blurred.GetComponent<SpriteRenderer>().DOFade(0f, 1.5f).SetEase(Ease.InQuad));
+        intro2S.Join(fan2Blurred.GetComponent<SpriteRenderer>().DOFade(0f, 1.5f).SetEase(Ease.InQuad));
+        intro2S.Join(fan3Blurred.GetComponent<SpriteRenderer>().DOFade(0f, 1.5f).SetEase(Ease.InQuad));
+        intro2S.Join(fan4Blurred.GetComponent<SpriteRenderer>().DOFade(0f, 1.5f).SetEase(Ease.InQuad));
 
         intro2S.Join(fence.GetComponent<SpriteRenderer>().DOFade(1f, 1.5f).SetEase(Ease.InQuad));
         intro2S.Join(builder.GetComponent<SpriteRenderer>().DOFade(1f, 1.5f).SetEase(Ease.InQuad));
@@ -375,6 +382,12 @@ public class GameManager2 : MonoBehaviour
         intro2S.Join(pitcher.GetComponent<SpriteRenderer>().DOFade(1f, 1.5f).SetEase(Ease.InQuad));
         intro2S.Join(batter.GetComponent<SpriteRenderer>().DOFade(1f, 1.5f).SetEase(Ease.InQuad));
         intro2S.Join(catcher.GetComponent<SpriteRenderer>().DOFade(1f, 1.5f).SetEase(Ease.InQuad));
+
+        intro2S.Join(builder2.GetComponent<SpriteRenderer>().DOFade(1f, 1.5f).SetEase(Ease.InQuad));
+        intro2S.Join(fan1.GetComponent<SpriteRenderer>().DOFade(1f, 1.5f).SetEase(Ease.InQuad));
+        intro2S.Join(fan2.GetComponent<SpriteRenderer>().DOFade(1f, 1.5f).SetEase(Ease.InQuad));
+        intro2S.Join(fan3.GetComponent<SpriteRenderer>().DOFade(1f, 1.5f).SetEase(Ease.InQuad));
+        intro2S.Join(fan4.GetComponent<SpriteRenderer>().DOFade(1f, 1.5f).SetEase(Ease.InQuad));
     }
 
     public void Blur()
@@ -387,12 +400,24 @@ public class GameManager2 : MonoBehaviour
         batterBlurred.GetComponent<SpriteRenderer>().color = new Color(255f, 255f, 255f, 1f);
         catcherBlurred.GetComponent<SpriteRenderer>().color = new Color(255f, 255f, 255f, 1f);
 
+        builder2Blurred.GetComponent<SpriteRenderer>().color = new Color(255f, 255f, 255f, 1f);
+        fan1Blurred.GetComponent<SpriteRenderer>().color = new Color(255f, 255f, 255f, 1f);
+        fan2Blurred.GetComponent<SpriteRenderer>().color = new Color(255f, 255f, 255f, 1f);
+        fan3Blurred.GetComponent<SpriteRenderer>().color = new Color(255f, 255f, 255f, 1f);
+        fan4Blurred.GetComponent<SpriteRenderer>().color = new Color(255f, 255f, 255f, 1f);
+        
         fence.GetComponent<SpriteRenderer>().color = new Color(255f, 255f, 255f, 0f);
         builder.GetComponent<SpriteRenderer>().color = new Color(255f, 255f, 255f, 0f);
         dust.GetComponent<SpriteRenderer>().color = new Color(255f, 255f, 255f, 0f);
         pitcher.GetComponent<SpriteRenderer>().color = new Color(255f, 255f, 255f, 0f);
         batter.GetComponent<SpriteRenderer>().color = new Color(255f, 255f, 255f, 0f);
         catcher.GetComponent<SpriteRenderer>().color = new Color(255f, 255f, 255f, 0f);
+
+        builder2.GetComponent<SpriteRenderer>().color = new Color(255f, 255f, 255f, 0f);
+        fan1.GetComponent<SpriteRenderer>().color = new Color(255f, 255f, 255f, 0f);
+        fan2.GetComponent<SpriteRenderer>().color = new Color(255f, 255f, 255f, 0f);
+        fan3.GetComponent<SpriteRenderer>().color = new Color(255f, 255f, 255f, 0f);
+        fan4.GetComponent<SpriteRenderer>().color = new Color(255f, 255f, 255f, 0f);
     }
 
     public void Intro2_Exit()
@@ -508,10 +533,10 @@ public class GameManager2 : MonoBehaviour
     {
         SuccessScreen mySuccessScreen = successScene.GetComponent<SuccessScreen>();
         mySuccessScreen.percentText.text = percent.ToString() + "%";
-        Debug.Log("in turnonResultsScreen");
+        Debug.Log("in turnonResultsScreen: " + percent);
         if (fsm.CurrentStateMap.state.ToString() != States.Liberation.ToString())
         {
-            if (percent < 1f)
+            if (percent < 100f)
             {
                 mySuccessScreen.nextButton.GetComponent<Button>().interactable = false;
             }
@@ -756,20 +781,32 @@ public class GameManager2 : MonoBehaviour
         Camera.main.orthographicSize = 30;
         Camera.main.transform.position = INIT_LIBERATION_POS;
 
-        yield return new WaitForSeconds(10f);
-        if (panScript.numOfPans == 0)
-        {
+        yield return new WaitForSeconds(5f);
+        //if (panScript.numOfPans == 0)
+        //{
             clickTutorialUIText.text = "Tap and drag\n to pan sideways";
             
-            clickTutorialUI.transform.position = new Vector3(Screen.width*0.5f, clickTutorialUI.transform.position.y, clickTutorialUI.transform.position.z);
+            clickTutorialUI.transform.localPosition = new Vector3(0f, clickTutorialUI.transform.localPosition.y, clickTutorialUI.transform.position.z);
             Tween showTextTutorial = clickTutorialUI.transform.DOLocalMoveY(clickTutorialUI.transform.localPosition.y - 100f, 0.5f).From().SetEase(Ease.OutQuad);
             showTextTutorial.OnPlay(() =>
             {
                 clickTutorialUI.SetActive(true);
                 clickTutorialAnimator.SetBool("isDrag", true);
+                StartCoroutine(TurnOffFirstLibTutText());
             });
-        }
+        //}
         
+    }
+
+    public IEnumerator TurnOffFirstLibTutText()
+    {
+        yield return new WaitForSeconds(10f);
+        if (clickTutorialUI.activeInHierarchy)
+        {
+            turnedOffClickTutorial = true;
+            clickTutorialUI.SetActive(false);
+            clickTutorialAnimator.SetBool("isDrag", false);
+        }
     }
 
     public void CalculateScore_Liberation()
@@ -802,16 +839,22 @@ public class GameManager2 : MonoBehaviour
     private bool triggerJumpMeter = false;
     public int currenFencePower = 0;
     private int maxFencePower = 12;
-    private bool initiateBreakFence = false; 
+    private bool initiateBreakFence = false;
+    private bool turnedOffClickTutorial = false;
     public void Liberation_Update()
     {
 
-        if (panScript.numOfPans > 0)
+        if (panScript.numOfPans > 1)
         {
-            if (clickTutorialUI.activeInHierarchy)
+            if (turnedOffClickTutorial == false)
             {
-                clickTutorialUI.SetActive(false);
-                clickTutorialAnimator.SetBool("isDrag", false);
+
+                if (clickTutorialUI.activeInHierarchy)
+                {
+                    turnedOffClickTutorial = true;
+                    clickTutorialUI.SetActive(false);
+                    clickTutorialAnimator.SetBool("isDrag", false);
+                }
             }
         }
             //Debug.Log("howMany: " + howManyOnFence + " allChars: " + allFenceChars.Count); 
@@ -852,7 +895,7 @@ public class GameManager2 : MonoBehaviour
     {
         yield return new WaitForSeconds(6f);
         Sequence successS = DOTween.Sequence();
-        successS.Append(DOTween.To(() => Camera.main.orthographicSize, x => Camera.main.orthographicSize = x, 60, 5f));
+        successS.Append(DOTween.To(() => Camera.main.orthographicSize, x => Camera.main.orthographicSize = x, 57, 5f));
         successS.Join(Camera.main.transform.DOMove(new Vector3(23f, 5f, Camera.main.transform.position.z), 5f, false));
         successS.InsertCallback(2f, () =>
         {
@@ -881,15 +924,118 @@ public class GameManager2 : MonoBehaviour
     }
 
     private bool triggeredIB = false;
-    public void TriggerIdeaBubble(Vector3 pos)
+    public void TriggerIdeaBubble(SitPoint point1, SitPoint point2)
     {
         if(triggeredIB == false)
         {
             triggeredIB = true;
-            ideaBubble.SetActive(true);
-            ideaBubble.transform.position = pos;
-            ideaBubble.transform.DOLocalMoveY(5f, 2f).SetSpeedBased().SetEase(Ease.Linear);
+            Vector3 idea1LocalPos = new Vector3(point1.occupant.speechBubble.transform.localPosition.x, point1.occupant.speechBubble.transform.localPosition.y, Mathf.Abs(point1.occupant.speechBubble.transform.localPosition.z));
+            Vector3 idea2LocalPos = new Vector3(point2.occupant.speechBubble.transform.localPosition.x, point2.occupant.speechBubble.transform.localPosition.y, Mathf.Abs(point2.occupant.speechBubble.transform.localPosition.z));
+
+            Camera.main.GetComponent<NewDrag>().enabled = false;
+            CountDownTimer.Instance.countDownTween.TogglePause();
+
+            Camera.main.transform.DOMoveX(point1.transformPoint.parent.position.x + 12f, 20f).SetSpeedBased().SetEase(Ease.Linear).OnComplete(()=> {
+
+                ideaBubble.gameObject.transform.SetParent(point1.transformPoint);
+                ideaBubble2.gameObject.transform.SetParent(point2.transformPoint);
+                Debug.Log("should have parented by now");
+
+                ideaBubble.transform.localPosition = Vector3.zero;
+                ideaBubble2.transform.localPosition = Vector3.zero ;
+                //space out the bubbles a bit
+                if(point1.yAngle > 1f)
+                {
+                    ideaBubble.transform.SetLocalX(ideaBubble.transform.localPosition.x + 2f);
+                    ideaBubble2.transform.SetLocalX(ideaBubble.transform.localPosition.x - 2f);
+                }
+                else
+                {
+                    ideaBubble.transform.SetLocalX(ideaBubble.transform.localPosition.x - 2f);
+                    ideaBubble2.transform.SetLocalX(ideaBubble.transform.localPosition.x + 2f);
+                }
+                Sequence ideaBubbleS = DOTween.Sequence();
+                
+                ideaBubbleS.Append(ideaBubble.transform.DOLocalMoveY(5f, 2f).SetSpeedBased().SetEase(Ease.Linear));
+                ideaBubbleS.Join(ideaBubble2.transform.DOLocalMoveY(5f, 2f).SetSpeedBased().SetEase(Ease.Linear));
+                ideaBubbleS.OnPlay(() =>
+                {
+                    ideaBubble.SetActive(true);
+                    ideaBubble2.SetActive(true);
+                });
+
+                bool fadeInOnce = false;
+                ideaBubbleS.OnUpdate(() => {
+                    if(ideaBubbleS.ElapsedPercentage() > 0.95f)
+                    {
+                        if (fadeInOnce == false)
+                        {
+                            fadeInOnce = true;
+                            ideaBubble.GetComponent<SpriteRenderer>().DOFade(1f, 1f).From();
+                            ideaBubble2.GetComponent<SpriteRenderer>().DOFade(1f, 1f).From();
+                        }
+                    }
+                });
+
+                ideaBubbleS.OnComplete(() => {
+                    ideaBubble.transform.DOScale(new Vector3(ideaBubble.transform.localScale.x - 0.1f, ideaBubble.transform.localScale.y-0.1f, ideaBubble.transform.localScale.z), .8f).SetLoops(-1, LoopType.Yoyo).SetEase(Ease.OutQuad);
+                    ideaBubble2.transform.DOScale(new Vector3(ideaBubble2.transform.localScale.x - 0.1f, ideaBubble2.transform.localScale.y - 0.1f, ideaBubble2.transform.localScale.z), .8f).SetLoops(-1, LoopType.Yoyo).SetEase(Ease.OutQuad);
+
+                    //make them interactive
+                    ideaBubble.GetComponent<BoxCollider2D>().enabled = true;
+                    ideaBubble2.GetComponent<BoxCollider2D>().enabled = true;
+                    //click tutorial
+                    clickTutorialUIText.text = "Tap on one of the\n ideas to try it";
+
+                    //clickTutorialUI.transform.localPosition = new Vector3(0f, clickTutorialUI.transform.localPosition.y, clickTutorialUI.transform.position.z);
+                    //Tween showTextTutorial = clickTutorialUI.transform.DOLocalMoveY(clickTutorialUI.transform.localPosition.y - 100f, 0.5f).From().SetEase(Ease.OutQuad);
+                    //showTextTutorial.OnPlay(() =>
+                    //{
+                        clickTutorialUI.SetActive(true);
+                    //});
+                });           
+            });
         }
+    }
+
+
+    public void HandleIdeaBubble2()
+    {
+        
+        clickTutorialUI.SetActive(false);
+
+        Vector3 endPoint = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width / 2f, Screen.height * 0.5f, Camera.main.nearClipPlane));
+        ideaBubble2.transform.DOKill();
+        Sequence ideaBubble2S = DOTween.Sequence();
+        ideaBubble2S.SetDelay(0.5f);
+        ideaBubble2S.Append(ideaBubble2.transform.DOMove(new Vector3(endPoint.x, endPoint.y, ideaBubble2.transform.position.z), 1f).SetEase(Ease.OutQuad));
+        ideaBubble2S.Join(ideaBubble2.transform.DOScale(new Vector3(8f, 6.6f,ideaBubble2.transform.localScale.z), 1f).SetEase(Ease.OutQuad));
+       
+        ideaBubble2S.AppendInterval(5f);
+        ideaBubble2S.OnComplete(() =>
+        {
+            ideaBubble.SetActive(false);
+            ideaBubble2.SetActive(false);
+            Camera.main.GetComponent<NewDrag>().enabled = true;
+            CountDownTimer.Instance.countDownTween.TogglePause();
+            textTutorialText.text = "Continue to create boxes\n to achieve perfect equity";
+
+            //textTutorialUI.transform.localPosition = new Vector3(0f, textTutorialUI.transform.localPosition.y, textTutorialUI.transform.position.z);
+            //Tween showTextTutorial = textTutorialUI.transform.DOLocalMoveY(textTutorialUI.transform.localPosition.y - 100f, 0.5f).From().SetEase(Ease.OutQuad);
+            //showTextTutorial.OnPlay(() =>
+            //{
+                textTutorialUI.SetActive(true);
+                StartCoroutine(TurnOffIdeaBubble2HelpText());
+            //});
+        });
+
+        
+    }
+
+    public IEnumerator TurnOffIdeaBubble2HelpText()
+    {
+        yield return new WaitForSeconds(2.5f);
+        textTutorialUI.SetActive(false);
     }
 
     //track if character is going to stand on fence
@@ -900,13 +1046,15 @@ public class GameManager2 : MonoBehaviour
     {
         //Debug.Log("idea bubble clicked");
         //disable camera drag
+        clickTutorialUI.SetActive(false);
+        ideaBubble2.SetActive(false);
         Camera.main.GetComponent<NewDrag>().enabled = false;
         Vector3 endPoint = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width/2f, Screen.height*0.5f, Camera.main.nearClipPlane));
         ideaBubble.transform.DOKill();
         Sequence ideaBubbleS = DOTween.Sequence();
         ideaBubbleS.SetDelay(0.5f);
         ideaBubbleS.Append(ideaBubble.transform.DOMove(new Vector3(endPoint.x, endPoint.y, ideaBubble.transform.position.z), 1f).SetEase(Ease.OutQuad));
-        ideaBubbleS.Join(ideaBubble.transform.DOScale(26f, 1f).SetEase(Ease.OutQuad));
+        ideaBubbleS.Join(ideaBubble.transform.DOScale(new Vector3(8f, 6.6f, ideaBubble.transform.localScale.z), 1f).SetEase(Ease.OutQuad));
         ideaBubbleS.AppendCallback(() =>
         {
             finalBoxes.SetActive(true);
@@ -917,7 +1065,7 @@ public class GameManager2 : MonoBehaviour
             //turn off back button
             liberationUI.transform.GetChild(0).gameObject.SetActive(false);
         });
-        ideaBubbleS.AppendInterval(3f);
+        ideaBubbleS.AppendInterval(5f);
         ideaBubbleS.OnComplete(()=> {
             ideaBubble.SetActive(false);
             foreach (Transform child in LiberationScene.transform)
@@ -1020,6 +1168,7 @@ public class GameManager2 : MonoBehaviour
         fadingS.AppendCallback(() =>
         {
             endSceneChars.SetActive(false);
+            sawer.SetActive(false);
         });
         fadingS.Append(endSceneBlackScreen.DOFade(1f, .5f).SetEase(Ease.InOutQuad).From());
 

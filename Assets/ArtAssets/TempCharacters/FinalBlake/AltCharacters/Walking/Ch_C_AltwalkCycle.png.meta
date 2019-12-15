@@ -1,0 +1,1291 @@
+fileFormatVersion: 2
+guid: a7acadb7dbc2945a1b91cf55c9eb56b6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2099046436501539757
+    second: Ch_C_WALK_1.04
+  - first:
+      213: 7504953951705065128
+    second: Ch_C_WALK_1.05
+  - first:
+      213: -3027225339146224034
+    second: Ch_C_WALK_1.06
+  - first:
+      213: -220410289062980019
+    second: Ch_C_WALK_1.07
+  - first:
+      213: -2904973603357539860
+    second: Ch_C_WALK_1.08
+  - first:
+      213: -6991902169465044932
+    second: Ch_C_WALK_1.09
+  - first:
+      213: 2271215407123896266
+    second: Ch_C_WALK_1.10
+  - first:
+      213: 6792561099489930026
+    second: Ch_C_WALK_1.11
+  - first:
+      213: 1446625067718872327
+    second: Ch_C_WALK_1.12
+  - first:
+      213: -1431044912274199413
+    second: Ch_C_WALK_1.13
+  - first:
+      213: -8496833160233762625
+    second: Ch_C_WALK_1.14
+  - first:
+      213: 1883183250232625082
+    second: Ch_C_WALK_1.15
+  - first:
+      213: -3963085174266051278
+    second: Ch_C_WALK_1.16
+  - first:
+      213: 813800353195828559
+    second: Ch_C_WALK_1.17
+  - first:
+      213: 2506202650683591610
+    second: Ch_C_WALK_1.18
+  - first:
+      213: 654936317612611723
+    second: Ch_C_WALK_1.19
+  - first:
+      213: -8234644330217563957
+    second: Ch_C_WALK_1.20
+  - first:
+      213: -6695635914144045394
+    second: Ch_C_WALK_1.21
+  - first:
+      213: 6657103293646828896
+    second: Ch_C_WALK_1.22
+  - first:
+      213: 5736427176894699030
+    second: Ch_C_WALK_1.23
+  - first:
+      213: -4999503152339788530
+    second: Ch_C_WALK_1.24
+  - first:
+      213: -5103813519227838268
+    second: Ch_C_WALK_1.25
+  - first:
+      213: 7057459736876125996
+    second: Ch_C_WALK_1.26
+  - first:
+      213: 479885978129616591
+    second: Ch_C_WALK_1.27
+  - first:
+      213: -3988178879394570157
+    second: Ch_C_WALK_1.28
+  - first:
+      213: -4435424664517942319
+    second: Ch_C_WALK_2.04
+  - first:
+      213: -3956539942131213052
+    second: Ch_C_WALK_2.05
+  - first:
+      213: 3889917515287290742
+    second: Ch_C_WALK_2.06
+  - first:
+      213: -7117557879280406752
+    second: Ch_C_WALK_2.07
+  - first:
+      213: 7300804934653705615
+    second: Ch_C_WALK_2.08
+  - first:
+      213: -7559635859086191653
+    second: Ch_C_WALK_2.09
+  - first:
+      213: 8634783438070037512
+    second: Ch_C_WALK_2.10
+  - first:
+      213: 1479666260555229890
+    second: Ch_C_WALK_2.11
+  - first:
+      213: 6363737979611478420
+    second: Ch_C_WALK_2.12
+  - first:
+      213: 2477016800879430230
+    second: Ch_C_WALK_2.13
+  - first:
+      213: 2378944837921514514
+    second: Ch_C_WALK_2.14
+  - first:
+      213: -3290843784444423722
+    second: Ch_C_WALK_2.15
+  - first:
+      213: 7771657857534440072
+    second: Ch_C_WALK_2.16
+  - first:
+      213: -3050237024402994185
+    second: Ch_C_WALK_2.17
+  - first:
+      213: -7584632766813828889
+    second: Ch_C_WALK_2.18
+  - first:
+      213: 7805302110676301497
+    second: Ch_C_WALK_2.19
+  - first:
+      213: 2584607709989316775
+    second: Ch_C_WALK_2.20
+  - first:
+      213: 7197977383941519125
+    second: Ch_C_WALK_2.21
+  - first:
+      213: -6189069651786921553
+    second: Ch_C_WALK_2.22
+  - first:
+      213: 7846341382645233259
+    second: Ch_C_WALK_2.23
+  - first:
+      213: 2677270773281767563
+    second: Ch_C_WALK_2.24
+  - first:
+      213: -7249848396738684781
+    second: Ch_C_WALK_2.25
+  - first:
+      213: 5768667102774576039
+    second: Ch_C_WALK_2.26
+  - first:
+      213: -8513028005799575407
+    second: Ch_C_WALK_2.27
+  - first:
+      213: -8774261645794431636
+    second: Ch_C_WALK_2.28
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ch_C_WALK_1.04
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 1190
+        width: 382
+        height: 727
+      alignment: 9
+      pivot: {x: 0.36125654, y: 0.0068775793}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 2099046436501539757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_WALK_1.05
+      rect:
+        serializedVersion: 2
+        x: 2936
+        y: 2648
+        width: 352
+        height: 723
+      alignment: 9
+      pivot: {x: 0.38920453, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 7504953951705065128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_WALK_1.06
+      rect:
+        serializedVersion: 2
+        x: 3644
+        y: 2648
+        width: 323
+        height: 723
+      alignment: 9
+      pivot: {x: 0.43962848, y: 0.0055325036}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -3027225339146224034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_WALK_1.07
+      rect:
+        serializedVersion: 2
+        x: 2573
+        y: 409
+        width: 395
+        height: 761
+      alignment: 9
+      pivot: {x: 0.4556962, y: 0.051248357}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -220410289062980019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_WALK_1.08
+      rect:
+        serializedVersion: 2
+        x: 1853
+        y: 417
+        width: 358
+        height: 753
+      alignment: 9
+      pivot: {x: 0.50558656, y: 0.05046481}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -2904973603357539860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_WALK_1.09
+      rect:
+        serializedVersion: 2
+        x: 3504
+        y: 1172
+        width: 312
+        height: 745
+      alignment: 9
+      pivot: {x: 0.44230768, y: 0.03758389}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -6991902169465044932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_WALK_1.10
+      rect:
+        serializedVersion: 2
+        x: 1401
+        y: 2649
+        width: 350
+        height: 722
+      alignment: 9
+      pivot: {x: 0.3942857, y: 0.0013850415}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 2271215407123896266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_WALK_1.11
+      rect:
+        serializedVersion: 2
+        x: 2648
+        y: 1920
+        width: 389
+        height: 726
+      alignment: 9
+      pivot: {x: 0.3521851, y: 0.004132231}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 6792561099489930026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_WALK_1.12
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 1923
+        width: 411
+        height: 723
+      alignment: 9
+      pivot: {x: 0.35036495, y: 0.0055325036}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 1446625067718872327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_WALK_1.13
+      rect:
+        serializedVersion: 2
+        x: 1539
+        y: 1190
+        width: 443
+        height: 727
+      alignment: 9
+      pivot: {x: 0.39503387, y: 0.011004127}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -1431044912274199413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_WALK_1.14
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 3375
+        width: 429
+        height: 720
+      alignment: 9
+      pivot: {x: 0.4032634, y: 0.0069444445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -8496833160233762625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_WALK_1.15
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 3375
+        width: 371
+        height: 720
+      alignment: 9
+      pivot: {x: 0.37196764, y: 0.004166667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 1883183250232625082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_WALK_1.16
+      rect:
+        serializedVersion: 2
+        x: 1930
+        y: 1920
+        width: 357
+        height: 726
+      alignment: 9
+      pivot: {x: 0.38655463, y: 0.006887052}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -3963085174266051278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_WALK_1.17
+      rect:
+        serializedVersion: 2
+        x: 3213
+        y: 3373
+        width: 340
+        height: 722
+      alignment: 9
+      pivot: {x: 0.40294117, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 813800353195828559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_WALK_1.18
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 1190
+        width: 323
+        height: 727
+      alignment: 9
+      pivot: {x: 0.43962848, y: 0.011004127}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 2506202650683591610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_WALK_1.19
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 419
+        width: 395
+        height: 751
+      alignment: 9
+      pivot: {x: 0.4556962, y: 0.03861518}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 654936317612611723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_WALK_1.20
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 425
+        width: 370
+        height: 745
+      alignment: 9
+      pivot: {x: 0.48918918, y: 0.040268455}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -8234644330217563957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_WALK_1.21
+      rect:
+        serializedVersion: 2
+        x: 2874
+        y: 1184
+        width: 313
+        height: 733
+      alignment: 9
+      pivot: {x: 0.44089457, y: 0.021828104}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -6695635914144045394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_WALK_1.22
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 2649
+        width: 351
+        height: 722
+      alignment: 9
+      pivot: {x: 0.3931624, y: 0.0013850415}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 6657103293646828896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_WALK_1.23
+      rect:
+        serializedVersion: 2
+        x: 3039
+        y: 1920
+        width: 385
+        height: 726
+      alignment: 9
+      pivot: {x: 0.35584417, y: 0.004132231}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 5736427176894699030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_WALK_1.24
+      rect:
+        serializedVersion: 2
+        x: 2524
+        y: 2648
+        width: 410
+        height: 723
+      alignment: 9
+      pivot: {x: 0.34878048, y: 0.0055325036}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -4999503152339788530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_WALK_1.25
+      rect:
+        serializedVersion: 2
+        x: 1984
+        y: 1189
+        width: 443
+        height: 728
+      alignment: 9
+      pivot: {x: 0.39503387, y: 0.012362638}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -5103813519227838268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_WALK_1.26
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 3375
+        width: 427
+        height: 720
+      alignment: 9
+      pivot: {x: 0.40515223, y: 0.0069444445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 7057459736876125996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_WALK_1.27
+      rect:
+        serializedVersion: 2
+        x: 2840
+        y: 3375
+        width: 371
+        height: 720
+      alignment: 9
+      pivot: {x: 0.37196764, y: 0.004166667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 479885978129616591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_WALK_1.28
+      rect:
+        serializedVersion: 2
+        x: 3555
+        y: 3373
+        width: 357
+        height: 722
+      alignment: 9
+      pivot: {x: 0.38655463, y: 0.0013850415}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -3988178879394570157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_WALK_2.04
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 1190
+        width: 382
+        height: 727
+      alignment: 9
+      pivot: {x: 0.36125654, y: 0.0068775793}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -4435424664517942319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_WALK_2.05
+      rect:
+        serializedVersion: 2
+        x: 3290
+        y: 2648
+        width: 352
+        height: 723
+      alignment: 9
+      pivot: {x: 0.38920453, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -3956539942131213052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_WALK_2.06
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1923
+        width: 323
+        height: 723
+      alignment: 9
+      pivot: {x: 0.43962848, y: 0.0055325036}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 3889917515287290742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_WALK_2.07
+      rect:
+        serializedVersion: 2
+        x: 2970
+        y: 409
+        width: 395
+        height: 761
+      alignment: 9
+      pivot: {x: 0.4556962, y: 0.051248357}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -7117557879280406752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_WALK_2.08
+      rect:
+        serializedVersion: 2
+        x: 2213
+        y: 417
+        width: 358
+        height: 753
+      alignment: 9
+      pivot: {x: 0.50558656, y: 0.05046481}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 7300804934653705615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_WALK_2.09
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 425
+        width: 312
+        height: 745
+      alignment: 9
+      pivot: {x: 0.44230768, y: 0.03758389}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -7559635859086191653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_WALK_2.10
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2649
+        width: 350
+        height: 722
+      alignment: 9
+      pivot: {x: 0.3942857, y: 0.0013850415}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 8634783438070037512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_WALK_2.11
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1920
+        width: 389
+        height: 726
+      alignment: 9
+      pivot: {x: 0.3521851, y: 0.004132231}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 1479666260555229890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_WALK_2.12
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 1923
+        width: 411
+        height: 723
+      alignment: 9
+      pivot: {x: 0.35036495, y: 0.0055325036}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 6363737979611478420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_WALK_2.13
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1190
+        width: 443
+        height: 727
+      alignment: 9
+      pivot: {x: 0.39503387, y: 0.011004127}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 2477016800879430230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_WALK_2.14
+      rect:
+        serializedVersion: 2
+        x: 2036
+        y: 3375
+        width: 429
+        height: 720
+      alignment: 9
+      pivot: {x: 0.4032634, y: 0.0069444445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 2378944837921514514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_WALK_2.15
+      rect:
+        serializedVersion: 2
+        x: 1663
+        y: 3375
+        width: 371
+        height: 720
+      alignment: 9
+      pivot: {x: 0.37196764, y: 0.004166667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -3290843784444423722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_WALK_2.16
+      rect:
+        serializedVersion: 2
+        x: 2289
+        y: 1920
+        width: 357
+        height: 726
+      alignment: 9
+      pivot: {x: 0.38655463, y: 0.006887052}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 7771657857534440072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_WALK_2.17
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 2649
+        width: 340
+        height: 722
+      alignment: 9
+      pivot: {x: 0.40294117, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -3050237024402994185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_WALK_2.18
+      rect:
+        serializedVersion: 2
+        x: 3426
+        y: 1919
+        width: 323
+        height: 727
+      alignment: 9
+      pivot: {x: 0.43962848, y: 0.011004127}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -7584632766813828889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_WALK_2.19
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 419
+        width: 395
+        height: 751
+      alignment: 9
+      pivot: {x: 0.4556962, y: 0.03861518}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 7805302110676301497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_WALK_2.20
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 425
+        width: 370
+        height: 745
+      alignment: 9
+      pivot: {x: 0.48918918, y: 0.040268455}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 2584607709989316775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_WALK_2.21
+      rect:
+        serializedVersion: 2
+        x: 3189
+        y: 1184
+        width: 313
+        height: 733
+      alignment: 9
+      pivot: {x: 0.44089457, y: 0.021828104}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 7197977383941519125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_WALK_2.22
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 2649
+        width: 351
+        height: 722
+      alignment: 9
+      pivot: {x: 0.3931624, y: 0.0013850415}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -6189069651786921553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_WALK_2.23
+      rect:
+        serializedVersion: 2
+        x: 1543
+        y: 1920
+        width: 385
+        height: 726
+      alignment: 9
+      pivot: {x: 0.35584417, y: 0.004132231}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 7846341382645233259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_WALK_2.24
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 2648
+        width: 410
+        height: 723
+      alignment: 9
+      pivot: {x: 0.34878048, y: 0.0055325036}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 2677270773281767563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_WALK_2.25
+      rect:
+        serializedVersion: 2
+        x: 2429
+        y: 1189
+        width: 443
+        height: 728
+      alignment: 9
+      pivot: {x: 0.39503387, y: 0.012362638}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -7249848396738684781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_WALK_2.26
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3375
+        width: 427
+        height: 720
+      alignment: 9
+      pivot: {x: 0.40515223, y: 0.0069444445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 5768667102774576039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_WALK_2.27
+      rect:
+        serializedVersion: 2
+        x: 2467
+        y: 3375
+        width: 371
+        height: 720
+      alignment: 9
+      pivot: {x: 0.37196764, y: 0.004166667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -8513028005799575407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ch_C_WALK_2.28
+      rect:
+        serializedVersion: 2
+        x: 1753
+        y: 2649
+        width: 357
+        height: 722
+      alignment: 9
+      pivot: {x: 0.38655463, y: 0.0013850415}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -8774261645794431636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

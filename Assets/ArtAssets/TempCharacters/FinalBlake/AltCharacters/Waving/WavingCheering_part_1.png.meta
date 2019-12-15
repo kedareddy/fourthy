@@ -1,0 +1,1339 @@
+fileFormatVersion: 2
+guid: a7f7a58cd739b440c9529351ac94f2ad
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8398539074798029056
+    second: Scene - Char_A_B-Scene - Char_A_B.07
+  - first:
+      213: 178847664848206280
+    second: Scene - Char_A_B-Scene - Char_A_B.08
+  - first:
+      213: 7779028210096920319
+    second: Scene - Char_A_B-Scene - Char_A_B.09
+  - first:
+      213: 8866373958439005567
+    second: Scene - Char_A_B-Scene - Char_A_B.10
+  - first:
+      213: 1567335162223769606
+    second: Scene - Char_A_B-Scene - Char_A_B.11
+  - first:
+      213: -8750500003660591366
+    second: Scene - Char_A_B-Scene - Char_A_B.12
+  - first:
+      213: -7291484059752697620
+    second: Scene - Char_A_B-Scene - Char_A_B.13
+  - first:
+      213: -1169594352329491728
+    second: Scene - Char_A_B-Scene - Char_A_B.14
+  - first:
+      213: 2593026860852536433
+    second: Scene - Char_A_B_2-Scene - Char_A_B_2.05
+  - first:
+      213: -1552901372432333740
+    second: Scene - Char_A_B_2-Scene - Char_A_B_2.06
+  - first:
+      213: -7591051997245974992
+    second: Scene - Char_A_B_2-Scene - Char_A_B_2.07
+  - first:
+      213: 2005007541172873046
+    second: Scene - Char_A_B_2-Scene - Char_A_B_2.08
+  - first:
+      213: -3383736838916232297
+    second: Scene - Char_A_B_2-Scene - Char_A_B_2.09
+  - first:
+      213: -8823214607609623323
+    second: Scene - Char_A_B_2-Scene - Char_A_B_2.10
+  - first:
+      213: 2502153598223587479
+    second: Scene - Char_A_B_2-Scene - Char_A_B_2.11
+  - first:
+      213: 7198518427795735926
+    second: Scene - Char_A_C-Scene - Char_A_C.09
+  - first:
+      213: -3153027821546304291
+    second: Scene - Char_A_C-Scene - Char_A_C.10
+  - first:
+      213: -4372501673762443921
+    second: Scene - Char_A_C-Scene - Char_A_C.11
+  - first:
+      213: 2113530075637399457
+    second: Scene - Char_A_C-Scene - Char_A_C.12
+  - first:
+      213: -7860579687766772014
+    second: Scene - Char_A_C-Scene - Char_A_C.13
+  - first:
+      213: 1340742888692892725
+    second: Scene - Char_A_C-Scene - Char_A_C.14
+  - first:
+      213: 6333760677288190871
+    second: Scene - Char_A_C-Scene - Char_A_C.15
+  - first:
+      213: 6739802943942919279
+    second: Scene - Char_A_C-Scene - Char_A_C.16
+  - first:
+      213: 1310298432100471532
+    second: Scene - Char_A_C_2-Scene - Char_A_C_2.04
+  - first:
+      213: -6938017485700339297
+    second: Scene - Char_A_C_2-Scene - Char_A_C_2.05
+  - first:
+      213: -1376101415021601518
+    second: Scene - Char_A_C_2-Scene - Char_A_C_2.06
+  - first:
+      213: -5223518246449694965
+    second: Scene - Char_A_C_2-Scene - Char_A_C_2.07
+  - first:
+      213: 6113803398190732179
+    second: Scene - Char_A_C_2-Scene - Char_A_C_2.08
+  - first:
+      213: 375413756699900307
+    second: Scene - Char_A_C_2-Scene - Char_A_C_2.09
+  - first:
+      213: 5439789957707838359
+    second: Scene - Char_A_C_2-Scene - Char_A_C_2.10
+  - first:
+      213: -6522588800863217781
+    second: Scene - Char_B_B-Scene - Char_B_B.05
+  - first:
+      213: -5268531242004846676
+    second: Scene - Char_B_B-Scene - Char_B_B.06
+  - first:
+      213: 7320128324573007284
+    second: Scene - Char_B_B-Scene - Char_B_B.07
+  - first:
+      213: 1735248288343231084
+    second: Scene - Char_B_B-Scene - Char_B_B.08
+  - first:
+      213: -347035752799875279
+    second: Scene - Char_B_B-Scene - Char_B_B.09
+  - first:
+      213: 6441758978998085658
+    second: Scene - Char_B_C-Scene - Char_B_C.06
+  - first:
+      213: -7518626540756917404
+    second: Scene - Char_B_C-Scene - Char_B_C.07
+  - first:
+      213: 1098790982317372867
+    second: Scene - Char_B_C-Scene - Char_B_C.08
+  - first:
+      213: -7228720374636409789
+    second: Scene - Char_B_C-Scene - Char_B_C.09
+  - first:
+      213: -2074719920930079229
+    second: Scene - Char_B_C-Scene - Char_B_C.10
+  - first:
+      213: 5028081638619289726
+    second: Scene - Char_C_B-Scene - Char_C_B.06
+  - first:
+      213: 3021209746140889113
+    second: Scene - Char_C_B-Scene - Char_C_B.07
+  - first:
+      213: 93738638750505674
+    second: Scene - Char_C_B-Scene - Char_C_B.08
+  - first:
+      213: 6776223024573614925
+    second: Scene - Char_C_B-Scene - Char_C_B.09
+  - first:
+      213: -9042155049653835959
+    second: Scene - Char_C_B-Scene - Char_C_B.10
+  - first:
+      213: -3458424096190059822
+    second: Scene - Char_C_B_2-Scene - Char_C_B_2.04
+  - first:
+      213: -5867011962250602496
+    second: Scene - Char_C_B_2-Scene - Char_C_B_2.05
+  - first:
+      213: 5924271215554134188
+    second: Scene - Char_C_B_2-Scene - Char_C_B_2.06
+  - first:
+      213: -4979816324036716136
+    second: Scene - Char_C_B_2-Scene - Char_C_B_2.07
+  - first:
+      213: 7177067792453326710
+    second: Scene - Char_C_B_2-Scene - Char_C_B_2.08
+  - first:
+      213: 5000541613175657668
+    second: Scene - Char_C_B_2-Scene - Char_C_B_2.09
+  - first:
+      213: -157833510980537637
+    second: Scene - Char_C_B_2-Scene - Char_C_B_2.10
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Scene - Char_A_B-Scene - Char_A_B.07
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3108
+        width: 334
+        height: 987
+      alignment: 9
+      pivot: {x: 0.5508982, y: 0.004052685}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 8398539074798029056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - Char_A_B-Scene - Char_A_B.08
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 2935
+        width: 299
+        height: 1160
+      alignment: 9
+      pivot: {x: 0.49832776, y: 0.0017241379}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 178847664848206280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - Char_A_B-Scene - Char_A_B.09
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 2954
+        width: 461
+        height: 1141
+      alignment: 9
+      pivot: {x: 0.6746204, y: 0.0017528484}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 7779028210096920319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - Char_A_B-Scene - Char_A_B.10
+      rect:
+        serializedVersion: 2
+        x: 1101
+        y: 3009
+        width: 525
+        height: 1086
+      alignment: 9
+      pivot: {x: 0.71428573, y: 0.0018416207}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 8866373958439005567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - Char_A_B-Scene - Char_A_B.11
+      rect:
+        serializedVersion: 2
+        x: 1101
+        y: 3009
+        width: 525
+        height: 1086
+      alignment: 9
+      pivot: {x: 0.71428573, y: 0.0018416207}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 1567335162223769606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - Char_A_B-Scene - Char_A_B.12
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 2954
+        width: 461
+        height: 1141
+      alignment: 9
+      pivot: {x: 0.6746204, y: 0.0017528484}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -8750500003660591366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - Char_A_B-Scene - Char_A_B.13
+      rect:
+        serializedVersion: 2
+        x: 1628
+        y: 2938
+        width: 356
+        height: 1157
+      alignment: 9
+      pivot: {x: 0.57865167, y: 0.0017286085}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -7291484059752697620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - Char_A_B-Scene - Char_A_B.14
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3108
+        width: 334
+        height: 987
+      alignment: 9
+      pivot: {x: 0.5508982, y: 0.004052685}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -1169594352329491728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - Char_A_B_2-Scene - Char_A_B_2.05
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3108
+        width: 334
+        height: 987
+      alignment: 9
+      pivot: {x: 0.5508982, y: 0.004052685}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 2593026860852536433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - Char_A_B_2-Scene - Char_A_B_2.06
+      rect:
+        serializedVersion: 2
+        x: 1986
+        y: 3026
+        width: 413
+        height: 1069
+      alignment: 9
+      pivot: {x: 0.44552058, y: 0.0037418148}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -1552901372432333740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - Char_A_B_2-Scene - Char_A_B_2.07
+      rect:
+        serializedVersion: 2
+        x: 2401
+        y: 2962
+        width: 402
+        height: 1133
+      alignment: 9
+      pivot: {x: 0.45771143, y: 0.0035304502}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -7591051997245974992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - Char_A_B_2-Scene - Char_A_B_2.08
+      rect:
+        serializedVersion: 2
+        x: 2805
+        y: 2933
+        width: 321
+        height: 1162
+      alignment: 9
+      pivot: {x: 0.57320875, y: 0.0034423408}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 2005007541172873046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - Char_A_B_2-Scene - Char_A_B_2.09
+      rect:
+        serializedVersion: 2
+        x: 1986
+        y: 3026
+        width: 413
+        height: 1069
+      alignment: 9
+      pivot: {x: 0.44552058, y: 0.0037418148}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -3383736838916232297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - Char_A_B_2-Scene - Char_A_B_2.10
+      rect:
+        serializedVersion: 2
+        x: 2805
+        y: 2933
+        width: 321
+        height: 1162
+      alignment: 9
+      pivot: {x: 0.57320875, y: 0.0034423408}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -8823214607609623323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - Char_A_B_2-Scene - Char_A_B_2.11
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3108
+        width: 334
+        height: 987
+      alignment: 9
+      pivot: {x: 0.5508982, y: 0.004052685}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 2502153598223587479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - Char_A_C-Scene - Char_A_C.09
+      rect:
+        serializedVersion: 2
+        x: 3128
+        y: 3108
+        width: 334
+        height: 987
+      alignment: 9
+      pivot: {x: 0.5508982, y: 0.004052685}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 7198518427795735926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - Char_A_C-Scene - Char_A_C.10
+      rect:
+        serializedVersion: 2
+        x: 3464
+        y: 2935
+        width: 299
+        height: 1160
+      alignment: 9
+      pivot: {x: 0.49832776, y: 0.0017241379}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -3153027821546304291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - Char_A_C-Scene - Char_A_C.11
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1790
+        width: 461
+        height: 1141
+      alignment: 9
+      pivot: {x: 0.6746204, y: 0.0017528484}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -4372501673762443921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - Char_A_C-Scene - Char_A_C.12
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 1845
+        width: 525
+        height: 1086
+      alignment: 9
+      pivot: {x: 0.71428573, y: 0.0018416207}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 2113530075637399457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - Char_A_C-Scene - Char_A_C.13
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 1845
+        width: 525
+        height: 1086
+      alignment: 9
+      pivot: {x: 0.71428573, y: 0.0018416207}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -7860579687766772014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - Char_A_C-Scene - Char_A_C.14
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1790
+        width: 461
+        height: 1141
+      alignment: 9
+      pivot: {x: 0.6746204, y: 0.0017528484}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 1340742888692892725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - Char_A_C-Scene - Char_A_C.15
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 1774
+        width: 356
+        height: 1157
+      alignment: 9
+      pivot: {x: 0.57865167, y: 0.0017286085}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 6333760677288190871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - Char_A_C-Scene - Char_A_C.16
+      rect:
+        serializedVersion: 2
+        x: 3128
+        y: 3108
+        width: 334
+        height: 987
+      alignment: 9
+      pivot: {x: 0.5508982, y: 0.004052685}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 6739802943942919279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - Char_A_C_2-Scene - Char_A_C_2.04
+      rect:
+        serializedVersion: 2
+        x: 3128
+        y: 3108
+        width: 334
+        height: 987
+      alignment: 9
+      pivot: {x: 0.5508982, y: 0.004052685}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 1310298432100471532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - Char_A_C_2-Scene - Char_A_C_2.05
+      rect:
+        serializedVersion: 2
+        x: 1349
+        y: 1862
+        width: 413
+        height: 1069
+      alignment: 9
+      pivot: {x: 0.44552058, y: 0.0037418148}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -6938017485700339297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - Char_A_C_2-Scene - Char_A_C_2.06
+      rect:
+        serializedVersion: 2
+        x: 1764
+        y: 1798
+        width: 402
+        height: 1133
+      alignment: 9
+      pivot: {x: 0.45771143, y: 0.0035304502}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -1376101415021601518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - Char_A_C_2-Scene - Char_A_C_2.07
+      rect:
+        serializedVersion: 2
+        x: 2168
+        y: 1769
+        width: 321
+        height: 1162
+      alignment: 9
+      pivot: {x: 0.57320875, y: 0.0034423408}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -5223518246449694965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - Char_A_C_2-Scene - Char_A_C_2.08
+      rect:
+        serializedVersion: 2
+        x: 1349
+        y: 1862
+        width: 413
+        height: 1069
+      alignment: 9
+      pivot: {x: 0.44552058, y: 0.0037418148}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 6113803398190732179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - Char_A_C_2-Scene - Char_A_C_2.09
+      rect:
+        serializedVersion: 2
+        x: 2168
+        y: 1769
+        width: 321
+        height: 1162
+      alignment: 9
+      pivot: {x: 0.57320875, y: 0.0034423408}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 375413756699900307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - Char_A_C_2-Scene - Char_A_C_2.10
+      rect:
+        serializedVersion: 2
+        x: 3128
+        y: 3108
+        width: 334
+        height: 987
+      alignment: 9
+      pivot: {x: 0.5508982, y: 0.004052685}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 5439789957707838359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - Char_B_B-Scene - Char_B_B.05
+      rect:
+        serializedVersion: 2
+        x: 2491
+        y: 2096
+        width: 332
+        height: 835
+      alignment: 9
+      pivot: {x: 0.47891566, y: 0.0095808385}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -6522588800863217781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - Char_B_B-Scene - Char_B_B.06
+      rect:
+        serializedVersion: 2
+        x: 2825
+        y: 2007
+        width: 331
+        height: 924
+      alignment: 9
+      pivot: {x: 0.47734138, y: 0.008658009}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -5268531242004846676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - Char_B_B-Scene - Char_B_B.07
+      rect:
+        serializedVersion: 2
+        x: 3158
+        y: 2058
+        width: 331
+        height: 873
+      alignment: 9
+      pivot: {x: 0.47734138, y: 0.009163803}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 7320128324573007284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - Char_B_B-Scene - Char_B_B.08
+      rect:
+        serializedVersion: 2
+        x: 3491
+        y: 2096
+        width: 331
+        height: 835
+      alignment: 9
+      pivot: {x: 0.47734138, y: 0.0095808385}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 1735248288343231084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - Char_B_B-Scene - Char_B_B.09
+      rect:
+        serializedVersion: 2
+        x: 2491
+        y: 2096
+        width: 332
+        height: 835
+      alignment: 9
+      pivot: {x: 0.47891566, y: 0.0095808385}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -347035752799875279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - Char_B_C-Scene - Char_B_C.06
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 932
+        width: 332
+        height: 835
+      alignment: 9
+      pivot: {x: 0.47891566, y: 0.0095808385}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 6441758978998085658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - Char_B_C-Scene - Char_B_C.07
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 843
+        width: 331
+        height: 924
+      alignment: 9
+      pivot: {x: 0.47734138, y: 0.008658009}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -7518626540756917404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - Char_B_C-Scene - Char_B_C.08
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 894
+        width: 331
+        height: 873
+      alignment: 9
+      pivot: {x: 0.47734138, y: 0.009163803}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 1098790982317372867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - Char_B_C-Scene - Char_B_C.09
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 932
+        width: 331
+        height: 835
+      alignment: 9
+      pivot: {x: 0.47734138, y: 0.0095808385}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -7228720374636409789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - Char_B_C-Scene - Char_B_C.10
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 932
+        width: 332
+        height: 835
+      alignment: 9
+      pivot: {x: 0.47891566, y: 0.0095808385}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -2074719920930079229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - Char_C_B-Scene - Char_C_B.06
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 1034
+        width: 382
+        height: 733
+      alignment: 9
+      pivot: {x: 0.4712042, y: 0.008185538}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 5028081638619289726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - Char_C_B-Scene - Char_C_B.07
+      rect:
+        serializedVersion: 2
+        x: 1718
+        y: 873
+        width: 499
+        height: 894
+      alignment: 9
+      pivot: {x: 0.5951904, y: 0.0067114094}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 3021209746140889113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - Char_C_B-Scene - Char_C_B.08
+      rect:
+        serializedVersion: 2
+        x: 2219
+        y: 877
+        width: 551
+        height: 890
+      alignment: 9
+      pivot: {x: 0.6333938, y: 0.006741573}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 93738638750505674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - Char_C_B-Scene - Char_C_B.09
+      rect:
+        serializedVersion: 2
+        x: 2772
+        y: 954
+        width: 524
+        height: 813
+      alignment: 9
+      pivot: {x: 0.6145038, y: 0.007380074}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 6776223024573614925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - Char_C_B-Scene - Char_C_B.10
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 1034
+        width: 382
+        height: 733
+      alignment: 9
+      pivot: {x: 0.4712042, y: 0.008185538}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -9042155049653835959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - Char_C_B_2-Scene - Char_C_B_2.04
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 1034
+        width: 382
+        height: 733
+      alignment: 9
+      pivot: {x: 0.4712042, y: 0.008185538}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -3458424096190059822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - Char_C_B_2-Scene - Char_C_B_2.05
+      rect:
+        serializedVersion: 2
+        x: 3298
+        y: 903
+        width: 334
+        height: 864
+      alignment: 9
+      pivot: {x: 0.53892213, y: 0.0069444445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -5867011962250602496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - Char_C_B_2-Scene - Char_C_B_2.06
+      rect:
+        serializedVersion: 2
+        x: 3634
+        y: 925
+        width: 401
+        height: 842
+      alignment: 9
+      pivot: {x: 0.4488778, y: 0.007125891}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 5924271215554134188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - Char_C_B_2-Scene - Char_C_B_2.07
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 40
+        width: 497
+        height: 801
+      alignment: 9
+      pivot: {x: 0.36217305, y: 0.007490637}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -4979816324036716136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - Char_C_B_2-Scene - Char_C_B_2.08
+      rect:
+        serializedVersion: 2
+        x: 3634
+        y: 925
+        width: 401
+        height: 842
+      alignment: 9
+      pivot: {x: 0.4488778, y: 0.007125891}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 7177067792453326710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - Char_C_B_2-Scene - Char_C_B_2.09
+      rect:
+        serializedVersion: 2
+        x: 3298
+        y: 903
+        width: 334
+        height: 864
+      alignment: 9
+      pivot: {x: 0.53892213, y: 0.0069444445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: 5000541613175657668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Scene - Char_C_B_2-Scene - Char_C_B_2.10
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 1034
+        width: 382
+        height: 733
+      alignment: 9
+      pivot: {x: 0.4712042, y: 0.008185538}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 
+      internalID: -157833510980537637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

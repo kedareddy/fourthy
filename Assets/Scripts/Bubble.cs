@@ -72,7 +72,7 @@ public class Bubble : MonoBehaviour
         }
         transform.DOScale(0f, 20f).From().SetSpeedBased().SetEase(Ease.InOutQuad).OnComplete(() =>
         {
-            int numOfEmojis = Random.Range(3, 6);
+            int numOfEmojis = Random.Range(2, 6);
             for (int i = 0; i < availableSpriteRenderers.Count; i++)
             {
                 if (i < numOfEmojis)

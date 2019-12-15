@@ -4,6 +4,16 @@ tpsheetFileNames:
 - Assets/ArtAssets/CharacterATest/Character_A_Walking.tpsheet
 - Assets/ArtAssets/TempCharacters/Character_B_Cheering.tpsheet
 - Assets/ArtAssets/TempCharacters/Character_B_Walking.tpsheet
+- Assets/ArtAssets/TempCharacters/FinalBlake/AltCharacters/Idle/_Ch_A.tpsheet
+- Assets/ArtAssets/TempCharacters/FinalBlake/AltCharacters/Idle/_Ch_D.tpsheet
+- Assets/ArtAssets/TempCharacters/FinalBlake/AltCharacters/Sitting/AltColorSitIdle_1.tpsheet
+- Assets/ArtAssets/TempCharacters/FinalBlake/AltCharacters/Sitting/AltColorSitIdle_2.tpsheet
+- Assets/ArtAssets/TempCharacters/FinalBlake/AltCharacters/Walking/Ch_A_AltWalking.tpsheet
+- Assets/ArtAssets/TempCharacters/FinalBlake/AltCharacters/Walking/Ch_B_AltWalkCycle.tpsheet
+- Assets/ArtAssets/TempCharacters/FinalBlake/AltCharacters/Walking/Ch_C_AltwalkCycle.tpsheet
+- Assets/ArtAssets/TempCharacters/FinalBlake/AltCharacters/Walking/Ch_D_AltWalkCycle.tpsheet
+- Assets/ArtAssets/TempCharacters/FinalBlake/AltCharacters/Waving/WavingCheering_part_1.tpsheet
+- Assets/ArtAssets/TempCharacters/FinalBlake/AltCharacters/Waving/WavingCheering_part_2.tpsheet
 - Assets/ArtAssets/TempCharacters/FinalBlake/AltCheering/Waving_2.tpsheet
 - Assets/ArtAssets/TempCharacters/FinalBlake/Cheering/WaveCycles_Nov18.tpsheet
 - Assets/ArtAssets/TempCharacters/FinalBlake/ExcitedTalking/ExcitedTalking.tpsheet
@@ -26,6 +36,16 @@ textureFileNames:
 - Assets/ArtAssets/CharacterATest/Character_A_Walking.png
 - Assets/ArtAssets/TempCharacters/Character_B_Cheering.png
 - Assets/ArtAssets/TempCharacters/Character_B_Walking.png
+- Assets/ArtAssets/TempCharacters/FinalBlake/AltCharacters/Idle/_Ch_A.png
+- Assets/ArtAssets/TempCharacters/FinalBlake/AltCharacters/Idle/_Ch_D.png
+- Assets/ArtAssets/TempCharacters/FinalBlake/AltCharacters/Sitting/AltColorSitIdle_1.png
+- Assets/ArtAssets/TempCharacters/FinalBlake/AltCharacters/Sitting/AltColorSitIdle_2.png
+- Assets/ArtAssets/TempCharacters/FinalBlake/AltCharacters/Walking/Ch_A_AltWalking.png
+- Assets/ArtAssets/TempCharacters/FinalBlake/AltCharacters/Walking/Ch_B_AltWalkCycle.png
+- Assets/ArtAssets/TempCharacters/FinalBlake/AltCharacters/Walking/Ch_C_AltwalkCycle.png
+- Assets/ArtAssets/TempCharacters/FinalBlake/AltCharacters/Walking/Ch_D_AltWalkCycle.png
+- Assets/ArtAssets/TempCharacters/FinalBlake/AltCharacters/Waving/WavingCheering_part_1.png
+- Assets/ArtAssets/TempCharacters/FinalBlake/AltCharacters/Waving/WavingCheering_part_2.png
 - Assets/ArtAssets/TempCharacters/FinalBlake/AltCheering/Waving_2.png
 - Assets/ArtAssets/TempCharacters/FinalBlake/Cheering/WaveCycles_Nov18.png
 - Assets/ArtAssets/TempCharacters/FinalBlake/ExcitedTalking/ExcitedTalking.png
@@ -45,6 +65,16 @@ textureFileNames:
 - Assets/ArtAssets/TempCharacters/FinalBlake/Walking/Ch_D_WALK.png
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.png
 normalmapFileNames:
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
 - 
 - 
 - 
