@@ -32,7 +32,10 @@ public class Box : MonoBehaviour
     IEnumerator Start()
     {
         boxHealthState = BoxHealthState.Healthy;
-        boxOccupiedState = BoxOccupiedState.Unoccupied;
+        if (boxOrigin == BoxOrigin.Instantiate)
+        {
+            boxOccupiedState = BoxOccupiedState.Unoccupied;
+        }
         float heightToFallTo = BOX_Y;
 
         if (boxOrigin == BoxOrigin.Instantiate)
@@ -43,7 +46,7 @@ public class Box : MonoBehaviour
             {
                 //Debug.Log("obstacles count greater than 0! " + obstaclesInColumn[0].transform.name);
                 Box boxObstacle = obstaclesInColumn[0].GetComponent<Box>();
-                if (boxObstacle != null)
+                if (boxObstacle != null && boxObstacle.countDownS.Elapsed() < (0.9f*boxObstacle.HEALTH))
                 {
 
                     heightToFallTo = BOX_Y + obstaclesInColumn[0].GetComponent<SpriteRenderer>().bounds.size.y;
@@ -55,7 +58,7 @@ public class Box : MonoBehaviour
             //yield return boxFallTween.WaitForPosition(0.8f);
             
             yield return boxFallTween.WaitForCompletion();
-            SoundManager.instance.PlaySingle(SoundManager.instance.crash);
+            SoundManager.instance.PlaySingle(SoundManager.instance.crash, 0.2f);
             //OnComplete(()=>
             //{
             if (obstaclesInColumn.Count > 0)
@@ -79,7 +82,8 @@ public class Box : MonoBehaviour
             }
         }
 
-        StartCoroutine(CountDown());
+        CountDown();
+        //StartCoroutine(CountDown());
         //});
         GridWorld.RegisterObstacle(transform, false);
         //Debug.Log("box LOC: " + GridWorld.GetSquare(transform.position)[0] + " : " + GridWorld.GetSquare(transform.position)[1]);
@@ -105,7 +109,7 @@ public class Box : MonoBehaviour
                 //Debug.Log("add to: " + transform.position);
                 //Debug.DrawLine(transform.position, new Vector3(0f, 5f, 0f), Color.white, 2.5f);
                 GridWorld.RegisterObstacle(transform, false);
-                SoundManager.instance.PlaySingle(SoundManager.instance.smallCrack);
+                SoundManager.instance.PlaySingle(SoundManager.instance.smallCrack,0.25f);
                 fallDownTween.Kill();
                 fallDownTween = null;
             });
@@ -113,23 +117,28 @@ public class Box : MonoBehaviour
 
     }
 
-    private bool deRegisterObstacle = false; 
-    IEnumerator CountDown()
+    private bool deRegisterObstacle = false;
+    public Sequence countDownS; 
+    public void CountDown()
     {
-        yield return new WaitForSeconds(0.6f * HEALTH);
-            deRegisterObstacle = false; 
+        countDownS = DOTween.Sequence();
+        countDownS.AppendInterval(0.6f * HEALTH);
+        countDownS.AppendCallback(() => {
+            deRegisterObstacle = false;
             //cracked box sprite
-            if(crackedSprite != null)
+            if (crackedSprite != null)
             {
                 mySpriteRenderer.sprite = crackedSprite;
-                SoundManager.instance.PlaySingle(SoundManager.instance.smallCrack);
+                SoundManager.instance.PlaySingle(SoundManager.instance.smallCrack, 0.15f);
             }
             boxHealthState = BoxHealthState.Cracked;
-        yield return new WaitForSeconds(0.4f * HEALTH);
-        //broken box sprite
+        });
+        countDownS.AppendInterval(0.4f * HEALTH);
+        countDownS.AppendCallback(() => {
+            //broken box sprite
             if (deRegisterObstacle == false)
             {
-                deRegisterObstacle = true; 
+                deRegisterObstacle = true;
                 GridWorld.RegisterObstacle(transform, true);
 
                 if (boxOnTop != null)
@@ -140,22 +149,70 @@ public class Box : MonoBehaviour
                 {
                     GameObject dust = Instantiate(Resources.Load("Prefabs/dust", typeof(GameObject)), new Vector3(transform.position.x, transform.position.y - 3.35f, 0f), Quaternion.identity, transform) as GameObject;
                     dust.GetComponent<ParticleSystem>().Play();
-                    SoundManager.instance.PlaySingle(SoundManager.instance.bigBreak);
+                    //SoundManager.instance.PlaySingle(SoundManager.instance.bigBreak);
+                    SoundManager.instance.PlaySingle(SoundManager.instance.singleBoxBreak, 0.2f);
                 }
                 boxHealthState = BoxHealthState.Broken;
             }
-        yield return new WaitForSeconds(0.75f);
+        });
+        countDownS.AppendInterval(0.75f);
+        countDownS.AppendCallback(() => {
             if (crackedSprite != null && mySpriteRenderer.sprite != brokenSprite)
             {
                 mySpriteRenderer.sprite = brokenSprite;
-                transform.localPosition = new Vector3(transform.localPosition.x, transform.localPosition.y-3.35f, transform.localPosition.z);
+                transform.localPosition = new Vector3(transform.localPosition.x, transform.localPosition.y - 3.35f, transform.localPosition.z);
             }
-        yield return new WaitForSeconds(2f);
-            mySpriteRenderer.DOFade(0f, 1f).OnComplete(()=> {
-            
+        });
+        countDownS.AppendInterval(2f);
+        countDownS.AppendCallback(() => {
+            mySpriteRenderer.DOFade(0f, 1f).OnComplete(() => {
+
                 Destroy(gameObject);
-            
+
             });
+        });
+
+        //yield return new WaitForSeconds(0.6f * HEALTH);
+        //    deRegisterObstacle = false; 
+        //    //cracked box sprite
+        //    if(crackedSprite != null)
+        //    {
+        //        mySpriteRenderer.sprite = crackedSprite;
+        //        SoundManager.instance.PlaySingle(SoundManager.instance.smallCrack, 0.15f);
+        //    }
+        //    boxHealthState = BoxHealthState.Cracked;
+        //yield return new WaitForSeconds(0.4f * HEALTH);
+        ////broken box sprite
+        //    if (deRegisterObstacle == false)
+        //    {
+        //        deRegisterObstacle = true; 
+        //        GridWorld.RegisterObstacle(transform, true);
+
+        //        if (boxOnTop != null)
+        //        {
+        //            boxOnTop.GetComponent<Box>().DropDown();
+        //        }
+        //        if (crackedSprite != null)
+        //        {
+        //            GameObject dust = Instantiate(Resources.Load("Prefabs/dust", typeof(GameObject)), new Vector3(transform.position.x, transform.position.y - 3.35f, 0f), Quaternion.identity, transform) as GameObject;
+        //            dust.GetComponent<ParticleSystem>().Play();
+        //            //SoundManager.instance.PlaySingle(SoundManager.instance.bigBreak);
+        //            SoundManager.instance.PlaySingle(SoundManager.instance.singleBoxBreak, 0.2f);
+        //    }
+        //        boxHealthState = BoxHealthState.Broken;
+        //    }
+        //yield return new WaitForSeconds(0.75f);
+        //    if (crackedSprite != null && mySpriteRenderer.sprite != brokenSprite)
+        //    {
+        //        mySpriteRenderer.sprite = brokenSprite;
+        //        transform.localPosition = new Vector3(transform.localPosition.x, transform.localPosition.y-3.35f, transform.localPosition.z);
+        //    }
+        //yield return new WaitForSeconds(2f);
+        //    mySpriteRenderer.DOFade(0f, 1f).OnComplete(()=> {
+            
+        //        Destroy(gameObject);
+            
+        //    });
         //fade out
         //destroy
 

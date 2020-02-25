@@ -59,7 +59,7 @@ public class HeartCounter : MonoBehaviour
     
     public void IncrementHearts()
     {
-        SoundManager.instance.PlaySingle(SoundManager.instance.taken);
+        SoundManager.instance.PlaySingle(SoundManager.instance.taken, 0.15f);
         HeartsNumber = HeartsNumber + 1;
         transform.DOJump(transform.position, 2.5f, 1, 0.25f).OnComplete(() => {
             myText.text = HeartsNumber.ToString();

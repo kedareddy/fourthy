@@ -6,12 +6,15 @@ tpsheetFileNames:
 - Assets/ArtAssets/TempCharacters/Character_B_Walking.tpsheet
 - Assets/ArtAssets/TempCharacters/FinalBlake/AltCharacters/Idle/_Ch_A.tpsheet
 - Assets/ArtAssets/TempCharacters/FinalBlake/AltCharacters/Idle/_Ch_D.tpsheet
+- Assets/ArtAssets/TempCharacters/FinalBlake/AltCharacters/Idle/Ch_B.tpsheet
+- Assets/ArtAssets/TempCharacters/FinalBlake/AltCharacters/Idle/Ch_C.tpsheet
 - Assets/ArtAssets/TempCharacters/FinalBlake/AltCharacters/Sitting/AltColorSitIdle_1.tpsheet
 - Assets/ArtAssets/TempCharacters/FinalBlake/AltCharacters/Sitting/AltColorSitIdle_2.tpsheet
 - Assets/ArtAssets/TempCharacters/FinalBlake/AltCharacters/Walking/Ch_A_AltWalking.tpsheet
 - Assets/ArtAssets/TempCharacters/FinalBlake/AltCharacters/Walking/Ch_B_AltWalkCycle.tpsheet
 - Assets/ArtAssets/TempCharacters/FinalBlake/AltCharacters/Walking/Ch_C_AltwalkCycle.tpsheet
 - Assets/ArtAssets/TempCharacters/FinalBlake/AltCharacters/Walking/Ch_D_AltWalkCycle.tpsheet
+- Assets/ArtAssets/TempCharacters/FinalBlake/AltCharacters/Waving/CH_B cheering alt colors.tpsheet
 - Assets/ArtAssets/TempCharacters/FinalBlake/AltCharacters/Waving/WavingCheering_part_1.tpsheet
 - Assets/ArtAssets/TempCharacters/FinalBlake/AltCharacters/Waving/WavingCheering_part_2.tpsheet
 - Assets/ArtAssets/TempCharacters/FinalBlake/AltCheering/Waving_2.tpsheet
@@ -24,6 +27,8 @@ tpsheetFileNames:
 - Assets/ArtAssets/TempCharacters/FinalBlake/IdleAlternate/Ch_B_IdleBack.tpsheet
 - Assets/ArtAssets/TempCharacters/FinalBlake/SittingIdle/Ch_A_SitIdle.tpsheet
 - Assets/ArtAssets/TempCharacters/FinalBlake/SittingIdle/CH_B_SittingIdle.tpsheet
+- Assets/ArtAssets/TempCharacters/FinalBlake/SittingIdle/Ch_C_0.tpsheet
+- Assets/ArtAssets/TempCharacters/FinalBlake/SittingIdle/Ch_C_01.tpsheet
 - Assets/ArtAssets/TempCharacters/FinalBlake/SittingIdle/CH_C_SittingIdle.tpsheet
 - Assets/ArtAssets/TempCharacters/FinalBlake/SittingIdle/CH_D_SittingIdle.tpsheet
 - Assets/ArtAssets/TempCharacters/FinalBlake/SittingTalking/CH_SitTalk.tpsheet
@@ -38,12 +43,15 @@ textureFileNames:
 - Assets/ArtAssets/TempCharacters/Character_B_Walking.png
 - Assets/ArtAssets/TempCharacters/FinalBlake/AltCharacters/Idle/_Ch_A.png
 - Assets/ArtAssets/TempCharacters/FinalBlake/AltCharacters/Idle/_Ch_D.png
+- Assets/ArtAssets/TempCharacters/FinalBlake/AltCharacters/Idle/Ch_B.png
+- Assets/ArtAssets/TempCharacters/FinalBlake/AltCharacters/Idle/Ch_C.png
 - Assets/ArtAssets/TempCharacters/FinalBlake/AltCharacters/Sitting/AltColorSitIdle_1.png
 - Assets/ArtAssets/TempCharacters/FinalBlake/AltCharacters/Sitting/AltColorSitIdle_2.png
 - Assets/ArtAssets/TempCharacters/FinalBlake/AltCharacters/Walking/Ch_A_AltWalking.png
 - Assets/ArtAssets/TempCharacters/FinalBlake/AltCharacters/Walking/Ch_B_AltWalkCycle.png
 - Assets/ArtAssets/TempCharacters/FinalBlake/AltCharacters/Walking/Ch_C_AltwalkCycle.png
 - Assets/ArtAssets/TempCharacters/FinalBlake/AltCharacters/Walking/Ch_D_AltWalkCycle.png
+- Assets/ArtAssets/TempCharacters/FinalBlake/AltCharacters/Waving/CH_B cheering alt colors.png
 - Assets/ArtAssets/TempCharacters/FinalBlake/AltCharacters/Waving/WavingCheering_part_1.png
 - Assets/ArtAssets/TempCharacters/FinalBlake/AltCharacters/Waving/WavingCheering_part_2.png
 - Assets/ArtAssets/TempCharacters/FinalBlake/AltCheering/Waving_2.png
@@ -56,6 +64,8 @@ textureFileNames:
 - Assets/ArtAssets/TempCharacters/FinalBlake/IdleAlternate/Ch_B_IdleBack.png
 - Assets/ArtAssets/TempCharacters/FinalBlake/SittingIdle/Ch_A_SitIdle.png
 - Assets/ArtAssets/TempCharacters/FinalBlake/SittingIdle/CH_B_SittingIdle.png
+- Assets/ArtAssets/TempCharacters/FinalBlake/SittingIdle/Ch_C_0.png
+- Assets/ArtAssets/TempCharacters/FinalBlake/SittingIdle/Ch_C_01.png
 - Assets/ArtAssets/TempCharacters/FinalBlake/SittingIdle/CH_C_SittingIdle.png
 - Assets/ArtAssets/TempCharacters/FinalBlake/SittingIdle/CH_D_SittingIdle.png
 - Assets/ArtAssets/TempCharacters/FinalBlake/SittingTalking/CH_SitTalk.png
@@ -65,6 +75,11 @@ textureFileNames:
 - Assets/ArtAssets/TempCharacters/FinalBlake/Walking/Ch_D_WALK.png
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.png
 normalmapFileNames:
+- 
+- 
+- 
+- 
+- 
 - 
 - 
 - 

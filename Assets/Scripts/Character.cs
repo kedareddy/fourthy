@@ -100,8 +100,9 @@ public class Character : MonoBehaviour
     public void HandleEmptyBox(GameObject box = null)
     {
         Box targetBox = box.GetComponent<Box>();
-        //Debug.Log("Handle Empty Box");
-        if (fsm.CurrentStateMap.state != null && !transform.name.Contains("CharC"))
+        Debug.Log("Handle Empty Box" + targetBox.boxOccupiedState);
+        //&& !transform.name.Contains("CharC")
+        if (fsm.CurrentStateMap.state != null )
         {
             if (fsm.CurrentStateMap.state.ToString() == States.Waiting.ToString() || fsm.CurrentStateMap.state.ToString() == States.Offscreen.ToString())
             {
@@ -122,52 +123,65 @@ public class Character : MonoBehaviour
                             //Debug.Log("box is already occupied");
                             if (targetBox.boxOccupiedState == BoxOccupiedState.Unoccupied)
                             {
-                                // Debug.Log("added box to character");
-                                myBoxes.Add(targetBox);
-                                targetBox.boxOccupiedState = BoxOccupiedState.Occupied;
-
-                                Vector3 firstPoint = new Vector3(transform.localPosition.x, transform.localPosition.y, transform.localPosition.z);
-                                Vector3 secondPoint = new Vector3(transform.localPosition.x, transform.localPosition.y + 6.5f + 1f, transform.localPosition.z);
-                                Vector3 thirdPoint = new Vector3(transform.localPosition.x, transform.localPosition.y + 6.5f, transform.localPosition.z);
-
-                                SoundManager.instance.PlaySingle(SoundManager.instance.grunt);
-
-                                myBoxJumpTween = transform.DOLocalPath(new Vector3[] { firstPoint, secondPoint, thirdPoint }, JUMP_SPEED).SetSpeedBased().SetEase(Ease.InOutQuad);
-                                myBoxJumpTween.OnComplete(() =>
+                                //char C tries to jump but can't get on box
+                                if (transform.name.Contains("CharC"))
                                 {
-                                    myBoxJumpTween = null;
-                                    if (myHeightType == HeightType.Short)
+                                    transform.DOLocalMoveY(transform.localPosition.y + 2f, JUMP_SPEED/3f).SetSpeedBased().SetLoops(2, LoopType.Yoyo).SetEase(Ease.InOutQuad).OnComplete(()=> {
+                                        resolveBarTween.Pause();
+                                        myAnimator.SetBool("isMoving", false);
+                                        speechBubble.SetActive(true);
+                                        fsm.ChangeState(States.Restart);
+                                    });
+                                }
+                                else
+                                {
+                                    // Debug.Log("added box to character");
+                                    myBoxes.Add(targetBox);
+                                    targetBox.boxOccupiedState = BoxOccupiedState.Occupied;
+
+                                    Vector3 firstPoint = new Vector3(transform.localPosition.x, transform.localPosition.y, transform.localPosition.z);
+                                    Vector3 secondPoint = new Vector3(transform.localPosition.x, transform.localPosition.y + 6.5f + 1f, transform.localPosition.z);
+                                    Vector3 thirdPoint = new Vector3(transform.localPosition.x, transform.localPosition.y + 6.5f, transform.localPosition.z);
+
+                                    /////SoundManager.instance.PlaySingle(SoundManager.instance.grunt, 0.5f);
+
+                                    myBoxJumpTween = transform.DOLocalPath(new Vector3[] { firstPoint, secondPoint, thirdPoint }, JUMP_SPEED).SetSpeedBased().SetEase(Ease.InOutQuad);
+                                    myBoxJumpTween.OnComplete(() =>
                                     {
+                                        myBoxJumpTween = null;
+                                        if (myHeightType == HeightType.Short)
+                                        {
                                         //fsm.ChangeState(States.WaitingOnBox);
                                         mySpriteRenderer.sortingLayerName = "Watching";
-                                        mySpriteRenderer.sortingOrder = 2;
-                                    }
-                                    else
-                                    {
-                                        resolveBarTween.Kill();
-                                        fsm.ChangeState(States.Watching);
-                                    }
+                                            mySpriteRenderer.sortingOrder = 2;
+                                        }
+                                        else
+                                        {
+                                            resolveBarTween.Kill();
+                                            fsm.ChangeState(States.Watching);
+                                        }
 
                                     //For Equality success
                                     if (GameManager2.instance.fsm.CurrentStateMap.state.ToString() == GameManager2.States.Equality.ToString())
-                                    {
-                                        if (transform == GameManager2.instance.equality_ShortC.transform)
                                         {
-                                            GameManager2.instance.Equality_Success();
-                                            meter.SetActive(false);
+                                            if (transform == GameManager2.instance.equality_ShortC.transform)
+                                            {
+                                                GameManager2.instance.Equality_Success();
+                                                meter.SetActive(false);
+                                            }
                                         }
-                                    }
 
                                     //Tutorial in Equity
                                     if (GameManager2.instance.fsm.CurrentStateMap.state.ToString() == GameManager2.States.Equity.ToString())
-                                    {
-                                        Tween showTextTutorial = GameManager2.instance.textTutorialUI.transform.DOLocalMoveY(GameManager2.instance.textTutorialUI.transform.localPosition.y - 100f, 0.25f).From().SetEase(Ease.OutQuad).SetDelay(0.5f);
-                                        showTextTutorial.OnPlay(() =>
                                         {
-                                            GameManager2.instance.textTutorialUI.SetActive(true);
-                                        });
-                                    }
-                                });
+                                            Tween showTextTutorial = GameManager2.instance.textTutorialUI.transform.DOLocalMoveY(GameManager2.instance.textTutorialUI.transform.localPosition.y - 100f, 0.25f).From().SetEase(Ease.OutQuad).SetDelay(0.5f);
+                                            showTextTutorial.OnPlay(() =>
+                                            {
+                                                GameManager2.instance.textTutorialUI.SetActive(true);
+                                            });
+                                        }
+                                    });
+                                }
                             }
                             else
                             {
@@ -462,7 +476,7 @@ public class Character : MonoBehaviour
                             myBoxes.Add(topBox);
                             jumpUpAgainTween.Kill();
                             jumpUpAgainTween = null;
-                            SoundManager.instance.PlaySingle(SoundManager.instance.grunt);
+                            /////SoundManager.instance.PlaySingle(SoundManager.instance.grunt, 0.5f);
                             resolveBarTween.Kill();
                             fsm.ChangeState(States.Watching);
                         });
@@ -483,7 +497,7 @@ public class Character : MonoBehaviour
                             resolveBarTween.Pause();
                             fallDownTween.Kill();
                             fallDownTween = null;
-                            SoundManager.instance.PlaySingle(SoundManager.instance.grunt);
+                            /////SoundManager.instance.PlaySingle(SoundManager.instance.grunt, 0.5f);
                             fsm.ChangeState(States.Restart);
                         });
                     }
@@ -636,7 +650,7 @@ public class Character : MonoBehaviour
     }
 
 
-    private Tween gaveUpWalkTween;
+    public Tween gaveUpWalkTween;
     public SitSite closestSitSite;
     public int sitPointIndex = 0;
     public bool skipSittingDown = false; 
@@ -700,7 +714,7 @@ public class Character : MonoBehaviour
                 transform.DOLocalMoveY(-15.1f, JUMP_SPEED).SetSpeedBased().SetEase(Ease.InExpo).SetDelay(0.25f).OnComplete(() =>
                 {
                     myBoxes.RemoveAt(0);
-                    SoundManager.instance.PlaySingle(SoundManager.instance.grunt);
+                    /////SoundManager.instance.PlaySingle(SoundManager.instance.grunt, 0.5f);
                     WalkToSitPoint();
                 });
             }
@@ -779,7 +793,7 @@ public class Character : MonoBehaviour
 
         jumpOffBoxTween.OnComplete(() =>
         {
-            Debug.Log("finished jumping offf boxes"); 
+           // Debug.Log("finished jumping offf boxes"); 
             myBoxes.Clear();
             transform.DOKill();
             skipSittingDown = true;
@@ -932,14 +946,22 @@ public class Character : MonoBehaviour
             }
 
             fenceJumpTween = transform.DOLocalMoveY(transform.localPosition.y + (WALK_SPEED/2f), 0.75f).SetLoops(2, LoopType.Yoyo).SetDelay(delay).SetEase(Ease.InOutCirc);
+            
 
             fenceJumpTween.OnStepComplete(() =>
             {
-                //if(fenceJumpTween.CompletedLoops() == 1)
-                //{
-                //    fenceJumpTween.SetEase(Ease.OutQuad);
-                //}
-                if(fenceJumpTween.CompletedLoops() > 1)
+                if (fenceJumpTween.CompletedLoops() == 1)
+                {
+                    if (!sweetSpot)
+                    {
+                        int jumpNow = Random.Range(0, 3);
+                        if (jumpNow == 0)
+                        {
+                            SoundManager.instance.PlaySingle(SoundManager.instance.jumpFence, 0.25f);
+                        }
+                    }
+                }
+                if (fenceJumpTween.CompletedLoops() > 1)
                 {
                     fenceJumpTween = null;
                 }

@@ -7,6 +7,7 @@ using MonsterLove.StateMachine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using DG.Tweening;
+using Lean.Localization;
 
 
 [System.Serializable]
@@ -22,6 +23,7 @@ public class GameManager2 : MonoBehaviour
 {
     public enum States
     {
+        LanguageMenu,
         Intro1,
         Intro2,
         Equality,
@@ -29,11 +31,12 @@ public class GameManager2 : MonoBehaviour
         Liberation,
         EndScene,
         Credits,
+        Questions,
         FourthBox,
         MainMenu,
         Restart,
     }
-    public static States nextSceneState = States.Liberation;
+    public static States nextSceneState = States.LanguageMenu;
     public StateMachine<States> fsm;
 
     public static int unlockGameNum = 0;
@@ -52,11 +55,11 @@ public class GameManager2 : MonoBehaviour
 
     public GameObject heartCounterButton, boxButton;
 
-    public GameObject quoteUI;
+    public GameObject quoteUI, noClickUI;
     public Text quoteText, quoteByLineText;
 
     //Equality related references
-    public GameObject equalityUI, liberationUI, clickTutorialUI, textTutorialUI, wideTutorialUI;
+    public GameObject introUI, equalityQuestionsUI, equityQuestionsUI, liberationQuestionsUI, fourthBoxQuestionsUI, equalityUI, liberationUI, clickTutorialUI, textTutorialUI, wideTutorialUI;
     public Animator clickTutorialAnimator; 
     public Animator equalityTextAnimator;
     public Image equalityBlackScreen;
@@ -82,21 +85,35 @@ public class GameManager2 : MonoBehaviour
     public GameObject fireworks;
     public GameObject bottomBkgObject, topBkgObject;
     public GameObject liberationFourthy, winningTeam, gamePlayers;
+    public Animator noCaneBerthaAnimator;
 
     //endscene references
     public GameObject endSceneUI;
     public GameObject endSceneIntroScreen;
     public Image endSceneBlackScreen;
-    public GameObject endSceneChars, endFenceBuilder, lastFence1, lastFence2, lastFence3, endBuilderDust, sawer;
+    public GameObject endSceneChars, endFenceBuilder, lastFence1, lastFence2, lastFence3, lastFence4, endBuilderDust, sawer;
+    public GameObject unfinishedGardenBox, finishedGardenBox;
     public Vector3 INIT_ENDSCENE_POS = new Vector3(18.3f, -9.6f, -10f);
 
     //credits references
     public GameObject creditsUI;
-    public Image creditsBlackScreen; 
+    public Image creditsBlackScreen;
+
+    //questions references
+    public GameObject questionsUI;
+    public Image questionsBlackScreen;
 
     //ui buttons
     public GameObject mainMenuUI, cssLogo, game1Button, game2Button, game3Button, creditsButton, questionsButton, englishButton, spanishButton;
+    public Sprite englishButtonSelectedSprite, englishButtonUnselectedSprite, spanishButtonSelectedSprite, spanishButtonUnselectedSprite;
+    public Image titleImage;
+    public Sprite engTitleSprite, spnTitleSprite;
+    
+    public LeanLocalization leanLocalizationScript; 
 
+    //language buttons
+    public GameObject languageMenuUI, langEnglishButton, langSpanishButton, langcssLogo;
+    public Image languageBlackScreen;
     public GameObject binocularView;
     public GameObject intro2Background;
 
@@ -147,7 +164,7 @@ public class GameManager2 : MonoBehaviour
         
         equityCharacters.Add(equity_TallC);
         equityCharacters.Add(equity_ShortC);
-        equityCharacters.Add(equity_BoxC1);
+        //equityCharacters.Add(equity_BoxC1);
         equityCharacters.Add(equity_BoxC2);
     }
 
@@ -155,29 +172,41 @@ public class GameManager2 : MonoBehaviour
 
     public void Intro1_Enter()
     {
-        
-        Sequence quoteS = DOTween.Sequence();
-        quoteS.Append(quoteText.transform.DOScale(0.17f, 20f).From());
-        quoteS.Join(quoteText.DOFade(0f, 5f).From().SetEase(Ease.InOutQuad));
-        quoteS.Append(quoteByLineText.DOFade(0f, 2f).From().SetEase(Ease.InOutQuad));
-        quoteS.AppendInterval(4f);
-        quoteS.Append(quoteText.DOFade(0f, 2f).SetEase(Ease.InOutQuad));
-        quoteS.Join(quoteByLineText.DOFade(0f, 2f).SetEase(Ease.InOutQuad));
-        quoteS.OnPlay(() => {
-            quoteUI.SetActive(true);
-        });
-        quoteS.OnComplete(()=> {
 
-            quoteUI.SetActive(false);
+        //Sequence quoteS = DOTween.Sequence();
+        //quoteS.Append(quoteText.transform.DOScale(0.17f, 20f).From());
+        //quoteS.Join(quoteText.DOFade(0f, 5f).From().SetEase(Ease.InOutQuad));
+        //quoteS.Append(quoteByLineText.DOFade(0f, 2f).From().SetEase(Ease.InOutQuad));
+        //quoteS.AppendInterval(4f);
+        //quoteS.Append(quoteText.DOFade(0f, 2f).SetEase(Ease.InOutQuad));
+        //quoteS.Join(quoteByLineText.DOFade(0f, 2f).SetEase(Ease.InOutQuad));
+        //quoteS.OnPlay(() => {
+        //    quoteUI.SetActive(true);
+        //});
+        //quoteS.OnComplete(()=> {
+        blackScreen.gameObject.SetActive(true);
+        intro1Scene.SetActive(true);
+
+        quoteUI.SetActive(false);
 
             SoundManager.instance.musicSource.clip = SoundManager.instance.steadycheer;
-            SoundManager.instance.musicSource.Play();
+            SoundManager.instance.musicSource.volume = 0.25f;
+            SoundManager.instance.musicSource.DOFade(0f, 2f).From().OnPlay(()=> {
+                SoundManager.instance.musicSource.Play();
+            });
+           
             blackScreen.DOFade(0f, 9f).SetEase(Ease.InQuad);//.SetLoops(1, LoopType.Restart);
             Debug.Log("Welcome entered");
-            //welcomeUI.SetActive(true);
-            instroS = DOTween.Sequence();
+
+        
+        
+        //welcomeUI.SetActive(true);
+        instroS = DOTween.Sequence();
             instroS.Append(DOTween.To(() => Camera.main.orthographicSize, x => Camera.main.orthographicSize = x, 12, 10f));
             instroS.Join(Camera.main.transform.DOMove(new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y + 25f, Camera.main.transform.position.z), 10f, false));
+            instroS.InsertCallback(2f,() => {
+                noClickUI.SetActive(true);
+            });
             instroS.AppendInterval(3f);
             //instroS.Insert(4.5f, blackBarTop.transform.DOLocalMoveY(130f, 0.5f, false).SetEase(Ease.OutQuad));
             //instroS.Insert(4.5f, blackBarBottom.transform.DOLocalMoveY(-130f, 0.5f, false).SetEase(Ease.OutQuad));
@@ -193,7 +222,7 @@ public class GameManager2 : MonoBehaviour
                 fourthyAnimator.SetBool("isSerious", true);
             });
 
-        });
+       // });
     }
 
     public void FinishedIntro1Sequence()
@@ -270,75 +299,98 @@ public class GameManager2 : MonoBehaviour
         Camera.main.transform.position = new Vector3(6f, -25f, -10f);
         Camera.main.orthographicSize = 30f;
         introScene2.SetActive(true);
-        clickTutorialUI.SetActive(true);
-        clickTutorialUI.transform.DOLocalMoveX(clickTutorialUI.transform.localPosition.x + 300f, 0.5f).From().SetEase(Ease.OutQuad);
+        //clickTutorialUI.SetActive(true);
+        //clickTutorialUI.transform.DOLocalMoveX(clickTutorialUI.transform.localPosition.x + 300f, 0.5f).From().SetEase(Ease.OutQuad);
 
-        binocularView.transform.DOLocalMoveY(36f, 5f, false).SetLoops(-1, LoopType.Yoyo).SetEase(Ease.Linear);
+        binocularView.transform.DOLocalMoveY(36f, 5f, false).SetLoops(2, LoopType.Yoyo).SetEase(Ease.Linear).OnComplete(() => {
+            DeBlur();
+            Sequence zoomToPlay = DOTween.Sequence();
+            binocularView.transform.DOGoto(0, false);
+            zoomToPlay.Append(intro2Background.transform.DOScale(new Vector3(3f, 3f, 3f), 1.5f));
+            zoomToPlay.Join(intro2Background.transform.DOLocalMoveY(-30f - 78.6f, 1.5f));
+            zoomToPlay.AppendInterval(2f);
+
+            zoomToPlay.AppendCallback(() =>
+            {
+                StartCoroutine(buildFence());
+            });
+        });
+    }
+
+    public void HandleIntro2HomeButton() {
+        SoundManager.instance.PlaySingle(SoundManager.instance.take);
+        fsm.ChangeState(States.MainMenu);
+    }
+
+    public void HandleIntro2NextButton()
+    {
+        SoundManager.instance.PlaySingle(SoundManager.instance.take);
+        fsm.ChangeState(States.Equality);
     }
 
     private bool intro2Clicked = false; 
     public void Intro2_Update()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            //Debug.Log(binocularView.transform.position.y);
-            clickTutorialUI.SetActive(false);
-            if (newFence1.activeInHierarchy == true)
-            {
-                blackScreen.DOFade(0f, 1f).SetEase(Ease.InOutQuad).SetLoops(1, LoopType.Restart).OnComplete(() =>
-                {
-                    fsm.ChangeState(States.Equality);
-                });
-            }
-            else if(intro2Clicked == false)
-            {
-                intro2Clicked = true; 
-                DeBlur();
-                if (binocularView.transform.localPosition.y < 5f)
-                {
-                    Sequence zoomToPlay = DOTween.Sequence();
-                    binocularView.transform.DOGoto(0, false);
-                    zoomToPlay.Append(intro2Background.transform.DOScale(new Vector3(3f, 3f, 3f), 1.5f));
-                    zoomToPlay.Join(intro2Background.transform.DOLocalMoveY(-30f - 78.6f, 1.5f));
-                    zoomToPlay.AppendInterval(2f);
+        //if (Input.GetMouseButtonDown(0))
+        //{
+        //    //Debug.Log(binocularView.transform.position.y);
+        //    clickTutorialUI.SetActive(false);
+        //    if (newFence1.activeInHierarchy == true)
+        //    {
+        //        blackScreen.DOFade(0f, 1f).SetEase(Ease.InOutQuad).SetLoops(1, LoopType.Restart).OnComplete(() =>
+        //        {
+        //            fsm.ChangeState(States.Equality);
+        //        });
+        //    }
+        //    else if(intro2Clicked == false)
+        //    {
+        //        intro2Clicked = true; 
+        //        DeBlur();
+        //        if (binocularView.transform.localPosition.y < 5f)
+        //        {
+        //            Sequence zoomToPlay = DOTween.Sequence();
+        //            binocularView.transform.DOGoto(0, false);
+        //            zoomToPlay.Append(intro2Background.transform.DOScale(new Vector3(3f, 3f, 3f), 1.5f));
+        //            zoomToPlay.Join(intro2Background.transform.DOLocalMoveY(-30f - 78.6f, 1.5f));
+        //            zoomToPlay.AppendInterval(2f);
 
-                    zoomToPlay.AppendCallback(() =>
-                    {
-                        StartCoroutine(buildFence());
-                    });
+        //            zoomToPlay.AppendCallback(() =>
+        //            {
+        //                StartCoroutine(buildFence());
+        //            });
 
-                }
-                else
-                {
-                    //zoom in on the action and go back to yo yo.
-                    Sequence zoomToPlay = DOTween.Sequence();
-                    binocularView.transform.DOGoto(0, false);
-                    zoomToPlay.Append(intro2Background.transform.DOScale(new Vector3(3f, 3f, 3f), 1.5f));
-                    zoomToPlay.Join(intro2Background.transform.DOLocalMoveY(-30f + 86.3f, 1.5f));
-                    zoomToPlay.AppendInterval(3f);
-                    zoomToPlay.InsertCallback(1.5f, () =>
-                    {
-                        pitcher.GetComponent<Animator>().SetTrigger("inAction");
-                    });
-                    zoomToPlay.InsertCallback(1.75f, () =>
-                    {
-                        batter.GetComponent<Animator>().SetTrigger("inAction");
-                    });
+        //        }
+        //        else
+        //        {
+        //            //zoom in on the action and go back to yo yo.
+        //            Sequence zoomToPlay = DOTween.Sequence();
+        //            binocularView.transform.DOGoto(0, false);
+        //            zoomToPlay.Append(intro2Background.transform.DOScale(new Vector3(3f, 3f, 3f), 1.5f));
+        //            zoomToPlay.Join(intro2Background.transform.DOLocalMoveY(-30f + 86.3f, 1.5f));
+        //            zoomToPlay.AppendInterval(3f);
+        //            zoomToPlay.InsertCallback(1.5f, () =>
+        //            {
+        //                pitcher.GetComponent<Animator>().SetTrigger("inAction");
+        //            });
+        //            zoomToPlay.InsertCallback(1.75f, () =>
+        //            {
+        //                batter.GetComponent<Animator>().SetTrigger("inAction");
+        //            });
 
-                    zoomToPlay.AppendCallback(() =>
-                    {
-                        intro2Background.transform.SetScaleXYZ(1.3424f, 1.3424f, 1.3424f);
-                        intro2Background.transform.SetLocalY(-30f);
-                        Blur();
-                        binocularView.transform.DOLocalMoveY(36f, 5f, false).SetLoops(-1, LoopType.Yoyo).SetEase(Ease.Linear);
-                        intro2Clicked = false;
-                        //binocularView.transform.DOLocalMoveY(20f, 3f, false).SetLoops(-1, LoopType.Yoyo);
-                    });
+        //            zoomToPlay.AppendCallback(() =>
+        //            {
+        //                intro2Background.transform.SetScaleXYZ(1.3424f, 1.3424f, 1.3424f);
+        //                intro2Background.transform.SetLocalY(-30f);
+        //                Blur();
+        //                binocularView.transform.DOLocalMoveY(36f, 5f, false).SetLoops(-1, LoopType.Yoyo).SetEase(Ease.Linear);
+        //                intro2Clicked = false;
+        //                //binocularView.transform.DOLocalMoveY(20f, 3f, false).SetLoops(-1, LoopType.Yoyo);
+        //            });
 
-                }
-            }
+        //        }
+        //    }
 
-        }
+        //}
     }
 
     public IEnumerator buildFence()
@@ -354,9 +406,18 @@ public class GameManager2 : MonoBehaviour
         newFence2.SetActive(true);
         yield return new WaitForSeconds(.25f);
         builder.transform.localPosition = new Vector3(builder.transform.localPosition.x + 14f, builder.transform.localPosition.y, builder.transform.localPosition.z);
-        yield return new WaitForSeconds(2f);
-        clickTutorialUIText.text = "Tap anywhere to \ngo to the fence";
-        clickTutorialUI.SetActive(true);
+        yield return new WaitForSeconds(1.5f);
+        dust.GetComponent<Animator>().SetTrigger("triggerBigPoof");
+        yield return new WaitForSeconds(1f);
+        newFence2.SetActive(true);
+        yield return new WaitForSeconds(.25f);
+        builder.transform.localPosition = new Vector3(builder.transform.localPosition.x + 14f, builder.transform.localPosition.y, builder.transform.localPosition.z);
+        
+        yield return new WaitForSeconds(1f);
+        introUI.SetActive(true);
+        
+        //clickTutorialUIText.text = "Tap anywhere to \ngo to the fence";
+        //clickTutorialUI.SetActive(true);
     }
 
     public void DeBlur()
@@ -427,7 +488,8 @@ public class GameManager2 : MonoBehaviour
 
         introScene2.SetActive(false);
         clickTutorialUI.SetActive(false);
-
+        noClickUI.SetActive(false);
+        introUI.SetActive(false);
 
     }
 
@@ -436,9 +498,15 @@ public class GameManager2 : MonoBehaviour
     public void Equality_Enter()
     {
         Debug.Log("Welcome to Equality");
+        failedOnce = false;
 
         SoundManager.instance.musicSource.clip = SoundManager.instance.ballparkBkg;
         SoundManager.instance.musicSource.Play();
+        if (SoundManager.instance.efxSource.isPlaying)
+        {
+            SoundManager.instance.efxSource.Stop();
+        }
+        
         //reset heart counter, character Heart_StartPoint
 
         boxTutTextShow = false;
@@ -462,7 +530,8 @@ public class GameManager2 : MonoBehaviour
         Camera.main.transform.position = INIT_EQUALITY_POS;
         equality_ShortC.transform.localPosition = equality_ShortC.offscreenPos;
 
-        clickTutorialUIText.text = "Tap each heart\n to collect it";
+        clickTutorialUIText.GetComponent<LeanLocalizedText>().TranslationName = "Tap each heart to collect it";
+        //clickTutorialUIText.text = "Tap each heart\n to collect it";
         clickTutorialUI.transform.DOLocalMoveX(clickTutorialUI.transform.localPosition.x + 350f, 0.5f).From().SetEase(Ease.OutQuad).SetDelay(5f).OnPlay(() =>
         {
             clickTutorialUI.SetActive(true);
@@ -472,20 +541,27 @@ public class GameManager2 : MonoBehaviour
     public IEnumerator BoxPlacementTutorial()
     {
         yield return new WaitForSeconds(0.25f);
-        clickTutorialUIText.text = "Tap anywhere to\nto drop the box";
-        clickTutorialUI.transform.position = new Vector3(Screen.width * 0.7f, Screen.height * 0.12f, 0);
+        //clickTutorialUIText.text = "Tap anywhere to\nto drop the box";
+        clickTutorialUIText.GetComponent<LeanLocalizedText>().TranslationName = "Tap anywhere to drop the box";
+
+        //clickTutorialUI.transform.localPosition = new Vector3(Screen.width * 0.7f, Screen.height * 0.12f, 0);
         clickTutorialUI.SetActive(true);
         clickTutorialUI.transform.DOLocalMoveY(clickTutorialUI.transform.localPosition.y - 300f, 0.5f).From().SetEase(Ease.OutQuad);
     }
 
     public void Equality_Update()
     {
+        //Debug.Log("heart num: " + HeartCounter.Instance.HeartsNumber);
         if (HeartCounter.Instance.HeartsNumber == 3 && boxTutTextShow == false)
         {
             boxTutTextShow = true;
             Debug.Log("3 hearts are there");
-            clickTutorialUIText.text = "Tap the icon\nto make a box";
-            clickTutorialUI.transform.position = new Vector3(Screen.width * 0.7f, Screen.height * 0.12f, 0);
+            //clickTutorialUIText.text = "Tap the icon\nto make a box";
+            clickTutorialUIText.GetComponent<LeanLocalizedText>().TranslationName = "Tap the icon to make a box";
+
+            //Screen.height * 0.12f
+            // Screen.width * 0.7f
+            clickTutorialUI.transform.localPosition = new Vector3(221f, -229f, 0f);
             clickTutorialUI.SetActive(true);
             clickTutorialUI.transform.DOLocalMoveY(clickTutorialUI.transform.localPosition.y - 300f, 0.5f).From().SetEase(Ease.OutQuad);
         }
@@ -504,7 +580,16 @@ public class GameManager2 : MonoBehaviour
         Debug.Log("Equality Success calllled");
         equality_BoxC1.GetComponent<Character>().meter.SetActive(false);
         equality_BoxC2.GetComponent<Character>().meter.SetActive(false);
-        equality_ShortC.GetComponent<Character>().meter.SetActive(false);
+        Character tempShortC = equality_ShortC.GetComponent<Character>();
+        tempShortC.meter.SetActive(false);
+        tempShortC.transform.GetChild(tempShortC.transform.childCount - 1).gameObject.SetActive(true);
+        foreach (Transform child in equalityRuntimeObjsParent.transform)
+        {
+            if (child.name.Contains("heart"))
+            {
+                Destroy(child.gameObject);
+            }
+        }
         DOTween.KillAll();
         Sequence successS = DOTween.Sequence();
         successS.Append(DOTween.To(() => Camera.main.orthographicSize, x => Camera.main.orthographicSize = x, 25, 5f));
@@ -531,6 +616,9 @@ public class GameManager2 : MonoBehaviour
 
     public void TurnOnResultsScreen(float percent)
     {
+        textTutorialUI.SetActive(false);
+        clickTutorialUI.SetActive(false);
+        wideTutorialUI.SetActive(false);
         SuccessScreen mySuccessScreen = successScene.GetComponent<SuccessScreen>();
         mySuccessScreen.percentText.text = percent.ToString() + "%";
         Debug.Log("in turnonResultsScreen: " + percent);
@@ -557,14 +645,17 @@ public class GameManager2 : MonoBehaviour
             successScene.transform.SetParent(equalityUI.transform);
             successScene.transform.SetAsLastSibling();
             equalityBlackScreen.transform.SetAsLastSibling();
-            mySuccessScreen.infoText.text = "Equality Achieved";
+            mySuccessScreen.infoText.GetComponent<LeanLocalizedText>().TranslationName = "Equality Achieved";
+            mySuccessScreen.questionLeanText.TranslationName = "Have you ever claimed a victory even if it wasn't a victory for everyone? Why or why not?";
+            //mySuccessScreen.infoText.text = "Equality Achieved";
         }
         else if (fsm.CurrentStateMap.state.ToString() == States.Equity.ToString())
         {
             successScene.transform.SetParent(equityUI.transform);
             successScene.transform.SetAsLastSibling();
             equityBlackScreen.transform.SetAsLastSibling();
-            mySuccessScreen.infoText.text = "Equity Achieved"; 
+            mySuccessScreen.infoText.GetComponent<LeanLocalizedText>().TranslationName = "Equity Achieved";
+            mySuccessScreen.questionLeanText.TranslationName = "How does a sense of urgency effect equity work?";
         }
         else if (fsm.CurrentStateMap.state.ToString() == States.Liberation.ToString())
         {
@@ -572,32 +663,39 @@ public class GameManager2 : MonoBehaviour
             successScene.transform.SetParent(liberationUI.transform);
             successScene.transform.SetAsLastSibling();
             liberationBlackScreen.transform.SetAsLastSibling();
-            mySuccessScreen.infoText.text = "Equity Achieved";
+            mySuccessScreen.infoText.GetComponent<LeanLocalizedText>().TranslationName = "Liberation Achieved";
+            mySuccessScreen.questionLeanText.TranslationName = "Do you ever consider getting to know those responsible for building barriers to liberation? Why or why not?";
         }
 
         successScene.SetActive(true);
     }
 
+    private bool failedOnce = false;
     public IEnumerator Failed()
     {
-        clickTutorialUI.SetActive(false);
-        yield return new WaitForSeconds(2f);
-        if(fsm.CurrentStateMap.state.ToString() == States.Equality.ToString())
+        if (failedOnce == false)
         {
-            TurnOnResultsScreen(67f);
-        }else if(fsm.CurrentStateMap.state.ToString() == States.Equity.ToString())
-        {
-            Debug.Log("should show Equity fail screen");
-            float totalPassed = 4f;
-            for(int i =0; i < equityCharacters.Count; i++)
+            failedOnce = true; 
+            clickTutorialUI.SetActive(false);
+            yield return new WaitForSeconds(2f);
+            if (fsm.CurrentStateMap.state.ToString() == States.Equality.ToString())
             {
-                if (equityCharacters[i].fsm.CurrentStateMap.state.ToString() != Character.States.Watching.ToString())
-                {
-                    totalPassed = totalPassed - 1f;
-                }
+                TurnOnResultsScreen(67f);
             }
+            else if (fsm.CurrentStateMap.state.ToString() == States.Equity.ToString())
+            {
+                Debug.Log("should show Equity fail screen");
+                float totalPassed = 3f;
+                for (int i = 0; i < equityCharacters.Count; i++)
+                {
+                    if (equityCharacters[i].fsm.CurrentStateMap.state.ToString() != Character.States.Watching.ToString())
+                    {
+                        totalPassed = totalPassed - 1f;
+                    }
+                }
 
-            TurnOnResultsScreen((totalPassed / 4f) * 100f);
+                TurnOnResultsScreen((float)Mathf.RoundToInt((totalPassed / 3f) * 100f));
+            }
         }
         
     }
@@ -634,9 +732,14 @@ public class GameManager2 : MonoBehaviour
     {
         Debug.Log("Welcome to Equity");
         callSuccessOnce = false;
+        failedOnce = false;
 
         SoundManager.instance.musicSource.clip = SoundManager.instance.ballparkBkg;
         SoundManager.instance.musicSource.Play();
+        if (SoundManager.instance.efxSource.isPlaying)
+        {
+            SoundManager.instance.efxSource.Stop();
+        }
         //reset heart counter, character Heart_StartPoint
 
         successScene.SetActive(false);
@@ -700,6 +803,19 @@ public class GameManager2 : MonoBehaviour
             equityCharacters[i].meter.SetActive(false);
         }
         DOTween.KillAll();
+        foreach (Transform child in equityRuntimeObjsParent.transform)
+        {
+            if (child.name.Contains("heart"))
+            {
+                Destroy(child.gameObject);
+            }
+        }
+
+        if (wideTutorialUI.activeInHierarchy)
+        {
+            wideTutorialUI.SetActive(false);
+        }
+
         Sequence successS = DOTween.Sequence();
         successS.Append(DOTween.To(() => Camera.main.orthographicSize, x => Camera.main.orthographicSize = x, 30, 5f));
         successS.Join(Camera.main.transform.DOMove(new Vector3(Camera.main.transform.position.x, -8.8f, Camera.main.transform.position.z), 5f, false));
@@ -756,6 +872,10 @@ public class GameManager2 : MonoBehaviour
 
         SoundManager.instance.musicSource.clip = SoundManager.instance.ballparkBkg;
         SoundManager.instance.musicSource.Play();
+        if (SoundManager.instance.efxSource.isPlaying)
+        {
+            SoundManager.instance.efxSource.Stop();
+        }
         //reset heart counter, character Heart_StartPoint
         panScript.enabled = true; 
         successScene.SetActive(false);
@@ -784,9 +904,10 @@ public class GameManager2 : MonoBehaviour
         yield return new WaitForSeconds(5f);
         //if (panScript.numOfPans == 0)
         //{
-            clickTutorialUIText.text = "Tap and drag\n to pan sideways";
-            
-            clickTutorialUI.transform.localPosition = new Vector3(0f, clickTutorialUI.transform.localPosition.y, clickTutorialUI.transform.position.z);
+        clickTutorialUIText.GetComponent<LeanLocalizedText>().TranslationName = "Hold down and drag to move sideways";
+        //    clickTutorialUIText.text = "Hold down & drag\n to pan sideways";
+
+        clickTutorialUI.transform.localPosition = new Vector3(0f, -236f, 0f);//  new Vector3(0f, clickTutorialUI.transform.localPosition.y, clickTutorialUI.transform.position.z);
             Tween showTextTutorial = clickTutorialUI.transform.DOLocalMoveY(clickTutorialUI.transform.localPosition.y - 100f, 0.5f).From().SetEase(Ease.OutQuad);
             showTextTutorial.OnPlay(() =>
             {
@@ -832,7 +953,7 @@ public class GameManager2 : MonoBehaviour
             }
         }
 
-        TurnOnResultsScreen((passedCharacters / totalCharacters) * 100f);
+        TurnOnResultsScreen((float)Mathf.RoundToInt((passedCharacters / totalCharacters) * 100f));
     }
 
 
@@ -863,6 +984,7 @@ public class GameManager2 : MonoBehaviour
             if(triggerJumpMeter == false)
             {
                 jumpMeter.SetActive(true);
+                noClickUI.SetActive(false);
                 triggerJumpMeter = true;
             }
         }
@@ -874,6 +996,10 @@ public class GameManager2 : MonoBehaviour
             {
                 initiateBreakFence = true;
                 jumpMeter.SetActive(false);
+                noClickUI.transform.SetParent(liberationUI.transform);
+                noClickUI.transform.SetAsLastSibling();
+                liberationBlackScreen.transform.SetAsLastSibling();
+                noClickUI.SetActive(true);
                 FenceParent.Instance.DestroyFence();
 
                 for(int j=0; j< allNonFenceChars.Count; j++)
@@ -886,6 +1012,10 @@ public class GameManager2 : MonoBehaviour
                     allFenceChars[i].FallToGround();
                     
                 }
+                //noCaneBertha falls to ground and starts cheering
+                noCaneBerthaAnimator.gameObject.transform.DOLocalMoveY(-15.1f, 10f).SetSpeedBased().SetDelay(2.25f).SetEase(Ease.InExpo).OnComplete(() => {
+                    noCaneBerthaAnimator.SetBool("isCheering", true);
+                });
                 StartCoroutine(InitiateLiberationSuccess());
             }
         }
@@ -895,7 +1025,7 @@ public class GameManager2 : MonoBehaviour
     {
         yield return new WaitForSeconds(6f);
         Sequence successS = DOTween.Sequence();
-        successS.Append(DOTween.To(() => Camera.main.orthographicSize, x => Camera.main.orthographicSize = x, 57, 5f));
+        successS.Append(DOTween.To(() => Camera.main.orthographicSize, x => Camera.main.orthographicSize = x, 54, 5f));
         successS.Join(Camera.main.transform.DOMove(new Vector3(23f, 5f, Camera.main.transform.position.z), 5f, false));
         successS.InsertCallback(2f, () =>
         {
@@ -913,13 +1043,81 @@ public class GameManager2 : MonoBehaviour
         successS.InsertCallback(6f, () =>
         {
             fireworks.SetActive(true);
+            SoundManager.instance.PlaySingle(SoundManager.instance.fireworks);
         });
         successS.InsertCallback(17f, () =>
         {
-            fsm.ChangeState(States.EndScene);
+            ///fsm.ChangeState(States.EndScene);
+            //instead show scorecard
+            TurnOnResultsScreen(100f);
         });
         
 
+
+    }
+
+    private Tween backButtonCutSceneTween;
+    private Tween heartCounterCutSceneTween;
+    private Tween countDownCutSceneTween;
+    private Tween boxButtonCutSceneTween;
+    public void BeginCutScene()
+    {
+
+        Camera.main.GetComponent<NewDrag>().enabled = false;
+        CountDownTimer.Instance.countDownTween.TogglePause();
+
+        Transform backButton = liberationUI.transform.Find("BackButton");
+
+        //back button
+        backButtonCutSceneTween = backButton.DOLocalMoveY(400f, 1f).SetLoops(2, LoopType.Yoyo);
+        backButtonCutSceneTween.OnStepComplete(() =>
+        {
+            if (backButtonCutSceneTween.CompletedLoops() == 1)
+            {
+                backButtonCutSceneTween.TogglePause();
+            }
+        });
+
+        //heart counter
+        heartCounterCutSceneTween = HeartCounter.Instance.transform.DOLocalMoveY(400f, 1f).SetLoops(2, LoopType.Yoyo);
+        heartCounterCutSceneTween.OnStepComplete(() =>
+        {
+            if(heartCounterCutSceneTween.CompletedLoops() == 1)
+            {
+                heartCounterCutSceneTween.TogglePause(); 
+            }
+        });
+        //count down timer
+        countDownCutSceneTween = CountDownTimer.Instance.transform.DOLocalMoveY(600f, 1f).SetLoops(2, LoopType.Yoyo);
+        countDownCutSceneTween.OnStepComplete(() =>
+        {
+            if (countDownCutSceneTween.CompletedLoops() == 1)
+            {
+                countDownCutSceneTween.TogglePause();
+            }
+        });
+        //box button
+        boxButtonCutSceneTween = boxButton.transform.DOLocalMoveY(-400f, 1f).SetLoops(2, LoopType.Yoyo);
+        boxButtonCutSceneTween.OnStepComplete(() =>
+        {
+            if (boxButtonCutSceneTween.CompletedLoops() == 1)
+            {
+                boxButtonCutSceneTween.TogglePause();
+            }
+        });
+    }
+
+
+    public void EndCutScene()
+    {
+
+        Camera.main.GetComponent<NewDrag>().enabled = true;
+        CountDownTimer.Instance.countDownTween.TogglePause();
+
+        backButtonCutSceneTween.TogglePause();
+        heartCounterCutSceneTween.TogglePause();
+        countDownCutSceneTween.TogglePause();
+        boxButtonCutSceneTween.TogglePause();
 
     }
 
@@ -932,32 +1130,36 @@ public class GameManager2 : MonoBehaviour
             Vector3 idea1LocalPos = new Vector3(point1.occupant.speechBubble.transform.localPosition.x, point1.occupant.speechBubble.transform.localPosition.y, Mathf.Abs(point1.occupant.speechBubble.transform.localPosition.z));
             Vector3 idea2LocalPos = new Vector3(point2.occupant.speechBubble.transform.localPosition.x, point2.occupant.speechBubble.transform.localPosition.y, Mathf.Abs(point2.occupant.speechBubble.transform.localPosition.z));
 
-            Camera.main.GetComponent<NewDrag>().enabled = false;
-            CountDownTimer.Instance.countDownTween.TogglePause();
+            BeginCutScene();
 
-            Camera.main.transform.DOMoveX(point1.transformPoint.parent.position.x + 12f, 20f).SetSpeedBased().SetEase(Ease.Linear).OnComplete(()=> {
+            Camera.main.transform.DOMoveX(point1.transformPoint.parent.position.x + 12f, 20f).SetSpeedBased().SetDelay(1f).SetEase(Ease.Linear).OnComplete(()=> {
 
                 ideaBubble.gameObject.transform.SetParent(point1.transformPoint);
                 ideaBubble2.gameObject.transform.SetParent(point2.transformPoint);
-                Debug.Log("should have parented by now");
+                ideaBubble2.transform.SetScaleXY(5f, 4f);
+                ideaBubble.transform.SetScaleXY(5f, 4f);
+                //Debug.Log("should have parented by now");
 
-                ideaBubble.transform.localPosition = Vector3.zero;
-                ideaBubble2.transform.localPosition = Vector3.zero ;
+                //ideaBubble.transform.localPosition = Vector3.zero;
+                //ideaBubble2.transform.localPosition = Vector3.zero ;
                 //space out the bubbles a bit
-                if(point1.yAngle > 1f)
-                {
-                    ideaBubble.transform.SetLocalX(ideaBubble.transform.localPosition.x + 2f);
-                    ideaBubble2.transform.SetLocalX(ideaBubble.transform.localPosition.x - 2f);
-                }
-                else
-                {
-                    ideaBubble.transform.SetLocalX(ideaBubble.transform.localPosition.x - 2f);
-                    ideaBubble2.transform.SetLocalX(ideaBubble.transform.localPosition.x + 2f);
-                }
+                //if (point1.yAngle > 1f)
+                //{
+                //    ideaBubble.transform.SetLocalX(ideaBubble.transform.localPosition.x + 15f);
+                //    ideaBubble2.transform.SetLocalX(ideaBubble.transform.localPosition.x - 5f);
+                //}
+                //else
+                //{
+                //    ideaBubble.transform.SetLocalX(ideaBubble.transform.localPosition.x - 5f);
+                //    ideaBubble2.transform.SetLocalX(ideaBubble.transform.localPosition.x + 15f);
+                //}
+                ideaBubble2.transform.SetLocalX(-4.5f);
+                ideaBubble.transform.SetLocalX(6.5f);
+
                 Sequence ideaBubbleS = DOTween.Sequence();
                 
-                ideaBubbleS.Append(ideaBubble.transform.DOLocalMoveY(5f, 2f).SetSpeedBased().SetEase(Ease.Linear));
-                ideaBubbleS.Join(ideaBubble2.transform.DOLocalMoveY(5f, 2f).SetSpeedBased().SetEase(Ease.Linear));
+                ideaBubbleS.Append(ideaBubble.transform.DOLocalMoveY(7.5f, 2f).SetSpeedBased().SetEase(Ease.Linear));
+                ideaBubbleS.Join(ideaBubble2.transform.DOLocalMoveY(7.5f, 2f).SetSpeedBased().SetEase(Ease.Linear));
                 ideaBubbleS.OnPlay(() =>
                 {
                     ideaBubble.SetActive(true);
@@ -966,7 +1168,7 @@ public class GameManager2 : MonoBehaviour
 
                 bool fadeInOnce = false;
                 ideaBubbleS.OnUpdate(() => {
-                    if(ideaBubbleS.ElapsedPercentage() > 0.95f)
+                    if(ideaBubbleS.ElapsedPercentage() > 0.5f)
                     {
                         if (fadeInOnce == false)
                         {
@@ -985,13 +1187,14 @@ public class GameManager2 : MonoBehaviour
                     ideaBubble.GetComponent<BoxCollider2D>().enabled = true;
                     ideaBubble2.GetComponent<BoxCollider2D>().enabled = true;
                     //click tutorial
-                    clickTutorialUIText.text = "Tap on one of the\n ideas to try it";
-
+                    clickTutorialUIText.GetComponent<LeanLocalizedText>().TranslationName = "Tap on one of the ideas to try it";
+                    //clickTutorialUIText.text = "Tap on one of the\n ideas to try it";
+                    clickTutorialUI.transform.localPosition = new Vector3(0f, -236f, 0f); 
                     //clickTutorialUI.transform.localPosition = new Vector3(0f, clickTutorialUI.transform.localPosition.y, clickTutorialUI.transform.position.z);
                     //Tween showTextTutorial = clickTutorialUI.transform.DOLocalMoveY(clickTutorialUI.transform.localPosition.y - 100f, 0.5f).From().SetEase(Ease.OutQuad);
                     //showTextTutorial.OnPlay(() =>
                     //{
-                        clickTutorialUI.SetActive(true);
+                    clickTutorialUI.SetActive(true);
                     //});
                 });           
             });
@@ -999,116 +1202,138 @@ public class GameManager2 : MonoBehaviour
     }
 
 
+    private bool clickIdeaBubble2 = false; 
     public void HandleIdeaBubble2()
     {
-        
-        clickTutorialUI.SetActive(false);
-
-        Vector3 endPoint = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width / 2f, Screen.height * 0.5f, Camera.main.nearClipPlane));
-        ideaBubble2.transform.DOKill();
-        Sequence ideaBubble2S = DOTween.Sequence();
-        ideaBubble2S.SetDelay(0.5f);
-        ideaBubble2S.Append(ideaBubble2.transform.DOMove(new Vector3(endPoint.x, endPoint.y, ideaBubble2.transform.position.z), 1f).SetEase(Ease.OutQuad));
-        ideaBubble2S.Join(ideaBubble2.transform.DOScale(new Vector3(8f, 6.6f,ideaBubble2.transform.localScale.z), 1f).SetEase(Ease.OutQuad));
-       
-        ideaBubble2S.AppendInterval(5f);
-        ideaBubble2S.OnComplete(() =>
+        if (clickIdeaBubble2 == false)
         {
-            ideaBubble.SetActive(false);
-            ideaBubble2.SetActive(false);
-            Camera.main.GetComponent<NewDrag>().enabled = true;
-            CountDownTimer.Instance.countDownTween.TogglePause();
-            textTutorialText.text = "Continue to create boxes\n to achieve perfect equity";
+            clickIdeaBubble2 = true; 
+            clickTutorialUI.SetActive(false);
+            SoundManager.instance.PlaySingle(SoundManager.instance.select, 0.75f);
 
-            //textTutorialUI.transform.localPosition = new Vector3(0f, textTutorialUI.transform.localPosition.y, textTutorialUI.transform.position.z);
-            //Tween showTextTutorial = textTutorialUI.transform.DOLocalMoveY(textTutorialUI.transform.localPosition.y - 100f, 0.5f).From().SetEase(Ease.OutQuad);
-            //showTextTutorial.OnPlay(() =>
-            //{
+            Vector3 endPoint = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width / 2f, Screen.height * 0.5f, Camera.main.nearClipPlane));
+            ideaBubble2.transform.DOKill();
+            Sequence ideaBubble2S = DOTween.Sequence();
+            ideaBubble2S.SetDelay(0.5f);
+            ideaBubble2S.Append(ideaBubble.transform.GetComponent<SpriteRenderer>().DOFade(0f, 1f));
+            ideaBubble2S.Join(ideaBubble.transform.GetChild(0).GetComponent<SpriteRenderer>().DOFade(0f, 1f));
+            ideaBubble2S.Join(ideaBubble2.transform.DOMove(new Vector3(endPoint.x, endPoint.y, ideaBubble2.transform.position.z), 1f).SetEase(Ease.OutQuad));
+            ideaBubble2S.Join(ideaBubble2.transform.DOScale(new Vector3(8f, 6.6f, ideaBubble2.transform.localScale.z), 1f).SetEase(Ease.OutQuad));
+
+            ideaBubble2S.AppendInterval(5f);
+            ideaBubble2S.OnComplete(() =>
+            {
+                ideaBubble.SetActive(false);
+                ideaBubble2.SetActive(false);
+            //Camera.main.GetComponent<NewDrag>().enabled = true;
+            //CountDownTimer.Instance.countDownTween.TogglePause();
+                EndCutScene();
+                textTutorialText.GetComponent<LeanLocalizedText>().TranslationName = "Continue to create boxes to achieve perfect equity";
+                //textTutorialText.text = "Continue to create boxes\n to achieve perfect equity";
+                textTutorialUI.transform.localPosition = new Vector3(0f, -236f, 0f);
+                //textTutorialUI.transform.localPosition = new Vector3(0f, textTutorialUI.transform.localPosition.y, textTutorialUI.transform.position.z);
+                //Tween showTextTutorial = textTutorialUI.transform.DOLocalMoveY(textTutorialUI.transform.localPosition.y - 100f, 0.5f).From().SetEase(Ease.OutQuad);
+                //showTextTutorial.OnPlay(() =>
+                //{
                 textTutorialUI.SetActive(true);
                 StartCoroutine(TurnOffIdeaBubble2HelpText());
             //});
-        });
+            });
 
-        
+        }
     }
 
     public IEnumerator TurnOffIdeaBubble2HelpText()
     {
-        yield return new WaitForSeconds(2.5f);
+        yield return new WaitForSeconds(4f);
         textTutorialUI.SetActive(false);
     }
 
     //track if character is going to stand on fence
     public List<Character> allFenceChars = new List<Character>();
     public List<Character> allNonFenceChars = new List<Character>();
+    private bool clickIdeaBubble = false;
     public int howManyOnFence = 0; 
     public void HandleIdeaBubble()
     {
-        //Debug.Log("idea bubble clicked");
-        //disable camera drag
-        clickTutorialUI.SetActive(false);
-        ideaBubble2.SetActive(false);
-        Camera.main.GetComponent<NewDrag>().enabled = false;
-        Vector3 endPoint = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width/2f, Screen.height*0.5f, Camera.main.nearClipPlane));
-        ideaBubble.transform.DOKill();
-        Sequence ideaBubbleS = DOTween.Sequence();
-        ideaBubbleS.SetDelay(0.5f);
-        ideaBubbleS.Append(ideaBubble.transform.DOMove(new Vector3(endPoint.x, endPoint.y, ideaBubble.transform.position.z), 1f).SetEase(Ease.OutQuad));
-        ideaBubbleS.Join(ideaBubble.transform.DOScale(new Vector3(8f, 6.6f, ideaBubble.transform.localScale.z), 1f).SetEase(Ease.OutQuad));
-        ideaBubbleS.AppendCallback(() =>
+        if (clickIdeaBubble == false)
         {
-            finalBoxes.SetActive(true);
-            CountDownTimer.Instance.countDownTween.Kill();
-            CountDownTimer.Instance.transform.gameObject.SetActive(false);
-            HeartCounter.Instance.transform.gameObject.SetActive(false);
-            boxButton.gameObject.SetActive(false);
+
+            clickIdeaBubble = true;
+
+            //Debug.Log("idea bubble clicked");
+            //disable camera drag
+            clickTutorialUI.SetActive(false);
+            SoundManager.instance.PlaySingle(SoundManager.instance.select, 0.75f);
+            ideaBubble2.SetActive(false);
+            Camera.main.GetComponent<NewDrag>().enabled = false;
+            Vector3 endPoint = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width / 2f, Screen.height * 0.5f, Camera.main.nearClipPlane));
+            ideaBubble.transform.DOKill();
+            Sequence ideaBubbleS = DOTween.Sequence();
+            ideaBubbleS.SetDelay(0.5f);
+            ideaBubbleS.Append(ideaBubble2.transform.GetComponent<SpriteRenderer>().DOFade(0f, 1f));
+            ideaBubbleS.Join(ideaBubble2.transform.GetChild(0).GetComponent<SpriteRenderer>().DOFade(0f, 1f));
+            ideaBubbleS.Join(ideaBubble.transform.DOMove(new Vector3(endPoint.x, endPoint.y, ideaBubble.transform.position.z), 1f).SetEase(Ease.OutQuad));
+            ideaBubbleS.Join(ideaBubble.transform.DOScale(new Vector3(8f, 6.6f, ideaBubble.transform.localScale.z), 1f).SetEase(Ease.OutQuad));
+            ideaBubbleS.AppendCallback(() =>
+            {
+                finalBoxes.SetActive(true);
+                CountDownTimer.Instance.countDownTween.Kill();
+                CountDownTimer.Instance.transform.gameObject.SetActive(false);
+                HeartCounter.Instance.transform.gameObject.SetActive(false);
+                boxButton.gameObject.SetActive(false);
+                noCaneBerthaAnimator.gameObject.SetActive(true);
             //turn off back button
             liberationUI.transform.GetChild(0).gameObject.SetActive(false);
-        });
-        ideaBubbleS.AppendInterval(5f);
-        ideaBubbleS.OnComplete(()=> {
-            ideaBubble.SetActive(false);
-            foreach (Transform child in LiberationScene.transform)
+            });
+            ideaBubbleS.AppendInterval(5f);
+            ideaBubbleS.OnComplete(() =>
             {
-                Character c = child.GetComponent<Character>();
-                if (c != null)
+                ideaBubble.SetActive(false);
+                noClickUI.SetActive(true);
+                foreach (Transform child in LiberationScene.transform)
                 {
-                    //c.fsm.CurrentStateMap.state.ToString() == Character.States.GaveUp.ToString() &&
-                    if (!c.transform.name.Contains("CharC"))
+                    Character c = child.GetComponent<Character>();
+                    if (c != null)
                     {
-                        allFenceChars.Add(c);
-                        if (c.fsm.CurrentStateMap.state.ToString() != Character.States.GaveUp.ToString())
+                        //c.fsm.CurrentStateMap.state.ToString() == Character.States.GaveUp.ToString() &&
+                        if (!c.transform.name.Contains("CharC"))
                         {
-                            if(c.myBoxes.Count > 0)
+                            allFenceChars.Add(c);
+                            Debug.Log("little shit: " + c.fsm.CurrentStateMap.state.ToString());
+                            if (c.fsm.CurrentStateMap.state.ToString() != Character.States.GaveUp.ToString())
                             {
-                                //for Char B & D who might be standing on boxes, first get down from them
-                                c.GetDownBox_ThenFence();
+                                if (c.myBoxes.Count > 0)
+                                {
+                                    //for Char B & D who might be standing on boxes, first get down from them
+                                    c.GetDownBox_ThenFence();
+                                }
+                                else
+                                {
+                                    //for Char A who's watching and for Char B & D who might be waiting around with some resolve left
+                                    c.skipSittingDown = true;
+                                    c.fsm.ChangeState(Character.States.GaveUp);
+                                    StartCoroutine(c.GetOnFence());
+                                }
+
                             }
                             else
                             {
-                                //for Char A who's watching and for Char B & D who might be waiting around with some resolve left
-                                c.skipSittingDown = true;
-                                c.fsm.ChangeState(Character.States.GaveUp);
                                 StartCoroutine(c.GetOnFence());
                             }
 
                         }
                         else
                         {
-                            StartCoroutine(c.GetOnFence());
+                            allNonFenceChars.Add(c);
+                            c.StandUp();
                         }
-                        
-                    }
-                    else
-                    {
-                        allNonFenceChars.Add(c);
-                        c.StandUp();
                     }
                 }
-            }
-            //move camera final Boxes
-            Camera.main.transform.DOMoveX(finalBoxes.transform.position.x, 20f).SetSpeedBased().SetEase(Ease.Linear).SetDelay(2f);
-        });
+                //move camera final Boxes
+                Camera.main.transform.DOMoveX(finalBoxes.transform.position.x, 20f).SetSpeedBased().SetEase(Ease.Linear).SetDelay(2f);
+            });
+        }
         
     }
 
@@ -1117,7 +1342,7 @@ public class GameManager2 : MonoBehaviour
         Debug.Log("Exiting Liberation");
         Camera.main.GetComponent<NewDrag>().enabled = false;
         liberationBlackScreen.color = new Color(0f, 0f, 0f, 0f);
-        Tween fadeToBlackTween = liberationBlackScreen.DOFade(1f, 2f).SetEase(Ease.OutQuad);
+        Tween fadeToBlackTween = liberationBlackScreen.DOFade(1f, 5f).SetEase(Ease.OutQuad);
         yield return fadeToBlackTween.WaitForCompletion();
         //delete all instantiated boxes and hearts
         foreach (Transform child in liberationRuntimeObjsParent.transform)
@@ -1140,39 +1365,64 @@ public class GameManager2 : MonoBehaviour
 
 
         successScene.SetActive(false);
-        
+        SoundManager.instance.musicSource.clip = SoundManager.instance.birds;
+        SoundManager.instance.musicSource.volume = 0.4f; 
+        SoundManager.instance.musicSource.DOFade(0f, 1f).From().OnPlay(()=> {
+            SoundManager.instance.musicSource.Play();
+        });
+        SoundManager.instance.musicSource.volume = 0.4f; 
+        //SoundManager.instance.PlaySingle(SoundManager.instance.saw, 0.2f);
+
+
         EndScene.SetActive(true);
         endSceneUI.SetActive(true);
         endSceneBlackScreen.color = new Color(0f, 0f, 0f, 0f);
-        Tween fadeFromBlack = endSceneBlackScreen.DOFade(1f, 3f).SetEase(Ease.InOutQuad).From();
+        Tween fadeFromBlack = endSceneBlackScreen.DOFade(1f, 5f).SetEase(Ease.InOutQuad).From();
         fadeFromBlack.OnUpdate(() => {
             if (fadeFromBlack.ElapsedPercentage() > 0.25f)
             {
                 if (!endSceneIntroScreen.activeInHierarchy)
                 {
                     endSceneIntroScreen.SetActive(true);
+                    noClickUI.transform.SetParent(endSceneUI.transform);
+                    noClickUI.transform.SetAsLastSibling();
+                    endSceneBlackScreen.transform.SetAsLastSibling();
+                    noClickUI.SetActive(true);
                 }
 
             }
         });
 
-
-
         Camera.main.transform.position = INIT_ENDSCENE_POS;
         Camera.main.orthographicSize = 65;
 
-        yield return new WaitForSeconds(9f);
+        yield return new WaitForSeconds(18f);
 
         Sequence fadingS = DOTween.Sequence();
-        fadingS.Append(endSceneBlackScreen.DOFade(1f, 2f).SetEase(Ease.InOutQuad));
+        fadingS.Append(endSceneBlackScreen.DOFade(1f, 4f).SetEase(Ease.InOutQuad));
+        fadingS.Join(SoundManager.instance.efxSource.DOFade(0f, 2f));
         fadingS.AppendCallback(() =>
         {
             endSceneChars.SetActive(false);
             sawer.SetActive(false);
+            //show a finished garden bed
+            unfinishedGardenBox.SetActive(false);
+            finishedGardenBox.SetActive(true);
+            //SoundManager.instance.efxSource.volume = 1f; 
+            
         });
-        fadingS.Append(endSceneBlackScreen.DOFade(1f, .5f).SetEase(Ease.InOutQuad).From());
+        //fadingS.AppendInterval(1f);
+        fadingS.Append(endSceneBlackScreen.DOFade(1f, 2f).SetEase(Ease.InOutQuad).From());
 
+        
+        SoundManager.instance.musicSource.clip = SoundManager.instance.hammer;
+        SoundManager.instance.musicSource.volume = 0.25f;
+        SoundManager.instance.musicSource.DOFade(0f, 2f).From().OnPlay(() => {
+            SoundManager.instance.musicSource.Play();
+        });
         StartCoroutine(buildEndFence());
+        
+
     }
 
     public IEnumerator buildEndFence()
@@ -1195,7 +1445,27 @@ public class GameManager2 : MonoBehaviour
         yield return new WaitForSeconds(.25f);
         endFenceBuilder.transform.localPosition = new Vector3(endFenceBuilder.transform.localPosition.x + 16f, endFenceBuilder.transform.localPosition.y, endFenceBuilder.transform.localPosition.z);
         yield return new WaitForSeconds(3f);
+        endBuilderDust.GetComponent<Animator>().SetTrigger("triggerBigPoof");
+        yield return new WaitForSeconds(1.25f);
+        lastFence4.SetActive(true);
+        yield return new WaitForSeconds(.25f);
+        endFenceBuilder.transform.localPosition = new Vector3(endFenceBuilder.transform.localPosition.x + 16f, endFenceBuilder.transform.localPosition.y, endFenceBuilder.transform.localPosition.z);
+        yield return new WaitForSeconds(3f);
+        fourthBoxQuestionsUI.SetActive(true);
+        noClickUI.SetActive(false);
+
+    }
+
+    public void HandleFourthBoxCreditsButton()
+    {
+        SoundManager.instance.PlaySingle(SoundManager.instance.take);
         fsm.ChangeState(States.Credits);
+    }
+
+    public void HandleFourthBoxMainMenuButton()
+    {
+        SoundManager.instance.PlaySingle(SoundManager.instance.take);
+        fsm.ChangeState(States.MainMenu);
     }
 
 
@@ -1204,9 +1474,10 @@ public class GameManager2 : MonoBehaviour
         Debug.Log("Exiting EndScene");
         liberationBlackScreen.color = new Color(0f, 0f, 0f, 0f);
         Tween fadeToBlackTween = endSceneBlackScreen.DOFade(1f, 3f).SetEase(Ease.InOutQuad);
+        fourthBoxQuestionsUI.SetActive(false);
         yield return fadeToBlackTween.WaitForCompletion();
 
-
+        
         EndScene.SetActive(false);
         endSceneUI.SetActive(false);
         DOTween.KillAll();
@@ -1242,13 +1513,98 @@ public class GameManager2 : MonoBehaviour
         DOTween.KillAll();
     }
 
+    public void Questions_Enter()
+    {
+        Debug.Log("Welcome to Credits");
+
+        questionsUI.SetActive(true);
+        questionsBlackScreen.color = new Color(0f, 0f, 0f, 0f);
+        questionsBlackScreen.DOFade(1f, 3f).SetEase(Ease.InOutQuad).From();
+    }
+
+
+    public IEnumerator Questions_Exit()
+    {
+        Debug.Log("Exiting Questions");
+        questionsBlackScreen.color = new Color(0f, 0f, 0f, 0f);
+        Tween fadeToBlackTween = questionsBlackScreen.DOFade(1f, 2f).SetEase(Ease.OutQuad);
+        yield return fadeToBlackTween.WaitForCompletion();
+
+        questionsUI.SetActive(false);
+        DOTween.KillAll();
+    }
+
+
+    public void LanguageMenu_Enter()
+    {
+        SoundManager.instance.musicSource.clip = SoundManager.instance.menuBkg;
+        SoundManager.instance.musicSource.volume = 0.15f;
+        SoundManager.instance.musicSource.DOFade(0f, 2f).From().OnPlay(() => {
+            SoundManager.instance.musicSource.Play();
+        });
+
+        languageMenuUI.SetActive(true);
+        languageBlackScreen.color = new Color(0f, 0f, 0f, 0f);
+        languageBlackScreen.DOFade(1f, 3f).SetEase(Ease.InOutQuad).From();
+
+        //blackScreen.gameObject.SetActive(true);
+        //blackScreen.DOFade(0f, 1f).SetEase(Ease.InOutQuad).SetLoops(1, LoopType.Restart);
+
+        Sequence languageMenuS = DOTween.Sequence();
+        languageMenuS.Append(langEnglishButton.transform.DOScale(Vector3.zero, 0.25f).From().SetEase(Ease.OutQuad));
+        languageMenuS.Append(langSpanishButton.transform.DOScale(Vector3.zero, 0.25f).From().SetEase(Ease.OutQuad));
+        languageMenuS.AppendCallback(() =>
+        {
+            langcssLogo.SetActive(true);
+            mainMenuS.Append(langcssLogo.transform.DOLocalMoveY(cssLogo.transform.localPosition.y - 150f, 0.5f).From().SetEase(Ease.OutBounce));
+        });
+
+    }
+
+    public void LangEnglishButtonPressed()
+    {
+        EnglishButtonPressed();
+        fsm.ChangeState(States.Intro1);
+    }
+
+    public void LangSpanishButtonPressed()
+    {
+        //SoundManager.instance.PlaySingle(SoundManager.instance.take);
+        SpanishButtonPressed();
+        fsm.ChangeState(States.Intro1);
+    }
+
+    public void LanguageMenu_Update()
+    {
+    }
+
+    public IEnumerator LanguageMenu_Exit()
+    {
+        Debug.Log("Exiting Language Menu");
+        languageBlackScreen.color = new Color(0f, 0f, 0f, 0f);
+        Tween fadeToBlackTween = languageBlackScreen.DOFade(1f, 2f).SetEase(Ease.OutQuad);
+        yield return fadeToBlackTween.WaitForCompletion();
+
+        languageMenuUI.SetActive(false);
+    }
 
 
     public void MainMenu_Enter()
     {
         Debug.Log("Welcome to MainMenu");
+
+
         SoundManager.instance.musicSource.clip = SoundManager.instance.menuBkg;
-        SoundManager.instance.musicSource.Play();
+        SoundManager.instance.musicSource.volume = 0.15f;
+        SoundManager.instance.musicSource.DOFade(0f, 2f).From().OnPlay(()=> {
+            SoundManager.instance.musicSource.Play();
+        });
+
+        SoundManager.instance.efxSource.volume = 1f; 
+        if (SoundManager.instance.efxSource.isPlaying)
+        {
+            SoundManager.instance.efxSource.Stop();
+        }
         mainMenuUI.SetActive(true);
         cssLogo.SetActive(false);
         if (unlockGameNum == 0)
@@ -1264,7 +1620,7 @@ public class GameManager2 : MonoBehaviour
         }
         else if (unlockGameNum == 2)
         {
-            questionsButton.GetComponent<Button>().interactable = false;
+            //questionsButton.GetComponent<Button>().interactable = true;
         }
         //game1Button.SetActive(false);
         //game2Button.SetActive(false);
@@ -1318,7 +1674,7 @@ public class GameManager2 : MonoBehaviour
     public void QuestionsButtonPressed()
     {
         SoundManager.instance.PlaySingle(SoundManager.instance.error);
-        //fsm.ChangeState(States.Equality);
+        fsm.ChangeState(States.Questions);
     }
 
     public void CreditsButtonPressed()
@@ -1326,11 +1682,36 @@ public class GameManager2 : MonoBehaviour
         SoundManager.instance.PlaySingle(SoundManager.instance.take);
         fsm.ChangeState(States.Credits);
     }
-
-    public void MainMenu_Update()
+    public void EnglishButtonPressed()
     {
+        //SoundManager.instance.PlaySingle(SoundManager.instance.take);
+        if (englishButton.GetComponent<Image>().sprite != englishButtonSelectedSprite)
+        {
+            SoundManager.instance.PlaySingle(SoundManager.instance.take);
+            englishButton.GetComponent<Image>().sprite = englishButtonSelectedSprite;
+            spanishButton.GetComponent<Image>().sprite = spanishButtonUnselectedSprite;
+            titleImage.sprite = engTitleSprite; 
+        }
+    }
+
+    public void SpanishButtonPressed()
+    {
+        
+        //change color of spanish button
+        //change sprite of english button
+        if(spanishButton.GetComponent<Image>().sprite != spanishButtonSelectedSprite) {
+            SoundManager.instance.PlaySingle(SoundManager.instance.take);
+            spanishButton.GetComponent<Image>().sprite = spanishButtonSelectedSprite;
+            englishButton.GetComponent<Image>().sprite = englishButtonUnselectedSprite;
+            titleImage.sprite = spnTitleSprite;
+        }
 
     }
+
+    //public void MainMenu_Update()
+    //{
+
+    //}
 
     public void MainMenu_Exit()
     {

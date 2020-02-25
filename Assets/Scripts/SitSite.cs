@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 [System.Serializable]
 public class SitPoint
@@ -24,6 +25,7 @@ public class SitSite : MonoBehaviour
 
     public int numConversations = 0;
     private int CONVERSATIONS_THRESHOLD = 5;
+    private bool triggerOnce = false; 
     // Update is called once per frame
     void Update()
     {
@@ -62,10 +64,14 @@ public class SitSite : MonoBehaviour
                     //turn off chats
                     if (idea1Point!= null && idea2Point != null)
                     {
-                        Debug.Log("idea 1 angle: " + idea1Point.yAngle + "idea 2 angle: " + idea2Point.yAngle); 
-                        sitPoints[j].occupant.speechBubble.SetActive(false);
-                        GameManager2.instance.TriggerIdeaBubble(idea1Point, idea2Point);
-                        numConversations = 0;
+                        // Debug.Log("idea 1 angle: " + idea1Point.yAngle + "idea 2 angle: " + idea2Point.yAngle); 
+                        if (triggerOnce == false)
+                        {
+                            triggerOnce = true; 
+                            sitPoints[j].occupant.speechBubble.SetActive(false);
+                            StartCoroutine(WaitToTriggerIdeas(idea1Point, idea2Point));
+                            numConversations = 0;
+                        }
                         break;
                     }
                 }
@@ -73,4 +79,20 @@ public class SitSite : MonoBehaviour
             
         }
     }
+
+
+    public IEnumerator WaitToTriggerIdeas(SitPoint i1, SitPoint i2)
+    {
+        if (i1.occupant.gaveUpWalkTween != null)
+        {
+            yield return i1.occupant.gaveUpWalkTween.WaitForCompletion();
+        }
+        else
+        {
+            yield return new WaitForSeconds(0.1f);
+        }
+        //yield return i2.occupant.gaveUpWalkTween.WaitForCompletion();
+        GameManager2.instance.TriggerIdeaBubble(i1, i2);
+    }
+
 }

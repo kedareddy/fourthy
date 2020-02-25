@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+using Lean.Localization;
 
 public class JumpMeter : MonoBehaviour
 {
@@ -23,9 +24,12 @@ public class JumpMeter : MonoBehaviour
     void OnEnable()
     {
         markerTween = marker.transform.DOLocalMoveX(marker.transform.localPosition.x + meterLength, meterSpeed).SetSpeedBased().SetEase(Ease.Linear).SetLoops(-1, LoopType.Yoyo);
-        GameManager2.instance.wideTutorialText.text = "Tap anywhere when the\n marker overlaps the green";
+
+        GameManager2.instance.wideTutorialText.GetComponent<LeanLocalizedText>().TranslationName = "Tap anywhere while the marker is in the green to jump together";
+
+        //GameManager2.instance.wideTutorialText.text = "Tap anywhere when the\n marker overlaps the green";
         
-        GameManager2.instance.wideTutorialUI.transform.position = new Vector3(Screen.width*0.5f, GameManager2.instance.clickTutorialUI.transform.position.y, GameManager2.instance.wideTutorialUI.transform.position.z);
+        GameManager2.instance.wideTutorialUI.transform.localPosition = new Vector3(0f, -236f, 0f);// new Vector3(0f, GameManager2.instance.clickTutorialUI.transform.localPosition.y, GameManager2.instance.wideTutorialUI.transform.localPosition.z);
         GameManager2.instance.wideTutorialUI.SetActive(true);
         //GameManager2.instance.wideTutorialUI.transform.DOLocalMoveY(GameManager2.instance.wideTutorialUI.transform.localPosition.y - 100f, 0.5f).From().SetEase(Ease.InOutQuad).SetDelay(0.5f).OnPlay(() =>
         //{
@@ -55,6 +59,9 @@ public class JumpMeter : MonoBehaviour
                     sweetSpot = false; 
                     //GameManager2.instance.currenFencePower = GameManager2.instance.currenFencePower + 1;
                 }
+                //jump noCaneBertha
+                GameManager2.instance.noCaneBerthaAnimator.gameObject.transform.DOLocalMoveY(13.7f, 0.75f).SetLoops(2, LoopType.Yoyo).SetEase(Ease.InOutCirc);
+                SoundManager.instance.PlaySingle(SoundManager.instance.buzzStop, 0.75f);
                 markerTween.TogglePause();
                 listenToInput = false;
                 StartCoroutine(ResetListenToInput(sweetSpot));

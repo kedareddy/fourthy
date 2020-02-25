@@ -37,7 +37,7 @@ public class BoxButton : MonoBehaviour
         //Debug.Log("clicke on box butotn");
         if (boxToggle.IsInteractable())
         {
-            SoundManager.instance.PlaySingle(SoundManager.instance.take);
+            SoundManager.instance.PlaySingle(SoundManager.instance.take, 0.5f);
             //Debug.Log("it is interactive");
             //boxToggle.isOn = true;
             if (GameManager2.instance.fsm.CurrentStateMap.state.ToString() == GameManager2.States.Equality.ToString())
@@ -56,6 +56,7 @@ public class BoxButton : MonoBehaviour
                 stackTutorialTween.OnPlay(() =>
                 {
                     GameManager2.instance.wideTutorialUI.SetActive(true);
+                    StartCoroutine(TurnOffStackTutorial());
                 });
             }
         }
@@ -65,8 +66,15 @@ public class BoxButton : MonoBehaviour
         }
     }
 
+    IEnumerator TurnOffStackTutorial()
+    {
+        yield return new WaitForSeconds(10f);
+        GameManager2.instance.wideTutorialUI.SetActive(false);
+    }
 
-    private Vector3 mouseDownPos; 
+
+    private Vector3 mouseDownPos;
+    private float timeOfLastDrop = 0f;
     // Update is called once per frame
     void Update()
     {
@@ -80,24 +88,25 @@ public class BoxButton : MonoBehaviour
                 //if (!EventSystem.current.IsPointerOverGameObject())
                 //{
                 if(IsPointerOverUIElement() == false) { 
-                    Debug.Log("Dropped a box");
+                    //Debug.Log("Dropped a box");
                     mouseDownPos = Input.mousePosition;
 
                 }
             }
 
 
-            if (Input.GetMouseButtonUp(0))
+            if (Input.GetMouseButtonUp(0) )
             {
-                Debug.Log("Dropped a box UP");
-                if (mouseDownPos == Input.mousePosition)
+                //Debug.Log("time: " + (Time.time - timeOfLastDrop).ToString());
+                if (mouseDownPos == Input.mousePosition && (Time.time - timeOfLastDrop) > 2f)
                 {
+                    timeOfLastDrop = Time.time;
                     Vector3 worldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                     Vector3 worldTopPos = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, 0f));
                     Vector3 gridWorldPos = GridWorld.GetGridPointCenter(worldPos);
 
 
-                    SoundManager.instance.PlaySingle(SoundManager.instance.drop);
+                    //SoundManager.instance.PlaySingle(SoundManager.instance.drop, 0.2f);
                    
                     //trigger box stacking tutorial in Equity
 
@@ -113,13 +122,13 @@ public class BoxButton : MonoBehaviour
                         }
                     }
 
-                    if (GameManager2.instance.fsm.CurrentStateMap.state.ToString() == GameManager2.States.Equity.ToString() && GameManager2.instance.equity_ShortC.myBoxes.Count == 1)
-                    {
-                        if (GameManager2.instance.wideTutorialUI.activeInHierarchy)
-                        {
-                            GameManager2.instance.wideTutorialUI.SetActive(false);
-                        }
-                    }
+                    //if (GameManager2.instance.fsm.CurrentStateMap.state.ToString() == GameManager2.States.Equity.ToString() && GameManager2.instance.equity_ShortC.myBoxes.Count == 1)
+                    //{
+                    //    if (GameManager2.instance.wideTutorialUI.activeInHierarchy)
+                    //    {
+                    //        GameManager2.instance.wideTutorialUI.SetActive(false);
+                    //    }
+                    //}
                 }
 
             }

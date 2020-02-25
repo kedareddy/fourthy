@@ -32,6 +32,7 @@ public class CountDownTimer : MonoBehaviour
 
     private float timeLeft;
     private bool flickerStarted = false;
+   // private bool playAudioAgain = false; 
     public Tween countDownTween; 
     // Start is called before the first frame update
     void Start()
@@ -47,8 +48,17 @@ public class CountDownTimer : MonoBehaviour
                 //meter.DOColor(new Color(0f,0f,0f,0f), 10f).SetEase(Ease.Flash, 50, -1f);
                 meter.sprite = redMeterSprite; 
                 meterBkg.DOColor(new Color(0f, 0f, 0f, 0f), 30f).SetEase(Ease.Flash, 150, -1f);
-                flickerStarted = true; 
+                flickerStarted = true;
+                //SoundManager.instance.PlaySingle(SoundManager.instance.timer);
             }
+            //if(timeLeft < 13f)
+            //{
+            //    if (playAudioAgain == false)
+            //    {
+            //        playAudioAgain = true; 
+            //        SoundManager.instance.PlaySingle(SoundManager.instance.timer);
+            //    }
+            //}
         });
         countDownTween.OnComplete(()=> {
             Debug.Log("END LIBERATION");

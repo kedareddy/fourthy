@@ -59,11 +59,14 @@ public class FenceParent : MonoBehaviour
         int damageToApply; 
         if (fullDamage)
         {
-            damageToApply = 7; 
+            damageToApply = 7;
+            Debug.Log("How many times is the fenceJump Sound playing");
+            SoundManager.instance.PlaySingle(SoundManager.instance.jumpFence, 0.75f);
         }
         else
         {
             damageToApply = 2;
+            
         }
         int numOfFlips = 0; 
         for(int i = 0; i < fenceParts.Count; i++)
@@ -120,6 +123,7 @@ public class FenceParent : MonoBehaviour
                     GameManager2.instance.gamePlayers.SetActive(false);
                     GameManager2.instance.winningTeam.SetActive(true);
                     GameManager2.instance.liberationFourthy.SetActive(true);
+                    SoundManager.instance.PlaySingle(SoundManager.instance.fenceCrash, 0.6f);
                 }
                 
 
@@ -133,7 +137,7 @@ public class FenceParent : MonoBehaviour
     void Update()
     {
         int powerDiff = GameManager2.instance.currenFencePower - previousFencePower;
-        if ( powerDiff != 0)
+        if ( powerDiff !=0)
         {
             if(powerDiff == 1)
             {

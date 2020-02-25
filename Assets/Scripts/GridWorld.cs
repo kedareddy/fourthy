@@ -201,13 +201,17 @@ public static class GridWorld
                 Vector3 worldPoint = _grid.GridToWorld(gridPoint);
                 //Debug.Log("worldPoint: " + worldPoint);
                 Collider2D col = Physics2D.OverlapPoint(new Vector2(worldPoint.x, worldPoint.y), LayerMask.GetMask("Default"));
-                Box b = col.GetComponent<Box>();
-                if (col != null && b != null)
+                if (col != null)
                 {
-                    if(b.boxHealthState != BoxHealthState.Broken)
+                    Debug.Log("col name: " + col.transform.name);
+                    Box b = col.GetComponent<Box>();
+                    if (col != null && b != null)
                     {
-                        foundGOs.Add(col.gameObject);
-                        Debug.Log("col: " + col.transform.name);
+                        if (b.boxHealthState != BoxHealthState.Broken)
+                        {
+                            foundGOs.Add(col.gameObject);
+                            Debug.Log("col: " + col.transform.name);
+                        }
                     }
                 }
             }

@@ -1,0 +1,103 @@
+EQUALITY	>	IGUALDAD
+EQUITY	>	EQUIDAD
+LIBERATION	>	LIBERACIÓN
+Fourthy: The 4th Box	>	Cuartitex: La 4ta Caja
+The 4th Box	>	La 4ta Caja
+Tap anywhere to zoom-in	>	Toca en cualquier lugar para hacer zoom
+Tap anywhere to go to the fence	>	Toca en cualquier lugar para ir a la reja
+"If you want to build a just world, don't drum up people to collect petition signatures and don't assign them banners to make, but rather teach them to love and long for the endless immensity of freedom." 	>	"Si quiere construir un mundo justo, no incite a la gente a recolectar firmas para peticiónes y no les asigne que hagan pancartas, sino más bien enséñeles a amar y anhelar la inmensidad infinita de la libertad".  
+-- adapted from Antoine de Saint-Exupery	>	- adaptado de Antoine de Saint-Exupery
+Look away	>	Mira hacia otro lado
+Go to fence	>	Ir a la cerca
+Game 1	>	Juego 1
+The Buffaloes vs The Cows	>	Los Bufalos vs Las Vacas
+Tap each heart to collect it	>	Toca cada corazón para recogerlo
+Tap the icon to make a box	>	 Toca el ícono para hacer un cuadro
+Tap anywhere to drop the box	>	Toca en cualquier lugar para soltar el cuadro
+Tap to collect the heart. Hearts are emitted by happy fans watching the game. 	>	Haz click para colectar el corazón. Los corazónes son emitidos por fans que estan felices viendo el juego.
+Tap to make a box.  You need 3 hearts to make a box.	>	Haz click para crear una caja. Necesitas 3 corazónes para crear una caja.
+Tap where you want to drop the box. Boxes help shorter fans to watch the game.	>	Toca donde quieres poner la caja. Las cajas ayudan a que les fans de menor estatura puedan ver el juego.
+The fan gave up on ever watching the game. Try again.	>	El fan se rindió y no veera el juego. Intenta otra vez.
+More Questions	>	Más Preguntas
+Questions	>	Preguntas
+Equality	>	Igualdad
+Game 2	>	Juego 2
+The Buffaloes vs The Cows	>	Los Bufalos vs. Las Vacas
+Boxes get damaged and break overtime	>	Las cajas se arruinan y se rompen con el tiempo
+Collect 3 more hearts to create another box	>	Recoge 3 corazones más para crear otra caja
+Tap above or below a box to stack another on it	>	Toca encima o debajo de un cuadro para poner otro encima
+Equity	>	Equidad
+Game 3	>	Juego 3
+The Buffaloes vs The Cows	>	Los Bufalos vs Las Vacas
+Drag left or right to scroll	>	Arrastre hacia la izquierda o la derecha para desplazarse
+Hold down and drag to move sideways	>	Manten presionado y arrastra para moverse hacia los lados  
+Tap on one of the ideas to try it	>	Haz click en una de las ideas para probarla.
+Continue to create boxes to achieve perfect equity	>	Continua creando cajas para lograr la equidad perfecta
+Tap to try this idea	>	Haz click para probar esta idea
+Tap anywhere while the marker is in the green to jump together	>	Toca en cualquier parte cuando el marcador este en verde para saltar juntes
+Equity Achieved	>	Equidad Lograda
+Equality Achieved	>	Igualdad Lograda
+The Game ended	>	El Juego Se Acabo
+Liberation	>	Liberación
+Liberation Achieved	>	Liberación Lograda
+Main Menu	>	Menú principal
+Credits	>	Créditos
+Executive Producers 	>	Productores Ejecutivos
+Felicia T Perez	>	Felicia T Perez
+The Stuart Foundation	>	La Fundación Stuart
+Center for Story-based Strategy	>	Centro de Estrategia Basada en Historias
+Original 4th Box Concept Creators 	>	Creadores Originales del concepto de La 4ta Caja
+Angus Maguire 	>	Angus Maguire 
+Danielle Coates Connor	>	Danielle Coates Connor
+Felicia T Perez 	>	Felicia T Perez 
+Lawrence Q Barriner II	>	Lawrence Q Barriner II
+Equality v Equity Concept Creator 	>	Creador del concepto Igualdad v Equidad
+Craig Froehle	>	Craig Froehle
+Acknowledgments	>	Reconocimientos
+The earliest version of the 2-box concept we can find was created by Craig Froehle.	>	La version inicial de las 2 cajas fue creada por Craig Froehle.
+The 2-4 box versions used in this document were initially a co-production of Interaction Institute for Social Change and Center for Story-based Strategy in collaboration with the artist, Angus Maguire.	>	Las versiones de 2-4 cajas utilizadas en este documento fueron inicialmente una coproducción del Instituto de Interacción para el Cambio Social y el Centro de Estrategia Basada en Historias en colaboración con el artista, Angus Maguire.
+This tool, the learnings and positions taken herein are the sole responsibility of Center for Story-based Strategy.	>	Esta herramienta, los aprendizajes y las posiciones tomadas en este documento son responsabilidad exclusiva del Centro de Estrategia Basada en Historias.
+Special Thanks To 	>	Agradecimientos especiales
+Interaction Institute for Social Change 	>	Instituto de Interacción para el Cambio Social 
+Made with Angus 	>	Hecho con Angus 
+Inspiration From	>	Inspiradxs por
+Alok Vaid-Menon 	>	Alok Vaid-Menon 
+Riz Ahmed 	>	Riz Ahmed 
+Berta Cáceres 	>	Berta Cáceres 
+Janani Balasubramanian 	>	Janani Balasubramanian 
+And the number 4	>	y el numero 4
+Game Designers	>	Diseñadores del juego
+Kedar R	>	Kedar R
+Felicia T Perez	>	Felicia T Perez
+Game Developer	>	Desarrollo del Juego
+Kedar R	>	Kedar R
+Game Artist	>	Arte del Juego
+Nicoletta Azzolini	>	Nicoletta Azzolini
+Angus Maguire	>	Angus Maguire
+Animation 	>	Animacion
+Blake Besharian	>	Blake Besharian
+Nicoletta Azzolini	>	Nicoletta Azzolini
+Kedar R	>	Kedar R
+Sound Design	>	Diseño de Sonido
+Kedar R	>	Kedar R
+Consulting	>	Consultoría
+Erin O'Brien	>	Erin O'Brien
+Have you ever noticed harm being done and made the choice to look away? Why or why not?	>	Alguna vez has visto algo que esta mal y miraste hacia el otro lado? 
+porque? porque no?
+Have you ever claimed a victory even if it wasn't a victory for everyone? Why or why not?	>	¿Alguna vez has reclamado una victoria incluso si no fue una victoria para todos? ¿Por qué o por qué no?
+How do you evaluate/measure your work or success? How often do you evaluate/measure your work?	>	Como mides/evaluas tu trabajo o exito? Que tan seguido mides/evaluas tu trabajo?
+If your work is in the service of others, how often do you engage those whom you seek to serve in your evaluation?	>	Si tu trabajo es servir a otres, que tan seguido incluyes los que buscas servir en tu evaluacion?
+Where do you think the hearts are coming from? Who is sending them?	>	De donde crees que vienen los corazónes? quien los esta mandando?
+How does a sense of urgency effect equity work?	>	¿Cómo funciona el sentido de urgencia de la equidad?
+What do you think would have to happen in order to get the folks in the stadium stands to join the efforts of those trying to take down the wall?	>	Que crees que deberia pasar para que la gente en las gradas del estadio se unieran a los que estan tratando derribar el muro?
+How do you evaluate/measure your work or success? How often do you evaluate/measure your work?	>	Como mides/evaluas tu trabajo o exito? Que tan seguido mides/evaluas tu trabajo?
+Why do you think collecting hearts or love is necessary to build needed items or to get in to action?	>	Porque crees que coleccionar corazónes o amor es necesario para construir los items necesarios o entrar en acción?
+Do you ever consider getting to know those responsible for building barriers to liberation? Why or why not?	>	A veces consideras conocer mas a les que son responsables por crear barreras para la liberación? porque? porque no?
+What roles do timing, repetition and solidarity play in everyday work? What roles do timing, repetition and solidarity play in liberation work?	>	Querol tiene el tiempo, la repetición y la solidaridad en el trabajo de todos los dias? Querol tiene el tiempo, la repetición y la solidaridad en el trabajo de liberación?
+What role does love have in liberation work? What role does it have in your work or life?	>	Cuel es el rol del amor en el trabajo de liberación? Que rol tiene en tu trabajo o tu vida?
+What do you think the meter above the characters is measuring?	>	Que crees que mide el metro que esta arriba de les personajes?
+What do you think would prevent the construction of another wall?	>	¿Qué crees que impediría la construcción de otro muro?
+If you had to pick just one character in the story, who were you in this game world? What character or element did you most identify with and why?	>	Si tuvieras que elegir solo un personaje en la historia, quien eres tu en este mundo de juego? Con que personaje o elemento te identificaste mas? porque?
+What did playing this game remind you of? What other stories came to mind?	>	De que te recordo jugar este juego? que otras historias se te vinieron a la mente?
+Was there any particular game level (Equality, Equity, Liberation) that was easier for you to master? Why do you think that was?	>	Hubo algun nivel en particular (Igualdad, Equidad, Liberación) que fue mas facil de masterizar? Porque crees que se dio asi?
+Who do you think is responsible for building the wall?	>	Quien crees que es responsable por la construccion del muro?

@@ -36,7 +36,7 @@ public class Heart : MonoBehaviour, IPointerDownHandler
                     Destroy(gameObject);
                 }
             });
-            SoundManager.instance.PlaySingle(SoundManager.instance.born);
+            SoundManager.instance.PlaySingle(SoundManager.instance.born, 0.15f);
         }
     }
 
@@ -57,7 +57,7 @@ public class Heart : MonoBehaviour, IPointerDownHandler
                     }
 
                    // Debug.Log("picked up a heart");
-                    SoundManager.instance.PlaySingle(SoundManager.instance.gulp);
+                    SoundManager.instance.PlaySingle(SoundManager.instance.gulp, 0.25f);
                     Sequence collectS = DOTween.Sequence();
                     collectS.Append(transform.DOLocalRotate(new Vector3(0f, 0f, 0f), 0.5f).SetEase(Ease.OutQuad));
                     collectS.Append(transform.DOMove(Camera.main.ScreenToWorldPoint(new Vector3(Screen.width*0.2f, Screen.height*0.9f, Camera.main.nearClipPlane)), 1f).SetSpeedBased().SetEase(Ease.OutQuad));

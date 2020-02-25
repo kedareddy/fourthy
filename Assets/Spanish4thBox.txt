@@ -1,0 +1,76 @@
+Fourthy: The 4th Box	>	Cuartitex: La 4ta Caja	Fourthy: The 4th Box
+Tap anywhere to zoom-in	>	Toca en cualquier lugar para hacer zoom	Tap anywhere to zoom-in
+Tap anywhere to go to the fence	>	Toca en cualquier lugar para ir a la reja	Tap anywhere to go to the fence
+"If you want to build a just world, don't drum up people to collect petition signatures and don't assign them banners to make, but rather teach them to love and long for the endless immensity of freedom." 	>	"Si quiere construir un mundo justo, no incite a la gente a recolectar firmas para peticiónes y no les asigne que hagan pancartas, sino más bien enséñeles a amar y anhelar la inmensidad infinita de la libertad".  	"If you want to build a just world, don't drum up people to collect petition signatures and don't assign them banners to make, but rather teach them to love and long for the endless immensity of freedom." 
+-- adapted from Antoine de Saint-Exupery	>	- adaptado de Antoine de Saint-Exupery	-- adapted from Antoine de Saint-Exupery
+Look away	>	Mira hacia otro lado	Look away
+Go to fence	>	Ir a la cerca	Go to fence
+Game 1	>	Juego 1 	
+The Buffaloes vs The Cows	>	Los Bufalos vs Las Vacas	
+Tap each heart to collect it	>	Toca cada corazón para recogerlo	
+Tap each heart to collect it
+Tap the icon to make a box	>	 Toca el ícono para hacer un cuadro	Tap the icon to make a box
+Tap anywhere to drop the box	>	Toca en cualquier lugar para soltar el cuadro	Tap anywhere to drop the box
+Tap to collect the heart. Hearts are emitted by happy fans watching the game. 	>	Haz click para colectar el corazón. Los corazónes son emitidos por fans que estan felices viendo el juego.	Tap to collect the heart. Hearts are emitted by happy fans watching the game. 
+Tap to make a box.  You need 3 hearts to make a box.	>	Haz click para crear una caja. Necesitas 3 corazónes para crear una caja.	Tap to make a box.  You need 3 hearts to make a box.
+Tap where you want to drop the box. Boxes help shorter fans to watch the game.	>	Toca donde quieres poner la caja. Las cajas ayudan a que les fans de menor estatura puedan ver el juego.	Tap where you want to drop the box. Boxes help shorter fans to watch the game.
+The fan gave up on ever watching the game. Try again.	>	El fan se rindió y no veera el juego. Intenta otra vez.	The fan gave up on ever watching the game. Try again.
+More questions	>	Más preguntas	More questions
+Equality	>	Igualdad	Equality
+Game 2:	>	Juego 2:	Game 2:
+The Buffaloes vs The Cows	>	Los Bufalos vs. Las Vacas	The Buffaloes vs The Cows
+Boxes get damaged and break overtime	>	Las cajas se arruinan y se rompen con el tiempo	Boxes get damaged and break overtime
+Collect 3 more hearts to create another box	>	Recoge 3 corazones más para crear otra caja	Collect 3 more hearts to create another box
+Tap above or below a box to stack another on it	>	Toca encima o debajo de un cuadro para poner otro encima	Tap above or below a box to stack another on it
+Equity	>	Equidad	Equity
+Game 3:	>	Juego 3:	Game 3:
+The Buffaloes vs The Cows	>	Los Bufalos vs Las Vacas	The Buffaloes vs The Cows
+Drag left or right to scroll	>	Arrastre hacia la izquierda o la derecha para desplazarse	Drag left or right to scroll
+Hold down and drag to move sideways	>	Manten presionado y arrastra para moverse hacia los lados  	Hold down and drag to move sideways
+Tap on one of the ideas to try it	>	Haz click en una de las ideas para probarla.	Tap on one of the ideas to try it
+Continue to create boxes to achieve perfect equity	>	Continua creando cajas para lograr la equidad perfecta	Continue to create boxes to achieve perfect equity
+Tap to try this idea	>	Haz click para probar esta idea	Tap to try this idea
+Tap anywhere while the marker is in the green to jump together	>	Toca en cualquier parte cuando el marcador este en verde para saltar juntes	Tap anywhere while the marker is in the green to jump together
+Equity Achieved	>	Equidad Lograda	Equity Achieved
+The Game ended	>	El Juego Se Acabo	The Game ended
+Liberation	>	Liberación	Liberation
+Main Menu	>	Menú principal	Main Menu
+Credits	>	Créditos	Credits
+Executive Producers: 	>	Productores Ejecutivos:	Executive Producers: 
+Felicia T Perez	>	Felicia T Perez	Felicia T Perez
+The Stuart Foundation	>	La Fundación Stuart	The Stuart Foundation
+Center for Story-based Strategy	>	Centro de Estrategia Basada en Historias	Center for Story-based Strategy
+Original 4th Box Concept Creators: 	>	Creadores Originales del concepto de La 4ta Caja:	Original 4th Box Concept Creators: 
+Angus Maguire 	>	Angus Maguire 	Angus Maguire 
+Danielle Coates Connor	>	Danielle Coates Connor	Danielle Coates Connor
+Felicia T Perez 	>	Felicia T Perez 	Felicia T Perez 
+Lawrence Q Barriner II	>	Lawrence Q Barriner II	Lawrence Q Barriner II
+Equality v Equity Concept Creator: 	>	Creador del concepto Igualdad v Equidad:	Equality v Equity Concept Creator: 
+Craig Froehle	>	Craig Froehle	Craig Froehle
+Acknowledgments: 	>	Reconocimientos: 	Acknowledgments: 
+The earliest version of the 2-box concept we can find was created by Craig Froehle. The 2-4 box versions used in this document were initially a co-production of Interaction Institute for Social Change and Center for Story-based Strategy in collaboration with the artist, Angus Maguire. This tool, the learnings and positions taken herein are the sole responsibility of Center for Story-based Strategy.	>	La version inicial de las 2 cajas fue creada por Craig Froehle. Las versiones de 2-4 cajas utilizadas en este documento fueron inicialmente una coproducción del Instituto de Interacción para el Cambio Social y el Centro de Estrategia Basada en Historias en colaboración con el artista, Angus Maguire. Esta herramienta, los aprendizajes y las posiciones tomadas en este documento son responsabilidad exclusiva del Centro de Estrategia Basada en Historias.	The earliest version of the 2-box concept we can find was created by Craig Froehle. The 2-4 box versions used in this document were initially a co-production of Interaction Institute for Social Change and Center for Story-based Strategy in collaboration with the artist, Angus Maguire. This tool, the learnings and positions taken herein are the sole responsibility of Center for Story-based Strategy.
+Special Thanks To: 	>	Agradecimientos especiales: 	Special Thanks To: 
+Interaction Institute for Social Change 	>	Instituto de Interacción para el Cambio Social 	Interaction Institute for Social Change 
+Made with Angus 	>	Hecho con Angus 	Made with Angus 
+Inspiration From: 	>	Inspiradxs por: 	Inspiration From: 
+Alok Vaid-Menon 	>	Alok Vaid-Menon 	Alok Vaid-Menon 
+Riz Ahmed 	>	Riz Ahmed 	Riz Ahmed 
+Berta Cáceres 	>	Berta Cáceres 	Berta Cáceres 
+Janani Balasubramanian 	>	Janani Balasubramanian 	Janani Balasubramanian 
+And the number 4	>	y el numero 4	And the number 4
+Game Designers: 	>	Diseñadores del juego:	Game Designers: 
+Kedar R	>	Kedar R	Kedar R
+Felicia T Perez	>	Felicia T Perez	Felicia T Perez
+Game Developer: 	>	Desarrollo del Juego:	Game Developer: 
+Kedar R	>	Kedar R	Kedar R
+Game Artist: 	>	Arte del Juego:	Game Artist: 
+Nicoletta Azzolini	>	Nicoletta Azzolini	Nicoletta Azzolini
+Angus Maguire	>	Angus Maguire	Angus Maguire
+Animation:  	>	Animacion:	Animation:  
+Blake Besharian	>	Blake Besharian	Blake Besharian
+Nicoletta Azzolini	>	Nicoletta Azzolini	Nicoletta Azzolini
+Kedar R	>	Kedar R	Kedar R
+Sound Design:	>	Diseño de Sonido:	Sound Design:
+Kedar R	>	Kedar R	Kedar R
+Consulting:	>	Consultoría:	Consulting:
+Erin O'Brien	>	Erin O'Brien	Erin O'Brien

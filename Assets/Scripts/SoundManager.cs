@@ -3,6 +3,7 @@ using System.Collections;
 
 public class SoundManager : MonoBehaviour
 {
+    public AudioClip birds, saw, fireworks, timer, fenceCrash, hammer, singleBoxBreak, singleCrack, jumpFence, manyJumps, buzzStop, select;
     public AudioClip achievement, bop, bounce, coincollected, crash, grab, gulp, jump, lowthud, reveal, strike, take, fall, grunt, buttonpress, error, error2, drop, taken, smalltap, born, breaking, crack, smallCrack, bigBreak;
     //music
     public AudioClip ballparkBkg, bigcheer, steadycheer, menuBkg;
@@ -37,6 +38,16 @@ public class SoundManager : MonoBehaviour
 
         //Play the clip.
         efxSource.PlayOneShot(clip);
+        //efxSource.Play();
+    }
+
+    public void PlaySingle(AudioClip clip, float vol)
+    {
+        //Set the clip of our efxSource audio source to the clip passed in as a parameter.
+        efxSource.clip = clip;
+
+        //Play the clip.
+        efxSource.PlayOneShot(clip, vol);
         //efxSource.Play();
     }
 

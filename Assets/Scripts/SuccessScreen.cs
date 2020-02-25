@@ -3,14 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+using Lean.Localization;
 
 public class SuccessScreen : MonoBehaviour
 {
     public static SuccessScreen Instance { get; private set; }
 
 
-    public GameObject retryButton, homeButton, nextButton, textParent;
+    public GameObject retryButton, homeButton, nextButton, textParent, questionsButton;
     public Text infoText, percentText;
+    public LeanLocalizedText questionLeanText; 
     public GameObject star1, star1Fill, star2, star2Fill, star3, star3Fill;
 
     void Awake()
@@ -22,6 +24,7 @@ public class SuccessScreen : MonoBehaviour
     {
         Sequence resultsS = DOTween.Sequence();
         resultsS.Append(textParent.transform.DOLocalMoveY(infoText.transform.localPosition.y + 50f, 0.5f).From().SetEase(Ease.OutBounce));
+        resultsS.Append(questionsButton.transform.DOScale(Vector3.zero, 0.25f).From().SetEase(Ease.OutQuad));
         resultsS.Append(retryButton.transform.DOScale(Vector3.zero, 0.25f).From().SetEase(Ease.OutQuad));
         resultsS.Join(homeButton.transform.DOScale(Vector3.zero, 0.25f).From().SetEase(Ease.OutQuad));
         resultsS.Join(nextButton.transform.DOScale(Vector3.zero, 0.25f).From().SetEase(Ease.OutQuad));
@@ -57,7 +60,7 @@ public class SuccessScreen : MonoBehaviour
             starS.SetDelay(1.5f);
             starS.Append(star1Fill.transform.DOLocalMoveX(-116f, 0.2f).From().SetEase(Ease.OutQuad).OnPlay(()=> {
                 star1Fill.SetActive(true);
-                SoundManager.instance.PlaySingle(SoundManager.instance.coincollected);
+                SoundManager.instance.PlaySingle(SoundManager.instance.coincollected, 0.15f);
             }));
             starS.Append(star1.transform.DOScale(1.2f, 0.2f).SetLoops(2,LoopType.Yoyo).SetEase(Ease.OutQuad));
 
@@ -66,7 +69,7 @@ public class SuccessScreen : MonoBehaviour
                 starS.Append(star2Fill.transform.DOLocalMoveX(-116f, 0.2f).From().SetEase(Ease.OutQuad).SetDelay(0.01f).OnPlay(() =>
                 {
                     star2Fill.SetActive(true);
-                    SoundManager.instance.PlaySingle(SoundManager.instance.coincollected);
+                    SoundManager.instance.PlaySingle(SoundManager.instance.coincollected, 0.15f);
                 }));
                 starS.Append(star2.transform.DOScale(1.2f, 0.2f).SetLoops(2, LoopType.Yoyo).SetEase(Ease.OutQuad));
 
@@ -75,7 +78,7 @@ public class SuccessScreen : MonoBehaviour
                     starS.Append(star3Fill.transform.DOLocalMoveX(-116f, 0.2f).From().SetEase(Ease.OutQuad).SetDelay(0.05f).OnPlay(() =>
                     {
                         star3Fill.SetActive(true);
-                        SoundManager.instance.PlaySingle(SoundManager.instance.coincollected);
+                        SoundManager.instance.PlaySingle(SoundManager.instance.coincollected, 0.15f);
                     }));
                     starS.Append(star3.transform.DOScale(1.2f, 0.2f).SetLoops(2, LoopType.Yoyo).SetEase(Ease.OutQuad));
                 }
@@ -116,6 +119,28 @@ public class SuccessScreen : MonoBehaviour
         {
             //GameManager2.unlockGameNum = GameManager2.unlockGameNum + 1; 
             GameManager2.instance.fsm.ChangeState(GameManager2.States.Liberation);
+        }
+    }
+
+    public void HandleQuestionsButton()
+    {
+        SoundManager.instance.PlaySingle(SoundManager.instance.take);
+
+        if (GameManager2.instance.fsm.CurrentStateMap.state.ToString() == GameManager2.States.Equality.ToString())
+        {
+            //GameManager2.unlockGameNum = GameManager2.unlockGameNum + 1;
+            Debug.Log("Questions pushed");
+            GameManager2.instance.equalityQuestionsUI.SetActive(true);
+        }
+        else if (GameManager2.instance.fsm.CurrentStateMap.state.ToString() == GameManager2.States.Equity.ToString())
+        {
+            //GameManager2.unlockGameNum = GameManager2.unlockGameNum + 1; 
+            GameManager2.instance.equityQuestionsUI.SetActive(true);
+        }
+        else if (GameManager2.instance.fsm.CurrentStateMap.state.ToString() == GameManager2.States.Liberation.ToString())
+        {
+            //GameManager2.unlockGameNum = GameManager2.unlockGameNum + 1; 
+            GameManager2.instance.liberationQuestionsUI.SetActive(true);
         }
     }
 
