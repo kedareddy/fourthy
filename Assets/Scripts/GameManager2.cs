@@ -622,8 +622,8 @@ public class GameManager2 : MonoBehaviour
         SuccessScreen mySuccessScreen = successScene.GetComponent<SuccessScreen>();
         mySuccessScreen.percentText.text = percent.ToString() + "%";
         Debug.Log("in turnonResultsScreen: " + percent);
-        if (fsm.CurrentStateMap.state.ToString() != States.Liberation.ToString())
-        {
+        //if (fsm.CurrentStateMap.state.ToString() != States.Liberation.ToString())
+        //{
             if (percent < 100f)
             {
                 mySuccessScreen.nextButton.GetComponent<Button>().interactable = false;
@@ -633,11 +633,12 @@ public class GameManager2 : MonoBehaviour
                 mySuccessScreen.nextButton.GetComponent<Button>().interactable = true;
 
             }
-        }
-        else
-        {
-            mySuccessScreen.nextButton.GetComponent<Button>().interactable = false;
-        }
+        //}
+        //else
+        //{
+        //    Debug.Log("Current state nOT Liberation apparently");
+        //    mySuccessScreen.nextButton.GetComponent<Button>().interactable = false;
+        //}
 
         mySuccessScreen.AnimateStars(percent);
         if (fsm.CurrentStateMap.state.ToString() == States.Equality.ToString())

@@ -120,6 +120,11 @@ public class SuccessScreen : MonoBehaviour
             //GameManager2.unlockGameNum = GameManager2.unlockGameNum + 1; 
             GameManager2.instance.fsm.ChangeState(GameManager2.States.Liberation);
         }
+        else if (GameManager2.instance.fsm.CurrentStateMap.state.ToString() == GameManager2.States.Liberation.ToString())
+        {
+            //GameManager2.unlockGameNum = GameManager2.unlockGameNum + 1; 
+            GameManager2.instance.fsm.ChangeState(GameManager2.States.EndScene);
+        }
     }
 
     public void HandleQuestionsButton()

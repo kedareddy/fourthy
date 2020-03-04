@@ -98,7 +98,9 @@ public class BoxButton : MonoBehaviour
             if (Input.GetMouseButtonUp(0) )
             {
                 //Debug.Log("time: " + (Time.time - timeOfLastDrop).ToString());
-                if (mouseDownPos == Input.mousePosition && (Time.time - timeOfLastDrop) > 2f)
+                //Vector3.SqrMagnitude(a - b) < 0.0001
+                //if (mouseDownPos == Input.mousePosition && (Time.time - timeOfLastDrop) > 2f)
+                if (Vector3.SqrMagnitude(mouseDownPos - Input.mousePosition) < 20f && (Time.time - timeOfLastDrop) > 2f)
                 {
                     timeOfLastDrop = Time.time;
                     Vector3 worldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
