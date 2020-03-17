@@ -52,6 +52,11 @@ public class BoxButton : MonoBehaviour
             if (GameManager2.instance.fsm.CurrentStateMap.state.ToString() == GameManager2.States.Equity.ToString() && GameManager2.instance.equity_ShortC.myBoxes.Count == 1 && HeartCounter.Instance.HeartsNumber == 3)
             {
                 GameManager2.instance.textTutorialUI.SetActive(false);
+
+                Vector2 localPoint;
+                RectTransformUtility.ScreenPointToLocalPointInRectangle(GameManager2.instance.wideTutorialUI.transform.parent as RectTransform, new Vector2(Screen.width * .35f, Screen.height * 0.9f), GameManager2.instance.UICamera, out localPoint);
+                GameManager2.instance.wideTutorialUI.transform.localPosition = localPoint;
+
                 Tween stackTutorialTween = GameManager2.instance.wideTutorialUI.transform.DOLocalMoveX(GameManager2.instance.wideTutorialUI.transform.localPosition.x - 100f, 0.5f).From().SetEase(Ease.OutQuad);
                 stackTutorialTween.OnPlay(() =>
                 {

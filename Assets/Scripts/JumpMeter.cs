@@ -27,9 +27,13 @@ public class JumpMeter : MonoBehaviour
 
         GameManager2.instance.wideTutorialText.GetComponent<LeanLocalizedText>().TranslationName = "Tap anywhere while the marker is in the green to jump together";
 
-        //GameManager2.instance.wideTutorialText.text = "Tap anywhere when the\n marker overlaps the green";
-        
-        GameManager2.instance.wideTutorialUI.transform.localPosition = new Vector3(0f, -236f, 0f);// new Vector3(0f, GameManager2.instance.clickTutorialUI.transform.localPosition.y, GameManager2.instance.wideTutorialUI.transform.localPosition.z);
+
+        Vector2 localPoint;
+
+        RectTransformUtility.ScreenPointToLocalPointInRectangle(GameManager2.instance.wideTutorialUI.transform.parent as RectTransform, new Vector2(Screen.width * .5f, Screen.height * 0.1f), GameManager2.instance.UICamera, out localPoint);
+        GameManager2.instance.wideTutorialUI.transform.localPosition = localPoint;
+
+        //GameManager2.instance.wideTutorialUI.transform.localPosition = new Vector3(0f, -236f, 0f);// new Vector3(0f, GameManager2.instance.clickTutorialUI.transform.localPosition.y, GameManager2.instance.wideTutorialUI.transform.localPosition.z);
         GameManager2.instance.wideTutorialUI.SetActive(true);
         //GameManager2.instance.wideTutorialUI.transform.DOLocalMoveY(GameManager2.instance.wideTutorialUI.transform.localPosition.y - 100f, 0.5f).From().SetEase(Ease.InOutQuad).SetDelay(0.5f).OnPlay(() =>
         //{

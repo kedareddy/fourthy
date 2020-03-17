@@ -104,7 +104,7 @@ public class GameManager2 : MonoBehaviour
     public Image questionsBlackScreen;
 
     //ui buttons
-    public GameObject mainMenuUI, cssLogo, game1Button, game2Button, game3Button, creditsButton, questionsButton, englishButton, spanishButton;
+    public GameObject mainMenuUI, cssLogo, game1Button, game2Button, game3Button, creditsButton, questionsButton, englishButton, spanishButton, introButton;
     public Sprite englishButtonSelectedSprite, englishButtonUnselectedSprite, spanishButtonSelectedSprite, spanishButtonUnselectedSprite;
     public Image titleImage;
     public Sprite engTitleSprite, spnTitleSprite;
@@ -184,22 +184,25 @@ public class GameManager2 : MonoBehaviour
         //    quoteUI.SetActive(true);
         //});
         //quoteS.OnComplete(()=> {
+        //reset initial camera setttings
+        Camera.main.orthographicSize = 30f;
+        Camera.main.transform.position = new Vector3(6.899f, -20.6f, -10f);
+        blackScreen.color = new Color(blackScreen.color.r, blackScreen.color.g, blackScreen.color.b, 1f);
         blackScreen.gameObject.SetActive(true);
         intro1Scene.SetActive(true);
 
         quoteUI.SetActive(false);
 
-            SoundManager.instance.musicSource.clip = SoundManager.instance.steadycheer;
-            SoundManager.instance.musicSource.volume = 0.25f;
-            SoundManager.instance.musicSource.DOFade(0f, 2f).From().OnPlay(()=> {
-                SoundManager.instance.musicSource.Play();
-            });
+        SoundManager.instance.musicSource.clip = SoundManager.instance.steadycheer;
+        SoundManager.instance.musicSource.volume = 0.25f;
+        SoundManager.instance.musicSource.DOFade(0f, 2f).From().OnPlay(()=> {
+            SoundManager.instance.musicSource.Play();
+        });
            
-            blackScreen.DOFade(0f, 9f).SetEase(Ease.InQuad);//.SetLoops(1, LoopType.Restart);
-            Debug.Log("Welcome entered");
+        blackScreen.DOFade(0f, 9f).SetEase(Ease.InQuad);//.SetLoops(1, LoopType.Restart);
+        Debug.Log("Welcome entered"); 
 
-        
-        
+
         //welcomeUI.SetActive(true);
         instroS = DOTween.Sequence();
             instroS.Append(DOTween.To(() => Camera.main.orthographicSize, x => Camera.main.orthographicSize = x, 12, 10f));
@@ -532,6 +535,11 @@ public class GameManager2 : MonoBehaviour
 
         clickTutorialUIText.GetComponent<LeanLocalizedText>().TranslationName = "Tap each heart to collect it";
         //clickTutorialUIText.text = "Tap each heart\n to collect it";
+        Vector2 localPoint;
+        
+        RectTransformUtility.ScreenPointToLocalPointInRectangle( clickTutorialUI.transform.parent as RectTransform , new Vector2(Screen.width*.83f, Screen.height*0.1f) , UICamera, out localPoint);
+        clickTutorialUI.transform.localPosition = localPoint;
+        Debug.Log("screen height is1: " + localPoint);
         clickTutorialUI.transform.DOLocalMoveX(clickTutorialUI.transform.localPosition.x + 350f, 0.5f).From().SetEase(Ease.OutQuad).SetDelay(5f).OnPlay(() =>
         {
             clickTutorialUI.SetActive(true);
@@ -555,15 +563,20 @@ public class GameManager2 : MonoBehaviour
         if (HeartCounter.Instance.HeartsNumber == 3 && boxTutTextShow == false)
         {
             boxTutTextShow = true;
-            Debug.Log("3 hearts are there");
+            //Debug.Log("3 hearts are there");
             //clickTutorialUIText.text = "Tap the icon\nto make a box";
             clickTutorialUIText.GetComponent<LeanLocalizedText>().TranslationName = "Tap the icon to make a box";
 
             //Screen.height * 0.12f
             // Screen.width * 0.7f
-            clickTutorialUI.transform.localPosition = new Vector3(221f, -229f, 0f);
+            Vector2 localPoint1;
+            
+            RectTransformUtility.ScreenPointToLocalPointInRectangle(clickTutorialUI.transform.parent as RectTransform, new Vector2(Screen.width * .72f, Screen.height * 0.1f), UICamera, out localPoint1);
+            clickTutorialUI.transform.localPosition = localPoint1;
+            Debug.Log("screen height is2: " +localPoint1);
+            //clickTutorialUI.transform.localPosition = new Vector3(221f, -229f, 0f);
             clickTutorialUI.SetActive(true);
-            clickTutorialUI.transform.DOLocalMoveY(clickTutorialUI.transform.localPosition.y - 300f, 0.5f).From().SetEase(Ease.OutQuad);
+            //clickTutorialUI.transform.DOLocalMoveY(clickTutorialUI.transform.localPosition.y - 300f, 0.5f).From().SetEase(Ease.OutQuad);
         }
     }
 
@@ -594,12 +607,12 @@ public class GameManager2 : MonoBehaviour
         Sequence successS = DOTween.Sequence();
         successS.Append(DOTween.To(() => Camera.main.orthographicSize, x => Camera.main.orthographicSize = x, 25, 5f));
         successS.Join(Camera.main.transform.DOMove(new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y + 12f, Camera.main.transform.position.z), 5f, false));
-        successS.InsertCallback(2f, () =>
+        successS.InsertCallback(.1f, () =>
         {
             SoundManager.instance.musicSource.clip = SoundManager.instance.bigcheer;
             SoundManager.instance.musicSource.Play();           
         });
-        successS.InsertCallback(5f, () =>
+        successS.InsertCallback(4.1f, () =>
         {
             equalityTextAnimator.gameObject.SetActive(true);
             equalityTextAnimator.Play("Expand");
@@ -820,12 +833,12 @@ public class GameManager2 : MonoBehaviour
         Sequence successS = DOTween.Sequence();
         successS.Append(DOTween.To(() => Camera.main.orthographicSize, x => Camera.main.orthographicSize = x, 30, 5f));
         successS.Join(Camera.main.transform.DOMove(new Vector3(Camera.main.transform.position.x, -8.8f, Camera.main.transform.position.z), 5f, false));
-        successS.InsertCallback(2f, () =>
+        successS.InsertCallback(.1f, () =>
         {
             SoundManager.instance.musicSource.clip = SoundManager.instance.bigcheer;
             SoundManager.instance.musicSource.Play();
         });
-        successS.InsertCallback(5f, () =>
+        successS.InsertCallback(4.1f, () =>
         {
             equityTextAnimator.gameObject.SetActive(true);
             equityTextAnimator.Play("Expand");
@@ -907,9 +920,13 @@ public class GameManager2 : MonoBehaviour
         //{
         clickTutorialUIText.GetComponent<LeanLocalizedText>().TranslationName = "Hold down and drag to move sideways";
         //    clickTutorialUIText.text = "Hold down & drag\n to pan sideways";
+        Vector2 localPoint;
 
-        clickTutorialUI.transform.localPosition = new Vector3(0f, -236f, 0f);//  new Vector3(0f, clickTutorialUI.transform.localPosition.y, clickTutorialUI.transform.position.z);
-            Tween showTextTutorial = clickTutorialUI.transform.DOLocalMoveY(clickTutorialUI.transform.localPosition.y - 100f, 0.5f).From().SetEase(Ease.OutQuad);
+        RectTransformUtility.ScreenPointToLocalPointInRectangle(clickTutorialUI.transform.parent as RectTransform, new Vector2(Screen.width * .5f, Screen.height * 0.1f), UICamera, out localPoint);
+        clickTutorialUI.transform.localPosition = localPoint;
+
+        //clickTutorialUI.transform.localPosition = new Vector3(0f, -236f, 0f);//  new Vector3(0f, clickTutorialUI.transform.localPosition.y, clickTutorialUI.transform.position.z);
+        Tween showTextTutorial = clickTutorialUI.transform.DOLocalMoveY(clickTutorialUI.transform.localPosition.y - 100f, 0.5f).From().SetEase(Ease.OutQuad);
             showTextTutorial.OnPlay(() =>
             {
                 clickTutorialUI.SetActive(true);
@@ -922,7 +939,7 @@ public class GameManager2 : MonoBehaviour
 
     public IEnumerator TurnOffFirstLibTutText()
     {
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(20f);
         if (clickTutorialUI.activeInHierarchy)
         {
             turnedOffClickTutorial = true;
@@ -1026,9 +1043,9 @@ public class GameManager2 : MonoBehaviour
     {
         yield return new WaitForSeconds(6f);
         Sequence successS = DOTween.Sequence();
-        successS.Append(DOTween.To(() => Camera.main.orthographicSize, x => Camera.main.orthographicSize = x, 54, 5f));
+        successS.Append(DOTween.To(() => Camera.main.orthographicSize, x => Camera.main.orthographicSize = x, 45, 5f));
         successS.Join(Camera.main.transform.DOMove(new Vector3(23f, 5f, Camera.main.transform.position.z), 5f, false));
-        successS.InsertCallback(2f, () =>
+        successS.InsertCallback(.1f, () =>
         {
             SoundManager.instance.musicSource.clip = SoundManager.instance.bigcheer;
             SoundManager.instance.musicSource.Play();
@@ -1036,7 +1053,7 @@ public class GameManager2 : MonoBehaviour
             //topBkgObject.transform.localPosition = new Vector3(0f, 0f, 0f);
 
         });
-        successS.InsertCallback(5f, () =>
+        successS.InsertCallback(4f, () =>
         {
             liberationTextAnimator.gameObject.SetActive(true);
             liberationTextAnimator.Play("Expand");
@@ -1070,7 +1087,7 @@ public class GameManager2 : MonoBehaviour
         Transform backButton = liberationUI.transform.Find("BackButton");
 
         //back button
-        backButtonCutSceneTween = backButton.DOLocalMoveY(400f, 1f).SetLoops(2, LoopType.Yoyo);
+        backButtonCutSceneTween = backButton.DOLocalMoveY(800f, 1f).SetLoops(2, LoopType.Yoyo);
         backButtonCutSceneTween.OnStepComplete(() =>
         {
             if (backButtonCutSceneTween.CompletedLoops() == 1)
@@ -1080,7 +1097,7 @@ public class GameManager2 : MonoBehaviour
         });
 
         //heart counter
-        heartCounterCutSceneTween = HeartCounter.Instance.transform.DOLocalMoveY(400f, 1f).SetLoops(2, LoopType.Yoyo);
+        heartCounterCutSceneTween = HeartCounter.Instance.transform.DOLocalMoveY(800f, 1f).SetLoops(2, LoopType.Yoyo);
         heartCounterCutSceneTween.OnStepComplete(() =>
         {
             if(heartCounterCutSceneTween.CompletedLoops() == 1)
@@ -1089,7 +1106,7 @@ public class GameManager2 : MonoBehaviour
             }
         });
         //count down timer
-        countDownCutSceneTween = CountDownTimer.Instance.transform.DOLocalMoveY(600f, 1f).SetLoops(2, LoopType.Yoyo);
+        countDownCutSceneTween = CountDownTimer.Instance.transform.DOLocalMoveY(1200f, 1f).SetLoops(2, LoopType.Yoyo);
         countDownCutSceneTween.OnStepComplete(() =>
         {
             if (countDownCutSceneTween.CompletedLoops() == 1)
@@ -1098,7 +1115,7 @@ public class GameManager2 : MonoBehaviour
             }
         });
         //box button
-        boxButtonCutSceneTween = boxButton.transform.DOLocalMoveY(-400f, 1f).SetLoops(2, LoopType.Yoyo);
+        boxButtonCutSceneTween = boxButton.transform.DOLocalMoveY(-800f, 1f).SetLoops(2, LoopType.Yoyo);
         boxButtonCutSceneTween.OnStepComplete(() =>
         {
             if (boxButtonCutSceneTween.CompletedLoops() == 1)
@@ -1189,8 +1206,12 @@ public class GameManager2 : MonoBehaviour
                     ideaBubble2.GetComponent<BoxCollider2D>().enabled = true;
                     //click tutorial
                     clickTutorialUIText.GetComponent<LeanLocalizedText>().TranslationName = "Tap on one of the ideas to try it";
-                    //clickTutorialUIText.text = "Tap on one of the\n ideas to try it";
-                    clickTutorialUI.transform.localPosition = new Vector3(0f, -236f, 0f); 
+
+                    Vector2 localPoint;
+
+                    RectTransformUtility.ScreenPointToLocalPointInRectangle(clickTutorialUI.transform.parent as RectTransform, new Vector2(Screen.width * .5f, Screen.height * 0.1f), UICamera, out localPoint);
+                    clickTutorialUI.transform.localPosition = localPoint;
+                    //clickTutorialUI.transform.localPosition = new Vector3(0f, -236f, 0f); 
                     //clickTutorialUI.transform.localPosition = new Vector3(0f, clickTutorialUI.transform.localPosition.y, clickTutorialUI.transform.position.z);
                     //Tween showTextTutorial = clickTutorialUI.transform.DOLocalMoveY(clickTutorialUI.transform.localPosition.y - 100f, 0.5f).From().SetEase(Ease.OutQuad);
                     //showTextTutorial.OnPlay(() =>
@@ -1230,8 +1251,12 @@ public class GameManager2 : MonoBehaviour
             //CountDownTimer.Instance.countDownTween.TogglePause();
                 EndCutScene();
                 textTutorialText.GetComponent<LeanLocalizedText>().TranslationName = "Continue to create boxes to achieve perfect equity";
-                //textTutorialText.text = "Continue to create boxes\n to achieve perfect equity";
-                textTutorialUI.transform.localPosition = new Vector3(0f, -236f, 0f);
+
+                Vector2 localPoint;
+
+                RectTransformUtility.ScreenPointToLocalPointInRectangle(textTutorialText.transform.parent as RectTransform, new Vector2(Screen.width * .5f, Screen.height * 0.1f), UICamera, out localPoint);
+                textTutorialText.transform.localPosition = localPoint;
+                //textTutorialUI.transform.localPosition = new Vector3(0f, -236f, 0f);
                 //textTutorialUI.transform.localPosition = new Vector3(0f, textTutorialUI.transform.localPosition.y, textTutorialUI.transform.position.z);
                 //Tween showTextTutorial = textTutorialUI.transform.DOLocalMoveY(textTutorialUI.transform.localPosition.y - 100f, 0.5f).From().SetEase(Ease.OutQuad);
                 //showTextTutorial.OnPlay(() =>
@@ -1371,8 +1396,11 @@ public class GameManager2 : MonoBehaviour
         SoundManager.instance.musicSource.DOFade(0f, 1f).From().OnPlay(()=> {
             SoundManager.instance.musicSource.Play();
         });
-        SoundManager.instance.musicSource.volume = 0.4f; 
+        SoundManager.instance.musicSource.volume = 0.4f;
         //SoundManager.instance.PlaySingle(SoundManager.instance.saw, 0.2f);
+
+        unfinishedGardenBox.SetActive(false);
+        finishedGardenBox.SetActive(true);
 
 
         EndScene.SetActive(true);
@@ -1395,25 +1423,21 @@ public class GameManager2 : MonoBehaviour
         });
 
         Camera.main.transform.position = INIT_ENDSCENE_POS;
-        Camera.main.orthographicSize = 65;
+        Camera.main.orthographicSize = 50f;//65;
 
         yield return new WaitForSeconds(18f);
 
-        Sequence fadingS = DOTween.Sequence();
-        fadingS.Append(endSceneBlackScreen.DOFade(1f, 4f).SetEase(Ease.InOutQuad));
-        fadingS.Join(SoundManager.instance.efxSource.DOFade(0f, 2f));
-        fadingS.AppendCallback(() =>
-        {
+        //Sequence fadingS = DOTween.Sequence();
+        //fadingS.Append(endSceneBlackScreen.DOFade(1f, 4f).SetEase(Ease.InOutQuad));
+        //fadingS.Join(SoundManager.instance.efxSource.DOFade(0f, 2f));
+        //fadingS.AppendCallback(() =>
+        //{
             endSceneChars.SetActive(false);
             sawer.SetActive(false);
-            //show a finished garden bed
-            unfinishedGardenBox.SetActive(false);
-            finishedGardenBox.SetActive(true);
-            //SoundManager.instance.efxSource.volume = 1f; 
             
-        });
-        //fadingS.AppendInterval(1f);
-        fadingS.Append(endSceneBlackScreen.DOFade(1f, 2f).SetEase(Ease.InOutQuad).From());
+        //});
+        
+        //fadingS.Append(endSceneBlackScreen.DOFade(1f, 2f).SetEase(Ease.InOutQuad).From());
 
         
         SoundManager.instance.musicSource.clip = SoundManager.instance.hammer;
@@ -1631,6 +1655,26 @@ public class GameManager2 : MonoBehaviour
         //englishButton.SetActive(false);
         //spanishButton.SetActive(false);
 
+        if(LeanLocalization.CurrentLanguage == "English")
+        {
+            spanishButton.GetComponent<Image>().sprite = spanishButtonUnselectedSprite;
+            englishButton.GetComponent<Image>().sprite = englishButtonSelectedSprite;
+            titleImage.sprite = engTitleSprite;// spnTitleSprite;
+        }
+        else
+        {
+            spanishButton.GetComponent<Image>().sprite = spanishButtonSelectedSprite;
+            englishButton.GetComponent<Image>().sprite = englishButtonUnselectedSprite;
+            titleImage.sprite = spnTitleSprite;
+        }
+        //if (spanishButton.GetComponent<Image>().sprite != spanishButtonSelectedSprite)
+        //{
+        //    SoundManager.instance.PlaySingle(SoundManager.instance.take);
+        //    spanishButton.GetComponent<Image>().sprite = spanishButtonSelectedSprite;
+        //    englishButton.GetComponent<Image>().sprite = englishButtonUnselectedSprite;
+        //    titleImage.sprite = spnTitleSprite;
+        //}
+
         blackScreen.DOFade(0f, 1f).SetEase(Ease.InOutQuad).SetLoops(1, LoopType.Restart);
 
         mainMenuS = DOTween.Sequence();
@@ -1641,6 +1685,7 @@ public class GameManager2 : MonoBehaviour
         mainMenuS.Join(spanishButton.transform.DOScale(Vector3.zero, 0.5f).From().SetEase(Ease.OutQuad));
         mainMenuS.Join(creditsButton.transform.DOScale(Vector3.zero, 0.5f).From().SetEase(Ease.OutQuad));
         mainMenuS.Join(questionsButton.transform.DOScale(Vector3.zero, 0.5f).From().SetEase(Ease.OutQuad));
+        mainMenuS.Join(introButton.transform.DOScale(Vector3.zero, 0.5f).From().SetEase(Ease.OutQuad));
         mainMenuS.AppendCallback(() =>
         {
             cssLogo.SetActive(true);
@@ -1683,11 +1728,19 @@ public class GameManager2 : MonoBehaviour
         SoundManager.instance.PlaySingle(SoundManager.instance.take);
         fsm.ChangeState(States.Credits);
     }
+    public void IntroButtonPressed()
+    {
+        SoundManager.instance.PlaySingle(SoundManager.instance.take);
+        nextSceneState = States.Intro1;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        //fsm.ChangeState(States.Intro1);
+    }
     public void EnglishButtonPressed()
     {
         //SoundManager.instance.PlaySingle(SoundManager.instance.take);
         if (englishButton.GetComponent<Image>().sprite != englishButtonSelectedSprite)
         {
+            Debug.Log("Eglish button was pressed");
             SoundManager.instance.PlaySingle(SoundManager.instance.take);
             englishButton.GetComponent<Image>().sprite = englishButtonSelectedSprite;
             spanishButton.GetComponent<Image>().sprite = spanishButtonUnselectedSprite;
@@ -1701,6 +1754,7 @@ public class GameManager2 : MonoBehaviour
         //change color of spanish button
         //change sprite of english button
         if(spanishButton.GetComponent<Image>().sprite != spanishButtonSelectedSprite) {
+            Debug.Log("Spanish button was pressed");
             SoundManager.instance.PlaySingle(SoundManager.instance.take);
             spanishButton.GetComponent<Image>().sprite = spanishButtonSelectedSprite;
             englishButton.GetComponent<Image>().sprite = englishButtonUnselectedSprite;

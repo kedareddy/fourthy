@@ -174,6 +174,11 @@ public class Character : MonoBehaviour
                                     //Tutorial in Equity
                                     if (GameManager2.instance.fsm.CurrentStateMap.state.ToString() == GameManager2.States.Equity.ToString())
                                         {
+                                            Vector2 localPoint;
+                                            RectTransformUtility.ScreenPointToLocalPointInRectangle(GameManager2.instance.textTutorialUI.transform.parent as RectTransform, new Vector2(Screen.width * .5f, Screen.height * 0.1f), GameManager2.instance.UICamera, out localPoint);
+                                            GameManager2.instance.textTutorialUI.transform.localPosition = localPoint;
+
+
                                             Tween showTextTutorial = GameManager2.instance.textTutorialUI.transform.DOLocalMoveY(GameManager2.instance.textTutorialUI.transform.localPosition.y - 100f, 0.25f).From().SetEase(Ease.OutQuad).SetDelay(0.5f);
                                             showTextTutorial.OnPlay(() =>
                                             {
